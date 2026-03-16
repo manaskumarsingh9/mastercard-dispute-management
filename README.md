@@ -153,19 +153,6 @@ RawContent        : HTTP/1.1 200 OK
 - **StatusCode 500 (Internal Server Error):** Check the application logs for detailed error messages. Common issues include missing .p12 file or incorrect keystore password.
 - **Connection Refused:** Ensure the Spring Boot application is still running on `http://localhost:8080`.
 
-### 7. Verify on Mastercard Developer Portal
-To confirm that your API requests are reaching the Mastercard sandbox and being processed:
-
-1. Log in to your **Mastercard Developer Portal** account at `https://developer.mastercard.com`
-2. Navigate to your project dashboard
-3. Select the **Analytics** or **API Usage** section
-4. Look for recent API calls to `GET /v6/healthcheck`
-5. You should see successful responses (HTTP 200) from your test in the previous step
-
-This confirms that:
-- Your OAuth 1.0a signature is valid
-- Your Consumer Key is properly registered
-- Requests are being authenticated and processed by Mastercard
 
 ## API Endpoints
 
