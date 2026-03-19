@@ -105,8 +105,9 @@ public class MastercardApiClient {
         Request request = new Request.Builder().url(url).put(body).build();
         try (Response response = httpClient.newCall(request).execute()) {
             if (!response.isSuccessful()) {
-                log.error("PUT request failed: {} {}", response.code(), response.message());
-                throw new RuntimeException("API request failed: " + response.code() + " " + response.message());
+                String errorBody = response.body() != null ? response.body().string() : "";
+                log.error("PUT request failed: {} {} - {}", response.code(), response.message(), errorBody);
+                throw new RuntimeException("API request failed: " + response.code() + " " + response.message() + " - " + errorBody);
             }
             return response.body().string();
         }
@@ -118,8 +119,9 @@ public class MastercardApiClient {
         Request request = new Request.Builder().url(url).delete().build();
         try (Response response = httpClient.newCall(request).execute()) {
             if (!response.isSuccessful()) {
-                log.error("DELETE request failed: {} {}", response.code(), response.message());
-                throw new RuntimeException("API request failed: " + response.code() + " " + response.message());
+                String errorBody = response.body() != null ? response.body().string() : "";
+                log.error("DELETE request failed: {} {} - {}", response.code(), response.message(), errorBody);
+                throw new RuntimeException("API request failed: " + response.code() + " " + response.message() + " - " + errorBody);
             }
             return response.body().string();
         }
