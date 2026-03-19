@@ -160,7 +160,7 @@ public class MastercardApiController {
     public ResponseEntity<String> getRetrievalDoc(
             @PathVariable String claimId,
             @PathVariable String requestId,
-            @RequestParam String format) {
+            @RequestParam(defaultValue = "ORIGINAL") String format) {
         try {
             log.info("Retrieving documents for claim: {}, request: {}, format: {}", claimId, requestId, format);
             String response = mastercardApiClient.get(
@@ -312,7 +312,7 @@ public class MastercardApiController {
     @GetMapping("/cases/{caseId}/documents")
     public ResponseEntity<String> getCaseFilingDoc(
             @PathVariable String caseId,
-            @RequestParam String format) {
+            @RequestParam(defaultValue = "ORIGINAL") String format) {
         try {
             log.info("Retrieving case documents for case: {}, format: {}", caseId, format);
             String response = mastercardApiClient.get(
