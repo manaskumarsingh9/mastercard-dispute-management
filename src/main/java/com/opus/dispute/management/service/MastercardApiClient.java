@@ -73,8 +73,9 @@ public class MastercardApiClient {
         Request request = new Request.Builder().url(url).get().build();
         try (Response response = httpClient.newCall(request).execute()) {
             if (!response.isSuccessful()) {
-                log.error("GET request failed: {} {}", response.code(), response.message());
-                throw new RuntimeException("API request failed: " + response.code() + " " + response.message());
+                String errorBody = response.body() != null ? response.body().string() : "";
+                log.error("GET request failed: {} {} - {}", response.code(), response.message(), errorBody);
+                throw new RuntimeException("API request failed: " + response.code() + " " + response.message() + " - " + errorBody);
             }
             return response.body().string();
         }
@@ -90,7 +91,7 @@ public class MastercardApiClient {
             if (!response.isSuccessful()) {
                 String errorBody = response.body() != null ? response.body().string() : "";
                 log.error("POST request failed: {} {} - {}", response.code(), response.message(), errorBody);
-                throw new RuntimeException("API request failed: " + response.code() + " " + response.message());
+                throw new RuntimeException("API request failed: " + response.code() + " " + response.message() + " - " + errorBody);
             }
             return response.body().string();
         }

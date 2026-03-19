@@ -67,7 +67,7 @@ public class MastercardApiController {
     public ResponseEntity<String> searchTransactions(@RequestBody String searchRequestJson) {
         try {
             log.info("Searching transactions with request: {}", searchRequestJson);
-            String response = mastercardApiClient.post("/mastercom/transaction/v1/search", searchRequestJson);
+            String response = mastercardApiClient.post("/mastercom/v6/transactions/search", searchRequestJson);
             return ResponseEntity.ok(response);
         } catch (Exception e) {
             log.error("Failed to search transactions", e);
