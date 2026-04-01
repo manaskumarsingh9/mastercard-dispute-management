@@ -17,8 +17,8 @@ public class DisputeService {
     private DisputeRepository disputeRepository;
 
     public Dispute createDispute(Dispute dispute) {
-        dispute.setClaimId(UUID.randomUUID().toString()); // Generate a unique claimId
-        dispute.setCreatedDate(LocalDateTime.now());
+        dispute.setClaimId(UUID.randomUUID().toString());
+        dispute.setIngestedAt(LocalDateTime.now());
         dispute.setLastUpdatedDate(LocalDateTime.now());
         dispute.setStatus("INITIATED");
         return disputeRepository.save(dispute);

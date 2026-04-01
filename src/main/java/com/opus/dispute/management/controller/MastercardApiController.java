@@ -385,4 +385,42 @@ public class MastercardApiController {
             return ResponseEntity.status(500).body("Error: " + e.getMessage());
         }
     }
+
+    // ===== 15. QUEUES =====
+
+    @GetMapping("/queues/names")
+    public ResponseEntity<String> getQueueNames() {
+        try {
+            log.info("Retrieving queue names...");
+            String response = mastercardApiClient.get(BASE + "/queues/names");
+            return ResponseEntity.ok(response);
+        } catch (Exception e) {
+            log.error("Failed to get queue names", e);
+            return ResponseEntity.status(500).body("Error: " + e.getMessage());
+        }
+    }
+
+    @GetMapping("/queues")
+    public ResponseEntity<String> getQueueClaims(@RequestParam(name = "queue-name") String queueName) {
+        try {
+            log.info("Retrieving claims from queue: {}", queueName);
+            String response = mastercardApiClient.get(BASE + "/queues?queue-name=" + queueName);
+            return ResponseEntity.ok(response);
+        } catch (Exception e) {
+            log.error("Failed to get queue claims", e);
+            return ResponseEntity.status(500).body("Error: " + e.getMessage());
+        }
+    }
+
+    @PostMapping("/queues")
+    public ResponseEntity<String> getQueueClaimsWithDateRange(@RequestBody String body) {
+        try {
+            log.info("Retrieving claims from queue with date range...");
+            String response = mastercardApiClient.post(BASE + "/queues", body);
+            return ResponseEntity.ok(response);
+        } catch (Exception e) {
+            log.error("Failed to get queue claims with date range", e);
+            return ResponseEntity.status(500).body("Error: " + e.getMessage());
+        }
+    }
 }
