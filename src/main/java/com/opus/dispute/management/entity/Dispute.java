@@ -54,6 +54,6 @@ public class Dispute {
     private LocalDateTime ingestedAt;
     private LocalDateTime lastUpdatedDate;
 
-    @Column(length = 1000)
+    @Column(columnDefinition = "TEXT")
     private String issuerSummary;
 }
