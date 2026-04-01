@@ -172,6 +172,22 @@ public class MastercardApiController {
         }
     }
 
+    @GetMapping("/claims/{claimId}/chargebacks/{chargebackId}/documents")
+    public ResponseEntity<String> getChargebackDoc(
+            @PathVariable String claimId,
+            @PathVariable String chargebackId,
+            @RequestParam(defaultValue = "ORIGINAL") String format) {
+        try {
+            log.info("Retrieving chargeback documents for claim: {}, chargeback: {}, format: {}", claimId, chargebackId, format);
+            String response = mastercardApiClient.get(
+                    BASE + "/claims/" + claimId + "/chargebacks/" + chargebackId + "/documents?format=" + format);
+            return ResponseEntity.ok(response);
+        } catch (Exception e) {
+            log.error("Failed to get chargeback documents", e);
+            return ResponseEntity.status(500).body("Error: " + e.getMessage());
+        }
+    }
+
     @PutMapping("/retrievalrequests/status")
     public ResponseEntity<String> retrieveFulfillmentStatus(@RequestBody String body) {
         try {
