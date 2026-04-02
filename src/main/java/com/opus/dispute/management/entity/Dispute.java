@@ -56,4 +56,16 @@ public class Dispute {
 
     @Column(columnDefinition = "TEXT")
     private String issuerSummary;
+
+    private String chargebackDisplayId;
+    private String disputeType;
+    private Double amount;
+    private String currency;
+    private String merchantName;
+    private String cardholderName;
+    private String reasonCodeDescription;
+    private String itemDescription;
+    private Integer enrichmentPercentage;
+    private Integer sourcesCount;
+    private String action;
 }
