@@ -1,16 +1,14 @@
 package com.opus.dispute.management.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "disputes")
@@ -68,4 +66,24 @@ public class Dispute {
     private Integer enrichmentPercentage;
     private Integer sourcesCount;
     private String action;
+
+    private Boolean detailsFetched;
+    private String auditControlNumber;
+    private String switchSerialNumber;
+
+    @OneToMany(mappedBy = "dispute", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @JsonIgnore
+    private List<ChargebackDetail> chargebackDetails = new ArrayList<>();
+
+    @OneToMany(mappedBy = "dispute", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @JsonIgnore
+    private List<RetrievalDetail> retrievalDetails = new ArrayList<>();
+
+    @OneToMany(mappedBy = "dispute", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @JsonIgnore
+    private List<FeeDetail> feeDetails = new ArrayList<>();
+
+    @OneToMany(mappedBy = "dispute", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @JsonIgnore
+    private List<CaseFilingDetail> caseFilingDetails = new ArrayList<>();
 }
