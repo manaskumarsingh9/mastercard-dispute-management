@@ -86,11 +86,20 @@ public class DisputeController {
 
             return ResponseEntity.ok(response);
         } catch (RuntimeException e) {
-            if (e.getMessage() != null && e.getMessage().contains("Dispute not found")) {
+            String msg = e.getMessage() != null ? e.getMessage() : "";
+            if (msg.contains("Dispute not found")) {
                 return ResponseEntity.status(404).body(Map.of(
                         "status", "ERROR",
                         "disputeId", id,
                         "error", "Dispute not found: " + id
+                ));
+            }
+            if (msg.contains("INVALID_INPUT_VALUE") || msg.contains("400 Bad Request")) {
+                log.warn("Mastercard API rejected claim ID for dispute {}: invalid claim-id on Mastercard side", id);
+                return ResponseEntity.status(422).body(Map.of(
+                        "status", "INVALID_CLAIM",
+                        "disputeId", id,
+                        "error", "The claim ID for this dispute is not recognized by the Mastercard API. This dispute may have been manually created and does not exist in Mastercard's system."
                 ));
             }
             log.error("Failed to fetch claim details for dispute {}", id, e);
