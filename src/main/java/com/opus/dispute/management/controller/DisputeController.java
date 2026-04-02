@@ -2,27 +2,41 @@ package com.opus.dispute.management.controller;
 
 import com.opus.dispute.management.entity.Dispute;
 import com.opus.dispute.management.service.ClaimDetailService;
+import com.opus.dispute.management.service.DataSourceService;
 import com.opus.dispute.management.service.DisputeService;
+import com.opus.dispute.management.repository.DisputeRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 @Slf4j
 @RestController
 @RequestMapping("/api/disputes")
 public class DisputeController {
 
+    private static final Set<String> VALID_CATEGORIES = Set.of(
+            "merchant", "shipping", "psp", "identity", "device", "fraud-tools", "customer-comms"
+    );
+
     @Autowired
     private DisputeService disputeService;
 
     @Autowired
     private ClaimDetailService claimDetailService;
+
+    @Autowired
+    private DataSourceService dataSourceService;
+
+    @Autowired
+    private DisputeRepository disputeRepository;
 
     @PostMapping
     public ResponseEntity<Dispute> createDispute(@RequestBody Dispute dispute) {
@@ -41,6 +55,51 @@ public class DisputeController {
         return disputeService.getDisputeById(id)
                 .map(dispute -> new ResponseEntity<>(dispute, HttpStatus.OK))
                 .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
+    }
+
+    @PatchMapping("/{id}")
+    public ResponseEntity<?> updateDispute(@PathVariable Long id, @RequestBody Map<String, Object> updates) {
+        return disputeRepository.findById(id)
+                .map(dispute -> {
+                    try {
+                        applyStringField(updates, "merchantCategory", dispute::setMerchantCategory);
+                        applyStringField(updates, "customerEmail", dispute::setCustomerEmail);
+                        applyStringField(updates, "cardNumber", dispute::setCardNumber);
+                        applyStringField(updates, "evidenceFileId", dispute::setEvidenceFileId);
+                        applyStringField(updates, "merchantName", dispute::setMerchantName);
+                        applyStringField(updates, "cardholderName", dispute::setCardholderName);
+                        applyStringField(updates, "itemDescription", dispute::setItemDescription);
+                        applyStringField(updates, "disputeType", dispute::setDisputeType);
+                        applyStringField(updates, "action", dispute::setAction);
+                        applyStringField(updates, "status", dispute::setStatus);
+                        applyStringField(updates, "currency", dispute::setCurrency);
+
+                        if (updates.containsKey("amount") && updates.get("amount") != null) {
+                            Object val = updates.get("amount");
+                            if (val instanceof Number) {
+                                dispute.setAmount(((Number) val).doubleValue());
+                            } else {
+                                return ResponseEntity.badRequest().body(Map.of("error", "Field 'amount' must be a number"));
+                            }
+                        }
+
+                        dispute.setLastUpdatedDate(LocalDateTime.now());
+                        Dispute saved = disputeRepository.save(dispute);
+                        return ResponseEntity.ok(saved);
+                    } catch (ClassCastException e) {
+                        return ResponseEntity.badRequest().body(Map.of("error", "Invalid field type in request body"));
+                    }
+                })
+                .orElseGet(() -> ResponseEntity.status(404).body(Map.of("error", "Dispute not found: " + id)));
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> deleteDispute(@PathVariable Long id) {
+        if (!disputeRepository.existsById(id)) {
+            return ResponseEntity.status(404).body(Map.of("error", "Dispute not found: " + id));
+        }
+        disputeRepository.deleteById(id);
+        return ResponseEntity.ok(Map.of("status", "DELETED", "disputeId", id));
     }
 
     @GetMapping("/{id}/details")
@@ -115,6 +174,75 @@ public class DisputeController {
                     "disputeId", id,
                     "error", "Failed to fetch claim details"
             ));
+        }
+    }
+
+    @GetMapping("/{id}/sources")
+    public ResponseEntity<?> getDisputeSources(@PathVariable Long id) {
+        return disputeRepository.findById(id)
+                .map(dispute -> {
+                    int caseNum = dataSourceService.extractCaseNumber(dispute.getId(), dispute.getClaimId());
+                    if (caseNum < 0) {
+                        return ResponseEntity.ok(Map.of(
+                                "disputeId", id,
+                                "caseNumber", -1,
+                                "sources", Map.of(),
+                                "message", "No local evidence data files found for this dispute"
+                        ));
+                    }
+                    Map<String, String> sources = dataSourceService.loadAllSourcesForCase(caseNum);
+                    Map<String, Object> response = new LinkedHashMap<>();
+                    response.put("disputeId", id);
+                    response.put("caseNumber", caseNum);
+                    response.put("sourceCount", sources.size());
+                    response.put("sources", sources);
+                    return ResponseEntity.ok(response);
+                })
+                .orElseGet(() -> ResponseEntity.status(404).body(Map.of("error", "Dispute not found: " + id)));
+    }
+
+    @GetMapping("/{id}/sources/{category}")
+    public ResponseEntity<?> getDisputeSourcesByCategory(
+            @PathVariable Long id,
+            @PathVariable String category) {
+        if (!VALID_CATEGORIES.contains(category)) {
+            return ResponseEntity.badRequest().body(Map.of(
+                    "error", "Invalid category: " + category,
+                    "validCategories", VALID_CATEGORIES
+            ));
+        }
+
+        return disputeRepository.findById(id)
+                .map(dispute -> {
+                    int caseNum = dataSourceService.extractCaseNumber(dispute.getId(), dispute.getClaimId());
+                    if (caseNum < 0) {
+                        return ResponseEntity.ok(Map.of(
+                                "disputeId", id,
+                                "category", category,
+                                "sources", Map.of(),
+                                "message", "No evidence files found"
+                        ));
+                    }
+                    Map<String, String> sources = dataSourceService.loadSourcesByCategory(category, caseNum);
+                    Map<String, Object> response = new LinkedHashMap<>();
+                    response.put("disputeId", id);
+                    response.put("category", category);
+                    response.put("caseNumber", caseNum);
+                    response.put("sourceCount", sources.size());
+                    response.put("sources", sources);
+                    return ResponseEntity.ok(response);
+                })
+                .orElseGet(() -> ResponseEntity.status(404).body(Map.of("error", "Dispute not found: " + id)));
+    }
+
+    private void applyStringField(Map<String, Object> updates, String key, java.util.function.Consumer<String> setter) {
+        if (updates.containsKey(key)) {
+            Object val = updates.get(key);
+            if (val == null) {
+                setter.accept(null);
+            } else {
+                setter.accept(val.toString());
+            }
         }
     }
 }

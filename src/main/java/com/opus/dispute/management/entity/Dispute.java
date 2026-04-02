@@ -67,6 +67,11 @@ public class Dispute {
     private Integer sourcesCount;
     private String action;
 
+    private String merchantCategory;
+    private String customerEmail;
+    private String cardNumber;
+    private String evidenceFileId;
+
     private Boolean detailsFetched;
     private String auditControlNumber;
     private String switchSerialNumber;
