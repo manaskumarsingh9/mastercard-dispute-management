@@ -73,6 +73,9 @@ public class DisputeController {
                         applyStringField(updates, "action", dispute::setAction);
                         applyStringField(updates, "status", dispute::setStatus);
                         applyStringField(updates, "currency", dispute::setCurrency);
+                        applyStringField(updates, "stripeDisputeId", dispute::setStripeDisputeId);
+                        applyStringField(updates, "stripeChargeId", dispute::setStripeChargeId);
+                        applyStringField(updates, "stripePaymentIntentId", dispute::setStripePaymentIntentId);
 
                         if (updates.containsKey("amount") && updates.get("amount") != null) {
                             Object val = updates.get("amount");

@@ -76,6 +76,10 @@ public class Dispute {
     private String auditControlNumber;
     private String switchSerialNumber;
 
+    private String stripeDisputeId;
+    private String stripeChargeId;
+    private String stripePaymentIntentId;
+
     @OneToMany(mappedBy = "dispute", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     @JsonIgnore
     private List<ChargebackDetail> chargebackDetails = new ArrayList<>();
