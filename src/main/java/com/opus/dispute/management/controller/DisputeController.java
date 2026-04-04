@@ -204,6 +204,49 @@ public class DisputeController {
                 .orElseGet(() -> ResponseEntity.status(404).body(Map.of("error", "Dispute not found: " + id)));
     }
 
+    @GetMapping("/{id}/sources/{side}/{category}")
+    public ResponseEntity<?> getDisputeSourcesBySideAndCategory(
+            @PathVariable Long id,
+            @PathVariable String side,
+            @PathVariable String category) {
+        if (!side.equals("issuer") && !side.equals("acquirer")) {
+            return ResponseEntity.badRequest().body(Map.of(
+                    "error", "Invalid side: " + side,
+                    "validSides", List.of("issuer", "acquirer")
+            ));
+        }
+        if (!VALID_CATEGORIES.contains(category)) {
+            return ResponseEntity.badRequest().body(Map.of(
+                    "error", "Invalid category: " + category,
+                    "validCategories", VALID_CATEGORIES
+            ));
+        }
+
+        return disputeRepository.findById(id)
+                .map(dispute -> {
+                    int caseNum = dataSourceService.extractCaseNumber(dispute.getId(), dispute.getClaimId());
+                    if (caseNum < 0) {
+                        return ResponseEntity.ok(Map.of(
+                                "disputeId", id,
+                                "side", side,
+                                "category", category,
+                                "sources", Map.of(),
+                                "message", "No evidence files found"
+                        ));
+                    }
+                    Map<String, String> sources = dataSourceService.loadSourcesByCategory(side, category, caseNum);
+                    Map<String, Object> response = new LinkedHashMap<>();
+                    response.put("disputeId", id);
+                    response.put("side", side);
+                    response.put("category", category);
+                    response.put("caseNumber", caseNum);
+                    response.put("sourceCount", sources.size());
+                    response.put("sources", sources);
+                    return ResponseEntity.ok(response);
+                })
+                .orElseGet(() -> ResponseEntity.status(404).body(Map.of("error", "Dispute not found: " + id)));
+    }
+
     @GetMapping("/{id}/sources/{category}")
     public ResponseEntity<?> getDisputeSourcesByCategory(
             @PathVariable Long id,
@@ -226,13 +269,21 @@ public class DisputeController {
                                 "message", "No evidence files found"
                         ));
                     }
-                    Map<String, String> sources = dataSourceService.loadSourcesByCategory(category, caseNum);
+                    Map<String, String> issuer = dataSourceService.loadSourcesByCategory("issuer", category, caseNum);
+                    Map<String, String> acquirer = dataSourceService.loadSourcesByCategory("acquirer", category, caseNum);
+                    Map<String, String> combined = new LinkedHashMap<>();
+                    for (Map.Entry<String, String> e : issuer.entrySet()) {
+                        combined.put("issuer/" + e.getKey(), e.getValue());
+                    }
+                    for (Map.Entry<String, String> e : acquirer.entrySet()) {
+                        combined.put("acquirer/" + e.getKey(), e.getValue());
+                    }
                     Map<String, Object> response = new LinkedHashMap<>();
                     response.put("disputeId", id);
                     response.put("category", category);
                     response.put("caseNumber", caseNum);
-                    response.put("sourceCount", sources.size());
-                    response.put("sources", sources);
+                    response.put("sourceCount", combined.size());
+                    response.put("sources", combined);
                     return ResponseEntity.ok(response);
                 })
                 .orElseGet(() -> ResponseEntity.status(404).body(Map.of("error", "Dispute not found: " + id)));
