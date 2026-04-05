@@ -1,6 +1,7 @@
 package com.opus.dispute.management.controller;
 
 import com.opus.dispute.management.entity.Dispute;
+import com.opus.dispute.management.service.AcceptanceStatusResolver;
 import com.opus.dispute.management.service.ClaimDetailService;
 import com.opus.dispute.management.service.DataSourceService;
 import com.opus.dispute.management.service.DisputeService;
@@ -37,6 +38,9 @@ public class DisputeController {
 
     @Autowired
     private DisputeRepository disputeRepository;
+
+    @Autowired
+    private AcceptanceStatusResolver acceptanceStatusResolver;
 
     @PostMapping
     public ResponseEntity<Dispute> createDispute(@RequestBody Dispute dispute) {
@@ -92,6 +96,28 @@ public class DisputeController {
                     } catch (ClassCastException e) {
                         return ResponseEntity.badRequest().body(Map.of("error", "Invalid field type in request body"));
                     }
+                })
+                .orElseGet(() -> ResponseEntity.status(404).body(Map.of("error", "Dispute not found: " + id)));
+    }
+
+    @PostMapping("/{id}/accept")
+    public ResponseEntity<?> acceptDispute(@PathVariable Long id) {
+        return disputeRepository.findById(id)
+                .map(dispute -> {
+                    String acceptStatus = acceptanceStatusResolver.resolve(dispute.getProgressState());
+                    dispute.setStatus(acceptStatus);
+                    dispute.setAction("Manually accepted by analyst");
+                    dispute.setLastUpdatedDate(LocalDateTime.now());
+                    Dispute saved = disputeRepository.save(dispute);
+                    log.info("Dispute {} manually accepted with status '{}' (progressState={})",
+                            id, acceptStatus, dispute.getProgressState());
+                    Map<String, Object> response = new LinkedHashMap<>();
+                    response.put("status", acceptStatus);
+                    response.put("action", saved.getAction());
+                    response.put("disputeId", id);
+                    response.put("progressState", dispute.getProgressState());
+                    response.put("message", acceptanceStatusResolver.describe(acceptStatus));
+                    return ResponseEntity.ok(response);
                 })
                 .orElseGet(() -> ResponseEntity.status(404).body(Map.of("error", "Dispute not found: " + id)));
     }
@@ -299,4 +325,5 @@ public class DisputeController {
             }
         }
     }
+
 }
