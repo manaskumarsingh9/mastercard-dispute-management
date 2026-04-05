@@ -211,15 +211,25 @@ public class DisputeController {
         return disputeRepository.findById(id)
                 .map(dispute -> {
                     int caseNum = dataSourceService.extractCaseNumber(dispute.getId(), dispute.getClaimId(), dispute.getCaseNumber());
+                    Map<String, String> sources;
                     if (caseNum < 0) {
-                        return ResponseEntity.ok(Map.of(
-                                "disputeId", id,
-                                "caseNumber", -1,
-                                "sources", Map.of(),
-                                "message", "No local evidence data files found for this dispute"
-                        ));
+                        String rc = dispute.getReasonCode();
+                        if (rc != null && !rc.isEmpty()) {
+                            sources = dataSourceService.loadAllSourcesForReasonCode(rc);
+                        } else {
+                            sources = Map.of();
+                        }
+                        if (sources.isEmpty()) {
+                            return ResponseEntity.ok(Map.of(
+                                    "disputeId", id,
+                                    "caseNumber", -1,
+                                    "sources", Map.of(),
+                                    "message", "No local evidence data files found for this dispute"
+                            ));
+                        }
+                    } else {
+                        sources = dataSourceService.loadAllSourcesWithFallback(caseNum, dispute.getReasonCode());
                     }
-                    Map<String, String> sources = dataSourceService.loadAllSourcesForCase(caseNum);
                     Map<String, Object> response = new LinkedHashMap<>();
                     response.put("disputeId", id);
                     response.put("caseNumber", caseNum);
