@@ -184,7 +184,7 @@ public class DisputeController {
     public ResponseEntity<?> getDisputeSources(@PathVariable Long id) {
         return disputeRepository.findById(id)
                 .map(dispute -> {
-                    int caseNum = dataSourceService.extractCaseNumber(dispute.getId(), dispute.getClaimId());
+                    int caseNum = dataSourceService.extractCaseNumber(dispute.getId(), dispute.getClaimId(), dispute.getCaseNumber());
                     if (caseNum < 0) {
                         return ResponseEntity.ok(Map.of(
                                 "disputeId", id,
@@ -224,7 +224,7 @@ public class DisputeController {
 
         return disputeRepository.findById(id)
                 .map(dispute -> {
-                    int caseNum = dataSourceService.extractCaseNumber(dispute.getId(), dispute.getClaimId());
+                    int caseNum = dataSourceService.extractCaseNumber(dispute.getId(), dispute.getClaimId(), dispute.getCaseNumber());
                     if (caseNum < 0) {
                         return ResponseEntity.ok(Map.of(
                                 "disputeId", id,
@@ -260,7 +260,7 @@ public class DisputeController {
 
         return disputeRepository.findById(id)
                 .map(dispute -> {
-                    int caseNum = dataSourceService.extractCaseNumber(dispute.getId(), dispute.getClaimId());
+                    int caseNum = dataSourceService.extractCaseNumber(dispute.getId(), dispute.getClaimId(), dispute.getCaseNumber());
                     if (caseNum < 0) {
                         return ResponseEntity.ok(Map.of(
                                 "disputeId", id,

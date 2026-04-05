@@ -76,6 +76,8 @@ public class Dispute {
     private String auditControlNumber;
     private String switchSerialNumber;
 
+    private Integer caseNumber;
+
     private String stripeDisputeId;
     private String stripeChargeId;
     private String stripePaymentIntentId;
