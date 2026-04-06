@@ -104,6 +104,9 @@ public class DisputeController {
     public ResponseEntity<?> acceptDispute(@PathVariable Long id) {
         return disputeRepository.findById(id)
                 .map(dispute -> {
+                    dispute.setPreviousStatus(dispute.getStatus());
+                    dispute.setPreviousAction(dispute.getAction());
+
                     String acceptStatus = acceptanceStatusResolver.resolve(dispute.getProgressState());
                     dispute.setStatus(acceptStatus);
                     dispute.setAction("Manually accepted by analyst");
@@ -117,6 +120,49 @@ public class DisputeController {
                     response.put("disputeId", id);
                     response.put("progressState", dispute.getProgressState());
                     response.put("message", acceptanceStatusResolver.describe(acceptStatus));
+                    response.put("undoAvailable", true);
+                    return ResponseEntity.ok(response);
+                })
+                .orElseGet(() -> ResponseEntity.status(404).body(Map.of("error", "Dispute not found: " + id)));
+    }
+
+    @PostMapping("/{id}/undo-accept")
+    public ResponseEntity<?> undoAcceptDispute(@PathVariable Long id) {
+        return disputeRepository.findById(id)
+                .map(dispute -> {
+                    String currentStatus = dispute.getStatus();
+                    if (!AcceptanceStatusResolver.NOT_REPRESENTED.equals(currentStatus)
+                            && !AcceptanceStatusResolver.ACCEPTED_PRE_ARBITRATION.equals(currentStatus)
+                            && !AcceptanceStatusResolver.ACCEPTED_ARBITRATION.equals(currentStatus)) {
+                        return ResponseEntity.badRequest().body(Map.of(
+                                "error", "Dispute is not in an accepted state",
+                                "currentStatus", currentStatus != null ? currentStatus : "null"
+                        ));
+                    }
+
+                    String restoredStatus = dispute.getPreviousStatus();
+                    String restoredAction = dispute.getPreviousAction();
+
+                    if (restoredStatus == null) {
+                        restoredStatus = "OPEN";
+                    }
+
+                    dispute.setStatus(restoredStatus);
+                    dispute.setAction(restoredAction);
+                    dispute.setPreviousStatus(null);
+                    dispute.setPreviousAction(null);
+                    dispute.setLastUpdatedDate(LocalDateTime.now());
+                    disputeRepository.save(dispute);
+
+                    log.info("Dispute {} acceptance undone, restored status '{}' (progressState={})",
+                            id, restoredStatus, dispute.getProgressState());
+
+                    Map<String, Object> response = new LinkedHashMap<>();
+                    response.put("status", restoredStatus);
+                    response.put("action", restoredAction);
+                    response.put("disputeId", id);
+                    response.put("progressState", dispute.getProgressState());
+                    response.put("message", "Acceptance has been undone. The dispute is back to its previous state.");
                     return ResponseEntity.ok(response);
                 })
                 .orElseGet(() -> ResponseEntity.status(404).body(Map.of("error", "Dispute not found: " + id)));
