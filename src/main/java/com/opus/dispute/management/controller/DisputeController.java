@@ -424,7 +424,9 @@ public class DisputeController {
         try {
             byte[] zipBytes = buildEvidenceZip(textSources, mediaSources);
             String claimId = dispute.getClaimId() != null ? dispute.getClaimId() : String.valueOf(id);
-            String filename = claimId + "_" + side + "_evidences.zip";
+            String rc = dispute.getReasonCode() != null && !dispute.getReasonCode().isBlank()
+                    ? dispute.getReasonCode() : "unknown";
+            String filename = claimId + "_" + rc + "_" + side + "_evidences.zip";
 
             HttpHeaders headers = new HttpHeaders();
             headers.setContentType(MediaType.parseMediaType("application/zip"));
