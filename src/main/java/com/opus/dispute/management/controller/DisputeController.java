@@ -5,18 +5,26 @@ import com.opus.dispute.management.service.AcceptanceStatusResolver;
 import com.opus.dispute.management.service.ClaimDetailService;
 import com.opus.dispute.management.service.DataSourceService;
 import com.opus.dispute.management.service.DisputeService;
+import com.opus.dispute.management.service.MediaFile;
 import com.opus.dispute.management.repository.DisputeRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.time.LocalDateTime;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipOutputStream;
 
 @Slf4j
 @RestController
@@ -369,6 +377,87 @@ public class DisputeController {
                     return ResponseEntity.ok(response);
                 })
                 .orElseGet(() -> ResponseEntity.status(404).body(Map.of("error", "Dispute not found: " + id)));
+    }
+
+    @GetMapping("/{id}/download/{side}")
+    public ResponseEntity<?> downloadEvidenceZip(@PathVariable Long id, @PathVariable String side) {
+        if (!"issuer".equals(side) && !"acquirer".equals(side)) {
+            return ResponseEntity.badRequest().body(Map.of(
+                    "error", "Invalid side: " + side,
+                    "validSides", List.of("issuer", "acquirer")
+            ));
+        }
+
+        Dispute dispute = disputeRepository.findById(id).orElse(null);
+        if (dispute == null) {
+            return ResponseEntity.status(404).body(Map.of("error", "Dispute not found: " + id));
+        }
+
+        int caseNum = dataSourceService.extractCaseNumber(dispute.getId(), dispute.getClaimId(), dispute.getCaseNumber());
+        String reasonCode = dispute.getReasonCode();
+
+        Map<String, String> textSources;
+        List<MediaFile> mediaSources;
+
+        if ("issuer".equals(side)) {
+            textSources = caseNum >= 0
+                    ? dataSourceService.loadIssuerSourcesWithFallback(caseNum, reasonCode)
+                    : (reasonCode != null ? dataSourceService.loadIssuerSourcesForReasonCode(reasonCode) : Map.of());
+            mediaSources = caseNum >= 0
+                    ? dataSourceService.loadIssuerMediaWithFallback(caseNum, reasonCode)
+                    : (reasonCode != null ? dataSourceService.loadIssuerMediaForReasonCode(reasonCode) : List.of());
+        } else {
+            textSources = caseNum >= 0
+                    ? dataSourceService.loadAcquirerSourcesWithFallback(caseNum, reasonCode)
+                    : (reasonCode != null ? dataSourceService.loadAcquirerSourcesForReasonCode(reasonCode) : Map.of());
+            mediaSources = caseNum >= 0
+                    ? dataSourceService.loadAcquirerMediaWithFallback(caseNum, reasonCode)
+                    : (reasonCode != null ? dataSourceService.loadAcquirerMediaForReasonCode(reasonCode) : List.of());
+        }
+
+        if (textSources.isEmpty() && mediaSources.isEmpty()) {
+            return ResponseEntity.status(404).body(Map.of(
+                    "error", "No " + side + " evidence files found for this dispute"
+            ));
+        }
+
+        try {
+            byte[] zipBytes = buildEvidenceZip(textSources, mediaSources);
+            String claimId = dispute.getClaimId() != null ? dispute.getClaimId() : String.valueOf(id);
+            String filename = claimId + "_" + side + "_evidences.zip";
+
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentType(MediaType.parseMediaType("application/zip"));
+            headers.setContentDispositionFormData("attachment", filename);
+            headers.setContentLength(zipBytes.length);
+
+            log.info("Generated {} evidence ZIP for dispute {} (claimId={}): {} text files, {} media files, {} bytes",
+                    side, id, claimId, textSources.size(), mediaSources.size(), zipBytes.length);
+
+            return new ResponseEntity<>(zipBytes, headers, HttpStatus.OK);
+        } catch (IOException e) {
+            log.error("Failed to generate evidence ZIP for dispute {}", id, e);
+            return ResponseEntity.status(500).body(Map.of("error", "Failed to generate ZIP file"));
+        }
+    }
+
+    private byte[] buildEvidenceZip(Map<String, String> textSources, List<MediaFile> mediaSources) throws IOException {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        try (ZipOutputStream zos = new ZipOutputStream(baos)) {
+            for (Map.Entry<String, String> entry : textSources.entrySet()) {
+                String path = entry.getKey().endsWith(".json") ? entry.getKey() : entry.getKey() + ".json";
+                zos.putNextEntry(new ZipEntry(path));
+                zos.write(entry.getValue().getBytes(StandardCharsets.UTF_8));
+                zos.closeEntry();
+            }
+
+            for (MediaFile mf : mediaSources) {
+                zos.putNextEntry(new ZipEntry(mf.name()));
+                zos.write(mf.data());
+                zos.closeEntry();
+            }
+        }
+        return baos.toByteArray();
     }
 
     private void applyStringField(Map<String, Object> updates, String key, java.util.function.Consumer<String> setter) {
