@@ -6,6 +6,7 @@ import com.opus.dispute.management.service.ClaimDetailService;
 import com.opus.dispute.management.service.DataSourceService;
 import com.opus.dispute.management.service.DisputeService;
 import com.opus.dispute.management.service.MediaFile;
+import com.opus.dispute.management.service.SecondPresentmentService;
 import com.opus.dispute.management.repository.DisputeRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,6 +50,9 @@ public class DisputeController {
 
     @Autowired
     private AcceptanceStatusResolver acceptanceStatusResolver;
+
+    @Autowired
+    private SecondPresentmentService secondPresentmentService;
 
     @PostMapping
     public ResponseEntity<Dispute> createDispute(@RequestBody Dispute dispute) {
@@ -174,6 +178,26 @@ public class DisputeController {
                     return ResponseEntity.ok(response);
                 })
                 .orElseGet(() -> ResponseEntity.status(404).body(Map.of("error", "Dispute not found: " + id)));
+    }
+
+    @PostMapping("/{id}/second-presentment")
+    public ResponseEntity<?> raiseSecondPresentment(@PathVariable Long id,
+                                                      @RequestBody(required = false) Map<String, String> body) {
+        try {
+            String messageText = (body != null) ? body.get("messageText") : null;
+            log.info("Raising second presentment for dispute {}", id);
+            Map<String, Object> result = secondPresentmentService.raiseSecondPresentment(id, messageText);
+            return ResponseEntity.ok(result);
+        } catch (IllegalStateException e) {
+            log.warn("Second presentment validation failed for dispute {}: {}", id, e.getMessage());
+            return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));
+        } catch (IllegalArgumentException e) {
+            log.warn("Second presentment bad request for dispute {}: {}", id, e.getMessage());
+            return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));
+        } catch (Exception e) {
+            log.error("Failed to raise second presentment for dispute {}", id, e);
+            return ResponseEntity.status(500).body(Map.of("error", e.getMessage()));
+        }
     }
 
     @DeleteMapping("/{id}")
