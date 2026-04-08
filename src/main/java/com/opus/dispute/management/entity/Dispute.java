@@ -5,11 +5,15 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.AccessLevel;
+import lombok.extern.slf4j.Slf4j;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+@Slf4j
 @Entity
 @Table(name = "disputes")
 @Data
@@ -22,6 +26,7 @@ public class Dispute {
     private Long id;
 
     @Column(unique = true)
+    @Setter(AccessLevel.NONE)
     private String claimId;
 
     private String claimType;
@@ -31,7 +36,27 @@ public class Dispute {
     private String acquirerRefNum;
     private String issuerId;
     private String merchantId;
+
+    @Setter(AccessLevel.NONE)
     private String transactionId;
+
+    public void setClaimId(String claimId) {
+        if (this.claimId != null && !this.claimId.isBlank() && !this.claimId.equals(claimId)) {
+            log.warn("Blocked attempt to overwrite immutable claimId '{}' with '{}' on dispute {}",
+                    this.claimId, claimId, this.id);
+            return;
+        }
+        this.claimId = claimId;
+    }
+
+    public void setTransactionId(String transactionId) {
+        if (this.transactionId != null && !this.transactionId.isBlank() && !this.transactionId.equals(transactionId)) {
+            log.warn("Blocked attempt to overwrite immutable transactionId '{}' with '{}' on dispute {}",
+                    this.transactionId, transactionId, this.id);
+            return;
+        }
+        this.transactionId = transactionId;
+    }
     private String reasonCode;
     private String progressState;
     private String queueName;
