@@ -1,0 +1,86 @@
+name: Build & Deploy to AWS
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  AWS_REGION: us-east-1
+  S3_DEPLOY_BUCKET: dispute-mgmt-deployments
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Java 19
+        uses: actions/setup-java@v4
+        with:
+          distribution: oracle
+          java-version: 19
+
+      - name: Cache Maven dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-maven-
+
+      - name: Build JAR
+        run: ./mvnw clean package -DskipTests -B
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Upload JAR to S3
+        run: |
+          TIMESTAMP=$(date +%Y%m%d%H%M%S)
+          aws s3 cp target/mastercard-dispute-management-0.0.1-SNAPSHOT.jar \
+            s3://${{ env.S3_DEPLOY_BUCKET }}/app-$TIMESTAMP.jar
+          aws s3 cp target/mastercard-dispute-management-0.0.1-SNAPSHOT.jar \
+            s3://${{ env.S3_DEPLOY_BUCKET }}/app.jar
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ubuntu
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            echo "Stopping service..."
+            sudo systemctl stop dispute-mgmt
+
+            echo "Downloading latest JAR..."
+            aws s3 cp s3://dispute-mgmt-deployments/app.jar /opt/dispute-mgmt/app.jar
+
+            echo "Starting service..."
+            sudo systemctl start dispute-mgmt
+
+            echo "Waiting for health check..."
+            for i in {1..30}; do
+              if curl -sf http://localhost:5000/api/mastercard/test > /dev/null 2>&1; then
+                echo "Application is healthy!"
+                exit 0
+              fi
+              echo "Attempt $i/30 - waiting..."
+              sleep 5
+            done
+            echo "Health check failed after 150 seconds"
+            exit 1
