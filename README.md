@@ -81,19 +81,19 @@ where psql
     psql --version
     ```
 
-3.  Create a database named `dispute_db`. Open a terminal and connect to PostgreSQL:
+3.  Create a database named `opus_dispute_db`. Open a terminal and connect to PostgreSQL:
     ```bash
     psql -U postgres
     ```
     Then execute:
     ```sql
-    CREATE DATABASE dispute_db;
+    CREATE DATABASE opus_dispute_db;
     ```
     Exit with `\q`
 
 4.  Update the database connection details in `src/main/resources/application.properties` if they differ from the default:
     ```properties
-    spring.datasource.url=jdbc:postgresql://localhost:5432/dispute_db
+    spring.datasource.url=jdbc:postgresql://localhost:5432/opus_dispute_db
     spring.datasource.username=postgres
     spring.datasource.password=password
     ```
@@ -200,9 +200,9 @@ Once the application is running, you can interact with it via the following endp
 ### Database Connection Issues
 *   **"Database does not exist" or "Role does not exist":** 
     1. Verify PostgreSQL is running
-    2. Ensure the `dispute_db` database is created (run `CREATE DATABASE dispute_db;` in PostgreSQL)
+    2. Ensure the `opus_dispute_db` database is created (run `CREATE DATABASE opus_dispute_db;` in PostgreSQL)
     3. Check that the username/password in `application.properties` matches your PostgreSQL configuration
-    4. Test connectivity: `psql -h localhost -U postgres -d dispute_db`
+    4. Test connectivity: `psql -h localhost -U postgres -d opus_dispute_db`
 
 ### Mastercard API Credential Issues
 *   **`.p12` File Not Found / Access Denied:**
