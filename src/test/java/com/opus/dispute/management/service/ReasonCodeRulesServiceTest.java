@@ -6,10 +6,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class ReasonCodeRulesServiceTest {
 
-    @Test
-    void loadsAllNineDefinedReasonCodes() {
-        ReasonCodeRulesService service = new ReasonCodeRulesService();
+    private final ReasonCodeRulesService service = new ReasonCodeRulesService(new DataSourceService());
 
+    @Test
+    void loadsAllNineInScopeReasonCodes() {
         Set<String> codes = service.getSupportedReasonCodes();
 
         assertThat(codes).containsExactlyInAnyOrder(
@@ -18,18 +18,21 @@ class ReasonCodeRulesServiceTest {
     }
 
     @Test
-    void doesNotContainCodesAbsentFromRulesFile() {
-        ReasonCodeRulesService service = new ReasonCodeRulesService();
-
+    void excludes4871EvenThoughItIsDefinedInTheRulesFile() {
         Set<String> codes = service.getSupportedReasonCodes();
 
-        assertThat(codes).doesNotContain("4801", "4802", "4900", "4871");
+        assertThat(codes).doesNotContain("4871");
+    }
+
+    @Test
+    void doesNotContainCodesAbsentFromRulesFile() {
+        Set<String> codes = service.getSupportedReasonCodes();
+
+        assertThat(codes).doesNotContain("4801", "4802", "4900");
     }
 
     @Test
     void repeatedCallsReturnSameCachedSet() {
-        ReasonCodeRulesService service = new ReasonCodeRulesService();
-
         Set<String> first = service.getSupportedReasonCodes();
         Set<String> second = service.getSupportedReasonCodes();
 

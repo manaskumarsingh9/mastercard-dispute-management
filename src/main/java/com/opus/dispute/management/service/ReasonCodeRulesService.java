@@ -5,20 +5,23 @@ import com.google.gson.JsonParser;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.Set;
 
 @Slf4j
 @Service
 public class ReasonCodeRulesService {
 
-    private static final Path RULES_FILE = Paths.get("src/data/reason-code-rules.json");
+    private static final String OUT_OF_SCOPE_REASON_CODE = "4871";
+
+    private final DataSourceService dataSourceService;
 
     private volatile Set<String> cachedCodes;
+
+    public ReasonCodeRulesService(DataSourceService dataSourceService) {
+        this.dataSourceService = dataSourceService;
+    }
 
     public Set<String> getSupportedReasonCodes() {
         if (cachedCodes == null) {
@@ -32,13 +35,14 @@ public class ReasonCodeRulesService {
     }
 
     private Set<String> loadReasonCodes() {
-        try {
-            String json = Files.readString(RULES_FILE);
-            JsonObject root = JsonParser.parseString(json).getAsJsonObject();
-            return Collections.unmodifiableSet(root.keySet());
-        } catch (IOException e) {
-            log.error("Failed to load reason-code-rules.json from {}", RULES_FILE, e);
+        String json = dataSourceService.loadReasonCodeRules();
+        if (json == null) {
+            log.error("Failed to load reason-code-rules.json via DataSourceService");
             return Collections.emptySet();
         }
+        JsonObject root = JsonParser.parseString(json).getAsJsonObject();
+        Set<String> codes = new HashSet<>(root.keySet());
+        codes.remove(OUT_OF_SCOPE_REASON_CODE);
+        return Collections.unmodifiableSet(codes);
     }
 }
