@@ -22,6 +22,7 @@ ingestion.scheduled.initial-delay-ms=60000
 ingestion.max-new-claims=3
 
 gemini.api-key=${GEMINI_API_KEY:}
+openai.api-key=${OPENAI_API_KEY:}
 
 stripe.secret-key=${STRIPE_SECRET_KEY:}
 stripe.base-url=https://api.stripe.com/v1
