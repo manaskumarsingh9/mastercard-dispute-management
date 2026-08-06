@@ -70,6 +70,8 @@ This is a content edit to `src/data/reason-code-rules.json` only — no code cha
 
 Every file under `src/data/sources/acquirer/{code}/**` and `src/data/sources/issuer/{code}/**` must be internally consistent with the AudioPeak Electronics identity and the fixed USD amount from Change 3 — not just the `order_details.json`/`cardholder_dispute_statement.json` "headline" files. That includes auth logs, settlement records, AVS/CVV checks, risk assessments, refund policies, email logs, fulfillment records, 3DS authentication, and the issuer-side chargeback documentation / transaction record — wherever the old merchant name, product, or amount appears.
 
+**Image/PDF evidence audit:** checked every image/PDF under `src/data/sources` for pattern-only placeholders with no concrete supporting content. Findings: 4853's two image files (`product_listing_screenshot(2).jpg`, `battery_drain_evidence.png`) are genuine, detailed evidence mockups with concrete text/data already — no replacement needed. None of the other 8 in-scope codes have any image/PDF evidence today (JSON only). Two stray `.jpg` files exist directly under `acquirer/fraud-tools/` and `acquirer/merchant/` (not inside any reason-code folder) — real but unrelated Macy's documents, structurally invisible to the app since `DataSourceService` only reads `{acquirer|issuer}/{reasonCode}/{category}/*`; out of scope, left untouched.
+
 | Code | Current story | Action |
 |---|---|---|
 | 4853 | AudioPeak Electronics — headphones | **No change** — already correct |
