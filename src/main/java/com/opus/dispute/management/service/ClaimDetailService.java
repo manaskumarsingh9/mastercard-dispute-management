@@ -34,6 +34,7 @@ public class ClaimDetailService {
     private final RetrievalDetailRepository retrievalDetailRepository;
     private final FeeDetailRepository feeDetailRepository;
     private final CaseFilingDetailRepository caseFilingDetailRepository;
+    private final AudioPeakOverrideService audioPeakOverrideService;
     private final Gson gson = new Gson();
 
     public ClaimDetailService(MastercardApiClient mastercardApiClient,
@@ -41,13 +42,15 @@ public class ClaimDetailService {
                               ChargebackDetailRepository chargebackDetailRepository,
                               RetrievalDetailRepository retrievalDetailRepository,
                               FeeDetailRepository feeDetailRepository,
-                              CaseFilingDetailRepository caseFilingDetailRepository) {
+                              CaseFilingDetailRepository caseFilingDetailRepository,
+                              AudioPeakOverrideService audioPeakOverrideService) {
         this.mastercardApiClient = mastercardApiClient;
         this.disputeRepository = disputeRepository;
         this.chargebackDetailRepository = chargebackDetailRepository;
         this.retrievalDetailRepository = retrievalDetailRepository;
         this.feeDetailRepository = feeDetailRepository;
         this.caseFilingDetailRepository = caseFilingDetailRepository;
+        this.audioPeakOverrideService = audioPeakOverrideService;
     }
 
     @PostConstruct
@@ -169,6 +172,7 @@ public class ClaimDetailService {
 
             dispute.setDetailsFetched(true);
             dispute.setLastUpdatedDate(LocalDateTime.now());
+            audioPeakOverrideService.applyOverride(dispute);
             disputeRepository.save(dispute);
 
             log.info("Claim detail stored for claimId={}: {} chargebacks, reasonCode={}",
@@ -219,6 +223,7 @@ public class ClaimDetailService {
 
         dispute.setDetailsFetched(true);
         dispute.setLastUpdatedDate(LocalDateTime.now());
+        audioPeakOverrideService.applyOverride(dispute);
         disputeRepository.save(dispute);
 
         log.info("Local fallback complete for disputeId={}: created 1 chargeback detail from local data (reasonCode={}, amount={} {})",
