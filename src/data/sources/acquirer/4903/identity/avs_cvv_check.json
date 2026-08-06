@@ -1,0 +1,16 @@
+{
+  "source": "TimePiece Gallery — Authorized Dealer — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4903",
+  "reasonCodeDescription": "Mastercard Compliance — Exceeds Limit",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "N/A",
+      "description": "Card-present EMV+PIN"
+    },
+    "cvv": {
+      "responseCode": "N/A",
+      "description": "Chip cryptogram validated + PIN verified"
+    }
+  }
+}

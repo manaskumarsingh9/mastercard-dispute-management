@@ -1,0 +1,26 @@
+{
+  "source": "Shipping Provider",
+  "dataType": "Delivery Confirmation",
+  "retrievedAt": "2026-02-18T13:07:00Z",
+  "provider": "UPS",
+  "caseReference": "CASE-19",
+  "records": [
+    {
+      "confirmationNumber": "DC-751554",
+      "deliveryDate": "2026-01-09T00:24:00Z",
+      "deliveryStatus": "Confirmed",
+      "signatureOnFile": true,
+      "signedBy": "John Smith",
+      "addressMatch": true,
+      "deliveredToCardholderAddress": true,
+      "deliveryPhoto": true,
+      "photoUrl": "https://evidence.opus.io/photos/delivery_19.jpg",
+      "gpsCoordinates": {
+        "lat": 45.54,
+        "lon": -95.54
+      },
+      "recipientRelation": "Family Member",
+      "transactionId": "TXN-001234"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "source": "Digital Goods LLC — Fraud Detection Service",
+  "dataType": "Device Fingerprint Analysis",
+  "caseReference": "CASE-20",
+  "records": [
+    {
+      "transactionId": "TXN-983841698",
+      "sessionId": "SES-20-983841",
+      "ipAddress": "92.160.140.5",
+      "deviceType": "Desktop",
+      "browser": "Chrome 121.0",
+      "os": "Windows 11",
+      "screenResolution": "1920x1080",
+      "vpnDetected": false,
+      "proxyDetected": false,
+      "torDetected": false,
+      "riskScore": 10,
+      "riskLevel": "Low",
+      "knownDevice": true,
+      "previousTransactions": 3,
+      "geolocation": {
+        "country": "US",
+        "region": "NY",
+        "city": "New York"
+      },
+      "cardholderName": "Emily R. Chen"
+    }
+  ]
+}

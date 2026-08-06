@@ -1,0 +1,19 @@
+{
+  "source": "TechGear Online — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4801",
+  "reasonCodeDescription": "Requested Transaction Data Not Received",
+  "orderRecord": {
+    "orderStatus": "Completed",
+    "items": [
+      {
+        "name": "Wireless Charging Pad — 15W Fast Charge",
+        "quantity": 1,
+        "unitPrice": 42.99,
+        "sku": "WCP-100"
+      }
+    ],
+    "shippingAddress": "Cardholder's billing address on file",
+    "orderNotes": "Order was processed and shipped. Transaction documentation was not retained due to a data archival system migration that occurred [20 days after the transaction]."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source": "FitPro Equipment Co. — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4850",
+  "reasonCodeDescription": "Installment Billing Dispute",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "Y",
+      "description": "Full match"
+    },
+    "cvv": {
+      "responseCode": "M",
+      "description": "On file from initial purchase"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source": "ProAccess Business Tools — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4899",
+  "reasonCodeDescription": "Mastercard Dispute Resolution — Violation of Rules",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "Y",
+      "description": "Match from original signup"
+    },
+    "cvv": {
+      "responseCode": "M",
+      "description": "CVV on file from enrollment"
+    }
+  }
+}

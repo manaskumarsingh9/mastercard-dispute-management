@@ -1,0 +1,31 @@
+{
+  "source": "Morning Brew Café — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4902",
+  "reasonCodeDescription": "Mastercard Compliance — Below Floor Limit",
+  "orderRecord": {
+    "orderStatus": "Completed",
+    "items": [
+      {
+        "name": "Large Cappuccino",
+        "quantity": 1,
+        "unitPrice": 5.5,
+        "sku": "MBC-CAP-L"
+      },
+      {
+        "name": "Almond Croissant",
+        "quantity": 1,
+        "unitPrice": 4.5,
+        "sku": "MBC-AC"
+      },
+      {
+        "name": "Bottled Water",
+        "quantity": 1,
+        "unitPrice": 2.5,
+        "sku": "MBC-BW"
+      }
+    ],
+    "shippingAddress": null,
+    "orderNotes": "In-store café purchase. $12.50 is within the applicable floor limit for this merchant category. Mastercard rules permit transactions below the floor limit to be processed without real-time authorization. The merchant obtained a post-authorization after the sale, which was approved."
+  }
+}

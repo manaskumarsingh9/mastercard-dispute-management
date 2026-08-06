@@ -1,0 +1,238 @@
+/v6/claims/{claim-id}:
+    get:
+      tags:
+        - Claims
+      summary: Retrieve claim details
+      description: |-
+        Issuers and acquirers use this endpoint to retrieve details for an existing claim, including any cases with which the claim is associated.
+
+         Note: the Retrieve endpoint for claims contains document statuses (completed, pending, failed, unavailable, and document not applicable) for all documents attached to dispute events within a claim. Issuers and acquirers do not have to make a separate call to obtain document statuses, making the use of this endpoint efficient.
+      operationId: getClaimDetail
+      parameters:
+        - name: claim-id
+          in: path
+          description: |-
+            Claim Id.
+
+             Length: 1-19
+
+             Valid Values/Format: Numeric
+          required: true
+          schema:
+            type: string
+          example: "200002020654"
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ClaimDetail'
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Errors'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Errors'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Errors'
+        404:
+          description: Resource not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Errors'
+        500:
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Errors'
+      x-testable: false
+      x-action: Retrieve
+      x-samples:
+        - name: get_claim_sample
+          request:
+            application/json: '{"claim-id": "200002020654"}'
+          response:
+            application/json: '{ "acquirerId": "002222", "acquirerRefNum": "55306608112341123451234",
+            "primaryAccountNum": "52751494691484000", "claimId": "200002000191", "claimType":
+            "Standard", "claimValue": "123.28 USD", "standardClaims": null, "clearingDueDate":
+            "2017-12-14", "clearingNetwork": "GCMS", "createDate": "2017-10-27", "dueDate":
+            "2017-12-11", "transactionId": "g1f4kmlMcfQaLHtRX+WWB2TfOiyAIO0ZrxZ2zJ226sQuH6EsoypShLUwzD95i2QeIxoHYh7qrAqy9qMdbmDgw==",
+            "isAccurate": "true", "isAcquirer": "true", "isIssuer": "false", "isOpen":
+            "true", "issuerId": "001111", "lastModifiedBy": "user1234", "lastModifiedDate":
+            "2017-11-13", "merchantId": "0024038000200", "queueName": "Pending", "switchSerialNumber":
+            null, "auditControlNumber ": "123111111000025", "retrievalDetails": { "acquirerRefNum": "55306608112341123451234",
+            "acquirerResponseCd": "D", "acquirerMemo": "This is an example memo RF1.",
+            "acquirerResponseDt": "2018-01-29", "amount": "196.42", "currency": "PLN",
+            "claimId": "200002000191", "issuerResponseCd": "REJECT_DOCUMENTATION_NOT_AS_REQUIRED",
+            "issuerRejectRsnCd": "02", "issuerMemo": "This is an example memo RFJ.",
+            "issuerResponseDt": "2018-01-29", "imageReviewDecision": "I", "imageReviewDt":
+            "2018-01-29", "primaryAcctNum": "52751494691484000", "requestId": "200002000151",
+            "retrievalRequestReason": "6305", "docNeeded": "1", "createDate": "2017-10-30",
+            "chargebackRefNum": "2000000000", "cancelDate": null, "rejectDate": null,
+            "reverseDate": null, "acquirerResponseNotificationStatus": "Processed",
+            "rejectReason":"Code1=0142(00):D0063/002;DE072=D0063\\8000000808\\\\",
+            "instructionsForHealthcare": "Instructions for Healthcare", "flexCode": "003", "collaborationExpirationDateTime": "2023-05-11T19:22:41"}, "chargebackDetails":
+            [ { "currency": "USD", "documentIndicator": "false", "messageText": "AUTHORIZATION
+            DECLINED MMDDYY", "amount": "196.43", "reasonCode": "4808", "isPartialChargeback":
+            false, "chargebackType": "CHARGEBACK", "chargebackId": "200002000151",
+            "claimId": "200002000191", "reversed": false, "reversal": false, "createDate":
+            "2017-10-27", "chargebackRefNum": "2000000000", "documentStatus": "DOC_NOT_APPLICABLE",
+            "rejectReason":"Code1=5000(00):D0025/000;DE072=D0025\\0000\\\\", "reconciliationAmount":
+            "196.43", "reconciliationCurrency": "PLN", "editExclusionCode": "BO",
+            "refundNotReceivedIndicator": "true", "creditVoucherStatus": "Credit Voucher
+            Accepted", "currencyConversionAssessmentCCAIncluded": "true", "currencyConversionAssessmentCCAAmount":
+            "20.00 USD", "japanCommonMerchantCode": "0410", "mexicoDomesticTaxAmount": "002901985000000000121985000000000124", 
+            "mexicoDomesticTransactionFeeAmount": "002901985000000000121985000000000125",
+            "mexicoDomesticSettlementFeesAndVat": "002901985000000000121985000000000126",
+            "installmentData": "1261610E81023498764532103", "flexCode": "003"},
+            { "currency": "USD", "documentIndicator": "false", "messageText":
+            null, "amount": "196.43", "reasonCode": "2001", "isPartialChargeback":
+            false, "chargebackType": "SECOND_PRESENTMENT", "chargebackId": "200002000151",
+            "claimId": "200002000191", "reversed": false, "reversal": false, "createDate":
+            "2017-11-08", "chargebackRefNum": "2000000000", "documentStatus": "DOC_NOT_APPLICABLE",
+            "rejectReason":"Code1=5000(00):D0025/000;DE072=D0025\\0000\\\\", "reconciliationAmount":
+            null, "reconciliationCurrency": null, "editExclusionCode": "BO", "currencyConversionAssessmentCCAIncluded":
+            "true", "currencyConversionAssessmentCCAAmount": "20.00 USD", "japanCommonMerchantCode": "0410", "installmentData": "1261610E81023498764532103", 
+            "flexCode": "003"}, { "currency": "USD", "documentIndicator": "false", "messageText": null, "amount": "61.64",
+            "reasonCode": "4807", "isPartialChargeback": false, "chargebackType":
+            "CHARGEBACK", "chargebackId": "200002000151", "claimId": "200002000191",
+            "reversed": false, "reversal": false, "createDate": "2017-10-30", "chargebackRefNum":
+            "9000000006", "documentStatus": "DOC_NOT_APPLICABLE", "rejectReason":"Code1=5000(00):D0025/000;DE072=D0025\\0000\\\\",
+            "reconciliationAmount": "61.64", "reconciliationCurrency": "USD", "editExclusionCode":
+            "BO", "currencyConversionAssessmentCCAIncluded": "true", "currencyConversionAssessmentCCAAmount":
+            "20.00 USD", "japanCommonMerchantCode": "0410", "mexicoDomesticTaxAmount": "002901985000000000121985000000000124", 
+            "mexicoDomesticTransactionFeeAmount": "002901985000000000121985000000000125",
+            "mexicoDomesticSettlementFeesAndVat": "002901985000000000121985000000000126",
+            "installmentData": "1261610E81023498764532103", "flexCode": "003"} ],
+            "feeDetails": [ { "cardAcceptorIdCode": "Test ID", "cardNumber":
+            "52751494691484000", "countryCode": "USA", "currency": "USD", "feeDate":
+            "2018-02-07", "destinationMember": "001527", "feeAmount": "0.24", "creditSender":
+            "true", "creditReceiver": "false", "message": "00000013502000000135020626065946717713065946",
+            "reason": "7623", "feeId": "300002002247", "chargebackRefNum": null, "reconciliationAmount":
+            "0.21", "reconciliationCurrency": "USD", "rejectReason":"Code1=0142(00):D0063/002;DE072=D0063\\8000000808\\\\",
+            "japanCommonMerchantCode": "0410", "mexicoDomesticTaxAmount": "002901985000000000121985000000000124", 
+            "mexicoDomesticTransactionFeeAmount": "002901985000000000121985000000000125",
+            "mexicoDomesticSettlementFeesAndVat": "002901985000000000121985000000000126",
+            "installmentData": "1261610E81023498764532103", "flexCode": "003"} ],
+            "caseFilingDetails": { "caseFilingStatus": "Closed", "caseFilingDetails":
+            { "claimId": "200002000151", "claimType": "CaseFiling", "caseId": "9000000012",
+            "caseType": "4", "chargebackRefNum": [ "1111423456,2222123456" ], "currencyCode":
+            "USD", "customerFilingNumber": "5482", "disputeAmount": "50.00", "dueDate":
+            "2017-12-11", "filingAgaintstIca": "5482", "filingAs": "A", "filingIca":
+            "6000", "merchantName": "test name", "primaryAccountNum": "52751494691484000",
+            "violationCode": "D.2", "violationDate": "2017-12-18", "rulingDate": "2018-01-24",
+            "rulingStatus": "Favor Sender", "creditDate": "2018-11-01", "chargebackDate":
+            "2018-11-01", "reasonCode": "4853", "virtualAccountNum": "5123123424999876"}, "caseFilingRespHistory": [ { "memo":
+            "Sample Memo", "action": "FAVOR SENDER", "responseDate": "2018-01-24"
+            }, { "memo": "Sample Memo", "action": "REBUT", "responseDate": "2017-12-18"
+            }, { "memo": "Sample Memo", "action": "ESCALATE", "responseDate": "2017-12-18"
+            }, { "memo": "Sample Memo", "action": "REJECT", "responseDate": "2017-12-18"
+            } ] }, "retrievalDetailsList": [ { "acquirerRefNum": "55306608112341123451234",
+            "acquirerResponseCd": null, "acquirerMemo": null, "acquirerResponseDt":
+            null, "amount": "196.42", "currency": "PLN", "claimId": "200002000191",
+            "issuerResponseCd": null, "issuerRejectRsnCd": null, "issuerMemo": null,
+            "issuerResponseDt": null, "imageReviewDecision": null, "imageReviewDt":
+            null, "primaryAcctNum": "52751494691484000", "requestId": "200002000151",
+            "retrievalRequestReason": "6305", "docNeeded": "2", "createDate": "2017-10-30",
+            "chargebackRefNum": "2000000000", "cancelDate": null, "rejectDate": null,
+            "reverseDate": null, "acquirerResponseNotificationStatus": "Pending",
+            "rejectReason":"Code1=0142(00):D0063/002;DE072=D0063\\8000000808\\\\",
+            "instructionsForHealthcare": "Instructions for Healthcare", "collaborationExpirationDateTime": "2023-05-11T19:22:41" }, { "acquirerRefNum":
+            null, "acquirerResponseCd": "D", "acquirerMemo": "This is an example memo
+            RF1.", "acquirerResponseDt": "2018-01-29", "amount": null, "currency":
+            null, "claimId": null, "issuerResponseCd": "REJECT_DOCUMENTATION_NOT_AS_REQUIRED",
+            "issuerRejectRsnCd": "02", "issuerMemo": "This is an example memo RFJ.",
+            "issuerResponseDt": "2018-01-29", "imageReviewDecision": null, "imageReviewDt":
+            null, "primaryAcctNum": null, "requestId": null, "retrievalRequestReason":
+            null, "docNeeded": null, "createDate": null, "chargebackRefNum": null,
+            "cancelDate": null, "rejectDate": null, "reverseDate": null, "acquirerResponseNotificationStatus":
+            "Processed", "rejectReason":"Code1=0142(00):D0063/002;DE072=D0063\\8000000808\\\\",
+            "instructionsForHealthcare": "Instructions for Healthcare", "collaborationExpirationDateTime": "2023-05-11T19:22:41" } ] }'
+    put:
+      tags:
+        - Claims
+      summary: Take action on claim
+      description: Issuers use this endpoint to take an action (reopen or close) on
+        an existing claim.
+      operationId: Update Claim
+      parameters:
+        - name: claim-id
+          in: path
+          description: |-
+            Claim Id.
+
+             Length: 1-19
+
+             Valid Values/Format: Numeric
+          required: true
+          schema:
+            type: string
+          example: "200002020654"
+      requestBody:
+        description: Update Claim Request
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateClaimRequest'
+        required: true
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ClaimResponse'
+        400:
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Errors'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Errors'
+        403:
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Errors'
+        404:
+          description: Resource not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Errors'
+        500:
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Errors'
+      x-testable: false
+      x-action: Update
+      x-samples:
+        - name: update_claim_sample
+          request:
+            application/json: '{  "claim-id": "200002020654", "action": "CLOSE", "closeClaimReasonCode":
+            "10"}'
+          response:
+            application/json: '{"claimId": "200002020654"}'
+      x-codegen-request-body-name: body
+  /

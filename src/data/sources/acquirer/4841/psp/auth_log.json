@@ -1,0 +1,19 @@
+{
+  "source": "CloudVault Premium — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4841",
+  "reasonCodeDescription": "Cancelled Recurring or Digital Goods Transaction",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Recurring — card on file",
+    "threeDSecure": {
+      "enrolled": true,
+      "authenticated": true,
+      "eci": "05",
+      "cavv": "Verified at initial signup"
+    },
+    "notes": "Recurring billing authorized via card-on-file credentials established at initial signup [6 months before]. The initial signup included 3D Secure authentication. The disputed charge is the final billing cycle before cancellation takes effect."
+  }
+}

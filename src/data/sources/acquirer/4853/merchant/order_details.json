@@ -1,0 +1,19 @@
+{
+  "source": "AudioPeak Electronics — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4853",
+  "reasonCodeDescription": "Goods/Services Not as Described or Defective",
+  "orderRecord": {
+    "orderStatus": "Completed — delivered",
+    "items": [
+      {
+        "name": "ProSilence ANC Wireless Headphones — Over-Ear, 30hr Battery",
+        "quantity": 1,
+        "unitPrice": 199.99,
+        "sku": "AP-PS-ANC"
+      }
+    ],
+    "shippingAddress": "Cardholder's billing address",
+    "orderNotes": "Product listing accurately describes specifications. The '30-hour battery life' is rated under standard listening conditions (50% volume, ANC off). With ANC enabled, battery life is approximately 12-15 hours, which is stated in the detailed specifications section. This distinction is disclosed on the product page."
+  }
+}

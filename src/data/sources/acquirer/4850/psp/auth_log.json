@@ -1,0 +1,19 @@
+{
+  "source": "FitPro Equipment Co. — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4850",
+  "reasonCodeDescription": "Installment Billing Dispute",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Recurring — card on file (installment)",
+    "threeDSecure": {
+      "enrolled": true,
+      "authenticated": true,
+      "eci": "05",
+      "cavv": "Verified at initial purchase"
+    },
+    "notes": "Recurring installment billing. Initial purchase included 3D Secure. This is installment 4 of 12. The first three installments of $125.00 each were processed without dispute."
+  }
+}

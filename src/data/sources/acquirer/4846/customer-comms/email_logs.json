@@ -1,0 +1,29 @@
+{
+  "source": "EuroLux Boutique — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4846",
+  "reasonCodeDescription": "Correct Currency Code Not Provided",
+  "communications": [
+    {
+      "type": "Order Confirmation",
+      "dir": "merchant_to_customer",
+      "timing": "Immediately after purchase",
+      "subject": "EuroLux Boutique — Order Confirmation #ELB-3392",
+      "body": "Merci for your purchase! Your Italian Leather Crossbody Bag (Tan) is confirmed. Total: €215.00. We will ship to your address within 3-5 business days."
+    },
+    {
+      "type": "Customer Complaint",
+      "dir": "customer_to_merchant",
+      "timing": "[3 days after noticing the charge]",
+      "subject": "Wrong currency charged",
+      "body": "Your website showed $220.00 USD at checkout but I was charged in EUR which ended up costing me $247.50 after conversion. I agreed to $220 USD, not €215. Please refund the difference."
+    },
+    {
+      "type": "Merchant Response",
+      "dir": "merchant_to_customer",
+      "timing": "[4 days after complaint]",
+      "subject": "RE: Wrong currency charged",
+      "body": "We apologize for the confusion. Our payment processor handles all transactions in EUR as we are based in France. The USD amount shown on our website is an estimate. We can offer a €10 store credit for the inconvenience but cannot refund the conversion difference."
+    }
+  ]
+}

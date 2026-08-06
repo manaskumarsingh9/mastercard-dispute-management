@@ -1,0 +1,19 @@
+{
+  "source": "Seaside Grand Hotel — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4859",
+  "reasonCodeDescription": "Addendum, No-show, or ATM Dispute",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Ecommerce — booking guarantee",
+    "threeDSecure": {
+      "enrolled": true,
+      "authenticated": true,
+      "eci": "05",
+      "cavv": "Verified at booking"
+    },
+    "notes": "Authorization obtained at time of booking as a guarantee. No-show charge processed after the guest failed to appear and no cancellation was recorded."
+  }
+}

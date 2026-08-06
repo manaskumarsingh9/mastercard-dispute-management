@@ -1,0 +1,16 @@
+{
+  "source": "ElectroWorld Megastore — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4847",
+  "reasonCodeDescription": "Exceeds Floor Limit — Not Authorized and Fraud",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "N/A",
+      "description": "Not available — offline transaction"
+    },
+    "cvv": {
+      "responseCode": "N/A",
+      "description": "Magnetic stripe CVV1 only"
+    }
+  }
+}

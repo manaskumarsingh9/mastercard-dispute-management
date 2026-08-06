@@ -1,0 +1,19 @@
+{
+  "source": "Brilliance Jewelers — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4835",
+  "reasonCodeDescription": "Card Not Valid or Expired",
+  "orderRecord": {
+    "orderStatus": "Completed — customer left with merchandise",
+    "items": [
+      {
+        "name": "14K Gold Rope Bracelet — 7 inch",
+        "quantity": 1,
+        "unitPrice": 385,
+        "sku": "BJ-GRB-7"
+      }
+    ],
+    "shippingAddress": null,
+    "orderNotes": "In-store purchase. Card swiped via magnetic stripe. POS terminal did not flag card as expired. Cashier did not manually check expiration date on the card."
+  }
+}

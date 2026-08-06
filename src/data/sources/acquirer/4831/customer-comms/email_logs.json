@@ -1,0 +1,15 @@
+{
+  "source": "The Olive Garden Terrace — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4831",
+  "reasonCodeDescription": "Transaction Amount Differs",
+  "communications": [
+    {
+      "type": "No Email — Card-Present Dining",
+      "dir": "system_note",
+      "timing": "N/A",
+      "subject": "N/A",
+      "body": "Card-present restaurant transaction. The cardholder signed a receipt with the itemized subtotal of $85.00 and added a handwritten tip of $17.00 (20%), bringing the total to $102.00. The signed receipt clearly shows the cardholder's handwriting for the tip amount and the final total. The cardholder called [4 days after dining] but the follow-up call was missed by staff."
+    }
+  ]
+}

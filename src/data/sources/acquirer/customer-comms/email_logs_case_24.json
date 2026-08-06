@@ -1,0 +1,52 @@
+{
+  "source": "SaaS Platform — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "caseReference": "CASE-24",
+  "records": [
+    {
+      "email": "eleanor.vance@email.com",
+      "customerName": "Eleanor Vance",
+      "merchantEmail": "support@saasplatform.com",
+      "merchantName": "SaaS Platform",
+      "transactionReference": "TXN-940584054",
+      "communications": [
+        {
+          "type": "Cancellation Request",
+          "direction": "customer_to_merchant",
+          "sentAt": "2025-12-10T09:15:00Z",
+          "opened": true,
+          "openedAt": "2025-12-10T09:20:00Z",
+          "subject": "Cancellation Request",
+          "body": "Hi,\n\nI would like to cancel my subscription with SaaS Platform. Please confirm cancellation and ensure I will not be charged again.\n\nThank you,\nEleanor Vance"
+        },
+        {
+          "type": "Cancellation Confirmation",
+          "direction": "merchant_to_customer",
+          "sentAt": "2025-12-11T11:00:00Z",
+          "opened": true,
+          "openedAt": "2025-12-11T11:30:00Z",
+          "subject": "RE: Cancellation Request",
+          "body": "Hi Eleanor,\n\nYour cancellation request has been received and processed. Your service will remain active until the end of your current billing period. You will not be charged after that date.\n\nCustomer Support\nSaaS Platform"
+        },
+        {
+          "type": "Customer Inquiry",
+          "direction": "customer_to_merchant",
+          "sentAt": "2026-01-15T16:00:00Z",
+          "opened": true,
+          "openedAt": "2026-01-15T16:05:00Z",
+          "subject": "Charge inquiry - TXN-940584054",
+          "body": "Hi,\n\nI noticed a charge of $8 on my statement from SaaS Platform. I would like to understand this charge and request a resolution.\n\nRegards,\nEleanor Vance"
+        },
+        {
+          "type": "Merchant Response",
+          "direction": "merchant_to_customer",
+          "sentAt": "2026-01-16T10:30:00Z",
+          "opened": true,
+          "openedAt": "2026-01-16T11:00:00Z",
+          "subject": "RE: Charge inquiry - TXN-940584054",
+          "body": "Merchant responded via email on January 17, 2026, stating that charges may take time to clear and advised monitoring my statement. They did not acknowledge the cancellation proof or offer a refund for the disputed charge, and subsequent follow-ups were ignored. Their response did not resolve the issue."
+        }
+      ]
+    }
+  ]
+}

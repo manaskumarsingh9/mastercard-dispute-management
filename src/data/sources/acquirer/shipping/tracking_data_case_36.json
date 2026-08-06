@@ -1,0 +1,27 @@
+{
+  "source": "Fashion Outlet — Shipping Provider",
+  "dataType": "Shipping Tracking Data",
+  "caseReference": "CASE-36",
+  "records": [
+    {
+      "orderId": "ORD-000036",
+      "transactionId": "TXN-904712821",
+      "carrier": "UPS",
+      "trackingNumber": "1Z999444420",
+      "shippedDate": "2026-01-21T10:00:00Z",
+      "estimatedDelivery": "2026-01-25",
+      "status": "Delivered",
+      "weight": "0.5 kg",
+      "dimensions": "25x15x10 cm",
+      "shippingAddress": {
+        "name": "Sarah Chen",
+        "street": "352 Alder Ln",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97201",
+        "country": "US"
+      },
+      "customerName": "Sarah Chen"
+    }
+  ]
+}

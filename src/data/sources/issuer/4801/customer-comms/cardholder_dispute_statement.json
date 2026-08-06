@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4801",
+  "reasonCodeDescription": "Requested Transaction Data Not Received",
+  "statement": {
+    "disputeReason": "4801 - Requested Transaction Data Not Received",
+    "detailedDescription": "The cardholder noticed an unfamiliar charge of $42.99 from 'TECHGEAR ONLINE' on their statement. The cardholder does not recall making this purchase. The issuing bank submitted a retrieval request to the acquirer [10 days after the transaction date] to obtain a copy of the sales draft and transaction documentation. As of [45 days after the retrieval request], no response or documentation has been received from the acquirer.",
+    "contactedMerchant": false,
+    "merchantResponseSummary": "N/A — the retrieval request was sent to the acquirer through Mastercard channels.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Full reversal due to non-receipt of requested transaction data within the required timeframe.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium-High — evidence supports cardholder's position.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4801 (Requested Transaction Data Not Received).",
+    "priority": "Standard"
+  }
+}

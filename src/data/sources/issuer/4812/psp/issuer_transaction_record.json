@@ -1,0 +1,24 @@
+{
+  "source": "Issuing Bank — Transaction Processing",
+  "dataType": "Issuer Transaction Record",
+  "reasonCode": "4812",
+  "reasonCodeDescription": "Account Number Not on File",
+  "authorization": {
+    "responseCode": "00",
+    "merchantCategoryCode": "5999",
+    "posEntryMode": "01",
+    "cardNotPresent": false,
+    "avsResult": {
+      "code": "N",
+      "description": "No match"
+    },
+    "cvvResult": {
+      "code": "N",
+      "description": "CVV not verified — manually keyed"
+    }
+  },
+  "riskFlags": {
+    "geolocationMismatch": "Yes — cardholder not in the city where store is located",
+    "deviceTrustScore": "N/A"
+  }
+}

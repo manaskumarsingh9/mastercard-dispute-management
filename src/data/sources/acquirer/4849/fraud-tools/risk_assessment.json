@@ -1,0 +1,20 @@
+{
+  "source": "SlimFit Wellness — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4849",
+  "reasonCodeDescription": "Questionable Merchant Activity",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "Unknown device — no prior history",
+      "trust": "Low",
+      "match": false
+    },
+    "ipAnalysis": {
+      "level": "Medium",
+      "proxy": false,
+      "geoMatch": false,
+      "notes": "IP does not correspond to the cardholder's known location."
+    },
+    "overallRiskScore": "High — multiple complaints, elevated chargeback ratio"
+  }
+}

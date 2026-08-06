@@ -1,0 +1,16 @@
+{
+  "source": "RenewTech Store — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4808",
+  "reasonCodeDescription": "Authorization-Related Chargeback",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "Y",
+      "description": "Full match — street and ZIP"
+    },
+    "cvv": {
+      "responseCode": "M",
+      "description": "CVV matches issuer records"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4809",
+  "reasonCodeDescription": "Non-Receipt of Requested Information",
+  "statement": {
+    "disputeReason": "4809 - Non-Receipt of Requested Information",
+    "detailedDescription": "The cardholder does not recognize a $189.95 charge from 'CULINARYEDGE PRO'. The issuer submitted a retrieval request [12 days after the transaction]. The issuer's records show no response was received from the acquirer.",
+    "contactedMerchant": false,
+    "merchantResponseSummary": "N/A — retrieval request sent through Mastercard channels to acquirer.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Full reversal due to non-receipt of requested information.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium — merchant may have valid defense documentation.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4809 (Non-Receipt of Requested Information).",
+    "priority": "Standard"
+  }
+}

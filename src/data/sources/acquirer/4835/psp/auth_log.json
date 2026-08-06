@@ -1,0 +1,14 @@
+{
+  "source": "Brilliance Jewelers — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4835",
+  "reasonCodeDescription": "Card Not Valid or Expired",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Magnetic Stripe Swipe",
+    "threeDSecure": null,
+    "notes": "Authorization submitted with expired card number and approved. POS terminal does not independently check expiration — it relies on issuer's auth response. Authorization was approved despite the card being expired."
+  }
+}

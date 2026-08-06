@@ -1,0 +1,19 @@
+{
+  "source": "Electronics Hub — Fulfillment System",
+  "dataType": "Fulfillment Record",
+  "caseReference": "CASE-27",
+  "records": [
+    {
+      "fulfillmentId": "FUL-000027",
+      "orderId": "ORD-000027",
+      "fulfillmentType": "Physical Shipment",
+      "fulfillmentStatus": "Completed",
+      "fulfilledDate": "2026-02-11T00:00:00.000Z",
+      "carrier": "UPS",
+      "trackingNumber": "1Z999333315",
+      "itemsFulfilled": 1,
+      "customerName": "Eleanor Vance",
+      "customerEmail": "eleanor.vance@email.com"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "source": "BookHaven — Rare & Collectible Books — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4908",
+  "reasonCodeDescription": "Mastercard Compliance — Authorization Related",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "Known device — same as pre-order",
+      "trust": "High",
+      "match": true
+    },
+    "ipAnalysis": {
+      "level": "Low",
+      "proxy": false,
+      "geoMatch": true,
+      "notes": "Consistent with cardholder."
+    },
+    "overallRiskScore": "Low — pre-order with proper re-authorization before shipment"
+  }
+}

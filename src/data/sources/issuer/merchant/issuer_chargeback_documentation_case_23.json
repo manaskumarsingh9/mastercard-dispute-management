@@ -1,0 +1,40 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "caseReference": "CASE-23",
+  "chargebackFiling": {
+    "filingDate": "2026-01-15",
+    "chargebackAmount": 8,
+    "currency": "USD",
+    "reasonCode": "4863",
+    "reasonCodeDescription": "Cardholder Does Not Recognize Transaction",
+    "issuerBIN": "970767",
+    "acquirerBIN": "009222",
+    "cardholderNotificationDate": "2026-01-05",
+    "chargebackDeadline": "2026-04-14",
+    "supportingDocuments": [
+      {
+        "documentType": "Cardholder Dispute Form",
+        "description": "Signed Cardholder Dispute Form asserting non-recognition of transaction.",
+        "dateProvided": "2026-01-08"
+      },
+      {
+        "documentType": "Statement Excerpt",
+        "description": "Bank statement excerpt showing the disputed transaction for Cloud Services Inc.",
+        "dateProvided": "2026-01-08"
+      }
+    ],
+    "issuerCommentary": "The cardholder for account ending XXXX has contacted our institution to dispute a transaction dated 2025-12-15 for 8.0 USD from 'Cloud Services Inc'. The cardholder explicitly states they do not recognize this transaction, nor did they authorize it. They confirm they have no active subscriptions or accounts with a merchant matching 'Cloud Services Inc' and have never engaged with such a service.\n\nIn accordance with Mastercard Rule 5.10.2, 'Cardholder Does Not Recognize Transaction', we are filing this chargeback. Our investigation confirms the cardholder's claim of non-recognition. We request the Acquirer provide conclusive evidence of the cardholder's authorization or participation in this transaction to validate its legitimacy. Failure to provide such evidence within the representment period will result in the permanent debit of funds.",
+    "representmentDeadline": "2026-03-01",
+    "arbitrationEligible": false,
+    "claimReference": "900002087263"
+  },
+  "transactionDetails": {
+    "originalTransactionDate": "2025-12-15",
+    "postingDate": "2025-12-16",
+    "authorizationCode": "APC2305",
+    "cardPresent": false,
+    "ecommerceIndicator": "7",
+    "recurringPayment": true
+  }
+}

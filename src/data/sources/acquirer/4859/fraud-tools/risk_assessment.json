@@ -1,0 +1,20 @@
+{
+  "source": "Seaside Grand Hotel — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4859",
+  "reasonCodeDescription": "Addendum, No-show, or ATM Dispute",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "Known device from booking",
+      "trust": "High",
+      "match": true
+    },
+    "ipAnalysis": {
+      "level": "Low",
+      "proxy": false,
+      "geoMatch": true,
+      "notes": "Booking made from cardholder's usual location."
+    },
+    "overallRiskScore": "Low — legitimate hotel no-show charge"
+  }
+}

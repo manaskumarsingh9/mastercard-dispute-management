@@ -1,0 +1,29 @@
+{
+  "source": "SaaS Platform — Service Platform",
+  "dataType": "Service Delivery Proof",
+  "caseReference": "CASE-24",
+  "records": [
+    {
+      "orderId": "ORD-000024",
+      "transactionId": "TXN-940584054",
+      "serviceType": "Monthly SaaS subscription service",
+      "activationDate": "2026-01-15T14:30:00Z",
+      "serviceStatus": "Active",
+      "lastAccessDate": "2026-01-18T00:00:00.000Z",
+      "accessLogs": [
+        {
+          "date": "2026-01-15T14:30:00Z",
+          "action": "Service activated",
+          "ip": "96.172.168.57"
+        },
+        {
+          "date": "2026-01-16T00:00:00.000Z",
+          "action": "User login",
+          "ip": "96.172.168.57"
+        }
+      ],
+      "customerName": "Eleanor Vance",
+      "customerEmail": "eleanor.vance@email.com"
+    }
+  ]
+}

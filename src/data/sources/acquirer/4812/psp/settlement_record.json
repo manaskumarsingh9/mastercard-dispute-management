@@ -1,0 +1,9 @@
+{
+  "source": "Metro Fashion Department Store — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4812",
+  "reasonCodeDescription": "Account Number Not on File",
+  "settlementRecord": {
+    "notes": "Settled for $294.00. Merchant acknowledges manual key entry introduces the possibility of a digit error."
+  }
+}

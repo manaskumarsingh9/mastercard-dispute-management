@@ -1,0 +1,22 @@
+{
+  "source": "Electronics Hub — 3DS Authentication Provider",
+  "dataType": "3D Secure Authentication Record",
+  "caseReference": "CASE-27",
+  "records": [
+    {
+      "transactionId": "TXN-972850548",
+      "threeDSVersion": "2.2.0",
+      "authenticationStatus": "Authenticated",
+      "eci": "05",
+      "cavv": "CAVV2797285054",
+      "dsTransactionId": "DS-972850548",
+      "challengeRequired": false,
+      "challengeCompleted": false,
+      "cardholderName": "Eleanor Vance",
+      "merchantName": "Electronics Hub",
+      "amount": 567.5,
+      "currency": "USD",
+      "timestamp": "2026-02-10T14:30:00Z"
+    }
+  ]
+}

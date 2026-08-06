@@ -1,0 +1,9 @@
+{
+  "source": "Morning Brew Café — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4902",
+  "reasonCodeDescription": "Mastercard Compliance — Below Floor Limit",
+  "settlementRecord": {
+    "notes": "Settled for $12.50. Below-floor-limit transaction processed per Mastercard's floor limit provisions. Post-authorization approved."
+  }
+}

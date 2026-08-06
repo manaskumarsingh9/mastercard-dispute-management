@@ -1,0 +1,24 @@
+{
+  "source": "Fraud Prevention Platform",
+  "dataType": "IP Risk Assessment",
+  "retrievedAt": "2026-01-23T06:30:00Z",
+  "provider": "Sift",
+  "caseReference": "CASE-19",
+  "records": [
+    {
+      "ipAddress": "140.181.72.107",
+      "riskScore": 13,
+      "isVPN": false,
+      "isProxy": false,
+      "isTor": false,
+      "blacklisted": false,
+      "country": "US",
+      "city": "Los Angeles",
+      "region": "CA",
+      "isp": "AT&T",
+      "matchesBillingAddress": true,
+      "connectionType": "Fiber",
+      "transactionId": "TXN-001234"
+    }
+  ]
+}

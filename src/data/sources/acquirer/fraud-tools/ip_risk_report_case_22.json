@@ -1,0 +1,24 @@
+{
+  "source": "FreeTrial Corp — IP Intelligence Service",
+  "dataType": "IP Risk Assessment",
+  "caseReference": "CASE-22",
+  "records": [
+    {
+      "transactionId": "TXN-927809341",
+      "ipAddress": "94.166.154.31",
+      "riskScore": 5,
+      "riskLevel": "Low",
+      "country": "US",
+      "region": "IL",
+      "city": "Chicago",
+      "isp": "Major US ISP",
+      "isVPN": false,
+      "isProxy": false,
+      "isTor": false,
+      "isHosting": false,
+      "threatCategory": "None",
+      "previousActivity": "Normal consumer behavior",
+      "cardholderName": "Eleanor Vance"
+    }
+  ]
+}

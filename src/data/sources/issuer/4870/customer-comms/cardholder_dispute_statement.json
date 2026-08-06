@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4870",
+  "reasonCodeDescription": "Chip Liability Shift — Counterfeit",
+  "statement": {
+    "disputeReason": "4870 - Chip Liability Shift — Counterfeit",
+    "detailedDescription": "A counterfeit card was used at 'VOGUE STREET FASHION' for a $412.00 purchase. The card is chip-enabled, but the merchant's terminal processed it via magnetic stripe fallback instead of reading the chip. Per Mastercard's EMV liability shift rules, when a chip card is processed via magnetic stripe at a non-chip terminal, liability for counterfeit fraud shifts to the acquirer. The genuine cardholder was not present.",
+    "contactedMerchant": false,
+    "merchantResponseSummary": "N/A — counterfeit card used; genuine cardholder not involved.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Full reversal under EMV chip liability shift for counterfeit transactions.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium-High — evidence supports cardholder's position.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4870 (Chip Liability Shift — Counterfeit).",
+    "priority": "Standard"
+  }
+}

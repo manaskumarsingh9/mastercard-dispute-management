@@ -1,0 +1,18 @@
+{
+  "source": "Subscription Box Co — Policy Department",
+  "dataType": "Refund/Cancellation Policy",
+  "caseReference": "CASE-31",
+  "records": [
+    {
+      "merchantName": "Subscription Box Co",
+      "policyVersion": "2025-12-01",
+      "refundWindow": "30 days from purchase",
+      "cancellationPolicy": "Subscriptions can be cancelled at any time. Cancellation takes effect at the end of the current billing period. No prorated refunds for partial months.",
+      "chargebackPolicy": "All chargebacks are reviewed and responded to with supporting documentation within the required timeframe.",
+      "termsAcceptedByCustomer": true,
+      "termsAcceptedDate": "2026-02-05T14:30:00Z",
+      "customerName": "Eleanor Vance",
+      "customerEmail": "eleanor.vance@email.com"
+    }
+  ]
+}

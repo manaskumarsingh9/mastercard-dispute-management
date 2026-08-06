@@ -1,0 +1,16 @@
+{
+  "source": "PhoneShield Pro — Authentication",
+  "dataType": "3D Secure Authentication Record",
+  "reasonCode": "4834",
+  "reasonCodeDescription": "Point of Interaction Error / Duplicate Processing",
+  "threeDSecure": {
+    "version": "2.0",
+    "enrolled": true,
+    "status": "Y — Authenticated on both",
+    "eci": "05",
+    "cavv": "Verified on both",
+    "challenge": true,
+    "liabilityShift": "Yes — both transactions",
+    "notes": "3D Secure completed independently on each order."
+  }
+}

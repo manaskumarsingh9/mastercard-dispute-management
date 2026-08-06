@@ -1,0 +1,25 @@
+{
+  "source": "Cloud Services Inc — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "caseReference": "CASE-23",
+  "records": [
+    {
+      "transactionId": "TXN-931889038",
+      "authorizationCode": "AUTH282137",
+      "requestTimestamp": "2026-01-28T14:30:00Z",
+      "responseTimestamp": "2026-01-28T14:30:02.000Z",
+      "amount": 8,
+      "currency": "USD",
+      "cardLastFour": "2092",
+      "cardholderName": "Eleanor V. Vance",
+      "entryMode": "Ecommerce",
+      "responseCode": "00",
+      "responseMessage": "Approved",
+      "merchantId": "009403620499",
+      "merchantName": "Cloud Services Inc",
+      "terminalId": "ECOM-23",
+      "acquirerBIN": "009222",
+      "issuerBIN": "970767"
+    }
+  ]
+}

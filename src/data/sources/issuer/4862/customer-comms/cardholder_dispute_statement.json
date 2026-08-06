@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4862",
+  "reasonCodeDescription": "Counterfeit Transaction (Magnetic Stripe)",
+  "statement": {
+    "disputeReason": "4862 - Counterfeit Transaction (Magnetic Stripe)",
+    "detailedDescription": "The cardholder reports a $650.00 charge from 'PRESTIGE LEATHER BOUTIQUE' that they did not make. Forensic analysis of the transaction data indicates the magnetic stripe data was cloned — the Track 2 data contains anomalies consistent with a counterfeit card. The genuine cardholder's card was in their possession at their home city, while this transaction occurred [300 miles away] at a physical store.",
+    "contactedMerchant": false,
+    "merchantResponseSummary": "N/A — the cardholder was not present and did not make this transaction.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Full reversal. Transaction was conducted with a counterfeit card using cloned magnetic stripe data.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium-High — evidence supports cardholder's position.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4862 (Counterfeit Transaction (Magnetic Stripe)).",
+    "priority": "Standard"
+  }
+}

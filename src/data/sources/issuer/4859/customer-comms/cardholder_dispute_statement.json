@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4859",
+  "reasonCodeDescription": "Addendum, No-show, or ATM Dispute",
+  "statement": {
+    "disputeReason": "4859 - Addendum, No-show, or ATM Dispute",
+    "detailedDescription": "The cardholder was charged a $189.00 no-show fee by 'SEASIDE GRAND HOTEL' for a reservation they claim to have cancelled. The cardholder states they called the hotel [2 days before the reservation] and spoke with a representative who confirmed the cancellation verbally.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "The cardholder called the hotel [3 days after the no-show charge] to dispute it. The hotel said their system shows no cancellation on file and the room was held as reserved. The hotel refused to reverse the charge.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Reversal of the $189.00 no-show charge.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium — merchant may have valid defense documentation.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4859 (Addendum, No-show, or ATM Dispute).",
+    "priority": "Standard"
+  }
+}

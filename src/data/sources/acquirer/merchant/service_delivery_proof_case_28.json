@@ -1,0 +1,28 @@
+{
+  "source": "Merchant Platform",
+  "dataType": "Service Delivery Proof",
+  "retrievedAt": "2026-01-04T15:45:00Z",
+  "provider": "Online Marketplace",
+  "caseReference": "CASE-28",
+  "records": [
+    {
+      "serviceId": "SVC-001243",
+      "serviceType": "Consultation",
+      "deliveryDate": "2026-01-17T12:12:00Z",
+      "completionStatus": "Completed",
+      "customerConfirmation": false,
+      "confirmationMethod": "In-app",
+      "serviceDetails": "Service delivered for Online Marketplace - Transaction TXN-001243",
+      "accessLogs": [
+        {
+          "timestamp": "2026-01-01T00:12:00Z",
+          "action": "Service accessed"
+        },
+        {
+          "timestamp": "2026-01-09T12:48:00Z",
+          "action": "Service completed"
+        }
+      ]
+    }
+  ]
+}

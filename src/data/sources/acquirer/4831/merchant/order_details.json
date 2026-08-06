@@ -1,0 +1,31 @@
+{
+  "source": "The Olive Garden Terrace — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4831",
+  "reasonCodeDescription": "Transaction Amount Differs",
+  "orderRecord": {
+    "orderStatus": "Completed",
+    "items": [
+      {
+        "name": "Dinner entrees (2)",
+        "quantity": 2,
+        "unitPrice": 28,
+        "sku": "OGT-ENT"
+      },
+      {
+        "name": "Appetizer — bruschetta",
+        "quantity": 1,
+        "unitPrice": 14,
+        "sku": "OGT-APP"
+      },
+      {
+        "name": "House wine (2 glasses)",
+        "quantity": 2,
+        "unitPrice": 7.5,
+        "sku": "OGT-BEV"
+      }
+    ],
+    "shippingAddress": null,
+    "orderNotes": "Dine-in. Subtotal: $85.00. Tip: $17.00 (20%). Total: $102.00. Signed receipt on file with tip amount in cardholder's handwriting."
+  }
+}

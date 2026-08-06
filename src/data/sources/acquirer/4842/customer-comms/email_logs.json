@@ -1,0 +1,36 @@
+{
+  "source": "SunCoast Travel Agency — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4842",
+  "reasonCodeDescription": "Late Presentment",
+  "communications": [
+    {
+      "type": "Booking Confirmation",
+      "dir": "merchant_to_customer",
+      "timing": "[4 months before the disputed charge]",
+      "subject": "SunCoast Travel — Booking Confirmation #SCT-4410",
+      "body": "Your hotel reservation is confirmed! Ocean View Room for 2 nights. Total: $312.00. Check-in details attached."
+    },
+    {
+      "type": "Post-Stay Thank You",
+      "dir": "merchant_to_customer",
+      "timing": "[4 months before the disputed charge, after checkout]",
+      "subject": "Thank you for staying with SunCoast Travel",
+      "body": "We hope you enjoyed your stay! Your folio for $312.00 will be charged to the card on file."
+    },
+    {
+      "type": "Customer Complaint",
+      "dir": "customer_to_merchant",
+      "timing": "[2 days after the late charge appeared]",
+      "subject": "Why was I charged 4 months late?",
+      "body": "I see a charge of $312.00 on my current statement from your agency. My hotel stay was 4 months ago. Why is this being charged now?"
+    },
+    {
+      "type": "Merchant Response",
+      "dir": "merchant_to_customer",
+      "timing": "[3 days after the late charge appeared]",
+      "subject": "RE: Why was I charged 4 months late?",
+      "body": "We apologize for the delay. Our payment processing system experienced a prolonged technical issue that delayed the submission of your transaction. The charge is for the hotel stay you completed. We understand this is inconvenient and regret the late billing."
+    }
+  ]
+}

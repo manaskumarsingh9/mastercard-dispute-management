@@ -1,0 +1,15 @@
+{
+  "source": "Jewelry Online — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "caseReference": "CASE-34",
+  "records": [
+    {
+      "email": "jessica.thompson@email.com",
+      "customerName": "Jessica Thompson",
+      "merchantEmail": "support@jewelryonline.com",
+      "merchantName": "Jewelry Online",
+      "transactionReference": "TXN-921598787",
+      "communications": []
+    }
+  ]
+}

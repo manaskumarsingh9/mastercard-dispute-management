@@ -1,0 +1,9 @@
+{
+  "source": "CloudVault Premium — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4841",
+  "reasonCodeDescription": "Cancelled Recurring or Digital Goods Transaction",
+  "settlementRecord": {
+    "notes": "Settled for $14.99. This is the final charge for the current billing cycle. Cancellation was received but takes effect at end of the paid period per the terms agreed at signup."
+  }
+}

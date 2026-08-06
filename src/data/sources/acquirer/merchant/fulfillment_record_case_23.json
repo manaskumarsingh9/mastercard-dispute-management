@@ -1,0 +1,19 @@
+{
+  "source": "Cloud Services Inc — Fulfillment System",
+  "dataType": "Fulfillment Record",
+  "caseReference": "CASE-23",
+  "records": [
+    {
+      "fulfillmentId": "FUL-000023",
+      "orderId": "ORD-000023",
+      "fulfillmentType": "Digital Delivery",
+      "fulfillmentStatus": "Completed",
+      "fulfilledDate": "2026-01-28T14:30:00Z",
+      "carrier": null,
+      "trackingNumber": null,
+      "itemsFulfilled": 1,
+      "customerName": "Eleanor V. Vance",
+      "customerEmail": "eleanor.vance@email.com"
+    }
+  ]
+}

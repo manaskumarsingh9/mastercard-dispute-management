@@ -1,0 +1,20 @@
+{
+  "source": "GiftCardVault — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4840",
+  "reasonCodeDescription": "Fraudulent Processing of Transaction",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "Unknown device — first-time visitor using a Tor exit node",
+      "trust": "Very Low",
+      "match": false
+    },
+    "ipAnalysis": {
+      "level": "Critical",
+      "proxy": true,
+      "geoMatch": false,
+      "notes": "IP address identified as a Tor exit node. No match to cardholder's known geography."
+    },
+    "overallRiskScore": "Critical — all fraud indicators present"
+  }
+}

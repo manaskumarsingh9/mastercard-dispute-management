@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4860",
+  "reasonCodeDescription": "Credit Not Processed",
+  "chargebackFiling": {
+    "reasonCode": "4860",
+    "reasonCodeDescription": "Credit Not Processed",
+    "supportingDocuments": [
+      {
+        "type": "Return Confirmation Email",
+        "desc": "Merchant's email confirming receipt of the returned shoes and promising a full refund."
+      },
+      {
+        "type": "Account Statements",
+        "desc": "Statements from [15 days after purchase] through [45 days after purchase] showing no credit was posted."
+      }
+    ],
+    "issuerCommentary": "Filing under 4860. The merchant acknowledged the return and promised a full refund [15 days after purchase] but has not processed the credit. Sufficient time has passed for the credit to appear.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI_07",
+    "posEntryMode": "81"
+  }
+}

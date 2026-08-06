@@ -1,0 +1,36 @@
+{
+  "source": "Subscription Box Co — Order Management System",
+  "dataType": "Order Details",
+  "caseReference": "CASE-31",
+  "records": [
+    {
+      "orderId": "ORD-000031",
+      "transactionId": "TXN-955547661",
+      "orderDate": "2026-02-05T14:30:00Z",
+      "orderStatus": "Completed",
+      "amount": 150,
+      "currency": "USD",
+      "items": [
+        {
+          "name": "Premium Subscription Box",
+          "quantity": 1,
+          "unitPrice": 150,
+          "sku": "SKU-SB-31"
+        }
+      ],
+      "billingDescriptor": "SUBSCRIPTION BOX CO*ORD-000031",
+      "billingAddress": {
+        "name": "Eleanor Vance",
+        "street": "317 Hickory Rd",
+        "city": "Jacksonville",
+        "state": "FL",
+        "zip": "32099",
+        "country": "US"
+      },
+      "shippingAddress": null,
+      "ipAddress": "103.193.217.148",
+      "customerEmail": "eleanor.vance@email.com",
+      "customerPhone": "+12003444441"
+    }
+  ]
+}

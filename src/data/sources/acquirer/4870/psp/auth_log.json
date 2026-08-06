@@ -1,0 +1,14 @@
+{
+  "source": "Vogue Street Fashion — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4870",
+  "reasonCodeDescription": "Chip Liability Shift — Counterfeit",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Magnetic Stripe Swipe — Non-EMV Terminal",
+    "threeDSecure": null,
+    "notes": "Authorization obtained via magnetic stripe. The terminal does not support EMV chip reading. Under Mastercard's liability shift rules, the acquirer bears liability for counterfeit fraud when a chip card is processed via fallback to magnetic stripe at a non-chip terminal."
+  }
+}

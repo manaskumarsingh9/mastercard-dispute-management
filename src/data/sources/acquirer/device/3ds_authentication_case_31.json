@@ -1,0 +1,22 @@
+{
+  "source": "Subscription Box Co — 3DS Authentication Provider",
+  "dataType": "3D Secure Authentication Record",
+  "caseReference": "CASE-31",
+  "records": [
+    {
+      "transactionId": "TXN-955547661",
+      "threeDSVersion": "2.2.0",
+      "authenticationStatus": "Authenticated",
+      "eci": "05",
+      "cavv": "CAVV3195554766",
+      "dsTransactionId": "DS-955547661",
+      "challengeRequired": false,
+      "challengeCompleted": false,
+      "cardholderName": "Eleanor Vance",
+      "merchantName": "Subscription Box Co",
+      "amount": 150,
+      "currency": "USD",
+      "timestamp": "2026-02-05T14:30:00Z"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "source": "FitZone Fitness Center — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4905",
+  "reasonCodeDescription": "Mastercard Compliance — Card Not Valid",
+  "communications": [
+    {
+      "type": "Membership Signup",
+      "dir": "merchant_to_customer",
+      "timing": "[8 months before the disputed charge]",
+      "subject": "Welcome to FitZone Fitness!",
+      "body": "Your unlimited membership is active! $49.99/month, billed on the 1st of each month. Cancel anytime with 30 days notice."
+    },
+    {
+      "type": "Monthly Billing Receipt",
+      "dir": "merchant_to_customer",
+      "timing": "On the disputed charge date",
+      "subject": "FitZone Fitness — Monthly Membership Receipt",
+      "body": "Your monthly membership of $49.99 has been processed. Thank you for being a FitZone member!"
+    }
+  ]
+}

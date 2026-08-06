@@ -1,0 +1,19 @@
+{
+  "source": "Digital Goods LLC — Fulfillment System",
+  "dataType": "Fulfillment Record",
+  "caseReference": "CASE-20",
+  "records": [
+    {
+      "fulfillmentId": "FUL-000020",
+      "orderId": "ORD-000020",
+      "fulfillmentType": "Digital Delivery",
+      "fulfillmentStatus": "Completed",
+      "fulfilledDate": "2026-02-10T14:30:00Z",
+      "carrier": null,
+      "trackingNumber": null,
+      "itemsFulfilled": 1,
+      "customerName": "Emily R. Chen",
+      "customerEmail": "emily.chen@email.com"
+    }
+  ]
+}

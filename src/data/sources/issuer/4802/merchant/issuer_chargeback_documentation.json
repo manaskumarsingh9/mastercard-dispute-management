@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4802",
+  "reasonCodeDescription": "Requested Item Not Received",
+  "chargebackFiling": {
+    "reasonCode": "4802",
+    "reasonCodeDescription": "Requested Item Not Received",
+    "supportingDocuments": [
+      {
+        "type": "Retrieval Request Record",
+        "desc": "Request submitted to acquirer for signed sales receipt."
+      },
+      {
+        "type": "Cardholder Statement",
+        "desc": "Account showing the posted charge of $104.50."
+      }
+    ],
+    "issuerCommentary": "Filing under 4802. Issuer requested the signed sales receipt to verify the final amount including tip. Acquirer has not provided the document within the fulfillment window.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": true,
+    "ecommerceIndicator": null,
+    "posEntryMode": "05"
+  }
+}

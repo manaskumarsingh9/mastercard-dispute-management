@@ -1,0 +1,43 @@
+{
+  "source": "HomeStitch Custom Décor — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4855",
+  "reasonCodeDescription": "Goods or Services Not Provided",
+  "communications": [
+    {
+      "type": "Order Confirmation",
+      "dir": "merchant_to_customer",
+      "timing": "Immediately after purchase",
+      "subject": "HomeStitch Custom Décor — Order #HS-4520",
+      "body": "Thank you for your custom curtain order! Custom Blackout Curtains (84x52, Navy Blue, Pair). Total: $275.00. Estimated delivery: [10-14 business days]. We'll send a shipping notification when your curtains are ready."
+    },
+    {
+      "type": "Customer Follow-up #1",
+      "dir": "customer_to_merchant",
+      "timing": "[14 days after purchase]",
+      "subject": "Order status — #HS-4520",
+      "body": "My curtains were supposed to arrive by now. Can you please provide an update on my order?"
+    },
+    {
+      "type": "Auto-Reply",
+      "dir": "merchant_to_customer",
+      "timing": "[14 days after purchase]",
+      "subject": "RE: Order status — #HS-4520",
+      "body": "Thank you for contacting HomeStitch Custom Décor. We are currently experiencing production delays due to supply chain issues. We will update you as soon as possible. We apologize for the inconvenience."
+    },
+    {
+      "type": "Customer Follow-up #2",
+      "dir": "customer_to_merchant",
+      "timing": "[21 days after purchase]",
+      "subject": "URGENT: Where are my curtains? Order #HS-4520",
+      "body": "It has been 3 weeks and I have not received my curtains or any update. Please ship my order or issue a full refund immediately."
+    },
+    {
+      "type": "No Response",
+      "dir": "system_note",
+      "timing": "[21+ days after purchase]",
+      "subject": "No merchant response",
+      "body": "No response was sent to the customer's second inquiry. The cardholder also attempted to call [30 days after purchase] and the phone number was disconnected. The merchant's website now displays 'temporarily closed for maintenance'."
+    }
+  ]
+}

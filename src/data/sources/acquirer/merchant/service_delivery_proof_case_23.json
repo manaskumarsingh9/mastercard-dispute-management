@@ -1,0 +1,29 @@
+{
+  "source": "Cloud Services Inc — Service Platform",
+  "dataType": "Service Delivery Proof",
+  "caseReference": "CASE-23",
+  "records": [
+    {
+      "orderId": "ORD-000023",
+      "transactionId": "TXN-931889038",
+      "serviceType": "Monthly cloud storage subscription",
+      "activationDate": "2026-01-28T14:30:00Z",
+      "serviceStatus": "Active",
+      "lastAccessDate": "2026-01-31T00:00:00.000Z",
+      "accessLogs": [
+        {
+          "date": "2026-01-28T14:30:00Z",
+          "action": "Service activated",
+          "ip": "95.169.161.44"
+        },
+        {
+          "date": "2026-01-29T00:00:00.000Z",
+          "action": "User login",
+          "ip": "95.169.161.44"
+        }
+      ],
+      "customerName": "Eleanor V. Vance",
+      "customerEmail": "eleanor.vance@email.com"
+    }
+  ]
+}

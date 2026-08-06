@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4870",
+  "reasonCodeDescription": "Chip Liability Shift — Counterfeit",
+  "chargebackFiling": {
+    "reasonCode": "4870",
+    "reasonCodeDescription": "Chip Liability Shift — Counterfeit",
+    "supportingDocuments": [
+      {
+        "type": "EMV Liability Shift Analysis",
+        "desc": "Confirmation that the card is chip-enabled but the transaction was processed via magnetic stripe at a non-chip terminal."
+      },
+      {
+        "type": "Counterfeit Analysis",
+        "desc": "Forensic indicators showing the magnetic stripe data was cloned."
+      }
+    ],
+    "issuerCommentary": "Filing under 4870. Chip-enabled card processed via magnetic stripe at a non-EMV terminal. Per the EMV liability shift framework, liability transfers to the acquirer when a chip card is not processed via chip due to merchant terminal limitations.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": true,
+    "ecommerceIndicator": null,
+    "posEntryMode": "90"
+  }
+}

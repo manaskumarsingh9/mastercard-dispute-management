@@ -1,0 +1,14 @@
+{
+  "source": "FitZone Fitness Center — Fulfillment",
+  "dataType": "Fulfillment & Delivery Record",
+  "reasonCode": "4905",
+  "reasonCodeDescription": "Mastercard Compliance — Card Not Valid",
+  "fulfillmentRecord": {
+    "type": "Physical Access Service",
+    "status": "Active — member visited gym [3 days before the disputed charge]",
+    "method": "Gym key card access",
+    "timing": "Ongoing since enrollment",
+    "confirmed": true,
+    "notes": "Access logs show the cardholder scanned into the gym [3 days before this charge], [5 days before this charge], and [8 days before this charge]. Active usage throughout the membership period."
+  }
+}

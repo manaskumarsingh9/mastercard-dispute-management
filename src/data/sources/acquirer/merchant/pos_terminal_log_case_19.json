@@ -1,0 +1,32 @@
+{
+  "source": "Merchant Platform",
+  "dataType": "POS Terminal Log",
+  "retrievedAt": "2026-03-27T02:50:00Z",
+  "provider": "TechStore Pro",
+  "caseReference": "CASE-19",
+  "records": [
+    {
+      "terminalId": "POS-7421",
+      "transactionId": "TXN-001234",
+      "entryMode": "Contactless",
+      "cardPresent": true,
+      "pinEntered": false,
+      "signatureOnFile": true,
+      "receiptGenerated": true,
+      "receiptNumber": "RCP-142421",
+      "cashierName": "B. Jones",
+      "storeLocation": "Store #521 - Los Angeles, CA",
+      "transactionTime": "2026-01-05T00:00:00Z",
+      "amount": 34.99,
+      "transactionLog": {
+        "entryMode": "Contactless",
+        "cardholderVerification": "Signature",
+        "applicationId": "A0000000041010",
+        "terminalCapability": "Magnetic Stripe"
+      },
+      "emvCompliant": true,
+      "chipReadAttempted": false,
+      "fallbackIndicator": null
+    }
+  ]
+}

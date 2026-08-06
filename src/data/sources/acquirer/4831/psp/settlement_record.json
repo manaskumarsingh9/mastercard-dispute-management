@@ -1,0 +1,9 @@
+{
+  "source": "The Olive Garden Terrace — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4831",
+  "reasonCodeDescription": "Transaction Amount Differs",
+  "settlementRecord": {
+    "notes": "Base: $85.00. Tip: $17.00. Total settled: $102.00. Signed receipt with tip in cardholder's handwriting is available. The 20% tip is within standard restaurant tip adjustment tolerances."
+  }
+}

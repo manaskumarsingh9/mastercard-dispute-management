@@ -1,0 +1,22 @@
+{
+  "source": "Online Marketplace — 3DS Authentication Provider",
+  "dataType": "3D Secure Authentication Record",
+  "caseReference": "CASE-28",
+  "records": [
+    {
+      "transactionId": "TXN-982137321",
+      "threeDSVersion": "2.2.0",
+      "authenticationStatus": "Authenticated",
+      "eci": "05",
+      "cavv": "CAVV2898213732",
+      "dsTransactionId": "DS-982137321",
+      "challengeRequired": false,
+      "challengeCompleted": false,
+      "cardholderName": "Sarah J. Miller",
+      "merchantName": "Online Marketplace",
+      "amount": 89.99,
+      "currency": "USD",
+      "timestamp": "2026-01-20T14:30:00Z"
+    }
+  ]
+}

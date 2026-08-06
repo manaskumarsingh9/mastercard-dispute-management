@@ -1,0 +1,29 @@
+{
+  "source": "Enterprise Solutions — Fraud Detection Service",
+  "dataType": "Device Fingerprint Analysis",
+  "caseReference": "CASE-21",
+  "records": [
+    {
+      "transactionId": "TXN-980145359",
+      "sessionId": "SES-21-980145",
+      "ipAddress": "93.163.147.18",
+      "deviceType": "Desktop",
+      "browser": "Chrome 121.0",
+      "os": "Windows 11",
+      "screenResolution": "1920x1080",
+      "vpnDetected": false,
+      "proxyDetected": false,
+      "torDetected": false,
+      "riskScore": 10,
+      "riskLevel": "Low",
+      "knownDevice": true,
+      "previousTransactions": 4,
+      "geolocation": {
+        "country": "US",
+        "region": "CA",
+        "city": "Los Angeles"
+      },
+      "cardholderName": "Eleanor Vance"
+    }
+  ]
+}

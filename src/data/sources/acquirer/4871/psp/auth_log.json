@@ -1,0 +1,14 @@
+{
+  "source": "FreshMart Supermarket — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4871",
+  "reasonCodeDescription": "Chip/PIN Liability Shift — Lost/Stolen/NRI",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "EMV Chip + PIN — Card Present",
+    "threeDSecure": null,
+    "notes": "EMV chip was read and the chip cryptogram was validated. PIN was entered correctly on the first attempt. The terminal is fully chip-and-PIN capable. Under Mastercard's liability shift rules for lost/stolen cards (4871), liability shifts to the issuer when the chip was read and the correct PIN was entered."
+  }
+}

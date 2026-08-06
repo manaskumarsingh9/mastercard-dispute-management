@@ -1,0 +1,12 @@
+{
+  "source": "SunCoast Travel Agency — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4842",
+  "reasonCodeDescription": "Late Presentment",
+  "policy": {
+    "refundWindow": "N/A — hotel stay completed",
+    "policy": "Hotel stays are non-refundable after checkout.",
+    "disclosureMethod": "Cancellation policy shown at booking.",
+    "customerAcknowledgment": "Customer agreed to cancellation policy during booking."
+  }
+}

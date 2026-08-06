@@ -1,0 +1,24 @@
+{
+  "source": "Merchant Platform",
+  "dataType": "Cancellation Policy",
+  "retrievedAt": "2026-03-09T20:08:00Z",
+  "provider": "TechStore Pro",
+  "caseReference": "CASE-19",
+  "records": [
+    {
+      "merchantName": "TechStore Pro",
+      "cancellationWindow": "24 hours before service",
+      "penaltyFee": 0,
+      "refundEligibility": "Pro-rated refund within cancellation window",
+      "customerAcknowledged": true,
+      "acknowledgedDate": "2026-03-20",
+      "policyUrl": "https://techstorepro.com/cancellation-policy",
+      "disclosedOnReceipt": true,
+      "disclosedOnWebsite": true,
+      "disclosedAtCheckout": true,
+      "disclosedSeparatelyFromOtherTerms": true,
+      "selfServiceCancellationAvailable": true,
+      "cancellationUrl": "https://techstorepro.com/cancellation-policy"
+    }
+  ]
+}

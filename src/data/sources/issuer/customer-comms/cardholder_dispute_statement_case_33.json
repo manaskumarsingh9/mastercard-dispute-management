@@ -1,0 +1,26 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "caseReference": "CASE-33",
+  "statement": {
+    "cardholderName": "Eleanor Vance",
+    "dateSubmitted": "2026-02-10",
+    "disputeReason": "Authorization-Related Chargeback (Declined Transaction Processed)",
+    "detailedDescription": "On January 28, 2026, I attempted to purchase several auto parts, totaling $780.00, from 'Auto Parts Store' located at 123 Main Street. When I presented my Mastercard for payment, the card reader at the checkout showed a 'Transaction Declined' message. The cashier also confirmed the decline and suggested I try another form of payment. I subsequently used my debit card to complete the purchase, and the transaction went through successfully.\n\nTo my surprise, when reviewing my latest statement, I found a charge for $780.00 from 'Auto Parts Store' posted on January 29, 2026, corresponding precisely to the transaction that was declined. I never received the goods or services for this specific Mastercard charge, as the original attempt was explicitly declined, and I paid separately using another method. This is clearly an erroneous charge for a transaction that failed to process at the point of sale.\n\nI am disputing this charge as it represents a transaction that was declined by the system, yet still posted to my account. I have only paid for these parts once, using my debit card, and the charge on my Mastercard is for an authorization that was explicitly rejected at the time of purchase.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "I contacted the Auto Parts Store on February 5, 2026. The store manager, Mr. Jensen, stated that their system showed the Mastercard transaction as 'approved' despite what appeared on the POS terminal. He was unable to offer an immediate refund and advised me to contact my bank as it seemed to be a 'processing error' on their end.",
+    "previousDisputeHistory": "None within the last 12 months.",
+    "requestedResolution": "Full refund of 780.00 USD.",
+    "cardholderDeclaration": "I, Eleanor Vance, declare that the information provided in this statement is true and accurate to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Low - Cardholder's account has a good standing and no recent dispute history. The narrative clearly aligns with common authorization-related chargeback scenarios.",
+    "recommendedAction": "Initiate chargeback under Mastercard reason code 4808 (Authorization-Related Chargeback). Request full authorization details and proof of transaction from the acquiring bank.",
+    "caseOfficer": "Arthur Finch",
+    "priority": "Normal",
+    "issuerCaseId": "94151238",
+    "issuerBIN": "933649"
+  },
+  "claimReference": "900002118533",
+  "chargebackReferenceNumber": "9900140249"
+}

@@ -1,0 +1,19 @@
+{
+  "source": "Enterprise Solutions — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "caseReference": "CASE-21",
+  "records": [
+    {
+      "transactionId": "TXN-980145359",
+      "settlementDate": "2026-01-17",
+      "settlementAmount": 24000,
+      "settlementCurrency": "USD",
+      "merchantId": "009403091254",
+      "merchantName": "Enterprise Solutions",
+      "batchId": "BATCH-21-001",
+      "status": "Settled",
+      "cardholderName": "Eleanor Vance",
+      "cardLastFour": "0909"
+    }
+  ]
+}

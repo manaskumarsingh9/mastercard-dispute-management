@@ -1,0 +1,19 @@
+{
+  "source": "Online Marketplace — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "caseReference": "CASE-28",
+  "records": [
+    {
+      "transactionId": "TXN-982137321",
+      "settlementDate": "2026-01-22",
+      "settlementAmount": 89.99,
+      "settlementCurrency": "USD",
+      "merchantId": "009403818752",
+      "merchantName": "Online Marketplace",
+      "batchId": "BATCH-28-001",
+      "status": "Settled",
+      "cardholderName": "Sarah J. Miller",
+      "cardLastFour": "3005"
+    }
+  ]
+}

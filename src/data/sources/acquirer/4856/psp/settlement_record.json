@@ -1,0 +1,9 @@
+{
+  "source": "TechFit Store — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4856",
+  "reasonCodeDescription": "Defective or Not as Described (Chip Liability Shift)",
+  "settlementRecord": {
+    "notes": "Settled for $249.99. Product tested in-store and found to be within specifications. Customer chose not to return the watch during the 30-day window."
+  }
+}

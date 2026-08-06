@@ -1,0 +1,15 @@
+{
+  "source": "Luxury Goods Ltd — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "caseReference": "CASE-26",
+  "records": [
+    {
+      "email": "sarah.chen@email.com",
+      "customerName": "Sarah Chen",
+      "merchantEmail": "support@luxurygoodsltd.com",
+      "merchantName": "Luxury Goods Ltd",
+      "transactionReference": "TXN-953344667",
+      "communications": []
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "source": "ProAccess Business Tools — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4899",
+  "reasonCodeDescription": "Mastercard Dispute Resolution — Violation of Rules",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "Known device — used during original signup",
+      "trust": "High",
+      "match": true
+    },
+    "ipAnalysis": {
+      "level": "Low",
+      "proxy": false,
+      "geoMatch": true,
+      "notes": "Consistent with cardholder."
+    },
+    "overallRiskScore": "Low fraud risk — but rule violation present"
+  }
+}

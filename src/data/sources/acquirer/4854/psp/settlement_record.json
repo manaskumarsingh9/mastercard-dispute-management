@@ -1,0 +1,9 @@
+{
+  "source": "MasterLens Academy — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4854",
+  "reasonCodeDescription": "Cardholder Dispute — Not Elsewhere Classified",
+  "settlementRecord": {
+    "notes": "Settled for $149.00. Digital course fully accessible. Cardholder completed 8 of 12 modules before filing dispute."
+  }
+}

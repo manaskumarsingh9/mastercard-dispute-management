@@ -1,0 +1,25 @@
+{
+  "source": "SaaS Platform — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "caseReference": "CASE-24",
+  "records": [
+    {
+      "transactionId": "TXN-940584054",
+      "authorizationCode": "AUTH290056",
+      "requestTimestamp": "2026-01-15T14:30:00Z",
+      "responseTimestamp": "2026-01-15T14:30:02.000Z",
+      "amount": 8,
+      "currency": "USD",
+      "cardLastFour": "7685",
+      "cardholderName": "Eleanor Vance",
+      "entryMode": "Ecommerce",
+      "responseCode": "00",
+      "responseMessage": "Approved",
+      "merchantId": "009403586477",
+      "merchantName": "SaaS Platform",
+      "terminalId": "ECOM-24",
+      "acquirerBIN": "009222",
+      "issuerBIN": "918823"
+    }
+  ]
+}

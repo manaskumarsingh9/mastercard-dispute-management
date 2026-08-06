@@ -1,0 +1,12 @@
+{
+  "source": "ElectroWorld Megastore — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4847",
+  "reasonCodeDescription": "Exceeds Floor Limit — Not Authorized and Fraud",
+  "policy": {
+    "refundWindow": "30 days from purchase with receipt",
+    "policy": "Full refund within 30 days with original receipt and packaging.",
+    "disclosureMethod": "Printed on receipt and posted at service desk.",
+    "customerAcknowledgment": "Receipt provided at POS."
+  }
+}

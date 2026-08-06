@@ -1,0 +1,9 @@
+{
+  "source": "PhoneShield Pro — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4834",
+  "reasonCodeDescription": "Point of Interaction Error / Duplicate Processing",
+  "settlementRecord": {
+    "notes": "Two separate settlements of $79.99 each for two distinct orders with unique order IDs, auth codes, and product SKUs. Not duplicate charges."
+  }
+}

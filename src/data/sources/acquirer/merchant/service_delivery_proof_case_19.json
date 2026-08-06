@@ -1,0 +1,28 @@
+{
+  "source": "Merchant Platform",
+  "dataType": "Service Delivery Proof",
+  "retrievedAt": "2026-02-22T13:43:00Z",
+  "provider": "TechStore Pro",
+  "caseReference": "CASE-19",
+  "records": [
+    {
+      "serviceId": "SVC-001234",
+      "serviceType": "Hotel Stay",
+      "deliveryDate": "2026-02-26T01:43:00Z",
+      "completionStatus": "Completed",
+      "customerConfirmation": true,
+      "confirmationMethod": "In-app",
+      "serviceDetails": "Service delivered for TechStore Pro - Transaction TXN-001234",
+      "accessLogs": [
+        {
+          "timestamp": "2026-02-10T13:55:00Z",
+          "action": "Service accessed"
+        },
+        {
+          "timestamp": "2026-03-27T14:38:00Z",
+          "action": "Service completed"
+        }
+      ]
+    }
+  ]
+}

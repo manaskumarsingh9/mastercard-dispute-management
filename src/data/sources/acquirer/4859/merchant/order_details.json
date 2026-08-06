@@ -1,0 +1,19 @@
+{
+  "source": "Seaside Grand Hotel — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4859",
+  "reasonCodeDescription": "Addendum, No-show, or ATM Dispute",
+  "orderRecord": {
+    "orderStatus": "No-show — room held but guest did not arrive",
+    "items": [
+      {
+        "name": "Deluxe Ocean View Room — 1 night",
+        "quantity": 1,
+        "unitPrice": 189,
+        "sku": "SGH-DOV-1N"
+      }
+    ],
+    "shippingAddress": null,
+    "orderNotes": "Reservation made online [14 days before check-in]. Cancellation policy requires cancellation at least 24 hours before check-in via the booking portal or by calling with the confirmation number. The hotel's reservation system shows no cancellation was recorded. The room was held and could not be sold to other guests."
+  }
+}

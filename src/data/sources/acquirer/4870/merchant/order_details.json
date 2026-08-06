@@ -1,0 +1,25 @@
+{
+  "source": "Vogue Street Fashion — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4870",
+  "reasonCodeDescription": "Chip Liability Shift — Counterfeit",
+  "orderRecord": {
+    "orderStatus": "Completed — customer left with merchandise",
+    "items": [
+      {
+        "name": "Designer Denim Jacket",
+        "quantity": 1,
+        "unitPrice": 245,
+        "sku": "VSF-DDJ-L"
+      },
+      {
+        "name": "Premium Cotton T-Shirt (2-pack)",
+        "quantity": 1,
+        "unitPrice": 167,
+        "sku": "VSF-PCT-2"
+      }
+    ],
+    "shippingAddress": null,
+    "orderNotes": "In-store purchase. The merchant's POS terminal does not support EMV chip reading. The card was swiped via magnetic stripe. The merchant is in the process of upgrading terminals but chip capability was not available at the time of this transaction."
+  }
+}

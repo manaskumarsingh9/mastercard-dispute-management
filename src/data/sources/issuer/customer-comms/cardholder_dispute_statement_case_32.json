@@ -1,0 +1,26 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "caseReference": "CASE-32",
+  "statement": {
+    "cardholderName": "Eleanor Vance",
+    "dateSubmitted": "2026-02-15",
+    "disputeReason": "Goods/Services Not as Described or Defective",
+    "detailedDescription": "On February 10, 2026, I placed an order through the Food Delivery App for $45.00 from 'The Pasta Spot'. My order specifically included their 'Signature Carbonara' and a 'Side Caesar Salad'. I was really looking forward to a quality meal, having seen good reviews for this particular restaurant on the app.\n\nWhen the order arrived, I was extremely disappointed. The 'Signature Carbonara' was cold, clumpy, and tasted nothing like fresh pasta. It seemed like it had been sitting for a long time, and the sauce was congealed. More critically, the 'Side Caesar Salad' was completely missing the croutons and parmesan cheese, which are listed as key ingredients in the description. The lettuce was also wilted and brown around the edges, clearly not fresh. The overall quality was far below what was advertised and what I paid for.\n\nI feel that the food delivered was not at all as described by the restaurant on the Food Delivery App. The quality was so poor it was barely edible, and key components of my order were either missing or severely compromised, rendering the meal defective and not worth the $45.00 I was charged.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "I immediately contacted the Food Delivery App's customer service via their in-app chat function on February 10, 2026. I explained the issues with the cold, congealed pasta and the incomplete/wilted salad. They apologized for the inconvenience and offered me a $10 credit for a future order. I rejected this as unsatisfactory because the entire meal was a write-off and not what I paid for. I requested a full refund, but they refused, stating their policy only allows for partial credits or re-delivery in some cases, neither of which I found acceptable given the quality and missing items.",
+    "previousDisputeHistory": "None noted by cardholder.",
+    "requestedResolution": "Full refund of $45.00 to my account.",
+    "cardholderDeclaration": "I, Eleanor Vance, declare under penalty of perjury that the foregoing is true and correct to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Moderate risk of chargeback success. Cardholder has a clear description of goods not as described/defective and has attempted merchant resolution with an unsatisfactory outcome. Evidence like photos (if available) would strengthen the case.",
+    "recommendedAction": "Initiate chargeback under Mastercard Reason Code 4853. Request any available transaction details and evidence from the merchant (Food Delivery App). Advise cardholder to retain any photographic evidence if they have it.",
+    "caseOfficer": "Marcus Reed",
+    "priority": "Normal",
+    "issuerCaseId": "94151207",
+    "issuerBIN": "965123"
+  },
+  "claimReference": "900002115406",
+  "chargebackReferenceNumber": "9900135928"
+}

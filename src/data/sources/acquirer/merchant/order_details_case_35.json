@@ -1,0 +1,36 @@
+{
+  "source": "Streaming Service — Order Management System",
+  "dataType": "Order Details",
+  "caseReference": "CASE-35",
+  "records": [
+    {
+      "orderId": "ORD-000035",
+      "transactionId": "TXN-970960742",
+      "orderDate": "2026-02-10T14:30:00Z",
+      "orderStatus": "Completed",
+      "amount": 99.99,
+      "currency": "USD",
+      "items": [
+        {
+          "name": "Annual Streaming Subscription",
+          "quantity": 1,
+          "unitPrice": 99.99,
+          "sku": "SKU-SS-35"
+        }
+      ],
+      "billingDescriptor": "STREAMING SERVICE*ORD-000035",
+      "billingAddress": {
+        "name": "Evelyn R. Hayes",
+        "street": "345 Laurel Ct",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80201",
+        "country": "US"
+      },
+      "shippingAddress": null,
+      "ipAddress": "107.205.245.200",
+      "customerEmail": "evelyn.hayes@email.com",
+      "customerPhone": "+12003888885"
+    }
+  ]
+}

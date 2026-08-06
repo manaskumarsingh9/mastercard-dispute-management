@@ -1,0 +1,12 @@
+{
+  "source": "TimePiece Gallery — Authorized Dealer — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4903",
+  "reasonCodeDescription": "Mastercard Compliance — Exceeds Limit",
+  "policy": {
+    "refundWindow": "14 days from purchase",
+    "policy": "Full refund within 14 days if watch returned in original condition with all documentation and packaging. After 14 days, manufacturer warranty applies.",
+    "disclosureMethod": "On receipt and warranty card.",
+    "customerAcknowledgment": "Customer signed receipt acknowledging purchase and return policy."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "source": "Morning Brew Café — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4902",
+  "reasonCodeDescription": "Mastercard Compliance — Below Floor Limit",
+  "policy": {
+    "refundWindow": "N/A — café purchase",
+    "policy": "Café purchases are final.",
+    "disclosureMethod": "N/A — standard café transaction.",
+    "customerAcknowledgment": "Customer initiated purchase."
+  }
+}

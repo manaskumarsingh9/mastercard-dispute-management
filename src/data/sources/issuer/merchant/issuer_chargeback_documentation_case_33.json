@@ -1,0 +1,40 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "caseReference": "CASE-33",
+  "chargebackFiling": {
+    "filingDate": "2026-02-17",
+    "chargebackAmount": 780,
+    "currency": "USD",
+    "reasonCode": "4808",
+    "reasonCodeDescription": "Authorization-Related Chargeback",
+    "issuerBIN": "933649",
+    "acquirerBIN": "009222",
+    "cardholderNotificationDate": "2026-02-10",
+    "chargebackDeadline": "2026-04-03",
+    "supportingDocuments": [
+      {
+        "documentType": "Cardholder Dispute Form",
+        "description": "Signed cardholder dispute form asserting transaction was processed without valid authorization.",
+        "dateProvided": "2026-02-10"
+      },
+      {
+        "documentType": "Cardholder Statement",
+        "description": "Excerpt of cardholder statement showing the disputed transaction.",
+        "dateProvided": "2026-02-12"
+      }
+    ],
+    "issuerCommentary": "Our cardholder reported that the transaction dated 2026-01-15 for 780.00 USD at 'Auto Parts Store' was processed without a valid authorization. Our internal records indicate that the initial authorization request submitted by the merchant for this transaction was declined. Despite this decline, the merchant proceeded to process and capture the transaction, resulting in a charge posted to the cardholder's account.\n\nPer Mastercard Rules, Section 5.11.1, reason code 4808, an issuer may initiate a chargeback when a transaction is processed without a valid authorization. In this instance, the merchant failed to obtain an approved authorization before processing the final transaction, or processed it after receiving a clear decline. The cardholder explicitly states they did not agree to proceed with the purchase after the authorization issue was identified. We request a full reversal of the transaction amount as the merchant did not adhere to Mastercard's authorization requirements.",
+    "representmentDeadline": "2026-04-03",
+    "arbitrationEligible": false,
+    "claimReference": "900002118533"
+  },
+  "transactionDetails": {
+    "originalTransactionDate": "2026-01-15",
+    "postingDate": "2026-01-16",
+    "authorizationCode": "WBR3315",
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI_05",
+    "recurringPayment": false
+  }
+}

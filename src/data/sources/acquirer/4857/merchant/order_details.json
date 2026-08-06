@@ -1,0 +1,19 @@
+{
+  "source": "NutriDirect Phone Sales — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4857",
+  "reasonCodeDescription": "Card-Activated Telephone Transaction",
+  "orderRecord": {
+    "orderStatus": "Completed — shipped",
+    "items": [
+      {
+        "name": "Premium Multi-Vitamin Complex — 90-day supply",
+        "quantity": 1,
+        "unitPrice": 74.95,
+        "sku": "ND-MVC-90"
+      }
+    ],
+    "shippingAddress": "Address provided during phone call — does not match cardholder's billing address",
+    "orderNotes": "Telephone order taken by sales agent. Caller provided card number, expiration date, and billing address. Call was not recorded. No written confirmation was sent before shipment."
+  }
+}

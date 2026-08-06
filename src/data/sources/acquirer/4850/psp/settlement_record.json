@@ -1,0 +1,9 @@
+{
+  "source": "FitPro Equipment Co. — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4850",
+  "reasonCodeDescription": "Installment Billing Dispute",
+  "settlementRecord": {
+    "notes": "Settled $125.00 for installment 4 of 12. Digitally signed installment agreement specifies $125.00/month. Three prior installments paid at this amount without dispute."
+  }
+}

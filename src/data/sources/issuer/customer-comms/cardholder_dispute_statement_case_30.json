@@ -1,0 +1,26 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "caseReference": "CASE-30",
+  "statement": {
+    "cardholderName": "Ms. Eleanor Vance",
+    "dateSubmitted": "2026-03-10",
+    "disputeReason": "No-show for pre-booked travel service due to merchant error",
+    "detailedDescription": "On or about January 15, 2026, I booked a 5-night hotel stay at the Grand Vista Hotel in Miami for myself and my family, scheduled for February 20-25, 2026, through 'Global Travel Solutions' (the merchant). I paid the full amount of 2100.00 USD at the time of booking using my Mastercard. I received an email confirmation from Global Travel Solutions with a booking reference number and itinerary.\n\nUpon our arrival at the Grand Vista Hotel on February 20th, we were informed by the front desk that they had no reservation under my name or the booking reference number provided by Global Travel Solutions. The hotel staff checked their system thoroughly and confirmed that no booking had ever been received from Global Travel Solutions for our dates. We were left stranded without accommodation and had to pay out-of-pocket for an alternative, more expensive hotel nearby for our entire stay.\n\nI immediately contacted Global Travel Solutions to rectify the situation. They initially claimed the booking was confirmed on their end but could not provide any proof of communication or confirmation directly from the Grand Vista Hotel. After several follow-up calls and emails, they ultimately stated that 'technical issues' might have occurred on their platform but refused to issue a refund, citing their general 'no-cancellation, no-show' policy. This is unacceptable as we were a 'no-show' at the Grand Vista Hotel entirely due to Global Travel Solutions' failure to properly secure our booking.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "Global Travel Solutions claimed the booking was confirmed on their end but failed to provide any evidence of a confirmed reservation with the Grand Vista Hotel. They refused a refund, stating their standard no-show policy applied, despite their evident failure to transmit the booking to the hotel.",
+    "previousDisputeHistory": "None with this specific merchant. One prior chargeback for a separate, unrelated merchant in 2024, resolved in cardholder's favor.",
+    "requestedResolution": "Full refund of 2100.00 USD for hotel services not rendered due to the merchant's failure.",
+    "cardholderDeclaration": "I declare that the information provided in this statement is true and accurate to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Moderate. Cardholder has a credible claim of merchant non-performance leading to a 'no-show' at the service provider. Merchant's refusal to refund despite their booking failure is a clear liability.",
+    "recommendedAction": "Initiate chargeback under Reason Code 4859 (No-show, service not provided). Request documentation from merchant regarding proof of booking confirmation with the Grand Vista Hotel and their communication with the hotel.",
+    "caseOfficer": "Mr. Daniel Miller",
+    "priority": "Standard",
+    "issuerCaseId": "94151145",
+    "issuerBIN": "948762"
+  },
+  "claimReference": "900002109152",
+  "chargebackReferenceNumber": "9900127286"
+}

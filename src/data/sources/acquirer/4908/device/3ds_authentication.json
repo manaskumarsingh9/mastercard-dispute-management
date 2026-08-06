@@ -1,0 +1,16 @@
+{
+  "source": "BookHaven — Rare & Collectible Books — Authentication",
+  "dataType": "3D Secure Authentication Record",
+  "reasonCode": "4908",
+  "reasonCodeDescription": "Mastercard Compliance — Authorization Related",
+  "threeDSecure": {
+    "version": "2.0",
+    "enrolled": true,
+    "status": "Y — Authenticated at pre-order",
+    "eci": "05",
+    "cavv": "Verified",
+    "challenge": true,
+    "liabilityShift": "Yes",
+    "notes": "3D Secure at pre-order. Re-authorization obtained before shipment."
+  }
+}

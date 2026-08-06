@@ -1,0 +1,22 @@
+{
+  "source": "Streaming Service — Subscription Management",
+  "dataType": "Cancellation Policy & Records",
+  "caseReference": "CASE-35",
+  "records": [
+    {
+      "merchantName": "Streaming Service",
+      "subscriptionId": "SUB-35-9709",
+      "customerName": "Evelyn R. Hayes",
+      "customerEmail": "evelyn.hayes@email.com",
+      "planName": "Annual Streaming Subscription",
+      "monthlyAmount": 99.99,
+      "currency": "USD",
+      "cancellationPolicy": "Cancellations take effect at end of current billing period. Must be submitted before renewal date.",
+      "cancellationReceived": true,
+      "cancellationDate": "2026-01-10",
+      "billingCycleEnd": "2026-01-31",
+      "chargeAfterCancellation": true,
+      "merchantNotes": "System processed recurring charge after cancellation was received. Reviewing billing system for processing delay."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "caseReference": "CASE-22",
+  "statement": {
+    "cardholderName": "Eleanor Vance",
+    "dateSubmitted": "2026-02-10",
+    "disputeReason": "Duplicate Processing (Reason Code 4834)",
+    "detailedDescription": "On January 28, 2026, I enrolled in a 7-day free trial with 'FreeTrial Corp'. As part of the sign-up process, a standard $0.00 authorization hold appeared on my account statement, which I understood to be a verification step. However, upon reviewing my online banking statement a couple of days later, I noticed a second identical $0.00 transaction from 'FreeTrial Corp' posted on January 29, 2026. This second entry is a complete duplicate and should not have occurred, as I only signed up for the free trial once.\n\nWhile the amount is zero, the presence of a duplicate transaction is concerning. It suggests a potential error in the merchant's billing system or an issue with how transactions are processed, which could lead to incorrect charges in the future. I want to ensure that my card is only linked to a single free trial enrollment and that this duplicate authorization is removed to prevent any confusion or potential future problems.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "I contacted FreeTrial Corp's customer support via their website chat on February 05, 2026. The representative, 'Maya,' confirmed that their system showed only one active free trial under my email. When I explained the duplicate $0.00 transaction on my bank statement, she was unable to explain why it appeared twice and advised me to contact my bank as it might be a 'bank-side processing issue' or a 'visual error' on my statement. She confirmed there was no financial impact from their end and couldn't process a cancellation for a $0.00 transaction.",
+    "previousDisputeHistory": "None with this merchant.",
+    "requestedResolution": "I request that the duplicate $0.00 transaction dated January 29, 2026, from FreeTrial Corp be removed from my account statement. I want assurance that my card details are correctly linked to only one free trial subscription and that no further duplicate authorizations will occur.",
+    "cardholderDeclaration": "I, Eleanor Vance, declare that the information provided above is true and accurate to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Low immediate financial risk due to $0.00 amount, but high potential for cardholder confusion and dissatisfaction. Duplicate authorization, even for zero, indicates a potential merchant system error or processing anomaly. Important to resolve for customer trust.",
+    "recommendedAction": "Proceed with chargeback under Reason Code 4834 (Duplicate Processing). Advise cardholder to continue monitoring statements for FreeTrial Corp transactions. Consider internal review if similar duplicate $0.00 issues arise frequently with this merchant.",
+    "caseOfficer": "Marcus Thorne",
+    "priority": "Medium",
+    "issuerCaseId": "9415897",
+    "issuerBIN": "916334"
+  },
+  "claimReference": "900002084136",
+  "chargebackReferenceNumber": "9900092718"
+}

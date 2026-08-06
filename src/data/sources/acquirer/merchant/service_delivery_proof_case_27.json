@@ -1,0 +1,28 @@
+{
+  "source": "Merchant Platform",
+  "dataType": "Service Delivery Proof",
+  "retrievedAt": "2026-02-28T19:25:00Z",
+  "provider": "Electronics Hub",
+  "caseReference": "CASE-27",
+  "records": [
+    {
+      "serviceId": "SVC-001242",
+      "serviceType": "Food Delivery",
+      "deliveryDate": "2026-01-10T09:15:00Z",
+      "completionStatus": "Completed",
+      "customerConfirmation": true,
+      "confirmationMethod": "Email",
+      "serviceDetails": "Service delivered for Electronics Hub - Transaction TXN-001242",
+      "accessLogs": [
+        {
+          "timestamp": "2026-02-10T01:31:00Z",
+          "action": "Service accessed"
+        },
+        {
+          "timestamp": "2026-02-07T22:46:00Z",
+          "action": "Service completed"
+        }
+      ]
+    }
+  ]
+}

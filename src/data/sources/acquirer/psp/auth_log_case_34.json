@@ -1,0 +1,25 @@
+{
+  "source": "Jewelry Online — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "caseReference": "CASE-34",
+  "records": [
+    {
+      "transactionId": "TXN-921598787",
+      "authorizationCode": "AUTH369246",
+      "requestTimestamp": "2026-01-12T14:30:00Z",
+      "responseTimestamp": "2026-01-12T14:30:02.000Z",
+      "amount": 3500,
+      "currency": "USD",
+      "cardLastFour": "5277",
+      "cardholderName": "Jessica Thompson",
+      "entryMode": "Ecommerce",
+      "responseCode": "00",
+      "responseMessage": "Approved",
+      "merchantId": "009403221909",
+      "merchantName": "Jewelry Online",
+      "terminalId": "ECOM-34",
+      "acquirerBIN": "009222",
+      "issuerBIN": "938744"
+    }
+  ]
+}

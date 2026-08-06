@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4812",
+  "reasonCodeDescription": "Account Number Not on File",
+  "chargebackFiling": {
+    "reasonCode": "4812",
+    "reasonCodeDescription": "Account Number Not on File",
+    "supportingDocuments": [
+      {
+        "type": "Account Verification Report",
+        "desc": "Issuer verification confirming the account number does not match any card issued to this cardholder."
+      },
+      {
+        "type": "Cardholder Statement",
+        "desc": "Signed statement confirming cardholder did not make this purchase."
+      }
+    ],
+    "issuerCommentary": "Filing under 4812. The account number used does not match any card issued to this cardholder. This appears to be a processing error from a manually keyed transaction.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": true,
+    "ecommerceIndicator": null,
+    "posEntryMode": "01"
+  }
+}

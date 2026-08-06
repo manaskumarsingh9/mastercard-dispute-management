@@ -1,0 +1,29 @@
+The backend uses an async pattern: POST /summarize/{id} queues the job and returns immediately, then you poll GET /summarize/status/{id} until it's COMPLETED with the summary field. The frontend wasn't polling — it was treating the queue response as the final result.
+
+Let me now check if the same pattern applies to the other agents and the proxy's NDJSON streaming:
+
+
+2 actions
+Now I understand the bug. The backend uses an async queued pattern: POST /summarize/{id} returns immediately with status: "PROCESSING", and you have to poll GET /summarize/status/{id} for the actual result. The frontend was treating the queue response as if it contained the summary.
+
+Let me check if the other agent endpoints follow the same pattern:
+
+
+2 actions
+Only the /summarize endpoint uses the async/polling pattern. The other agents (enrich, merchant-summary, recommend) return results directly. Now let me fix handleSummarize to poll for the result, and also fix the sync flow which calls sbSummarize:
+
+
+Opened artifacts/dispute-dashboard/src/lib/enrichment-api.ts
+Now I'll update sbSummarize to handle the async polling pattern:
+
+
+Edited artifacts/dispute-dashboard/src/lib/enrichment-api.ts
+Now I also need to update the handleSummarize function in AgentPipeline to show a proper loading state during polling, and also check the full-pipeline which calls summarize as part of its flow:
+
+
+Executed rg -C 3 -n 'sbFullPipeline|full-pipeline"' artifacts/dispute-dashboard/src/lib/enrichment-api.ts
+Let me also check what the full-pipeline response looks like:
+
+
+Executed curl -s -X POST "https://14c4d4fe-3a81-4b0e-a199-f1f4d5147f31-00-bhxfmiflhthj.pike.replit.dev/api/agents/full-pipeline/3" -H "Content-Type: application/json" 2>/dev/null | node -e "let b='';process.stdin.on('data',c=>b+=c);process.stdin.on('end',()=>{try{const d=JSON.parse(b);console.log('full-pipeline keys:', Object.keys(d));console.log('status:', d.status);console.log('has step1?', !!d.step1_issuerSummary);console.log('pipelineStatus:', d.pipelineStatus)}catch(e){console.log(b.substring(0,500))}})"
+The full-pipeline returns results synchronously — no polling needed there. Only summarize is async.

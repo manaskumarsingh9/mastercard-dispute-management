@@ -1,0 +1,61 @@
+This is a vital adjustment. You are describing a **"Strategy-First"** AI approach where the agent doesn't just collect data, but actively reasons about what is *missing* to win the case.
+
+I have updated the logic and the diagram code below to reflect this **Evidence Strategist (Agent 2)** and the **Manual Top-up** flow.
+
+### The New "Strategist" Workflow
+
+1.  **Phase 1: Ingestion (Instant)**
+    * **Agent 1 (Summarizer)** creates the "Issuer Summary" so the dashboard is never empty.
+2.  **Phase 2: The Strategy & Enrichment (User-Triggered)**
+    * **Agent 2 (Strategist) - Task 1:** Reads the claim and identifies "Weird Details." It creates a **Custom Fetch Plan** (e.g., "I need a warehouse photo because the customer claims the box arrived unsealed").
+    * **Evidence Engine:** Executes the plan across your 500+ adapters.
+    * **Agent 2 (Strategist) - Task 2:** Verifies the results. It creates an **Annotated Evidence Map** highlighting what was found (✅) and what is missing (❌).
+3.  **Phase 3: The Human Bridge (Optional)**
+    * **Manual Upload:** The user sees the ❌ gaps and can manually upload a missing document to "complete" the map.
+4.  **Phase 4: The Final Recommendation & Build**
+    * **Agent 4 (Advisor):** Reviews the *final* combined evidence (Auto + Manual) and gives the **Win-Probability**.
+    * **Agent 3b (Writer):** Drafts the final rebuttal.
+
+---
+
+### Updated Architecture Diagram (Mermaid.js)
+
+Copy and paste this into the [Mermaid Live Editor](https://mermaid.live/) to see the updated logic:
+
+```mermaid
+sequenceDiagram
+    participant U as Merchant (UI)
+    participant A1 as Agent 1 (Summarizer)
+    participant A2 as Agent 2 (Strategist)
+    participant EE as Evidence Engine
+    participant A4 as Agent 4 (Advisor)
+    participant A3b as Agent 3b (Writer)
+
+    Note over U, A1: Phase 1: Ingestion (Instant)
+    A1->>U: Display 2-min Issuer Summary
+    
+    U->>A2: Click "Enrich Evidence"
+    
+    Note over A2, EE: Phase 2: AI-Led Strategy
+    A2->>A2: Task 1: Analyze 'weird' claims & Create Fetch Plan
+    A2->>EE: Request Specific Data (API/Adapters)
+    EE-->>A2: Return Raw Data
+    A2->>A2: Task 2: Verify & Annotate (Success vs. Gaps)
+    A2->>U: Display Annotated Evidence Map (✅/❌)
+    
+    Note over U: Phase 3: Manual Top-up (Optional)
+    U->>U: Upload missing files to fill ❌ gaps
+    
+    Note over U, A3b: Phase 4: Final Decision
+    U->>A4: Request Recommendation (If enabled)
+    A4-->>U: Win-Probability & "Fight/Flight" Advice
+    U->>A3b: Approve & Generate Rebuttal
+    A3b-->>U: Final Document Ready for Submission
+```
+
+---
+
+### Strategic Highlight: The "Annotated Map"
+By making the **Annotated Evidence Map** a core part of the UI, you turn the AI into a partner rather than a "black box." The merchant feels in control because they can see exactly where the AI struggled and step in to help.
+
+**Would you like me to define the specific "Evidence Templates" (e.g., for 'Fraud' vs. 'Product Not Received') that Agent 2 will use as its starting point?**

@@ -1,0 +1,19 @@
+{
+  "source": "FreeTrial Corp — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "caseReference": "CASE-22",
+  "records": [
+    {
+      "transactionId": "TXN-927809341",
+      "settlementDate": "2026-01-30",
+      "settlementAmount": 0,
+      "settlementCurrency": "USD",
+      "merchantId": "009403638252",
+      "merchantName": "FreeTrial Corp",
+      "batchId": "BATCH-22-001",
+      "status": "Settled",
+      "cardholderName": "Eleanor Vance",
+      "cardLastFour": "1739"
+    }
+  ]
+}

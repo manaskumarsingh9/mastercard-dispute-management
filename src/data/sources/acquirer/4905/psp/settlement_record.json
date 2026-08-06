@@ -1,0 +1,9 @@
+{
+  "source": "FitZone Fitness Center — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4905",
+  "reasonCodeDescription": "Mastercard Compliance — Card Not Valid",
+  "settlementRecord": {
+    "notes": "Settled for $49.99. Card credentials were automatically updated via Mastercard Account Updater. The issuer approved the authorization request with the updated credentials. The cardholder has been an active member for 8 months."
+  }
+}

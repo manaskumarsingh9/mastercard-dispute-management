@@ -1,0 +1,19 @@
+{
+  "source": "Enterprise Solutions — Fulfillment System",
+  "dataType": "Fulfillment Record",
+  "caseReference": "CASE-21",
+  "records": [
+    {
+      "fulfillmentId": "FUL-000021",
+      "orderId": "ORD-000021",
+      "fulfillmentType": "Digital Delivery",
+      "fulfillmentStatus": "Completed",
+      "fulfilledDate": "2026-01-15T14:30:00Z",
+      "carrier": null,
+      "trackingNumber": null,
+      "itemsFulfilled": 1,
+      "customerName": "Eleanor Vance",
+      "customerEmail": "eleanor.vance@email.com"
+    }
+  ]
+}

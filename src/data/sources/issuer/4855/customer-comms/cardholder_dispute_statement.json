@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4855",
+  "reasonCodeDescription": "Goods or Services Not Provided",
+  "statement": {
+    "disputeReason": "4855 - Goods or Services Not Provided",
+    "detailedDescription": "The cardholder ordered custom-made curtains from 'HOMESTITCH CUSTOM DÉCOR' for $275.00. The estimated delivery was [10-14 business days after purchase]. As of [45 days after purchase], the curtains have not been delivered. The cardholder attempted to contact the merchant multiple times with no response. The merchant's website now shows 'temporarily closed'.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "The cardholder emailed [14 days after purchase] and again [21 days after purchase] asking about the order status. The first email received an auto-reply saying 'We are experiencing delays.' The second email received no response. The cardholder also tried calling [30 days after purchase] and the phone number was disconnected.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Full reversal for non-delivery of goods.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium-High — evidence supports cardholder's position.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4855 (Goods or Services Not Provided).",
+    "priority": "Standard"
+  }
+}

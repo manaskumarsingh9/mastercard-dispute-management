@@ -1,0 +1,22 @@
+{
+  "source": "NutriDirect Phone Sales — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4857",
+  "reasonCodeDescription": "Card-Activated Telephone Transaction",
+  "communications": [
+    {
+      "type": "No Pre-Order Communication",
+      "dir": "system_note",
+      "timing": "N/A",
+      "subject": "N/A",
+      "body": "Telephone order. The caller provided card details over the phone to a sales agent. The call was not recorded per company policy at the time. No written or emailed order confirmation was sent before shipment. A shipping confirmation was sent to the email address provided by the caller."
+    },
+    {
+      "type": "Shipping Confirmation",
+      "dir": "merchant_to_customer",
+      "timing": "[2 days after order]",
+      "subject": "NutriDirect — Your Order Has Shipped",
+      "body": "Your Premium Multi-Vitamin Complex (90-day supply) has shipped. Total: $74.95. Tracking included."
+    }
+  ]
+}

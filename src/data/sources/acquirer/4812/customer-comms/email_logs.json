@@ -1,0 +1,15 @@
+{
+  "source": "Metro Fashion Department Store — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4812",
+  "reasonCodeDescription": "Account Number Not on File",
+  "communications": [
+    {
+      "type": "No Email Communications",
+      "dir": "system_note",
+      "timing": "N/A",
+      "subject": "N/A",
+      "body": "In-store card-present transaction. Card number was manually entered at POS after chip read failure. No email collected. The possibility exists that a digit was keyed incorrectly, resulting in a different account being charged."
+    }
+  ]
+}

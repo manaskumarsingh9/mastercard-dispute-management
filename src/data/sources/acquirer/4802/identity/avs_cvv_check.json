@@ -1,0 +1,16 @@
+{
+  "source": "Bistro on Main — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4802",
+  "reasonCodeDescription": "Requested Item Not Received",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "N/A",
+      "description": "Card-present EMV"
+    },
+    "cvv": {
+      "responseCode": "N/A",
+      "description": "Chip cryptogram verified"
+    }
+  }
+}

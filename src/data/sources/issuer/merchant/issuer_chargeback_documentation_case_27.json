@@ -1,0 +1,45 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "caseReference": "CASE-27",
+  "chargebackFiling": {
+    "filingDate": "2026-02-20",
+    "chargebackAmount": 567.5,
+    "currency": "USD",
+    "reasonCode": "4855",
+    "reasonCodeDescription": "Goods or Services Not Provided",
+    "issuerBIN": "928445",
+    "acquirerBIN": "009222",
+    "cardholderNotificationDate": "2026-02-15",
+    "chargebackDeadline": "2026-04-06",
+    "supportingDocuments": [
+      {
+        "documentType": "Cardholder Dispute Form",
+        "description": "Signed declaration from cardholder detailing non-receipt of goods.",
+        "dateProvided": "2026-02-15"
+      },
+      {
+        "documentType": "Communication Records",
+        "description": "Emails/chat logs showing cardholder's attempts to contact merchant (Electronics Hub) regarding order status and failed delivery.",
+        "dateProvided": "2026-02-16"
+      },
+      {
+        "documentType": "Transaction Receipt",
+        "description": "Copy of the original transaction receipt for the purchase from Electronics Hub.",
+        "dateProvided": "2026-01-10"
+      }
+    ],
+    "issuerCommentary": "The cardholder initiated a dispute on 2026-02-15, claiming that the merchandise purchased from 'Electronics Hub' on 2026-01-10, amounting to 567.5 USD, was never received. The cardholder states that despite reasonable expectations for delivery and multiple attempts to contact the merchant for resolution or an update on the order status, they have received no goods and no satisfactory response from the merchant. The cardholder has provided evidence of these communication attempts, demonstrating their efforts to resolve the issue directly.\n\nIn accordance with Mastercard Chargeback Guide, Reason Code 4855 (Goods or Services Not Provided) applies to transactions where the cardholder claims the merchandise or service was not received. Based on the cardholder's sworn statement and supporting documentation, we find this claim to be valid. We are filing this chargeback to recover the funds for our cardholder, as the merchant has failed to fulfill their obligation to deliver the purchased goods.",
+    "representmentDeadline": "2026-04-06",
+    "arbitrationEligible": false,
+    "claimReference": "900002099771"
+  },
+  "transactionDetails": {
+    "originalTransactionDate": "2026-01-10",
+    "postingDate": "2026-01-11",
+    "authorizationCode": "FPT2709",
+    "cardPresent": false,
+    "ecommerceIndicator": "Electronic Commerce Transaction (with security)",
+    "recurringPayment": false
+  }
+}

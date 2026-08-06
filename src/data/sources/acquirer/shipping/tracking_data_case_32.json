@@ -1,0 +1,27 @@
+{
+  "source": "Food Delivery App — Shipping Provider",
+  "dataType": "Shipping Tracking Data",
+  "caseReference": "CASE-32",
+  "records": [
+    {
+      "orderId": "ORD-000032",
+      "transactionId": "TXN-952871447",
+      "carrier": "UPS",
+      "trackingNumber": "1Z999395040",
+      "shippedDate": "2026-02-11T10:00:00Z",
+      "estimatedDelivery": "2026-02-15",
+      "status": "Delivered",
+      "weight": "0.5 kg",
+      "dimensions": "25x15x10 cm",
+      "shippingAddress": {
+        "name": "Eleanor Vance",
+        "street": "324 Juniper Ave",
+        "city": "Columbus",
+        "state": "OH",
+        "zip": "43085",
+        "country": "US"
+      },
+      "customerName": "Eleanor Vance"
+    }
+  ]
+}

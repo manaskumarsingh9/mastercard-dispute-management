@@ -1,0 +1,45 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "caseReference": "CASE-29",
+  "chargebackFiling": {
+    "filingDate": "2026-02-05",
+    "chargebackAmount": 320,
+    "currency": "USD",
+    "reasonCode": "4871",
+    "reasonCodeDescription": "Chip/PIN Transaction — Lost/Stolen/Not Received",
+    "issuerBIN": "910204",
+    "acquirerBIN": "009222",
+    "cardholderNotificationDate": "2026-01-08",
+    "chargebackDeadline": "2026-05-10",
+    "supportingDocuments": [
+      {
+        "documentType": "Cardholder Dispute Form",
+        "description": "Signed declaration from cardholder disputing the transaction.",
+        "dateProvided": "2026-01-15"
+      },
+      {
+        "documentType": "Card Reported Lost/Stolen Confirmation",
+        "description": "Internal system log confirming the card was reported lost/stolen on 2026-01-08 at 09:30 AM EST, prior to the transaction.",
+        "dateProvided": "2026-01-15"
+      },
+      {
+        "documentType": "Statement of Account",
+        "description": "Monthly statement showing the disputed transaction.",
+        "dateProvided": "2026-01-20"
+      }
+    ],
+    "issuerCommentary": "This chargeback is being filed under Mastercard Reason Code 4871, 'Chip/PIN Transaction — Lost/Stolen/Not Received'. Our cardholder, Ms. Jane Doe, reported her Mastercard as lost/stolen on 2026-01-08 at 09:30 AM EST. Despite the card being reported compromised prior to the transaction, a Chip/PIN transaction occurred at 'Retail Store' on 2026-01-10.\n\nMastercard rules explicitly state that a chargeback is permitted for a Card-present EMV Chip transaction with Cardholder verification (e.g., PIN) when the card was reported as Lost/Stolen or Not Received to the Issuer or its agent *before* the transaction date. This transaction falls squarely within this exception to the standard EMV liability shift, as the card was reported stolen two days prior to the unauthorized use.",
+    "representmentDeadline": "2026-03-22",
+    "arbitrationEligible": true,
+    "claimReference": "900002106025"
+  },
+  "transactionDetails": {
+    "originalTransactionDate": "2026-01-10",
+    "postingDate": "2026-01-11",
+    "authorizationCode": "SLS2911",
+    "cardPresent": true,
+    "ecommerceIndicator": "Not Applicable",
+    "recurringPayment": false
+  }
+}

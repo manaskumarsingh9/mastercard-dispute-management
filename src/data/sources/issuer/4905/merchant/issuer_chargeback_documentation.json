@@ -1,0 +1,23 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4905",
+  "reasonCodeDescription": "Mastercard Compliance — Card Not Valid",
+  "chargebackFiling": {
+    "reasonCode": "4905",
+    "reasonCodeDescription": "Mastercard Compliance — Card Not Valid",
+    "supportingDocuments": [
+      {
+        "type": "Card Status Record",
+        "desc": "Showing the card was flagged as not valid before this charge."
+      }
+    ],
+    "issuerCommentary": "Filing under 4905. A recurring charge was processed on a card flagged as not valid.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI_07",
+    "posEntryMode": "81"
+  }
+}

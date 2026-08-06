@@ -1,0 +1,12 @@
+{
+  "source": "PhoneShield Pro — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4834",
+  "reasonCodeDescription": "Point of Interaction Error / Duplicate Processing",
+  "policy": {
+    "refundWindow": "30 days from delivery",
+    "policy": "Full refund within 30 days if items returned in unopened condition.",
+    "disclosureMethod": "Displayed at checkout and in each order confirmation email.",
+    "customerAcknowledgment": "Customer agreed to terms during each checkout."
+  }
+}

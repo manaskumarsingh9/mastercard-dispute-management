@@ -1,0 +1,25 @@
+{
+  "source": "Food Delivery App — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "caseReference": "CASE-32",
+  "records": [
+    {
+      "transactionId": "TXN-952871447",
+      "authorizationCode": "AUTH353408",
+      "requestTimestamp": "2026-02-10T14:30:00Z",
+      "responseTimestamp": "2026-02-10T14:30:02.000Z",
+      "amount": 45,
+      "currency": "USD",
+      "cardLastFour": "7903",
+      "cardholderName": "Eleanor Vance",
+      "entryMode": "Ecommerce",
+      "responseCode": "00",
+      "responseMessage": "Approved",
+      "merchantId": "009403096761",
+      "merchantName": "Food Delivery App",
+      "terminalId": "ECOM-32",
+      "acquirerBIN": "009222",
+      "issuerBIN": "965123"
+    }
+  ]
+}

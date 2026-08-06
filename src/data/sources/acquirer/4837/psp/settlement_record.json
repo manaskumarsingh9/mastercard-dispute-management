@@ -1,0 +1,9 @@
+{
+  "source": "LuxeVision Online — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4837",
+  "reasonCodeDescription": "No Cardholder Authorization (Fraud)",
+  "settlementRecord": {
+    "notes": "Settled for $327.00. Shipped to an address that does not match the billing address. No 3D Secure authentication performed."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "source": "AudioPeak Electronics — Fulfillment",
+  "dataType": "Fulfillment & Delivery Record",
+  "reasonCode": "4853",
+  "reasonCodeDescription": "Goods/Services Not as Described or Defective",
+  "fulfillmentRecord": {
+    "type": "Physical Shipment",
+    "status": "Delivered",
+    "method": "FedEx Ground",
+    "timing": "[4 days after purchase]",
+    "confirmed": true,
+    "notes": "Package delivered to cardholder's billing address. Product used for 18 days before complaint. Cardholder discarded original packaging."
+  }
+}

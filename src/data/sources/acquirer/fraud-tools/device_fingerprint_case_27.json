@@ -1,0 +1,29 @@
+{
+  "source": "Electronics Hub — Fraud Detection Service",
+  "dataType": "Device Fingerprint Analysis",
+  "caseReference": "CASE-27",
+  "records": [
+    {
+      "transactionId": "TXN-972850548",
+      "sessionId": "SES-27-972850",
+      "ipAddress": "99.181.189.96",
+      "deviceType": "Desktop",
+      "browser": "Chrome 121.0",
+      "os": "Windows 11",
+      "screenResolution": "1920x1080",
+      "vpnDetected": false,
+      "proxyDetected": false,
+      "torDetected": false,
+      "riskScore": 10,
+      "riskLevel": "Low",
+      "knownDevice": true,
+      "previousTransactions": 10,
+      "geolocation": {
+        "country": "US",
+        "region": "CA",
+        "city": "San Diego"
+      },
+      "cardholderName": "Eleanor Vance"
+    }
+  ]
+}

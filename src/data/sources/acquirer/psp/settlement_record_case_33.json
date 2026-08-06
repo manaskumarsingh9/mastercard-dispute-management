@@ -1,0 +1,19 @@
+{
+  "source": "Auto Parts Store — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "caseReference": "CASE-33",
+  "records": [
+    {
+      "transactionId": "TXN-938155939",
+      "settlementDate": "2026-01-30",
+      "settlementAmount": 780,
+      "settlementCurrency": "USD",
+      "merchantId": "009403137236",
+      "merchantName": "Auto Parts Store",
+      "batchId": "BATCH-33-001",
+      "status": "Settled",
+      "cardholderName": "Eleanor Vance",
+      "cardLastFour": "9399"
+    }
+  ]
+}

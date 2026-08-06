@@ -1,0 +1,19 @@
+{
+  "source": "Bistro on Main — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4802",
+  "reasonCodeDescription": "Requested Item Not Received",
+  "orderRecord": {
+    "orderStatus": "Completed",
+    "items": [
+      {
+        "name": "Dinner for two — food and beverages",
+        "quantity": 1,
+        "unitPrice": 85,
+        "sku": "DINE-0802"
+      }
+    ],
+    "shippingAddress": null,
+    "orderNotes": "Dine-in transaction. Subtotal $85.00. The signed receipt was retained at the restaurant but cannot be located after a staff change."
+  }
+}

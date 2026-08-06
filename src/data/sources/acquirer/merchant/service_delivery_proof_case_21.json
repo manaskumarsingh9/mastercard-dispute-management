@@ -1,0 +1,29 @@
+{
+  "source": "Enterprise Solutions — Service Platform",
+  "dataType": "Service Delivery Proof",
+  "caseReference": "CASE-21",
+  "records": [
+    {
+      "orderId": "ORD-000021",
+      "transactionId": "TXN-980145359",
+      "serviceType": "Advanced analytics suite - annual plan",
+      "activationDate": "2026-01-15T14:30:00Z",
+      "serviceStatus": "Active",
+      "lastAccessDate": "2026-01-18T00:00:00.000Z",
+      "accessLogs": [
+        {
+          "date": "2026-01-15T14:30:00Z",
+          "action": "Service activated",
+          "ip": "93.163.147.18"
+        },
+        {
+          "date": "2026-01-16T00:00:00.000Z",
+          "action": "User login",
+          "ip": "93.163.147.18"
+        }
+      ],
+      "customerName": "Eleanor Vance",
+      "customerEmail": "eleanor.vance@email.com"
+    }
+  ]
+}

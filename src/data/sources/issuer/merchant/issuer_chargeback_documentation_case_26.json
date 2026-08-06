@@ -1,0 +1,40 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "caseReference": "CASE-26",
+  "chargebackFiling": {
+    "filingDate": "2026-03-01",
+    "chargebackAmount": 1250,
+    "currency": "USD",
+    "reasonCode": "4837",
+    "reasonCodeDescription": "No Cardholder Authorization (Fraud)",
+    "issuerBIN": "941745",
+    "acquirerBIN": "009222",
+    "cardholderNotificationDate": "2026-02-20",
+    "chargebackDeadline": "2026-06-15",
+    "supportingDocuments": [
+      {
+        "documentType": "Cardholder Affidavit",
+        "description": "Signed affidavit from cardholder confirming no authorization for transaction.",
+        "dateProvided": "2026-02-20"
+      },
+      {
+        "documentType": "Transaction Details",
+        "description": "Copy of original transaction details from issuer system for reference.",
+        "dateProvided": "2026-03-01"
+      }
+    ],
+    "issuerCommentary": "Our cardholder, for account ending XXXX-1234, reported this transaction as unauthorized on 2026-02-20. The cardholder explicitly states they did not participate in, authorize, or have knowledge of this transaction with Luxury Goods Ltd for $1250.00 USD on 2026-02-15. This dispute falls squarely under Mastercard Reason Code 4837, 'No Cardholder Authorization (Fraud)', as the cardholder maintains the transaction was executed without their consent or knowledge.\n\nAs per Mastercard Chargeback Guide rules regarding unauthorized transactions, an issuer may file a chargeback under Reason Code 4837 when a cardholder claims an unauthorized transaction. We have provided a signed Cardholder Affidavit (attached) confirming the cardholder's lack of authorization. Given the cardholder's unequivocal denial of authorization and the fraudulent nature of the transaction, we request the reversal of this transaction to protect our cardholder from unauthorized activity.",
+    "representmentDeadline": "2026-04-15",
+    "arbitrationEligible": true,
+    "claimReference": "900002096644"
+  },
+  "transactionDetails": {
+    "originalTransactionDate": "2026-02-15",
+    "postingDate": "2026-02-16",
+    "authorizationCode": "WBR2608",
+    "cardPresent": false,
+    "ecommerceIndicator": "Electronic Commerce Transaction (Unauthenticated)",
+    "recurringPayment": false
+  }
+}

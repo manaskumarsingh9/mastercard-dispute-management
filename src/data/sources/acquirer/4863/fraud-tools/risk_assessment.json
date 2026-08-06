@@ -1,0 +1,20 @@
+{
+  "source": "CaseArtisan — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4863",
+  "reasonCodeDescription": "Cardholder Does Not Recognize Transaction",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "Known device — browser fingerprint matches the cardholder's typical device profile",
+      "trust": "High",
+      "match": true
+    },
+    "ipAnalysis": {
+      "level": "Low",
+      "proxy": false,
+      "geoMatch": true,
+      "notes": "IP address consistent with cardholder's billing address location."
+    },
+    "overallRiskScore": "Very Low — personalized product with cardholder's own photo, 3DS, AVS match, delivery to billing address"
+  }
+}

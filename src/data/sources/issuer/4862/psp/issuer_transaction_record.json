@@ -1,0 +1,24 @@
+{
+  "source": "Issuing Bank — Transaction Processing",
+  "dataType": "Issuer Transaction Record",
+  "reasonCode": "4862",
+  "reasonCodeDescription": "Counterfeit Transaction (Magnetic Stripe)",
+  "authorization": {
+    "responseCode": "00",
+    "merchantCategoryCode": "5999",
+    "posEntryMode": "90",
+    "cardNotPresent": false,
+    "avsResult": {
+      "code": "N/A",
+      "description": "Card-present"
+    },
+    "cvvResult": {
+      "code": "N/A",
+      "description": "CVV1 on magnetic stripe — from cloned data"
+    }
+  },
+  "riskFlags": {
+    "geolocationMismatch": "Yes — transaction 300 miles from cardholder's location",
+    "deviceTrustScore": "N/A"
+  }
+}

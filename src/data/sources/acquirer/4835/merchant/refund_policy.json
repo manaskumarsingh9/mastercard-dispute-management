@@ -1,0 +1,12 @@
+{
+  "source": "Brilliance Jewelers — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4835",
+  "reasonCodeDescription": "Card Not Valid or Expired",
+  "policy": {
+    "refundWindow": "14 days from purchase for jewelry",
+    "policy": "Full refund within 14 days with receipt. Items must be unworn.",
+    "disclosureMethod": "Printed on receipt and posted at register.",
+    "customerAcknowledgment": "Receipt provided at point of sale."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "source": "Fashion Outlet — 3DS Authentication Provider",
+  "dataType": "3D Secure Authentication Record",
+  "caseReference": "CASE-36",
+  "records": [
+    {
+      "transactionId": "TXN-904712821",
+      "threeDSVersion": "2.2.0",
+      "authenticationStatus": "Authenticated",
+      "eci": "05",
+      "cavv": "CAVV3690471282",
+      "dsTransactionId": "DS-904712821",
+      "challengeRequired": false,
+      "challengeCompleted": false,
+      "cardholderName": "Sarah Chen",
+      "merchantName": "Fashion Outlet",
+      "amount": 210.5,
+      "currency": "USD",
+      "timestamp": "2026-01-20T14:30:00Z"
+    }
+  ]
+}

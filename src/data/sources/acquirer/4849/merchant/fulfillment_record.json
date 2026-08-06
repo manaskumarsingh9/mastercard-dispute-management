@@ -1,0 +1,14 @@
+{
+  "source": "SlimFit Wellness — Fulfillment",
+  "dataType": "Fulfillment & Delivery Record",
+  "reasonCode": "4849",
+  "reasonCodeDescription": "Questionable Merchant Activity",
+  "fulfillmentRecord": {
+    "type": "Physical Shipment",
+    "status": "Shipped to address on file (does not match cardholder)",
+    "method": "Standard USPS",
+    "timing": "[3-5 business days after purchase]",
+    "confirmed": false,
+    "notes": "Shipped to the address provided during checkout, which does not match the cardholder's billing address. Delivery confirmation is not available."
+  }
+}

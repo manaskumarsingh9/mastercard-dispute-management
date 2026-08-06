@@ -1,0 +1,53 @@
+{
+  "source": "Issuing Bank — Transaction Processing",
+  "dataType": "Issuer Transaction Record",
+  "caseReference": "CASE-25",
+  "authorization": {
+    "authorizationCode": "A7Z1P3",
+    "authorizationDate": "2026-01-15T10:30:15Z",
+    "responseCode": "Approved",
+    "amount": 8,
+    "currency": "USD",
+    "merchantName": "Payment Gateway",
+    "merchantCategoryCode": "7372 - Computer Programming, Data Processing, Integrated Systems Design",
+    "terminalId": "WEB-ECOM001",
+    "posEntryMode": "81 - Electronic Commerce",
+    "cardNotPresent": true,
+    "avsResult": {
+      "code": "X",
+      "description": "Exact match, 9-digit ZIP"
+    },
+    "cvvResult": {
+      "code": "M",
+      "description": "Match"
+    },
+    "acquirerReferenceNumber": "91032462590400512365360",
+    "merchantId": "009403546917"
+  },
+  "posting": {
+    "postingDate": "2026-01-16",
+    "settledAmount": 8,
+    "settlementDate": "2026-01-17",
+    "batchNumber": "B123456789",
+    "interchangeFee": 0.12,
+    "networkProcessingFee": 0.02,
+    "switchSerialNumber": "900670243",
+    "auditControlNumber": "923070879869776"
+  },
+  "cardholderAccount": {
+    "accountType": "Credit Card",
+    "cardProduct": "World Elite Mastercard",
+    "accountStanding": "Good",
+    "previousChargebacks": 0,
+    "accountAge": "5 years 3 months",
+    "maskedPAN": "912343****4946",
+    "issuerBIN": "945046"
+  },
+  "riskFlags": {
+    "velocityCheck": "Passed",
+    "geolocationMismatch": "No Mismatch",
+    "unusualAmount": "No",
+    "firstTimeAtMerchant": false,
+    "deviceTrustScore": "High"
+  }
+}

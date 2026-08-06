@@ -1,0 +1,25 @@
+{
+  "source": "Luxury Goods Ltd — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "caseReference": "CASE-26",
+  "records": [
+    {
+      "transactionId": "TXN-953344667",
+      "authorizationCode": "AUTH305894",
+      "requestTimestamp": "2026-01-15T14:30:00Z",
+      "responseTimestamp": "2026-01-15T14:30:02.000Z",
+      "amount": 1250,
+      "currency": "USD",
+      "cardLastFour": "8380",
+      "cardholderName": "Sarah Chen",
+      "entryMode": "Ecommerce",
+      "responseCode": "00",
+      "responseMessage": "Approved",
+      "merchantId": "009403037985",
+      "merchantName": "Luxury Goods Ltd",
+      "terminalId": "ECOM-26",
+      "acquirerBIN": "009222",
+      "issuerBIN": "941745"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "source": "AudioPeak Electronics — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4853",
+  "reasonCodeDescription": "Goods/Services Not as Described or Defective",
+  "settlementRecord": {
+    "notes": "Settled for $199.99. Product delivered and used by the cardholder for 18 days before complaint. Product specifications are accurately disclosed on the product page."
+  }
+}

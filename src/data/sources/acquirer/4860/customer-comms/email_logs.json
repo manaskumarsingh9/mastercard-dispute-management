@@ -1,0 +1,71 @@
+{
+  "source": "StrideFit Running — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4860",
+  "reasonCodeDescription": "Credit Not Processed",
+  "communications": [
+    {
+      "type": "Order Confirmation",
+      "dir": "merchant_to_customer",
+      "timing": "Immediately after purchase",
+      "subject": "StrideFit Running — Order #SF-7723",
+      "body": "Your CloudRunner Pro Running Shoes (Size 10, Black/Red) are confirmed! Total: $134.95. Free returns within 30 days — just use the return label included in your package."
+    },
+    {
+      "type": "Delivery Confirmation",
+      "dir": "merchant_to_customer",
+      "timing": "[4 days after purchase]",
+      "subject": "Your StrideFit Order Has Been Delivered — #SF-7723",
+      "body": "Your shoes have been delivered! Try them on and if they don't fit, use the included prepaid return label for a free return within 30 days."
+    },
+    {
+      "type": "Return Request",
+      "dir": "customer_to_merchant",
+      "timing": "[10 days after purchase]",
+      "subject": "Return request — Order #SF-7723 — wrong size",
+      "body": "The shoes are a bit too narrow. I'd like to return them for a full refund. I'll use the included return label."
+    },
+    {
+      "type": "Return Acknowledged",
+      "dir": "merchant_to_customer",
+      "timing": "[10 days after purchase]",
+      "subject": "RE: Return request — #SF-7723",
+      "body": "No problem! Please ship the shoes back using the prepaid label. Once we receive them, we'll process your full refund of $134.95 within 5-7 business days."
+    },
+    {
+      "type": "Return Received & Refund Promise",
+      "dir": "merchant_to_customer",
+      "timing": "[15 days after purchase]",
+      "subject": "StrideFit — Return Received, Refund Processing — #SF-7723",
+      "body": "We've received your returned CloudRunner Pro shoes in good condition. Your full refund of $134.95 will be credited to your original payment method within 5-7 business days. Thank you!"
+    },
+    {
+      "type": "Customer Follow-up",
+      "dir": "customer_to_merchant",
+      "timing": "[30 days after purchase]",
+      "subject": "Where is my refund? Order #SF-7723",
+      "body": "It's been 2 weeks since you said you received my return and would refund me. I still don't see the $134.95 credit on my statement. When will this be processed?"
+    },
+    {
+      "type": "Merchant Response",
+      "dir": "merchant_to_customer",
+      "timing": "[31 days after purchase]",
+      "subject": "RE: Where is my refund?",
+      "body": "We apologize for the delay. We're experiencing a technical issue with our refund processing system. Your refund is in the queue and should appear within 5-7 additional business days."
+    },
+    {
+      "type": "Customer Final Follow-up",
+      "dir": "customer_to_merchant",
+      "timing": "[45 days after purchase]",
+      "subject": "STILL no refund — Order #SF-7723",
+      "body": "It has now been 30 days since you said my refund was processing. I have not received the $134.95 credit. Please process this immediately."
+    },
+    {
+      "type": "No Response",
+      "dir": "system_note",
+      "timing": "[45+ days after purchase]",
+      "subject": "No merchant response",
+      "body": "The merchant did not respond to the cardholder's final follow-up."
+    }
+  ]
+}

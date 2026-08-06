@@ -1,0 +1,36 @@
+{
+  "source": "Digital Goods LLC — Order Management System",
+  "dataType": "Order Details",
+  "caseReference": "CASE-20",
+  "records": [
+    {
+      "orderId": "ORD-000020",
+      "transactionId": "TXN-983841698",
+      "orderDate": "2026-02-10T14:30:00Z",
+      "orderStatus": "Completed",
+      "amount": 34.99,
+      "currency": "USD",
+      "items": [
+        {
+          "name": "Software License",
+          "quantity": 1,
+          "unitPrice": 34.99,
+          "sku": "SKU-DG-20"
+        }
+      ],
+      "billingDescriptor": "DIGITAL GOODS LLC*ORD-000020",
+      "billingAddress": {
+        "name": "Emily R. Chen",
+        "street": "240 Oak St",
+        "city": "New York",
+        "state": "NY",
+        "zip": "10001",
+        "country": "US"
+      },
+      "shippingAddress": null,
+      "ipAddress": "92.160.140.5",
+      "customerEmail": "emily.chen@email.com",
+      "customerPhone": "+12002222220"
+    }
+  ]
+}

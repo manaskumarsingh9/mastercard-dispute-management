@@ -1,0 +1,23 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4854",
+  "reasonCodeDescription": "Cardholder Dispute — Not Elsewhere Classified",
+  "chargebackFiling": {
+    "reasonCode": "4854",
+    "reasonCodeDescription": "Cardholder Dispute — Not Elsewhere Classified",
+    "supportingDocuments": [
+      {
+        "type": "Cardholder Dispute Form",
+        "desc": "Statement that the course was poor quality and misrepresented."
+      }
+    ],
+    "issuerCommentary": "Filing under 4854. The cardholder is dissatisfied with an online course they purchased. The dispute does not fit other reason code categories.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI_07",
+    "posEntryMode": "81"
+  }
+}

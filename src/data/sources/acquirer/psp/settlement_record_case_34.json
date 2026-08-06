@@ -1,0 +1,19 @@
+{
+  "source": "Jewelry Online — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "caseReference": "CASE-34",
+  "records": [
+    {
+      "transactionId": "TXN-921598787",
+      "settlementDate": "2026-01-14",
+      "settlementAmount": 3500,
+      "settlementCurrency": "USD",
+      "merchantId": "009403221909",
+      "merchantName": "Jewelry Online",
+      "batchId": "BATCH-34-001",
+      "status": "Settled",
+      "cardholderName": "Jessica Thompson",
+      "cardLastFour": "5277"
+    }
+  ]
+}

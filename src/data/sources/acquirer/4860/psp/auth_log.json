@@ -1,0 +1,14 @@
+{
+  "source": "StrideFit Running — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4860",
+  "reasonCodeDescription": "Credit Not Processed",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Ecommerce",
+    "threeDSecure": null,
+    "notes": "Original purchase authorized normally. The return was received and a refund was initiated in the merchant's system, but a processing error prevented the credit from being transmitted to the payment processor."
+  }
+}

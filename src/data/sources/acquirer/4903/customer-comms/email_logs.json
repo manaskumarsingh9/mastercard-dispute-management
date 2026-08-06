@@ -1,0 +1,15 @@
+{
+  "source": "TimePiece Gallery — Authorized Dealer — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4903",
+  "reasonCodeDescription": "Mastercard Compliance — Exceeds Limit",
+  "communications": [
+    {
+      "type": "Purchase Receipt & Warranty",
+      "dir": "merchant_to_customer",
+      "timing": "After purchase",
+      "subject": "TimePiece Gallery — Purchase Receipt & Warranty Registration",
+      "body": "Congratulations on your Swiss Automatic Chronograph! Total: $3,200.00. Your 2-year manufacturer's warranty is registered. Certificate of authenticity included with your purchase."
+    }
+  ]
+}

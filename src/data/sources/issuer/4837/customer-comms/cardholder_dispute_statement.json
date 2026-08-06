@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4837",
+  "reasonCodeDescription": "No Cardholder Authorization (Fraud)",
+  "statement": {
+    "disputeReason": "4837 - No Cardholder Authorization (Fraud)",
+    "detailedDescription": "The cardholder denies authorizing or participating in a $327.00 purchase from 'LUXEVISION ONLINE' for designer sunglasses. The cardholder's card was in their possession at all times. They have never heard of this merchant. The IP address used for the transaction is in a different country from the cardholder's residence, and the device fingerprint does not match any known device.",
+    "contactedMerchant": false,
+    "merchantResponseSummary": "N/A — the cardholder has no relationship with this merchant and did not visit their website.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Full reversal as a fraudulent unauthorized transaction.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium-High — evidence supports cardholder's position.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4837 (No Cardholder Authorization (Fraud)).",
+    "priority": "Standard"
+  }
+}

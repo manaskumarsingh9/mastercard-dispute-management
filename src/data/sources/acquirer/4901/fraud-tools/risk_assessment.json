@@ -1,0 +1,20 @@
+{
+  "source": "BargainTech Electronics — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4901",
+  "reasonCodeDescription": "Mastercard Compliance — Violation of Standards",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "N/A — card-present, non-compliant terminal",
+      "trust": "N/A",
+      "match": false
+    },
+    "ipAnalysis": {
+      "level": "N/A",
+      "proxy": false,
+      "geoMatch": true,
+      "notes": "Card-present."
+    },
+    "overallRiskScore": "Medium-High — non-compliant terminal and lapsed PCI certification"
+  }
+}

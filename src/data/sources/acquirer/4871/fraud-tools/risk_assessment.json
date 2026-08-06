@@ -1,0 +1,20 @@
+{
+  "source": "FreshMart Supermarket — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4871",
+  "reasonCodeDescription": "Chip/PIN Liability Shift — Lost/Stolen/NRI",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "N/A — chip-enabled POS terminal",
+      "trust": "N/A",
+      "match": true
+    },
+    "ipAnalysis": {
+      "level": "N/A",
+      "proxy": false,
+      "geoMatch": true,
+      "notes": "Card-present at store near cardholder's home."
+    },
+    "overallRiskScore": "Low from acquirer perspective — chip+PIN verified"
+  }
+}

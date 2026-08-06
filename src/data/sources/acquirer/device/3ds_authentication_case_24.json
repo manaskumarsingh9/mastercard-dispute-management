@@ -1,0 +1,22 @@
+{
+  "source": "SaaS Platform — 3DS Authentication Provider",
+  "dataType": "3D Secure Authentication Record",
+  "caseReference": "CASE-24",
+  "records": [
+    {
+      "transactionId": "TXN-940584054",
+      "threeDSVersion": "2.2.0",
+      "authenticationStatus": "Authenticated",
+      "eci": "05",
+      "cavv": "CAVV2494058405",
+      "dsTransactionId": "DS-940584054",
+      "challengeRequired": false,
+      "challengeCompleted": false,
+      "cardholderName": "Eleanor Vance",
+      "merchantName": "SaaS Platform",
+      "amount": 8,
+      "currency": "USD",
+      "timestamp": "2026-01-15T14:30:00Z"
+    }
+  ]
+}

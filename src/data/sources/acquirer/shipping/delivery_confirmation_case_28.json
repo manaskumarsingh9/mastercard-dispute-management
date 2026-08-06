@@ -1,0 +1,26 @@
+{
+  "source": "Online Marketplace — Delivery Service",
+  "dataType": "Delivery Confirmation",
+  "caseReference": "CASE-28",
+  "records": [
+    {
+      "orderId": "ORD-000028",
+      "transactionId": "TXN-982137321",
+      "deliveryDate": "2026-01-25T14:22:00Z",
+      "deliveryStatus": "Delivered",
+      "recipientName": "Sarah J. Miller",
+      "signatureOnFile": true,
+      "deliveryAddress": {
+        "name": "Sarah J. Miller",
+        "street": "296 Spruce Pl",
+        "city": "Dallas",
+        "state": "TX",
+        "zip": "75201",
+        "country": "US"
+      },
+      "photoProof": true,
+      "deliveryNotes": "Left with resident, signature obtained",
+      "carrier": "UPS"
+    }
+  ]
+}

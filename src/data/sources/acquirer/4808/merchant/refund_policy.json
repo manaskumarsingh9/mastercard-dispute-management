@@ -1,0 +1,12 @@
+{
+  "source": "RenewTech Store — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4808",
+  "reasonCodeDescription": "Authorization-Related Chargeback",
+  "policy": {
+    "refundWindow": "30 days from delivery date",
+    "policy": "Full refund within 30 days if item returned in original condition. Return label provided.",
+    "disclosureMethod": "Displayed at checkout and in order confirmation email.",
+    "customerAcknowledgment": "Customer agreed to terms during checkout."
+  }
+}

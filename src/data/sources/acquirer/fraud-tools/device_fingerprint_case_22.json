@@ -1,0 +1,29 @@
+{
+  "source": "FreeTrial Corp — Fraud Detection Service",
+  "dataType": "Device Fingerprint Analysis",
+  "caseReference": "CASE-22",
+  "records": [
+    {
+      "transactionId": "TXN-927809341",
+      "sessionId": "SES-22-927809",
+      "ipAddress": "94.166.154.31",
+      "deviceType": "Desktop",
+      "browser": "Chrome 121.0",
+      "os": "Windows 11",
+      "screenResolution": "1920x1080",
+      "vpnDetected": false,
+      "proxyDetected": false,
+      "torDetected": false,
+      "riskScore": 10,
+      "riskLevel": "Low",
+      "knownDevice": true,
+      "previousTransactions": 5,
+      "geolocation": {
+        "country": "US",
+        "region": "IL",
+        "city": "Chicago"
+      },
+      "cardholderName": "Eleanor Vance"
+    }
+  ]
+}

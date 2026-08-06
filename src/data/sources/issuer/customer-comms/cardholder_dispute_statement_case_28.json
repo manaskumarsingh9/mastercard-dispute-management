@@ -1,0 +1,26 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "caseReference": "CASE-28",
+  "statement": {
+    "cardholderName": "Sarah J. Miller",
+    "dateSubmitted": "2026-02-10",
+    "disputeReason": "Goods or Services Not Provided",
+    "detailedDescription": "On January 20, 2026, I placed an order for a 'Custom Hand-Painted Ceramic Mug' through a seller named 'ArtisanCrafts' on the 'Online Marketplace' platform. The total amount charged to my Mastercard was 89.99 USD. The product listing clearly stated an estimated delivery window of 10-14 business days from the date of purchase. I understood this to mean the item should have arrived by February 5, 2026, at the latest.\n\nAs of today, February 10, 2026, I have not received the mug. There was no tracking information provided by the seller after the purchase, and my order status on the marketplace platform remains 'Pending Shipment'. I am very concerned as this was intended as a gift, and the seller seems to have disappeared.\n\nI have checked my mail, spoken with family members at my address, and confirmed there has been no delivery attempt. The item was simply never shipped or provided, despite my payment being processed.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "I attempted to contact the seller, 'ArtisanCrafts,' directly through the 'Online Marketplace' messaging system on two occasions: January 30, 2026, and February 5, 2026. On January 30, I received an automated reply stating, 'Seller will respond within 48 hours.' However, no personalized or substantive response followed. My second message on February 5 received no reply at all. Furthermore, when I tried to visit the seller's storefront on the 'Online Marketplace' today, it shows 'No items for sale' and appears to be inactive. I have no other means of reaching them.",
+    "previousDisputeHistory": "None with this merchant or for a similar reason.",
+    "requestedResolution": "I request a full credit of 89.99 USD to my account for the goods that were never provided.",
+    "cardholderDeclaration": "I, Sarah J. Miller, declare that the information provided in this statement is true and accurate to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Low risk, cardholder's statement is detailed and consistent with a legitimate 'Goods Not Provided' claim. Merchant appears unresponsive/inactive.",
+    "recommendedAction": "Initiate chargeback under Reason Code 4855 (Goods or Services Not Provided). Prepare documentation for representment if necessary, referencing cardholder's attempts to contact merchant and lack of product delivery.",
+    "caseOfficer": "Daniel Lee",
+    "priority": "Medium",
+    "issuerCaseId": "94151083",
+    "issuerBIN": "977452"
+  },
+  "claimReference": "900002102898",
+  "chargebackReferenceNumber": "9900118644"
+}

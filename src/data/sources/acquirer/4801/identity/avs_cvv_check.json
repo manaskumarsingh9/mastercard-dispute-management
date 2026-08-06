@@ -1,0 +1,16 @@
+{
+  "source": "TechGear Online — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4801",
+  "reasonCodeDescription": "Requested Transaction Data Not Received",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "U",
+      "description": "Address unavailable — records not retained"
+    },
+    "cvv": {
+      "responseCode": "P",
+      "description": "Not processed or records unavailable"
+    }
+  }
+}

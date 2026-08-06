@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4853",
+  "reasonCodeDescription": "Goods/Services Not as Described or Defective",
+  "statement": {
+    "disputeReason": "4853 - Goods/Services Not as Described or Defective",
+    "detailedDescription": "The cardholder purchased noise-cancelling wireless headphones from 'AUDIOPEAK ELECTRONICS' for $199.99. The cardholder states the headphones have significantly weaker noise cancellation than advertised and the battery life is about 12 hours instead of the advertised 30 hours. The cardholder considers the product materially different from the description.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "The cardholder contacted AudioPeak [18 days after receiving the headphones]. The merchant offered a return but the cardholder had already discarded the packaging. The merchant's return policy requires original packaging.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Full reversal for goods not as described — product does not match advertised specifications.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium — merchant may have valid defense documentation.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4853 (Goods/Services Not as Described or Defective).",
+    "priority": "Standard"
+  }
+}

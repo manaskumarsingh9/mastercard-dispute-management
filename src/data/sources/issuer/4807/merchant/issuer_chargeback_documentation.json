@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4807",
+  "reasonCodeDescription": "Warning Bulletin File",
+  "chargebackFiling": {
+    "reasonCode": "4807",
+    "reasonCodeDescription": "Warning Bulletin File",
+    "supportingDocuments": [
+      {
+        "type": "Warning Bulletin Listing Record",
+        "desc": "Confirmation card was listed on Warning Bulletin [3 days before the transaction]."
+      },
+      {
+        "type": "Stolen Card Report",
+        "desc": "Police report and bank notification of stolen card."
+      }
+    ],
+    "issuerCommentary": "Filing under 4807. Card was on the Mastercard Warning Bulletin at the time of this transaction. The merchant was obligated to check the bulletin and decline the card.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": true,
+    "ecommerceIndicator": null,
+    "posEntryMode": "90"
+  }
+}

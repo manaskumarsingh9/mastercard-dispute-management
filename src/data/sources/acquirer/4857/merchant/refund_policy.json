@@ -1,0 +1,12 @@
+{
+  "source": "NutriDirect Phone Sales — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4857",
+  "reasonCodeDescription": "Card-Activated Telephone Transaction",
+  "policy": {
+    "refundWindow": "30 days from shipment",
+    "policy": "Full refund within 30 days if product returned unopened.",
+    "disclosureMethod": "Stated verbally during phone call (not recorded).",
+    "customerAcknowledgment": "Verbal acknowledgment only — no written record."
+  }
+}

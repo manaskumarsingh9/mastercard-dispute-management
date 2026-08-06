@@ -1,0 +1,14 @@
+{
+  "source": "FitPro Equipment Co. — Fulfillment",
+  "dataType": "Fulfillment & Delivery Record",
+  "reasonCode": "4850",
+  "reasonCodeDescription": "Installment Billing Dispute",
+  "fulfillmentRecord": {
+    "type": "Physical Delivery",
+    "status": "Delivered and set up [4 months ago]",
+    "method": "White-glove delivery and setup",
+    "timing": "[8 days after order]",
+    "confirmed": true,
+    "notes": "Equipment delivered, assembled, and inspected by the customer. No issues reported at delivery. Customer has been using the equipment for 4 months."
+  }
+}

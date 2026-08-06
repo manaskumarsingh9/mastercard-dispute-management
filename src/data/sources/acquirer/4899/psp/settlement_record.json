@@ -1,0 +1,9 @@
+{
+  "source": "ProAccess Business Tools — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4899",
+  "reasonCodeDescription": "Mastercard Dispute Resolution — Violation of Rules",
+  "settlementRecord": {
+    "notes": "Settled for $299.00. The merchant acknowledges the pre-renewal notification was not sent, which is a violation of Mastercard's recurring transaction rules."
+  }
+}

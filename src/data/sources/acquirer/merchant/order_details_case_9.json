@@ -1,0 +1,13 @@
+{
+  "source": "Merchant Order Management System",
+  "dataType": "Order Details & Fulfillment",
+  "orderId": "ORD-2026-EH-44821",
+  "orderDate": "2026-03-18",
+  "items": [{"name": "4K Monitor Display", "sku": "MON-4K-27PRO", "quantity": 1, "price": 567.50}],
+  "totalAmount": 567.50,
+  "currency": "USD",
+  "fulfillmentStatus": "DELIVERED",
+  "shippedDate": "2026-03-20",
+  "carrier": "FedEx",
+  "trackingNumber": "789456123654"
+}

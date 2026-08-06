@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4831",
+  "reasonCodeDescription": "Transaction Amount Differs",
+  "chargebackFiling": {
+    "reasonCode": "4831",
+    "reasonCodeDescription": "Transaction Amount Differs",
+    "supportingDocuments": [
+      {
+        "type": "Cardholder Dispute Form",
+        "desc": "Statement indicating expected amount was $85.00."
+      },
+      {
+        "type": "Account Statement",
+        "desc": "Showing posted amount of $102.00."
+      }
+    ],
+    "issuerCommentary": "Filing under 4831. Posted amount of $102.00 differs from the cardholder's expected amount of $85.00.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": true,
+    "ecommerceIndicator": null,
+    "posEntryMode": "05"
+  }
+}

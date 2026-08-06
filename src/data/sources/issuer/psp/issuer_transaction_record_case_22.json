@@ -1,0 +1,53 @@
+{
+  "source": "Issuing Bank — Transaction Processing",
+  "dataType": "Issuer Transaction Record",
+  "caseReference": "CASE-22",
+  "authorization": {
+    "authorizationCode": "098765",
+    "authorizationDate": "2026-01-15T10:30:00Z",
+    "responseCode": "Approved",
+    "amount": 0,
+    "currency": "USD",
+    "merchantName": "FreeTrial Corp",
+    "merchantCategoryCode": "7399",
+    "terminalId": "WEBTRM001",
+    "posEntryMode": "81",
+    "cardNotPresent": true,
+    "avsResult": {
+      "code": "Y",
+      "description": "Street address and 5-digit ZIP match"
+    },
+    "cvvResult": {
+      "code": "M",
+      "description": "CVV Match"
+    },
+    "acquirerReferenceNumber": "91032462590458083956472",
+    "merchantId": "009403638252"
+  },
+  "posting": {
+    "postingDate": "2026-01-17T09:00:00Z",
+    "settledAmount": 0,
+    "settlementDate": "2026-01-17T11:00:00Z",
+    "batchNumber": "BCH20260117A",
+    "interchangeFee": 0,
+    "networkProcessingFee": 0,
+    "switchSerialNumber": "944375119",
+    "auditControlNumber": "923956664626937"
+  },
+  "cardholderAccount": {
+    "accountType": "Credit",
+    "cardProduct": "World Elite Mastercard",
+    "accountStanding": "Good",
+    "previousChargebacks": 0,
+    "accountAge": "3 years",
+    "maskedPAN": "912343****1739",
+    "issuerBIN": "916334"
+  },
+  "riskFlags": {
+    "velocityCheck": "Normal",
+    "geolocationMismatch": "No Mismatch",
+    "unusualAmount": "No",
+    "firstTimeAtMerchant": true,
+    "deviceTrustScore": "High"
+  }
+}

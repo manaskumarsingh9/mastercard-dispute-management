@@ -1,0 +1,14 @@
+{
+  "source": "QuickFuel Station #247 — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4807",
+  "reasonCodeDescription": "Warning Bulletin File",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Magnetic Stripe — Pay at Pump",
+    "threeDSecure": null,
+    "notes": "Authorization requested and approved by issuer's system. The pump terminal relies solely on the electronic authorization response and does not cross-reference the Warning Bulletin for automated transactions."
+  }
+}

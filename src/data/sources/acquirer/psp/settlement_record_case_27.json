@@ -1,0 +1,19 @@
+{
+  "source": "Electronics Hub — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "caseReference": "CASE-27",
+  "records": [
+    {
+      "transactionId": "TXN-972850548",
+      "settlementDate": "2026-02-12",
+      "settlementAmount": 567.5,
+      "settlementCurrency": "USD",
+      "merchantId": "009403041036",
+      "merchantName": "Electronics Hub",
+      "batchId": "BATCH-27-001",
+      "status": "Settled",
+      "cardholderName": "Eleanor Vance",
+      "cardLastFour": "2141"
+    }
+  ]
+}

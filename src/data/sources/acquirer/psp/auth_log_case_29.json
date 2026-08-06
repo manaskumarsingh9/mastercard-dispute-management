@@ -1,0 +1,25 @@
+{
+  "source": "Retail Store — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "caseReference": "CASE-29",
+  "records": [
+    {
+      "transactionId": "TXN-919016207",
+      "authorizationCode": "AUTH329651",
+      "requestTimestamp": "2026-01-30T14:30:00Z",
+      "responseTimestamp": "2026-01-30T14:30:02.000Z",
+      "amount": 320,
+      "currency": "USD",
+      "cardLastFour": "7946",
+      "cardholderName": "Ms. Eleanor Vance",
+      "entryMode": "Chip",
+      "responseCode": "00",
+      "responseMessage": "Approved",
+      "merchantId": "009403304411",
+      "merchantName": "Retail Store",
+      "terminalId": "TERM-29",
+      "acquirerBIN": "009222",
+      "issuerBIN": "910204"
+    }
+  ]
+}

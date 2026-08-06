@@ -1,0 +1,15 @@
+{
+  "source": "Bistro on Main — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4802",
+  "reasonCodeDescription": "Requested Item Not Received",
+  "communications": [
+    {
+      "type": "No Communications on File",
+      "dir": "system_note",
+      "timing": "N/A",
+      "subject": "N/A",
+      "body": "Card-present restaurant transaction. No email exchanged. The cardholder called [5 days after dining] and the manager verbally confirmed the transaction but could not locate the signed receipt. The receipt filing system was disrupted during a recent staff transition."
+    }
+  ]
+}

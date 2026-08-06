@@ -1,0 +1,14 @@
+{
+  "source": "CulinaryEdge Pro — Fulfillment",
+  "dataType": "Fulfillment & Delivery Record",
+  "reasonCode": "4809",
+  "reasonCodeDescription": "Non-Receipt of Requested Information",
+  "fulfillmentRecord": {
+    "type": "Physical Shipment",
+    "status": "Delivered — signed for",
+    "method": "FedEx Ground — signature required",
+    "timing": "[5 days after purchase]",
+    "confirmed": true,
+    "notes": "Package delivered and signed for. No delivery exceptions."
+  }
+}

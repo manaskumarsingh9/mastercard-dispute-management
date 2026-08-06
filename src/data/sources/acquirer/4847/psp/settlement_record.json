@@ -1,0 +1,9 @@
+{
+  "source": "ElectroWorld Megastore — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4847",
+  "reasonCodeDescription": "Exceeds Floor Limit — Not Authorized and Fraud",
+  "settlementRecord": {
+    "notes": "Settled for $1,250.00 without prior authorization. The merchant's terminal was offline and the transaction was batched for later submission."
+  }
+}

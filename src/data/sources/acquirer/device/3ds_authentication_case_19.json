@@ -1,0 +1,31 @@
+{
+  "source": "3D Secure Provider (Mastercard SecureCode)",
+  "dataType": "3D Secure Authentication",
+  "retrievedAt": "2026-02-10T13:31:00Z",
+  "provider": "Mastercard Identity Check",
+  "caseReference": "CASE-19",
+  "records": [
+    {
+      "transactionId": "TXN-001234",
+      "threeDSVersion": "2.1.0",
+      "authenticationStatus": "Y",
+      "authenticationValue": "AUTH1741379376",
+      "eci": "02",
+      "dsTransId": "DS-532511309",
+      "challengeCompleted": true,
+      "challengeType": "OTP",
+      "liabilityShift": true,
+      "merchantName": "TechStore Pro",
+      "amount": 34.99,
+      "currency": "USD",
+      "riskAnalysis": {
+        "riskScore": 21,
+        "riskLevel": "Low",
+        "recommendation": "Proceed"
+      },
+      "protocol": "Mastercard Identity Check",
+      "scaCompliant": true,
+      "emvThreeDSVersion": "2.1.0"
+    }
+  ]
+}

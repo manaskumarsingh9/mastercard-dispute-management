@@ -1,0 +1,43 @@
+{
+  "source": "Electronics Hub — Order Management System",
+  "dataType": "Order Details",
+  "caseReference": "CASE-27",
+  "records": [
+    {
+      "orderId": "ORD-000027",
+      "transactionId": "TXN-972850548",
+      "orderDate": "2026-02-10T14:30:00Z",
+      "orderStatus": "Fulfilled",
+      "amount": 567.5,
+      "currency": "USD",
+      "items": [
+        {
+          "name": "Noise-Cancelling Headphones",
+          "quantity": 1,
+          "unitPrice": 567.5,
+          "sku": "SKU-EH-27"
+        }
+      ],
+      "billingDescriptor": "ELECTRONICS HUB*ORD-000027",
+      "billingAddress": {
+        "name": "Eleanor Vance",
+        "street": "289 Ash Blvd",
+        "city": "San Diego",
+        "state": "CA",
+        "zip": "92101",
+        "country": "US"
+      },
+      "shippingAddress": {
+        "name": "Eleanor Vance",
+        "street": "289 Ash Blvd",
+        "city": "San Diego",
+        "state": "CA",
+        "zip": "92101",
+        "country": "US"
+      },
+      "ipAddress": "99.181.189.96",
+      "customerEmail": "eleanor.vance@email.com",
+      "customerPhone": "+12002999997"
+    }
+  ]
+}

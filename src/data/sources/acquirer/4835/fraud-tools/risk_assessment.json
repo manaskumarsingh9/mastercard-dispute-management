@@ -1,0 +1,20 @@
+{
+  "source": "Brilliance Jewelers — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4835",
+  "reasonCodeDescription": "Card Not Valid or Expired",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "N/A — card-present POS",
+      "trust": "N/A",
+      "match": false
+    },
+    "ipAnalysis": {
+      "level": "N/A",
+      "proxy": false,
+      "geoMatch": false,
+      "notes": "Card-present."
+    },
+    "overallRiskScore": "Medium-High — expired card accepted via magnetic stripe"
+  }
+}

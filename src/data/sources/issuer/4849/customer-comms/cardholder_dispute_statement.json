@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4849",
+  "reasonCodeDescription": "Questionable Merchant Activity",
+  "statement": {
+    "disputeReason": "4849 - Questionable Merchant Activity",
+    "detailedDescription": "The issuing bank has received complaints from multiple cardholders about unauthorized charges from 'SLIMFIT WELLNESS'. This cardholder reports a $89.99 charge they did not authorize. The cardholder never visited this merchant's website or ordered any supplements. A pattern of unauthorized transactions from this merchant has been identified across several issuing banks.",
+    "contactedMerchant": false,
+    "merchantResponseSummary": "N/A — the cardholder has no knowledge of this merchant. Other cardholders report similar unauthorized charges.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Full reversal due to questionable merchant activity — pattern of unauthorized charges identified.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium-High — evidence supports cardholder's position.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4849 (Questionable Merchant Activity).",
+    "priority": "Standard"
+  }
+}

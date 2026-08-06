@@ -1,0 +1,43 @@
+{
+  "source": "Retail Store — Order Management System",
+  "dataType": "Order Details",
+  "caseReference": "CASE-29",
+  "records": [
+    {
+      "orderId": "ORD-000029",
+      "transactionId": "TXN-919016207",
+      "orderDate": "2026-01-30T14:30:00Z",
+      "orderStatus": "Fulfilled",
+      "amount": 320,
+      "currency": "USD",
+      "items": [
+        {
+          "name": "In-Store Purchase",
+          "quantity": 1,
+          "unitPrice": 320,
+          "sku": "SKU-RS-29"
+        }
+      ],
+      "billingDescriptor": "RETAIL STORE*ORD-000029",
+      "billingAddress": {
+        "name": "Ms. Eleanor Vance",
+        "street": "303 Cherry Ln",
+        "city": "San Jose",
+        "state": "CA",
+        "zip": "95101",
+        "country": "US"
+      },
+      "shippingAddress": {
+        "name": "Ms. Eleanor Vance",
+        "street": "303 Cherry Ln",
+        "city": "San Jose",
+        "state": "CA",
+        "zip": "95101",
+        "country": "US"
+      },
+      "ipAddress": null,
+      "customerEmail": "eleanor.vance@email.com",
+      "customerPhone": "+12003222219"
+    }
+  ]
+}

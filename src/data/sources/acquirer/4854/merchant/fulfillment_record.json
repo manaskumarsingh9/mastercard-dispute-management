@@ -1,0 +1,14 @@
+{
+  "source": "MasterLens Academy — Fulfillment",
+  "dataType": "Fulfillment & Delivery Record",
+  "reasonCode": "4854",
+  "reasonCodeDescription": "Cardholder Dispute — Not Elsewhere Classified",
+  "fulfillmentRecord": {
+    "type": "Digital Course",
+    "status": "Delivered — 8 of 12 modules completed",
+    "method": "Online learning platform",
+    "timing": "Immediate access after purchase",
+    "confirmed": true,
+    "notes": "Cardholder logged in [14 times over 12 days], completed 8 modules, submitted 4 assignments, and downloaded 6 resource packs. Active usage well beyond the refund window."
+  }
+}

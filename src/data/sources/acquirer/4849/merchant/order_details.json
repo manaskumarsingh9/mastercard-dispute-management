@@ -1,0 +1,19 @@
+{
+  "source": "SlimFit Wellness — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4849",
+  "reasonCodeDescription": "Questionable Merchant Activity",
+  "orderRecord": {
+    "orderStatus": "Completed — shipped",
+    "items": [
+      {
+        "name": "SlimFit Advanced Weight Loss Formula — 30-day supply",
+        "quantity": 1,
+        "unitPrice": 89.99,
+        "sku": "SF-AWL-30"
+      }
+    ],
+    "shippingAddress": "Address on file does not match cardholder's billing address",
+    "orderNotes": "Order placed through the merchant's website. The merchant maintains all transactions were legitimately processed. A recent security audit was conducted."
+  }
+}

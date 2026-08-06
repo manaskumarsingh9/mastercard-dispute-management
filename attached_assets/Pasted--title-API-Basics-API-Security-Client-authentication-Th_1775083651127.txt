@@ -1,0 +1,122 @@
+---
+title: API Basics
+---
+
+# API Security
+
+## Client authentication
+
+The Alerts for Merchants API is a RESTful API with OAuth security. For all environments, your API requests must have an OAuth 1.0a Authorization Header for authentication.
+
+Generate the OAuth 1.0a Authorization Header using the appropriate Signing Key and Consumer Key. You can implement your own OAuth 1.0a header or use the relevant Mastercard OAuth libraries (available on [GitHub](https://github.com/Mastercard?utf8=%E2%9C%93&q=oauth)). For guidance, see the _README.md_ file included with the libraries.
+
+For detailed information on using OAuth 1.0a with the Alerts for Merchants API and generating Authorization Headers, see [Using OAuth 1.0a to Access Mastercard APIs](https://developer.mastercard.com/platform/documentation/using-oauth-1a-to-access-mastercard-apis).
+
+## Transport encryption
+
+The transport between client applications and Mastercard is secured using [TLS/SSL](https://en.wikipedia.org/wiki/Transport_Layer_Security), which means data are encrypted by default when transmitted across networks.
+
+## Using MTLS to access the Alerts for Merchants API
+
+To use MTLS to access the Alerts for Merchants API, we recommend that your certificates trust Entrust CA. Check with your security administrator to validate that your certificates support Entrust CA. If they do, contact the Ethoca [Product Support Team](mailto:productsupport@ethoca.com) with your host details (endpoint URL) to complete client authentication.
+
+If your certificates don’t support Entrust CA, follow these steps:
+
+### Step 1. Get access to KMP
+
+1.  Sign-up to MC connect via [https://www.mastercardconnect.com/-/sign-up](https://www.mastercardconnect.com/-/sign-up)
+    
+2.  When your account is created, a regular user and a security administrator user are created.
+    
+3.  Go to the MC Connect store and search for **Key Management Portal** and then request access.
+    
+
+If you are having difficulties setting up KMP or have issues with your account, contact [Mastercard Customer Support](mailto:customer_support@mastercard.com).
+
+### Step 2. Create a new request
+
+1.  Log in to the Key Management Portal and select **Start a Certificate Request**.
+    
+    ![Add request payload in Outcomes UI](https://static.developer.mastercard.com/content/ethoca-alerts-for-merchants/documentation/img/sign-in-to-kmp.png)
+    
+2.  On the Certificate Request Form in the **Mastercard Application** dropdown, select **Ethoca Alerts Merchant API**.
+    
+3.  Fill out the rest of the form using these values in each of the dropdowns:
+    
+    *   **Request Type** – Submit Certificate or New Certificate
+        
+        ```
+        Select **Submit Certificate** if you have an existing certificate signed by a trusted CA (Certificate Authority) ready to submit. The certificate should be in x509 format.
+        
+        Select **New Certificate** if you don’t have an existing certificate. You can submit an CSR for Mastercard to sign.
+        ```
+        
+    *   **Environment** – Production
+        
+    *   **Certificate Profile** – Signing – USA – Cloud
+        
+    *   **Mastercard Project Contact Email** – _[haroon.ahmad@mastercard.com](mailto:haroon.ahmad@mastercard.com)_
+        
+        ![Add request payload in Outcomes UI](https://static.developer.mastercard.com/content/ethoca-alerts-for-merchants/documentation/img/fill-out-form.png)
+        
+
+After you’ve created a new request, you can create either a **Submit Certificate** request or a **New Certificate** request depending on the value you entered for **Request Type**.
+
+### Step 3. Create a Submit Certificate request
+
+After you’ve created a new request and filled out the form with the required values, follow these steps to create a **Submit Certificate** request. You must have an existing certificate in x509 format and signed by a trusted Certificate Authority.
+
+1.  Upload your certificate and CA chain files until you see the success message.
+    
+    **Note:** The certificate and CA chain can be uploaded in one file or over multiple files. KMP will detect if an object is missing and inform you of what is left to upload.
+    
+2.  Select **Submit**.
+    
+
+The request status is set to **In Progress**. An email notification is sent to every KMP Security Officer in your company informing them that the request was submitted.
+
+### Step 4. Create a New Certificate request
+
+Select this option if you don’t have an existing certificate and are submitting a CSR for Mastercard to sign.
+
+1.  After you’ve filled out the form with the required values, the **DN Requirements** section appears.
+2.  Upload your CSR file generated in compliance with the DN requirements, which can be found on the Support page.
+3.  Select **Next** and review the CSR values to make sure they adhere to the DN Requirements.
+4.  Fill out any remaining fields, if necessary, and then select **Submit**.
+
+The request status is set to **In Progress**. An email notification is sent to every KMP Security Officer of your company informing them that the request was submitted.
+
+# How to Consume the Alerts for Merchants API
+
+Here are a couple different ways you can integrate with the Alerts for Merchants API:
+
+*   Use a generated API client (recommended)
+*   Use a method of your choice
+
+## Generate your own API client
+
+Create customizable API clients from the Alerts for Merchants API specification and let Mastercard open-source client libraries handle the authentication for you. We recommend this approach since it offers the most flexibility.
+
+To do this, follow our [Generating and Configuring a Mastercard API Client](https://developer.mastercard.com/platform/documentation/security-and-authentication/generating-and-configuring-a-mastercard-api-client/) tutorial using the Alerts for Merchants API specification:
+
+*    (13KB)
+
+## Use a method of your choice
+
+Alerts for Merchants API exposes a REST API. You can use the REST/HTTP client of your choice and can still leverage the Mastercard open-source [client libraries](https://developer.mastercard.com/platform/documentation/security-and-authentication/using-oauth-1a-to-access-mastercard-apis/#client-libraries) for signing your requests.
+
+To do this, see the Alerts for Merchants API [REST API Reference](https://developer.mastercard.com/ethoca-alerts-for-merchants/documentation/api-reference/).
+
+# Environments
+
+This table describes the environments that are available for the Alerts for Merchants API:
+
+| Environment | Description |
+| :--- | :--- |
+| Sandbox | Early access environment containing limited-capability mock APIs, intended to help integrate new clients. The Sandbox contains sample static data and returns mock responses for a defined request.  <br>The JSON sample can be used as a reference for sending requests and receiving responses. You can also see our article on [Testing](https://developer.mastercard.com/ethoca-alerts-for-merchants/documentation/testing/) for examples of different types of test cases that you can use in your Sandbox.  <br>  <br>**URL:** [https://sandbox.api.ethocaweb.com/ethoca/alerts/merchant/outcomes](https://sandbox.api.ethocaweb.com/ethoca/alerts/merchant/outcomes) |
+| Production | Full production environment containing the latest production API release. This environment contains actual merchant data.  <br>  <br>**URL:** [https://api.ethocaweb.com/ethoca/alerts/merchant/outcomes](https://api.ethocaweb.com/ethoca/alerts/merchant/outcomes) |
+
+# Next Steps
+
+*   Use our [Tutorials](https://developer.mastercard.com/ethoca-alerts-for-merchants/documentation/tutorials-and-guides/) to quickly connect and start making calls to the Alerts for Merchants API in a sandbox environment.
+*   If you already created a project and have your keys, you can go through the [Reference Application Tutorial](https://developer.mastercard.com/ethoca-alerts-for-merchants/documentation/tutorials-and-guides/reference-app-tutorial) for step-by-step guidance in making API calls to the Alerts for Merchants API service.

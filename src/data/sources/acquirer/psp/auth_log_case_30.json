@@ -1,0 +1,25 @@
+{
+  "source": "Travel Agency — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "caseReference": "CASE-30",
+  "records": [
+    {
+      "transactionId": "TXN-956366942",
+      "authorizationCode": "AUTH337570",
+      "requestTimestamp": "2026-01-15T14:30:00Z",
+      "responseTimestamp": "2026-01-15T14:30:02.000Z",
+      "amount": 2100,
+      "currency": "USD",
+      "cardLastFour": "6435",
+      "cardholderName": "Ms. Eleanor Vance",
+      "entryMode": "Ecommerce",
+      "responseCode": "00",
+      "responseMessage": "Approved",
+      "merchantId": "009403384445",
+      "merchantName": "Travel Agency",
+      "terminalId": "ECOM-30",
+      "acquirerBIN": "009222",
+      "issuerBIN": "948762"
+    }
+  ]
+}

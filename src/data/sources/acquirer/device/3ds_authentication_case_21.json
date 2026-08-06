@@ -1,0 +1,22 @@
+{
+  "source": "Enterprise Solutions — 3DS Authentication Provider",
+  "dataType": "3D Secure Authentication Record",
+  "caseReference": "CASE-21",
+  "records": [
+    {
+      "transactionId": "TXN-980145359",
+      "threeDSVersion": "2.2.0",
+      "authenticationStatus": "Authenticated",
+      "eci": "05",
+      "cavv": "CAVV2198014535",
+      "dsTransactionId": "DS-980145359",
+      "challengeRequired": false,
+      "challengeCompleted": false,
+      "cardholderName": "Eleanor Vance",
+      "merchantName": "Enterprise Solutions",
+      "amount": 24000,
+      "currency": "USD",
+      "timestamp": "2026-01-15T14:30:00Z"
+    }
+  ]
+}

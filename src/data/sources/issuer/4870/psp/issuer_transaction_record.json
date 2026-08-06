@@ -1,0 +1,24 @@
+{
+  "source": "Issuing Bank — Transaction Processing",
+  "dataType": "Issuer Transaction Record",
+  "reasonCode": "4870",
+  "reasonCodeDescription": "Chip Liability Shift — Counterfeit",
+  "authorization": {
+    "responseCode": "00",
+    "merchantCategoryCode": "5999",
+    "posEntryMode": "90",
+    "cardNotPresent": false,
+    "avsResult": {
+      "code": "N/A",
+      "description": "Card-present"
+    },
+    "cvvResult": {
+      "code": "N/A",
+      "description": "Magnetic stripe CVV1"
+    }
+  },
+  "riskFlags": {
+    "geolocationMismatch": "Yes — different city from cardholder",
+    "deviceTrustScore": "N/A"
+  }
+}

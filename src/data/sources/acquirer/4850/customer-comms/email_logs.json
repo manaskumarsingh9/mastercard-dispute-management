@@ -1,0 +1,43 @@
+{
+  "source": "FitPro Equipment Co. — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4850",
+  "reasonCodeDescription": "Installment Billing Dispute",
+  "communications": [
+    {
+      "type": "Order Confirmation & Installment Agreement",
+      "dir": "merchant_to_customer",
+      "timing": "[4 months before the disputed installment]",
+      "subject": "FitPro Equipment — Order #FP-9102 & Installment Plan Confirmation",
+      "body": "Your FitPro Home Gym Package has been confirmed! Total: $1,500.00. Payment plan: 12 monthly installments of $125.00 each. First payment processed today. Your equipment will be delivered within 7-10 business days. Your digitally signed installment agreement is attached."
+    },
+    {
+      "type": "Delivery Confirmation",
+      "dir": "merchant_to_customer",
+      "timing": "[8 days after order, 4 months before dispute]",
+      "subject": "Your FitPro Home Gym Has Been Delivered!",
+      "body": "Your Home Gym Package has been delivered and set up at your address. Please check all components. Contact us within 7 days if any parts are missing."
+    },
+    {
+      "type": "Monthly Installment Receipt",
+      "dir": "merchant_to_customer",
+      "timing": "On the disputed installment date",
+      "subject": "FitPro Equipment — Installment 4 of 12 Processed",
+      "body": "Your monthly installment of $125.00 (installment 4 of 12) has been processed. Remaining balance: $1,000.00 (8 installments). Thank you for choosing FitPro."
+    },
+    {
+      "type": "Customer Complaint",
+      "dir": "customer_to_merchant",
+      "timing": "[10 days after the disputed installment]",
+      "subject": "Installment amount is wrong",
+      "body": "I was told the monthly payment would be $99 when I was shopping on your site. I've been charged $125 each month. This isn't what I agreed to."
+    },
+    {
+      "type": "Merchant Response",
+      "dir": "merchant_to_customer",
+      "timing": "[11 days after the disputed installment]",
+      "subject": "RE: Installment amount is wrong",
+      "body": "Thank you for reaching out. The $99/month was a limited-time promotional rate that had ended before your order was placed. Your installment agreement, which you digitally signed during checkout, clearly states the rate of $125.00/month for 12 months (total $1,500.00). We have attached a copy of your signed agreement for your reference. All three previous installments were successfully processed at $125.00 without dispute."
+    }
+  ]
+}

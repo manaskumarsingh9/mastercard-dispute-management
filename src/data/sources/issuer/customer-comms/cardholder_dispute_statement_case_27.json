@@ -1,0 +1,26 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "caseReference": "CASE-27",
+  "statement": {
+    "cardholderName": "Eleanor Vance",
+    "dateSubmitted": "2026-03-05",
+    "disputeReason": "Goods or Services Not Provided",
+    "detailedDescription": "On February 10, 2026, I made an online purchase from 'Electronics Hub' for a pair of high-end noise-cancelling headphones totaling USD 567.50. The website prominently advertised a shipping time of 5-7 business days. I received an order confirmation email shortly after the purchase, and my credit card was charged successfully.\n\nHowever, it has now been nearly four weeks since the purchase date, and I have yet to receive the headphones or any shipping notification beyond the initial order confirmation. The order status on the merchant's website remains stuck at 'Processing.' I have checked my spam folders diligently for any missed communication from Electronics Hub, but there has been nothing. The expected delivery window has long passed.\n\nI attempted to contact Electronics Hub multiple times to inquire about the status of my order and request an update. I sent two emails to their customer service address (on February 28 and March 3, 2026) and tried calling the customer support number listed on their website on March 3, 2026. My emails have gone unanswered, and the phone number either rings endlessly or sounds disconnected. I have received no product and no communication from the merchant regarding the delay or failure to deliver.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "Multiple attempts to contact 'Electronics Hub' via their advertised customer service email (support@electronicshub.com) and phone number (1-800-555-0199) have been unsuccessful. Emails went unanswered, and the phone number appears to be out of service or disconnected.",
+    "previousDisputeHistory": "None on record.",
+    "requestedResolution": "Full refund of USD 567.50 for the goods that were never provided.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true and accurate to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Low risk. Cardholder's account is in good standing. The narrative clearly aligns with a non-delivery scenario where the merchant is unresponsive.",
+    "recommendedAction": "Initiate chargeback under Mastercard Reason Code 4855 (Goods or Services Not Provided). Advise cardholder to monitor their account for updates and not to attempt further contact with the merchant.",
+    "caseOfficer": "Marcus Thorne",
+    "priority": "Standard",
+    "issuerCaseId": "94151052",
+    "issuerBIN": "928445"
+  },
+  "claimReference": "900002099771",
+  "chargebackReferenceNumber": "9900114323"
+}

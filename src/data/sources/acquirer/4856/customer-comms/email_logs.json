@@ -1,0 +1,22 @@
+{
+  "source": "TechFit Store — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4856",
+  "reasonCodeDescription": "Defective or Not as Described (Chip Liability Shift)",
+  "communications": [
+    {
+      "type": "In-Store Visit Record",
+      "dir": "system_note",
+      "timing": "[5 days after purchase]",
+      "subject": "Customer Visit — Defect Complaint",
+      "body": "Customer returned to store complaining of heart rate sensor issues and screen dead pixels. Staff testing: heart rate sensor functioned normally during a 5-minute test on the customer's wrist. Screen was examined — one very small light spot noted at the edge, within manufacturer's acceptable tolerance (fewer than 3 dead pixels). Staff performed a firmware update on the watch and demonstrated that the heart rate sensor was reading accurately. Customer was informed they could return the watch within 30 days for a full refund or exchange. Customer chose to keep the watch and left the store."
+    },
+    {
+      "type": "Post-Visit Follow-up",
+      "dir": "merchant_to_customer",
+      "timing": "[6 days after purchase]",
+      "subject": "TechFit Store — Following Up on Your Visit",
+      "body": "Thank you for visiting us regarding your FitTrack Pro Smart Watch. We're glad we could update the firmware. If you continue to experience issues, please bring the watch back within your 30-day return window for a full refund or exchange. We want you to be satisfied with your purchase."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "caseReference": "CASE-35",
+  "statement": {
+    "cardholderName": "Evelyn R. Hayes",
+    "dateSubmitted": "2026-02-15",
+    "disputeReason": "Cancelled Recurring Transaction (Reason Code 4841)",
+    "detailedDescription": "I am disputing a charge of $99.99 from 'Streaming Service' which appeared on my statement on February 10, 2026. This charge is completely unauthorized as I cancelled my subscription with them on January 20, 2026. I received a confirmation email that my subscription for 'StreamFlix Premium' was successfully cancelled and would not renew after my current billing cycle ended on January 31, 2026.\n\nDespite the cancellation, I was still charged for a new billing cycle. I checked my account on their platform, and it clearly shows that my subscription status is 'cancelled' and no active services are currently linked to my profile. I have not used their service since January 31, 2026, and certainly did not authorize any renewal or new subscription on or after that date.\n\nI contacted 'Streaming Service' customer support on February 12, 2026, to resolve this issue. They informed me that my cancellation was processed, but there might have been a 'system glitch' that led to the charge. They offered to refund me, but said it would take 'up to 30 business days' which I find unacceptable for an error on their part. I believe this charge should be reversed immediately as it was for a service I no longer subscribe to and explicitly cancelled.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "Cardholder contacted 'Streaming Service' customer support on 2026-02-12. Merchant acknowledged cancellation but claimed a 'system glitch' for the charge. Offered a refund but stated a processing time of 'up to 30 business days'. Cardholder found this timeframe unacceptable.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Full credit for the unauthorized charge of $99.99.",
+    "cardholderDeclaration": "I declare that the information provided in this statement is true and accurate to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Low - Clear evidence of prior cancellation and merchant acknowledgment of potential error.",
+    "recommendedAction": "Initiate chargeback under Reason Code 4841. Request proof of cancellation confirmation from cardholder if available, and provide merchant with cardholder's detailed statement.",
+    "caseOfficer": "David Chen",
+    "priority": "Medium",
+    "issuerCaseId": "94151300",
+    "issuerBIN": "938465"
+  },
+  "claimReference": "900002124787",
+  "chargebackReferenceNumber": "9900148891"
+}

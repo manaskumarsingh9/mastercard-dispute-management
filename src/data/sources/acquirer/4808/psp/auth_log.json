@@ -1,0 +1,19 @@
+{
+  "source": "RenewTech Store — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4808",
+  "reasonCodeDescription": "Authorization-Related Chargeback",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Ecommerce",
+    "threeDSecure": {
+      "enrolled": true,
+      "authenticated": true,
+      "eci": "05",
+      "cavv": "Verified — Mastercard Identity Check"
+    },
+    "notes": "Real-time authorization with 3D Secure challenge completed. AVS and CVV both matched. Amount matches settlement exactly."
+  }
+}

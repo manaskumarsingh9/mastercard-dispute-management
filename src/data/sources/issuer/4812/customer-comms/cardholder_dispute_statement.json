@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4812",
+  "reasonCodeDescription": "Account Number Not on File",
+  "statement": {
+    "disputeReason": "4812 - Account Number Not on File",
+    "detailedDescription": "A $294.00 transaction from 'METRO FASHION DEPT STORE' appeared on the cardholder's account. Upon investigation, the account number used does not correspond to any active or previously issued card for this cardholder. The cardholder confirms they have never shopped at this store.",
+    "contactedMerchant": false,
+    "merchantResponseSummary": "N/A — the cardholder has no knowledge of this transaction or this merchant.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Full reversal. The account number used is not on file with the issuing bank.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium-High — evidence supports cardholder's position.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4812 (Account Number Not on File).",
+    "priority": "Standard"
+  }
+}

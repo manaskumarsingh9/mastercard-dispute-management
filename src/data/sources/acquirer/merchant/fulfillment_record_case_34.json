@@ -1,0 +1,19 @@
+{
+  "source": "Jewelry Online — Fulfillment System",
+  "dataType": "Fulfillment Record",
+  "caseReference": "CASE-34",
+  "records": [
+    {
+      "fulfillmentId": "FUL-000034",
+      "orderId": "ORD-000034",
+      "fulfillmentType": "Physical Shipment",
+      "fulfillmentStatus": "Completed",
+      "fulfilledDate": "2026-01-13T00:00:00.000Z",
+      "carrier": "UPS",
+      "trackingNumber": "1Z999419730",
+      "itemsFulfilled": 1,
+      "customerName": "Jessica Thompson",
+      "customerEmail": "jessica.thompson@email.com"
+    }
+  ]
+}

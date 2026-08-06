@@ -1,0 +1,9 @@
+{
+  "source": "TechGear Online — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4801",
+  "reasonCodeDescription": "Requested Transaction Data Not Received",
+  "settlementRecord": {
+    "notes": "Transaction settled normally. Original sales draft lost during records system migration. Merchant unable to provide requested documentation."
+  }
+}

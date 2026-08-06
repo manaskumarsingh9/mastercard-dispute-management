@@ -1,0 +1,34 @@
+{
+  "source": "Subscription Box Co — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "caseReference": "CASE-31",
+  "records": [
+    {
+      "email": "eleanor.vance@email.com",
+      "customerName": "Eleanor Vance",
+      "merchantEmail": "support@subscriptionboxco.com",
+      "merchantName": "Subscription Box Co",
+      "transactionReference": "TXN-955547661",
+      "communications": [
+        {
+          "type": "Customer Inquiry",
+          "direction": "customer_to_merchant",
+          "sentAt": "2026-02-05T16:00:00Z",
+          "opened": true,
+          "openedAt": "2026-02-05T16:05:00Z",
+          "subject": "Charge inquiry - TXN-955547661",
+          "body": "Hi,\n\nI noticed a charge of $150 on my statement from Subscription Box Co. I would like to understand this charge and request a resolution.\n\nRegards,\nEleanor Vance"
+        },
+        {
+          "type": "Merchant Response",
+          "direction": "merchant_to_customer",
+          "sentAt": "2026-02-06T10:30:00Z",
+          "opened": true,
+          "openedAt": "2026-02-06T11:00:00Z",
+          "subject": "RE: Charge inquiry - TXN-955547661",
+          "body": "I contacted Subscription Box Co via their online customer support chat on February 7, 2026. I explained the discrepancy and provided my account details. The representative, 'Sarah,' claimed that my latest box included a 'special, limited-edition item' which resulted in the higher charge, stating it was part of a promotional offering. However, I was never informed about such an item, nor did I opt-in to receive it. When I pressed for clarification, 'Sarah' simply reiterated that the charge was valid according to their internal records and would not offer a partial refund or adjustment."
+        }
+      ]
+    }
+  ]
+}

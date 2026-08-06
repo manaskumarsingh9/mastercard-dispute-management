@@ -1,0 +1,24 @@
+{
+  "source": "Travel Agency — Payment Processor",
+  "dataType": "AVS/CVV Verification Results",
+  "caseReference": "CASE-30",
+  "records": [
+    {
+      "transactionId": "TXN-956366942",
+      "cardLastFour": "6435",
+      "avsResult": "Y",
+      "streetMatch": true,
+      "zipMatch": true,
+      "cvvMatch": true,
+      "cvvResult": "M",
+      "cardholderNameMatch": true,
+      "cardholderName": "Ms. Eleanor Vance",
+      "emailVerified": true,
+      "email": "eleanor.vance@email.com",
+      "phoneVerified": true,
+      "cvc2Result": "M",
+      "cvc2Match": true,
+      "cardNetwork": "Mastercard"
+    }
+  ]
+}

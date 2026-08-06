@@ -1,0 +1,12 @@
+{
+  "source": "StrideFit Running — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4860",
+  "reasonCodeDescription": "Credit Not Processed",
+  "policy": {
+    "refundWindow": "30 days from purchase — free returns",
+    "policy": "Full refund within 30 days. Free return shipping with prepaid label. Refund processed within 5-7 business days of receiving the return.",
+    "disclosureMethod": "In order confirmation email, on website, and included with the shipment.",
+    "customerAcknowledgment": "Customer initiated return within policy window. Merchant confirmed refund in writing."
+  }
+}

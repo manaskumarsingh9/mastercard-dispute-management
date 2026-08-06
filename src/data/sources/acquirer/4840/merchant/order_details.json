@@ -1,0 +1,19 @@
+{
+  "source": "GiftCardVault — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4840",
+  "reasonCodeDescription": "Fraudulent Processing of Transaction",
+  "orderRecord": {
+    "orderStatus": "Completed — gift cards delivered electronically and redeemed",
+    "items": [
+      {
+        "name": "Digital Gift Card — $100 denomination",
+        "quantity": 5,
+        "unitPrice": 100,
+        "sku": "GCV-DGC-100"
+      }
+    ],
+    "shippingAddress": null,
+    "orderNotes": "Five $100 digital gift cards purchased online and delivered to an email address. All five cards were redeemed within [30 minutes of purchase]. The merchant did not have advanced fraud screening in place for digital goods at the time."
+  }
+}

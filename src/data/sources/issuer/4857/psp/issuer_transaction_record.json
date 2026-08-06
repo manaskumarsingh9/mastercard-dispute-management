@@ -1,0 +1,24 @@
+{
+  "source": "Issuing Bank — Transaction Processing",
+  "dataType": "Issuer Transaction Record",
+  "reasonCode": "4857",
+  "reasonCodeDescription": "Card-Activated Telephone Transaction",
+  "authorization": {
+    "responseCode": "00",
+    "merchantCategoryCode": "5999",
+    "posEntryMode": "01",
+    "cardNotPresent": true,
+    "avsResult": {
+      "code": "N",
+      "description": "No match"
+    },
+    "cvvResult": {
+      "code": "N",
+      "description": "CVV not verified"
+    }
+  },
+  "riskFlags": {
+    "geolocationMismatch": "Unknown",
+    "deviceTrustScore": "N/A — telephone order"
+  }
+}

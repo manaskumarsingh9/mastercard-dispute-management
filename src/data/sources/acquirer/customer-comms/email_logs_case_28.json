@@ -1,0 +1,34 @@
+{
+  "source": "Online Marketplace — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "caseReference": "CASE-28",
+  "records": [
+    {
+      "email": "sarah.miller@email.com",
+      "customerName": "Sarah J. Miller",
+      "merchantEmail": "support@onlinemarketplace.com",
+      "merchantName": "Online Marketplace",
+      "transactionReference": "TXN-982137321",
+      "communications": [
+        {
+          "type": "Customer Inquiry",
+          "direction": "customer_to_merchant",
+          "sentAt": "2026-01-20T16:00:00Z",
+          "opened": true,
+          "openedAt": "2026-01-20T16:05:00Z",
+          "subject": "Charge inquiry - TXN-982137321",
+          "body": "Hi,\n\nI noticed a charge of $89.99 on my statement from Online Marketplace. I would like to understand this charge and request a resolution.\n\nRegards,\nSarah J. Miller"
+        },
+        {
+          "type": "Merchant Response",
+          "direction": "merchant_to_customer",
+          "sentAt": "2026-01-21T10:30:00Z",
+          "opened": true,
+          "openedAt": "2026-01-21T11:00:00Z",
+          "subject": "RE: Charge inquiry - TXN-982137321",
+          "body": "I attempted to contact the seller, 'ArtisanCrafts,' directly through the 'Online Marketplace' messaging system on two occasions: January 30, 2026, and February 5, 2026. On January 30, I received an automated reply stating, 'Seller will respond within 48 hours.' However, no personalized or substantive response followed. My second message on February 5 received no reply at all. Furthermore, when I tried to visit the seller's storefront on the 'Online Marketplace' today, it shows 'No items for sale' and appears to be inactive. I have no other means of reaching them."
+        }
+      ]
+    }
+  ]
+}

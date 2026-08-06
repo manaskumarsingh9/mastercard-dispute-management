@@ -1,0 +1,110 @@
+Good points — both of them. Let me implement:
+
+Hide "Raise Second Presentment" until a rebuttal has been generated
+Add a text area for user notes/instructions when regenerating the rebuttal (tone, angle, additional points)
+
+2 actions
+Now I need to:
+
+Track whether a rebuttal exists for the current dispute in the drawer
+Conditionally show Second Presentment only when rebuttal exists
+Add a user instructions textarea for rebuttal regeneration
+First, let me check how the EnrichmentPanel/AgentPipeline communicates rebuttal state back to the parent:
+
+
+Executed rg -C 5 -n 'onEnrichmentComplete|onRebuttal|EnrichmentPanel.*Props' artifacts/dispute-dashboard/src/pages/chargebacks/components/EnrichmentPanel.tsx
+Now let me add a callback from AgentPipeline to signal when a rebuttal is generated, and add the user instructions textarea. I'll update AgentPipeline, EnrichmentPanel, and DisputeTable:
+
+
+Executed rg -A 5 -n 'interface.*AgentPipelineProps|function AgentPipeline' artifacts/dispute-dashboard/src/pages/chargebacks/components/AgentPipeline.tsx
+Now let me make all the changes:
+
+
+2 actions
+Now notify the parent when rebuttal state changes. Let me update the places where rebuttalDocument is set:
+
+
+Opened artifacts/dispute-dashboard/src/pages/chargebacks/components/AgentPipeline.tsx
+Now I need to add the onRebuttalStateChange callback, a user instructions textarea, and update the rebuttal handler. Let me also add a state for user instructions:
+
+
+2 actions
+Now add the callback notification when rebuttal is loaded or generated. Let me update the load function:
+
+
+Edited artifacts/dispute-dashboard/src/pages/chargebacks/components/AgentPipeline.tsx
+Now update the rebuttal handler to accept user instructions. Let me check the current handler and the backend endpoint:
+
+
+2 actions
+Now update the sbRebuttal API method to accept optional user instructions:
+
+
+2 actions
+Now update the rebuttal UI section — add the user instructions textarea both where the generate button is and in the rebuttal document section:
+
+
+Edited artifacts/dispute-dashboard/src/pages/chargebacks/components/AgentPipeline.tsx
+Now update the rebuttal document section to also include a textarea for re-generation:
+
+
+Edited artifacts/dispute-dashboard/src/pages/chargebacks/components/AgentPipeline.tsx
+Now update the EnrichmentPanel to pass the callback through:
+
+
+2 actions
+Now update DisputeTable.tsx to track rebuttal state and conditionally show the Second Presentment button:
+
+
+2 actions
+Now I need to add a state variable in DisputeTable to track rebuttal existence. Let me find where the state variables are defined:
+
+
+3 actions
+Now reset hasRebuttal when switching disputes and pass callback to EnrichmentPanel:
+
+
+2 actions
+Now pass the callback to EnrichmentPanel and gate the Second Presentment button on hasRebuttal:
+
+
+Edited artifacts/dispute-dashboard/src/pages/chargebacks/components/DisputeTable.tsx
+Now gate the Second Presentment button on hasRebuttal:
+
+
+Edited artifacts/dispute-dashboard/src/pages/chargebacks/components/DisputeTable.tsx
+Let me restart the workflow to validate:
+
+
+2 actions
+The dashboard is running fine. Now let me run the code review:
+
+
+2 actions
+Good catch from the review. Let me fix the state propagation issue — ensure hasRebuttal is set to false when a dispute loads without a rebuttal:
+
+
+Opened artifacts/dispute-dashboard/src/pages/chargebacks/components/AgentPipeline.tsx
+Now let me fix the state propagation — emit false at the start of load and when no rebuttal found:
+
+
+2 actions
+Also, in the loadExistingData function, the else case for no rebuttal should explicitly emit false. Let me update the evidence map load:
+
+
+Edited artifacts/dispute-dashboard/src/pages/chargebacks/components/AgentPipeline.tsx
+Now let me restart the workflow and run tests:
+
+
+4 actions
+Tests pass. Here's a summary of what I changed:
+
+1. "Raise Second Presentment" is now gated behind rebuttal generation
+
+The button only appears after a rebuttal document has been generated for that dispute. This enforces the correct workflow: run the pipeline → get a recommendation → build a rebuttal → then submit the second presentment.
+The state resets properly when switching between disputes or closing the drawer.
+2. User instructions textarea for rebuttal refinement
+
+Before first generation: A textarea appears right below the Agent 4 recommendation (when it's not ACCEPT), letting you provide specific points, preferred tone, or angle before generating the rebuttal.
+After generation: The rebuttal document section includes a "Want to refine this rebuttal?" area with another textarea and a "Re-generate Rebuttal" button, so you can iterate — add your own arguments, adjust the tone, or ask the agent to focus on specific evidence.
+The instructions are sent to the backend as userInstructions in the request body, so the AI agent can incorporate your guidance.

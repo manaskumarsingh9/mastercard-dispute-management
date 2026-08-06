@@ -1,0 +1,27 @@
+{
+  "source": "Retail Store — Shipping Provider",
+  "dataType": "Shipping Tracking Data",
+  "caseReference": "CASE-29",
+  "records": [
+    {
+      "orderId": "ORD-000029",
+      "transactionId": "TXN-919016207",
+      "carrier": "UPS",
+      "trackingNumber": "1Z999358005",
+      "shippedDate": "2026-01-31T10:00:00Z",
+      "estimatedDelivery": "2026-02-04",
+      "status": "Delivered",
+      "weight": "0.5 kg",
+      "dimensions": "25x15x10 cm",
+      "shippingAddress": {
+        "name": "Ms. Eleanor Vance",
+        "street": "303 Cherry Ln",
+        "city": "San Jose",
+        "state": "CA",
+        "zip": "95101",
+        "country": "US"
+      },
+      "customerName": "Ms. Eleanor Vance"
+    }
+  ]
+}

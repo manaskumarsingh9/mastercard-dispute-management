@@ -1,0 +1,9 @@
+{
+  "source": "NutriDirect Phone Sales — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4857",
+  "reasonCodeDescription": "Card-Activated Telephone Transaction",
+  "settlementRecord": {
+    "notes": "Settled for $74.95. Telephone order with no call recording and no pre-shipment confirmation sent to cardholder. AVS did not match."
+  }
+}

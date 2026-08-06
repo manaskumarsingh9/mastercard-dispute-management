@@ -1,0 +1,12 @@
+{
+  "source": "ProAccess Business Tools — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4899",
+  "reasonCodeDescription": "Mastercard Dispute Resolution — Violation of Rules",
+  "policy": {
+    "refundWindow": "N/A — annual plan",
+    "policy": "Annual memberships may be cancelled at any time. No prorated refunds after 14 days from renewal.",
+    "disclosureMethod": "Terms on website and in signup confirmation.",
+    "customerAcknowledgment": "Customer agreed during original signup."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "source": "EuroLux Boutique — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4846",
+  "reasonCodeDescription": "Correct Currency Code Not Provided",
+  "orderRecord": {
+    "orderStatus": "Completed — delivered",
+    "items": [
+      {
+        "name": "Italian Leather Crossbody Bag — Tan",
+        "quantity": 1,
+        "unitPrice": 215,
+        "sku": "ELB-CB-TAN"
+      }
+    ],
+    "shippingAddress": "Cardholder's billing address in the United States",
+    "orderNotes": "Cross-border transaction. Merchant's payment gateway is configured to process all transactions in EUR regardless of the display currency on the website. The website showed USD but settlement was in EUR."
+  }
+}

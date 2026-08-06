@@ -1,0 +1,22 @@
+{
+  "source": "Luxury Goods Ltd — 3DS Authentication Provider",
+  "dataType": "3D Secure Authentication Record",
+  "caseReference": "CASE-26",
+  "records": [
+    {
+      "transactionId": "TXN-953344667",
+      "threeDSVersion": "2.2.0",
+      "authenticationStatus": "Attempted",
+      "eci": "06",
+      "cavv": "CAVV2695334466",
+      "dsTransactionId": "DS-953344667",
+      "challengeRequired": false,
+      "challengeCompleted": false,
+      "cardholderName": "Sarah Chen",
+      "merchantName": "Luxury Goods Ltd",
+      "amount": 1250,
+      "currency": "USD",
+      "timestamp": "2026-01-15T14:30:00Z"
+    }
+  ]
+}

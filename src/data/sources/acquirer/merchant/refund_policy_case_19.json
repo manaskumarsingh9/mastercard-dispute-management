@@ -1,0 +1,29 @@
+{
+  "source": "Merchant Platform",
+  "dataType": "Refund & Return Policy",
+  "retrievedAt": "2026-01-05T00:48:00Z",
+  "provider": "TechStore Pro",
+  "caseReference": "CASE-19",
+  "records": [
+    {
+      "merchantName": "TechStore Pro",
+      "policyVersion": "2024.1",
+      "effectiveDate": "2026-01-01",
+      "returnWindow": "30 days",
+      "refundMethod": "Original payment method",
+      "customerAcceptedTerms": true,
+      "acceptedDate": "2026-01-17",
+      "policyUrl": "https://techstorepro.com/refund-policy",
+      "policyHighlights": [
+        "Items must be returned in original packaging",
+        "Refund processed within 5-10 business days",
+        "Customer must contact support before initiating return"
+      ],
+      "prominentlyDisclosed": true,
+      "disclosedOnReceipt": true,
+      "disclosedOnWebsite": true,
+      "disclosedAtCheckout": true,
+      "disclosedOnSignage": false
+    }
+  ]
+}

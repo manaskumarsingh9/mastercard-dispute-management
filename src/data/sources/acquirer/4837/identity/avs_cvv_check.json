@@ -1,0 +1,16 @@
+{
+  "source": "LuxeVision Online — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4837",
+  "reasonCodeDescription": "No Cardholder Authorization (Fraud)",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "N",
+      "description": "No match — billing address does not match"
+    },
+    "cvv": {
+      "responseCode": "M",
+      "description": "CVV matched — card data may have been obtained through a breach"
+    }
+  }
+}

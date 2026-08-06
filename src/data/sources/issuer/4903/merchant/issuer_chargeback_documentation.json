@@ -1,0 +1,23 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4903",
+  "reasonCodeDescription": "Mastercard Compliance — Exceeds Limit",
+  "chargebackFiling": {
+    "reasonCode": "4903",
+    "reasonCodeDescription": "Mastercard Compliance — Exceeds Limit",
+    "supportingDocuments": [
+      {
+        "type": "Transaction Record",
+        "desc": "Showing the transaction amount and authorization details."
+      }
+    ],
+    "issuerCommentary": "Filing under 4903. The transaction exceeded applicable limits.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": true,
+    "ecommerceIndicator": null,
+    "posEntryMode": "05"
+  }
+}

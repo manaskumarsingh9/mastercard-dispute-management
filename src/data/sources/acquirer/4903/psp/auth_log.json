@@ -1,0 +1,14 @@
+{
+  "source": "TimePiece Gallery — Authorized Dealer — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4903",
+  "reasonCodeDescription": "Mastercard Compliance — Exceeds Limit",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved — full amount authorized",
+    "entryMode": "EMV Chip + PIN — Card Present",
+    "threeDSecure": null,
+    "notes": "Real-time authorization was requested for the full $3,200.00 amount and approved by the issuer with a valid approval code. The issuer's authorization system approved the transaction without a referral or step-up requirement. The merchant followed proper procedures by requesting authorization for the full amount before completing the sale."
+  }
+}

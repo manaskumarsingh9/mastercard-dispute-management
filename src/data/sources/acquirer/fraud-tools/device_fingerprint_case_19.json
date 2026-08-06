@@ -1,0 +1,26 @@
+{
+  "source": "Fraud Prevention Platform",
+  "dataType": "Device Fingerprint Analysis",
+  "retrievedAt": "2026-02-28T19:25:00Z",
+  "provider": "ThreatMetrix",
+  "caseReference": "CASE-19",
+  "records": [
+    {
+      "deviceId": "DEV-10585980",
+      "fingerprint": "FP-232286520",
+      "deviceType": "Mobile",
+      "os": "Android 14",
+      "browser": "Chrome 120",
+      "riskScore": 28,
+      "matchesPreviousTransactions": true,
+      "anomalyDetected": false,
+      "transactionCountOnDevice": 6,
+      "firstSeenDate": "2025-12-01",
+      "lastSeenDate": "2026-01-04",
+      "screenResolution": "2560x1440",
+      "language": "en-US",
+      "timezone": "America/Chicago",
+      "transactionId": "TXN-001234"
+    }
+  ]
+}

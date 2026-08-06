@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4857",
+  "reasonCodeDescription": "Card-Activated Telephone Transaction",
+  "chargebackFiling": {
+    "reasonCode": "4857",
+    "reasonCodeDescription": "Card-Activated Telephone Transaction",
+    "supportingDocuments": [
+      {
+        "type": "Cardholder Affidavit",
+        "desc": "Sworn statement that cardholder did not make a telephone order with this merchant."
+      },
+      {
+        "type": "Phone Records",
+        "desc": "Cardholder's phone records showing no calls to/from the merchant's number."
+      }
+    ],
+    "issuerCommentary": "Filing under 4857. The cardholder denies placing a telephone order. No call recording or written confirmation exists. The merchant did not follow required verification protocols for telephone orders.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI_07",
+    "posEntryMode": "01"
+  }
+}

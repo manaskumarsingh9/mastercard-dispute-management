@@ -1,0 +1,19 @@
+{
+  "source": "MasterLens Academy — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4854",
+  "reasonCodeDescription": "Cardholder Dispute — Not Elsewhere Classified",
+  "orderRecord": {
+    "orderStatus": "Completed — course access granted",
+    "items": [
+      {
+        "name": "Professional Photography Masterclass — 12-Module Online Course",
+        "quantity": 1,
+        "unitPrice": 149,
+        "sku": "MLA-PPM-12"
+      }
+    ],
+    "shippingAddress": null,
+    "orderNotes": "Digital product. Cardholder enrolled in the course and completed 8 of 12 modules over a period of [12 days]. Course curriculum matches the advertised outline exactly. All video lessons, assignments, and downloadable resources were accessible."
+  }
+}

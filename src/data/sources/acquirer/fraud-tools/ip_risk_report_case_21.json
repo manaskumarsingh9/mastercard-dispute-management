@@ -1,0 +1,24 @@
+{
+  "source": "Enterprise Solutions — IP Intelligence Service",
+  "dataType": "IP Risk Assessment",
+  "caseReference": "CASE-21",
+  "records": [
+    {
+      "transactionId": "TXN-980145359",
+      "ipAddress": "93.163.147.18",
+      "riskScore": 5,
+      "riskLevel": "Low",
+      "country": "US",
+      "region": "CA",
+      "city": "Los Angeles",
+      "isp": "Major US ISP",
+      "isVPN": false,
+      "isProxy": false,
+      "isTor": false,
+      "isHosting": false,
+      "threatCategory": "None",
+      "previousActivity": "Normal consumer behavior",
+      "cardholderName": "Eleanor Vance"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "source": "AudioPeak Electronics — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4853",
+  "reasonCodeDescription": "Goods/Services Not as Described or Defective",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Ecommerce",
+    "threeDSecure": {
+      "enrolled": true,
+      "authenticated": true,
+      "eci": "05",
+      "cavv": "Verified"
+    },
+    "notes": "Authorization obtained with 3D Secure authentication. Standard e-commerce transaction."
+  }
+}

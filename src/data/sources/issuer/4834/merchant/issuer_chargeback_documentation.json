@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4834",
+  "reasonCodeDescription": "Point of Interaction Error / Duplicate Processing",
+  "chargebackFiling": {
+    "reasonCode": "4834",
+    "reasonCodeDescription": "Point of Interaction Error / Duplicate Processing",
+    "supportingDocuments": [
+      {
+        "type": "Account Statement",
+        "desc": "Statement showing two identical $79.99 charges from same merchant, same day."
+      },
+      {
+        "type": "Cardholder Dispute Form",
+        "desc": "Signed statement that only one purchase was intended."
+      }
+    ],
+    "issuerCommentary": "Filing under 4834. Two charges of $79.99 from the same merchant on the same date. Cardholder asserts only one purchase was made.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI_07",
+    "posEntryMode": "81"
+  }
+}

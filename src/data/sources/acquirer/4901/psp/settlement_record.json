@@ -1,0 +1,9 @@
+{
+  "source": "BargainTech Electronics — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4901",
+  "reasonCodeDescription": "Mastercard Compliance — Violation of Standards",
+  "settlementRecord": {
+    "notes": "Settled for $189.00. The merchant's PCI-DSS compliance expired [3 months before this transaction]. Terminal firmware is outdated with known vulnerabilities."
+  }
+}

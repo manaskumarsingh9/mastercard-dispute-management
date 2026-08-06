@@ -1,0 +1,24 @@
+{
+  "source": "Online Marketplace — IP Intelligence Service",
+  "dataType": "IP Risk Assessment",
+  "caseReference": "CASE-28",
+  "records": [
+    {
+      "transactionId": "TXN-982137321",
+      "ipAddress": "100.184.196.109",
+      "riskScore": 5,
+      "riskLevel": "Low",
+      "country": "US",
+      "region": "TX",
+      "city": "Dallas",
+      "isp": "Major US ISP",
+      "isVPN": false,
+      "isProxy": false,
+      "isTor": false,
+      "isHosting": false,
+      "threatCategory": "None",
+      "previousActivity": "Normal consumer behavior",
+      "cardholderName": "Sarah J. Miller"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "source": "QuickFuel Station #247 — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4807",
+  "reasonCodeDescription": "Warning Bulletin File",
+  "orderRecord": {
+    "orderStatus": "Completed — fuel dispensed",
+    "items": [
+      {
+        "name": "Unleaded Fuel — 18.5 gallons",
+        "quantity": 1,
+        "unitPrice": 68.45,
+        "sku": "FUEL-UNL"
+      }
+    ],
+    "shippingAddress": null,
+    "orderNotes": "Pay-at-pump fuel transaction. The pump terminal does not perform Warning Bulletin checks; it relies on the electronic authorization response."
+  }
+}

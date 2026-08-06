@@ -1,0 +1,19 @@
+{
+  "source": "Fashion Outlet — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "caseReference": "CASE-36",
+  "records": [
+    {
+      "transactionId": "TXN-904712821",
+      "settlementDate": "2026-01-22",
+      "settlementAmount": 210.5,
+      "settlementCurrency": "USD",
+      "merchantId": "009403150424",
+      "merchantName": "Fashion Outlet",
+      "batchId": "BATCH-36-001",
+      "status": "Settled",
+      "cardholderName": "Sarah Chen",
+      "cardLastFour": "3924"
+    }
+  ]
+}

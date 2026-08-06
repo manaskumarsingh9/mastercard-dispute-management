@@ -1,0 +1,27 @@
+{
+  "source": "Electronics Hub — Shipping Provider",
+  "dataType": "Shipping Tracking Data",
+  "caseReference": "CASE-27",
+  "records": [
+    {
+      "orderId": "ORD-000027",
+      "transactionId": "TXN-972850548",
+      "carrier": "UPS",
+      "trackingNumber": "1Z999333315",
+      "shippedDate": "2026-02-11T10:00:00Z",
+      "estimatedDelivery": "2026-02-15",
+      "status": "Delivered",
+      "weight": "0.5 kg",
+      "dimensions": "25x15x10 cm",
+      "shippingAddress": {
+        "name": "Eleanor Vance",
+        "street": "289 Ash Blvd",
+        "city": "San Diego",
+        "state": "CA",
+        "zip": "92101",
+        "country": "US"
+      },
+      "customerName": "Eleanor Vance"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "source": "Payment Gateway — Order Management System",
+  "dataType": "Order Details",
+  "caseReference": "CASE-25",
+  "records": [
+    {
+      "orderId": "ORD-000025",
+      "transactionId": "TXN-980382766",
+      "orderDate": "2026-01-28T14:30:00Z",
+      "orderStatus": "Completed",
+      "amount": 8,
+      "currency": "USD",
+      "items": [
+        {
+          "name": "Payment Processing Service",
+          "quantity": 1,
+          "unitPrice": 8,
+          "sku": "SKU-PG-25"
+        }
+      ],
+      "billingDescriptor": "PAYMENT GATEWAY*ORD-000025",
+      "billingAddress": {
+        "name": "Emily R. Davidson",
+        "street": "275 Birch Way",
+        "city": "Philadelphia",
+        "state": "PA",
+        "zip": "19101",
+        "country": "US"
+      },
+      "shippingAddress": null,
+      "ipAddress": "97.175.175.70",
+      "customerEmail": "emily.davidson@email.com",
+      "customerPhone": "+12002777775"
+    }
+  ]
+}

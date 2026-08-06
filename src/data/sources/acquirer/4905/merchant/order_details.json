@@ -1,0 +1,19 @@
+{
+  "source": "FitZone Fitness Center — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4905",
+  "reasonCodeDescription": "Mastercard Compliance — Card Not Valid",
+  "orderRecord": {
+    "orderStatus": "Active membership — monthly recurring",
+    "items": [
+      {
+        "name": "FitZone Fitness — Monthly Membership (Unlimited Access)",
+        "quantity": 1,
+        "unitPrice": 49.99,
+        "sku": "FZ-MEM-UNL"
+      }
+    ],
+    "shippingAddress": null,
+    "orderNotes": "Monthly recurring charge on a membership active for [8 months]. The recurring billing was established with a valid card at signup. The issuer's account updater service provided updated card credentials after the card was reissued, allowing the recurring charge to continue processing on the new credentials. The merchant processed the charge using the updated credentials provided by the issuer's own account updater."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "source": "Fashion Outlet — IP Intelligence Service",
+  "dataType": "IP Risk Assessment",
+  "caseReference": "CASE-36",
+  "records": [
+    {
+      "transactionId": "TXN-904712821",
+      "ipAddress": "108.208.252.213",
+      "riskScore": 5,
+      "riskLevel": "Low",
+      "country": "US",
+      "region": "OR",
+      "city": "Portland",
+      "isp": "Major US ISP",
+      "isVPN": false,
+      "isProxy": false,
+      "isTor": false,
+      "isHosting": false,
+      "threatCategory": "None",
+      "previousActivity": "Normal consumer behavior",
+      "cardholderName": "Sarah Chen"
+    }
+  ]
+}

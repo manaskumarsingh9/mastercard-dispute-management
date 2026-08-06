@@ -1,0 +1,19 @@
+{
+  "source": "Auto Parts Store — Fulfillment System",
+  "dataType": "Fulfillment Record",
+  "caseReference": "CASE-33",
+  "records": [
+    {
+      "fulfillmentId": "FUL-000033",
+      "orderId": "ORD-000033",
+      "fulfillmentType": "In-Store",
+      "fulfillmentStatus": "Completed",
+      "fulfilledDate": "2026-01-28T14:30:00Z",
+      "carrier": null,
+      "trackingNumber": null,
+      "itemsFulfilled": 1,
+      "customerName": "Eleanor Vance",
+      "customerEmail": "eleanor.vance@email.com"
+    }
+  ]
+}

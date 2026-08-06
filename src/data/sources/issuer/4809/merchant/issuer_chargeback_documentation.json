@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4809",
+  "reasonCodeDescription": "Non-Receipt of Requested Information",
+  "chargebackFiling": {
+    "reasonCode": "4809",
+    "reasonCodeDescription": "Non-Receipt of Requested Information",
+    "supportingDocuments": [
+      {
+        "type": "Retrieval Request",
+        "desc": "Copy of retrieval request submitted to acquirer."
+      },
+      {
+        "type": "Response Tracking",
+        "desc": "System log showing no response recorded."
+      }
+    ],
+    "issuerCommentary": "Filing under 4809. Retrieval request submitted and no documentation was received in response.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI_07",
+    "posEntryMode": "81"
+  }
+}

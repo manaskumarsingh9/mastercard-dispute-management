@@ -1,0 +1,22 @@
+{
+  "source": "Merchant Platform",
+  "dataType": "Fulfillment Record",
+  "retrievedAt": "2026-02-22T01:07:00Z",
+  "provider": "TechStore Pro",
+  "caseReference": "CASE-19",
+  "records": [
+    {
+      "fulfillmentId": "FUL-001234",
+      "orderId": "ORD-001234",
+      "fulfillmentStatus": "Completed",
+      "fulfilledDate": "2026-01-16T15:45:00Z",
+      "shippedDate": "2026-03-05T08:20:00Z",
+      "carrier": "UPS",
+      "trackingNumber": "1877022790",
+      "warehouseLocation": "Warehouse B - West",
+      "itemsShipped": 1,
+      "qualityCheck": "Passed",
+      "packingSlipIncluded": true
+    }
+  ]
+}

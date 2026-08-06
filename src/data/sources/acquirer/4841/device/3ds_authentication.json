@@ -1,0 +1,16 @@
+{
+  "source": "CloudVault Premium — Authentication",
+  "dataType": "3D Secure Authentication Record",
+  "reasonCode": "4841",
+  "reasonCodeDescription": "Cancelled Recurring or Digital Goods Transaction",
+  "threeDSecure": {
+    "version": "2.0",
+    "enrolled": true,
+    "status": "Y — Authenticated at initial signup",
+    "eci": "05",
+    "cavv": "Verified",
+    "challenge": true,
+    "liabilityShift": "Yes — at initial enrollment",
+    "notes": "3D Secure was completed during the initial subscription signup. Subsequent recurring charges use the authenticated card-on-file credentials."
+  }
+}

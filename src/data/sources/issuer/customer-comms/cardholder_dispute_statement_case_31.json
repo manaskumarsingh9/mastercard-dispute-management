@@ -1,0 +1,26 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "caseReference": "CASE-31",
+  "statement": {
+    "cardholderName": "Eleanor Vance",
+    "dateSubmitted": "2026-02-10",
+    "disputeReason": "Transaction Amount Differs (4831)",
+    "detailedDescription": "On my statement dated February 5, 2026, I noticed a charge from 'Subscription Box Co' for $150.00 USD. I have been a loyal subscriber to their premium quarterly box for over a year, and the agreed-upon price for this service has always been $100.00 USD per quarter. My last several charges have consistently been this amount.\n\nI have reviewed my subscription details on the merchant's website, and my account still shows my premium subscription tier at $100.00 USD. I have not authorized any upgrades, add-ons, or special one-time purchases that would justify an additional $50.00 charge. There was no communication from Subscription Box Co regarding any price change or an increased charge for my latest box. This discrepancy of $50.00 is completely unexpected and unauthorized.\n\nI believe I should have been charged the standard $100.00 USD for my quarterly box, and not the $150.00 USD that appeared on my statement. I am requesting assistance in resolving this overcharge.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "I contacted Subscription Box Co via their online customer support chat on February 7, 2026. I explained the discrepancy and provided my account details. The representative, 'Sarah,' claimed that my latest box included a 'special, limited-edition item' which resulted in the higher charge, stating it was part of a promotional offering. However, I was never informed about such an item, nor did I opt-in to receive it. When I pressed for clarification, 'Sarah' simply reiterated that the charge was valid according to their internal records and would not offer a partial refund or adjustment.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "I request a credit for the overcharged amount of $50.00 USD, or the full $150.00 USD if the entire transaction is deemed incorrect, to be returned to my account.",
+    "cardholderDeclaration": "I declare that the information provided in this statement is true and accurate to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium - Cardholder's account history supports consistent pricing. Merchant's explanation of 'special item' without consent or notification is problematic.",
+    "recommendedAction": "Initiate chargeback under Mastercard Reason Code 4831 (Transaction Amount Differs). Request supporting documentation from the merchant regarding the supposed 'special item' and proof of cardholder authorization or notification for the increased charge.",
+    "caseOfficer": "Robert Chen",
+    "priority": "Medium",
+    "issuerCaseId": "94151176",
+    "issuerBIN": "979228"
+  },
+  "claimReference": "900002112279",
+  "chargebackReferenceNumber": "9900131607"
+}

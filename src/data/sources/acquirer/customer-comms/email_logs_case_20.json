@@ -1,0 +1,34 @@
+{
+  "source": "Digital Goods LLC — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "caseReference": "CASE-20",
+  "records": [
+    {
+      "email": "emily.chen@email.com",
+      "customerName": "Emily R. Chen",
+      "merchantEmail": "support@digitalgoodsllc.com",
+      "merchantName": "Digital Goods LLC",
+      "transactionReference": "TXN-983841698",
+      "communications": [
+        {
+          "type": "Customer Inquiry",
+          "direction": "customer_to_merchant",
+          "sentAt": "2026-02-10T16:00:00Z",
+          "opened": true,
+          "openedAt": "2026-02-10T16:05:00Z",
+          "subject": "Charge inquiry - TXN-983841698",
+          "body": "Hi,\n\nI noticed a charge of $34.99 on my statement from Digital Goods LLC. I would like to understand this charge and request a resolution.\n\nRegards,\nEmily R. Chen"
+        },
+        {
+          "type": "Merchant Response",
+          "direction": "merchant_to_customer",
+          "sentAt": "2026-02-11T10:30:00Z",
+          "opened": true,
+          "openedAt": "2026-02-11T11:00:00Z",
+          "subject": "RE: Charge inquiry - TXN-983841698",
+          "body": "I contacted Digital Goods LLC through their online support portal on February 12, 2026. They responded on February 14, 2026, stating that their internal records only show one successful transaction for my account on that date. They suggested that the duplicate charge was likely a 'banking error' and advised me to dispute it with my bank."
+        }
+      ]
+    }
+  ]
+}

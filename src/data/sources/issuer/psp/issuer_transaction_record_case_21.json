@@ -1,0 +1,53 @@
+{
+  "source": "Issuing Bank — Transaction Processing",
+  "dataType": "Issuer Transaction Record",
+  "caseReference": "CASE-21",
+  "authorization": {
+    "authorizationCode": "MSB4C7",
+    "authorizationDate": "2026-01-15T10:30:00Z",
+    "responseCode": "00",
+    "amount": 24000,
+    "currency": "USD",
+    "merchantName": "Enterprise Solutions",
+    "merchantCategoryCode": "7372",
+    "terminalId": "WEB-ENTERP001",
+    "posEntryMode": "81",
+    "cardNotPresent": true,
+    "avsResult": {
+      "code": "X",
+      "description": "Exact match, 9-digit ZIP"
+    },
+    "cvvResult": {
+      "code": "M",
+      "description": "CVV match"
+    },
+    "acquirerReferenceNumber": "91032462590095486562406",
+    "merchantId": "009403091254"
+  },
+  "posting": {
+    "postingDate": "2026-01-17T03:00:00Z",
+    "settledAmount": 24000,
+    "settlementDate": "2026-01-17T08:00:00Z",
+    "batchNumber": "BCH-ESOL-20260116-003",
+    "interchangeFee": 360,
+    "networkProcessingFee": 24,
+    "switchSerialNumber": "936231697",
+    "auditControlNumber": "923026215523867"
+  },
+  "cardholderAccount": {
+    "accountType": "Credit Card",
+    "cardProduct": "World Elite Mastercard",
+    "accountStanding": "Good",
+    "previousChargebacks": 0,
+    "accountAge": "5 years",
+    "maskedPAN": "912343****0909",
+    "issuerBIN": "953309"
+  },
+  "riskFlags": {
+    "velocityCheck": "Normal",
+    "geolocationMismatch": "None",
+    "unusualAmount": "No",
+    "firstTimeAtMerchant": false,
+    "deviceTrustScore": "High"
+  }
+}

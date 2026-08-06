@@ -1,0 +1,19 @@
+{
+  "source": "CulinaryEdge Pro — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4809",
+  "reasonCodeDescription": "Non-Receipt of Requested Information",
+  "orderRecord": {
+    "orderStatus": "Completed — delivered and signed for",
+    "items": [
+      {
+        "name": "Professional Chef's Knife Set — 8-piece, German steel",
+        "quantity": 1,
+        "unitPrice": 189.95,
+        "sku": "CE-KS8-GS"
+      }
+    ],
+    "shippingAddress": "Cardholder's billing address",
+    "orderNotes": "Order placed online. Shipped and delivered successfully with signature."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source": "NutriDirect Phone Sales — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4857",
+  "reasonCodeDescription": "Card-Activated Telephone Transaction",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "N",
+      "description": "No match — address provided by caller does not match"
+    },
+    "cvv": {
+      "responseCode": "N",
+      "description": "CVV not collected during phone call"
+    }
+  }
+}

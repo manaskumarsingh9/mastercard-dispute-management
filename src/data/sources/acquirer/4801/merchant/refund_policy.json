@@ -1,0 +1,12 @@
+{
+  "source": "TechGear Online — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4801",
+  "reasonCodeDescription": "Requested Transaction Data Not Received",
+  "policy": {
+    "refundWindow": "30 days from purchase date",
+    "policy": "Full refund within 30 days if item returned in original packaging.",
+    "disclosureMethod": "Policy on website footer and checkout page.",
+    "customerAcknowledgment": "Standard website terms apply."
+  }
+}

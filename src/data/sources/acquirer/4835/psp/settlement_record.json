@@ -1,0 +1,9 @@
+{
+  "source": "Brilliance Jewelers — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4835",
+  "reasonCodeDescription": "Card Not Valid or Expired",
+  "settlementRecord": {
+    "notes": "Settled for $385.00. Merchant relied on authorization approval and did not verify card's printed expiration date."
+  }
+}

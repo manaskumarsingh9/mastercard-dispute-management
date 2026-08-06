@@ -1,0 +1,40 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "caseReference": "CASE-21",
+  "chargebackFiling": {
+    "filingDate": "2026-02-15",
+    "chargebackAmount": 24000,
+    "currency": "USD",
+    "reasonCode": "4834",
+    "reasonCodeDescription": "Duplicate Processing",
+    "issuerBIN": "953309",
+    "acquirerBIN": "009222",
+    "cardholderNotificationDate": "2026-01-28",
+    "chargebackDeadline": "2026-04-01",
+    "supportingDocuments": [
+      {
+        "documentType": "Cardholder Affidavit",
+        "description": "Cardholder confirmation of duplicate charge and single authorization",
+        "dateProvided": "2026-01-25"
+      },
+      {
+        "documentType": "Account Statement",
+        "description": "Account statement showing two identical charges posted to the cardholder's account",
+        "dateProvided": "2026-02-10"
+      }
+    ],
+    "issuerCommentary": "Our cardholder initiated a single transaction with Enterprise Solutions for services amounting to 24000.00 USD on 2026-01-20. However, our cardholder's account shows two separate, identical charges from Enterprise Solutions, both for 24000.00 USD, posted on 2026-01-21 and 2026-01-22 respectively, for what the cardholder confirms was a single set of services. This constitutes duplicate processing, as the cardholder only authorized and received services corresponding to one transaction.\n\nThis chargeback is being filed under Mastercard Reason Code 4834 (Duplicate Processing). As per the Mastercard Chargeback Guide, this reason code is applicable when a transaction has been processed more than once, or more than one transaction has been posted to the cardholder's account, for the same goods or services. The supporting account statement and cardholder affidavit clearly demonstrate that two distinct charges were applied for a single authorized purchase, in violation of Mastercard Rule 5.3.4 'Duplicate Transaction Processing'.",
+    "representmentDeadline": "2026-04-01",
+    "arbitrationEligible": false,
+    "claimReference": "900002081009"
+  },
+  "transactionDetails": {
+    "originalTransactionDate": "2026-01-20",
+    "postingDate": "2026-01-21",
+    "authorizationCode": "TJB2103",
+    "cardPresent": false,
+    "ecommerceIndicator": "Non-3D Secure Transaction",
+    "recurringPayment": false
+  }
+}

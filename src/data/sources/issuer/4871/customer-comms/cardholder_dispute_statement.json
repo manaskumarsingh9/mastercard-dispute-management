@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4871",
+  "reasonCodeDescription": "Chip/PIN Liability Shift — Lost/Stolen/NRI",
+  "statement": {
+    "disputeReason": "4871 - Chip/PIN Liability Shift — Lost/Stolen/NRI",
+    "detailedDescription": "The cardholder reports their card was stolen [1 day before this transaction]. A $156.78 grocery purchase at 'FRESHMART SUPERMARKET' was made the next day. The cardholder did not make this purchase and reported the card as stolen to the bank.",
+    "contactedMerchant": false,
+    "merchantResponseSummary": "N/A — card was stolen; cardholder did not visit the store.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Reversal of the $156.78 charge made on the stolen card.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium — merchant may have valid defense documentation.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4871 (Chip/PIN Liability Shift — Lost/Stolen/NRI).",
+    "priority": "Standard"
+  }
+}

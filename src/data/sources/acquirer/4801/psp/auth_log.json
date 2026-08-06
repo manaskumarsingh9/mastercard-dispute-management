@@ -1,0 +1,14 @@
+{
+  "source": "TechGear Online — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4801",
+  "reasonCodeDescription": "Requested Transaction Data Not Received",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Ecommerce",
+    "threeDSecure": null,
+    "notes": "Authorization was obtained at time of purchase. However, the full transaction record and sales draft are unavailable due to a system migration."
+  }
+}

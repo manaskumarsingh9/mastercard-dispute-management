@@ -1,0 +1,12 @@
+{
+  "source": "GiftCardVault — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4840",
+  "reasonCodeDescription": "Fraudulent Processing of Transaction",
+  "policy": {
+    "refundWindow": "N/A — digital goods",
+    "policy": "Digital gift cards are non-refundable once redeemed.",
+    "disclosureMethod": "Terms displayed at checkout.",
+    "customerAcknowledgment": "Purchaser agreed to terms."
+  }
+}

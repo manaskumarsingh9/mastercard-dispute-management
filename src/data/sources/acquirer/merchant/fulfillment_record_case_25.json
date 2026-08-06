@@ -1,0 +1,19 @@
+{
+  "source": "Payment Gateway — Fulfillment System",
+  "dataType": "Fulfillment Record",
+  "caseReference": "CASE-25",
+  "records": [
+    {
+      "fulfillmentId": "FUL-000025",
+      "orderId": "ORD-000025",
+      "fulfillmentType": "Digital Delivery",
+      "fulfillmentStatus": "Completed",
+      "fulfilledDate": "2026-01-28T14:30:00Z",
+      "carrier": null,
+      "trackingNumber": null,
+      "itemsFulfilled": 1,
+      "customerName": "Emily R. Davidson",
+      "customerEmail": "emily.davidson@email.com"
+    }
+  ]
+}

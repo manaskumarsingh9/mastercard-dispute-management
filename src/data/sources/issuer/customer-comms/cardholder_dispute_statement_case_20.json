@@ -1,0 +1,26 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "caseReference": "CASE-20",
+  "statement": {
+    "cardholderName": "Emily R. Chen",
+    "dateSubmitted": "2026-02-15",
+    "disputeReason": "Duplicate Processing - Two charges for the same transaction",
+    "detailedDescription": "On February 10, 2026, I made a single purchase from Digital Goods LLC for $34.99. This was for a specific software license, and I received a single order confirmation via email after the transaction was completed on their website. I only intended to make and only believe I made one purchase at that time.\n\nHowever, upon reviewing my bank statement on February 13, 2026, I discovered two separate charges from 'DIGITAL GOODS LLC' for the exact same amount of $34.99, both appearing with a transaction date of February 10, 2026. I verified my account history with Digital Goods LLC, and it clearly shows only one completed order corresponding to this date and amount. There is no other product or service I purchased that would justify a second charge.\n\nThis appears to be a clear instance of duplicate billing for a single transaction. I am requesting a credit for one of these charges, as only one purchase was made.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "I contacted Digital Goods LLC through their online support portal on February 12, 2026. They responded on February 14, 2026, stating that their internal records only show one successful transaction for my account on that date. They suggested that the duplicate charge was likely a 'banking error' and advised me to dispute it with my bank.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "I request a full credit for one of the duplicate $34.99 charges posted by Digital Goods LLC on February 10, 2026.",
+    "cardholderDeclaration": "I, Emily R. Chen, declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Low - Clear evidence of duplicate transaction. Cardholder attempted merchant resolution.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4834 (Duplicate Processing).",
+    "caseOfficer": "Sarah Miller",
+    "priority": "Standard",
+    "issuerCaseId": "9415835",
+    "issuerBIN": "949456"
+  },
+  "claimReference": "900002077882",
+  "chargebackReferenceNumber": "9900084076"
+}

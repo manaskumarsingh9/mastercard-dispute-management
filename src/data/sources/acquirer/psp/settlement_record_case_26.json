@@ -1,0 +1,19 @@
+{
+  "source": "Luxury Goods Ltd — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "caseReference": "CASE-26",
+  "records": [
+    {
+      "transactionId": "TXN-953344667",
+      "settlementDate": "2026-01-17",
+      "settlementAmount": 1250,
+      "settlementCurrency": "USD",
+      "merchantId": "009403037985",
+      "merchantName": "Luxury Goods Ltd",
+      "batchId": "BATCH-26-001",
+      "status": "Settled",
+      "cardholderName": "Sarah Chen",
+      "cardLastFour": "8380"
+    }
+  ]
+}

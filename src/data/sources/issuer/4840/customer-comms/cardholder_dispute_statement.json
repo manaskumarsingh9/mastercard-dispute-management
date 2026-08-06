@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4840",
+  "reasonCodeDescription": "Fraudulent Processing of Transaction",
+  "statement": {
+    "disputeReason": "4840 - Fraudulent Processing of Transaction",
+    "detailedDescription": "The cardholder reports a $500.00 purchase from 'GIFTCARDVAULT' for digital gift cards they did not authorize. The cardholder has never used this merchant. Investigation suggests the card data was compromised in a data breach. Multiple gift cards were purchased and instantly redeemed, a pattern consistent with fraud.",
+    "contactedMerchant": false,
+    "merchantResponseSummary": "N/A — the cardholder did not make this purchase and has no account with this merchant.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Full reversal due to fraudulent processing.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium-High — evidence supports cardholder's position.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4840 (Fraudulent Processing of Transaction).",
+    "priority": "Standard"
+  }
+}

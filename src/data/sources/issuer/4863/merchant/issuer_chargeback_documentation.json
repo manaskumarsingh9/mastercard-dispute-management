@@ -1,0 +1,23 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4863",
+  "reasonCodeDescription": "Cardholder Does Not Recognize Transaction",
+  "chargebackFiling": {
+    "reasonCode": "4863",
+    "reasonCodeDescription": "Cardholder Does Not Recognize Transaction",
+    "supportingDocuments": [
+      {
+        "type": "Cardholder Dispute Form",
+        "desc": "Statement that the cardholder does not recognize the merchant or the charge."
+      }
+    ],
+    "issuerCommentary": "Filing under 4863. The cardholder does not recognize this transaction or the merchant name on their statement.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI_07",
+    "posEntryMode": "81"
+  }
+}

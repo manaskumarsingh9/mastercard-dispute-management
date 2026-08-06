@@ -1,0 +1,19 @@
+{
+  "source": "Payment Gateway — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "caseReference": "CASE-25",
+  "records": [
+    {
+      "transactionId": "TXN-980382766",
+      "settlementDate": "2026-01-30",
+      "settlementAmount": 8,
+      "settlementCurrency": "USD",
+      "merchantId": "009403546917",
+      "merchantName": "Payment Gateway",
+      "batchId": "BATCH-25-001",
+      "status": "Settled",
+      "cardholderName": "Emily R. Davidson",
+      "cardLastFour": "4946"
+    }
+  ]
+}

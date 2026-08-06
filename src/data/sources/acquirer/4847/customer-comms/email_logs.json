@@ -1,0 +1,15 @@
+{
+  "source": "ElectroWorld Megastore — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4847",
+  "reasonCodeDescription": "Exceeds Floor Limit — Not Authorized and Fraud",
+  "communications": [
+    {
+      "type": "No Communications",
+      "dir": "system_note",
+      "timing": "N/A",
+      "subject": "N/A",
+      "body": "In-store purchase. Customer paid with a magnetic stripe swipe while the POS terminal was offline. The cashier processed the sale under offline fallback procedures. No authorization was obtained from the issuer because the terminal could not connect. The customer left with the TV."
+    }
+  ]
+}

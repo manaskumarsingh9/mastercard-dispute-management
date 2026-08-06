@@ -1,0 +1,16 @@
+{
+  "source": "QuickFuel Station #247 — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4807",
+  "reasonCodeDescription": "Warning Bulletin File",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "Y",
+      "description": "ZIP code entered at pump matched billing ZIP"
+    },
+    "cvv": {
+      "responseCode": "N/A",
+      "description": "Magnetic stripe CVV1 on track data"
+    }
+  }
+}

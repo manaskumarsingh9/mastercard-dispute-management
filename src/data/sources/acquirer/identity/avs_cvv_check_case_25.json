@@ -1,0 +1,24 @@
+{
+  "source": "Payment Gateway — Payment Processor",
+  "dataType": "AVS/CVV Verification Results",
+  "caseReference": "CASE-25",
+  "records": [
+    {
+      "transactionId": "TXN-980382766",
+      "cardLastFour": "4946",
+      "avsResult": "Y",
+      "streetMatch": true,
+      "zipMatch": true,
+      "cvvMatch": true,
+      "cvvResult": "M",
+      "cardholderNameMatch": true,
+      "cardholderName": "Emily R. Davidson",
+      "emailVerified": true,
+      "email": "emily.davidson@email.com",
+      "phoneVerified": true,
+      "cvc2Result": "M",
+      "cvc2Match": true,
+      "cardNetwork": "Mastercard"
+    }
+  ]
+}

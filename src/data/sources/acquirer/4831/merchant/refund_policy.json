@@ -1,0 +1,12 @@
+{
+  "source": "The Olive Garden Terrace — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4831",
+  "reasonCodeDescription": "Transaction Amount Differs",
+  "policy": {
+    "refundWindow": "N/A — restaurant",
+    "policy": "Dining charges final. Tip line presented on receipt for cardholder to fill in and sign.",
+    "disclosureMethod": "Tip line and total line on receipt.",
+    "customerAcknowledgment": "Cardholder signed receipt with $102.00 total including $17.00 tip in their own handwriting."
+  }
+}

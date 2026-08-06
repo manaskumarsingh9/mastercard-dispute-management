@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4807",
+  "reasonCodeDescription": "Warning Bulletin File",
+  "statement": {
+    "disputeReason": "4807 - Warning Bulletin File",
+    "detailedDescription": "The cardholder's card was reported stolen [3 days before this transaction] and placed on the Mastercard Warning Bulletin the same day. Despite this, a $68.45 fuel purchase at QuickFuel Station #247 was processed using the stolen card via magnetic stripe at a pay-at-pump terminal. The cardholder did not make this transaction.",
+    "contactedMerchant": false,
+    "merchantResponseSummary": "N/A — card was stolen; cardholder had no interaction with this merchant.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Full reversal. Merchant failed to check the Warning Bulletin.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium-High — evidence supports cardholder's position.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4807 (Warning Bulletin File).",
+    "priority": "Standard"
+  }
+}

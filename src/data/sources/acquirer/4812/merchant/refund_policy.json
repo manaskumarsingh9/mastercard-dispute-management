@@ -1,0 +1,12 @@
+{
+  "source": "Metro Fashion Department Store — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4812",
+  "reasonCodeDescription": "Account Number Not on File",
+  "policy": {
+    "refundWindow": "30 days from purchase with receipt",
+    "policy": "Full refund within 30 days with receipt. Items must be unworn with tags.",
+    "disclosureMethod": "Printed on receipt and posted at register.",
+    "customerAcknowledgment": "Receipt provided at point of sale."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source": "FitPro Equipment Co. — Authentication",
+  "dataType": "3D Secure Authentication Record",
+  "reasonCode": "4850",
+  "reasonCodeDescription": "Installment Billing Dispute",
+  "threeDSecure": {
+    "version": "2.0",
+    "enrolled": true,
+    "status": "Y — Authenticated at initial purchase",
+    "eci": "05",
+    "cavv": "Verified",
+    "challenge": true,
+    "liabilityShift": "Yes",
+    "notes": "3D Secure completed at initial purchase. Subsequent installments use authenticated card-on-file."
+  }
+}

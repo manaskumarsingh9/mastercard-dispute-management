@@ -1,0 +1,19 @@
+{
+  "source": "CaseArtisan — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4863",
+  "reasonCodeDescription": "Cardholder Does Not Recognize Transaction",
+  "orderRecord": {
+    "orderStatus": "Completed — delivered",
+    "items": [
+      {
+        "name": "Custom Photo Phone Case — iPhone 15, Matte Finish, personalized with customer's uploaded photo",
+        "quantity": 1,
+        "unitPrice": 39.99,
+        "sku": "CA-CPC-I15M"
+      }
+    ],
+    "shippingAddress": "Cardholder's billing address",
+    "orderNotes": "Customer created an account using their email address, uploaded a personal photo for the custom phone case design, and completed checkout. The billing descriptor 'CASEARTISAN' matches the business name displayed on the website and in the order confirmation."
+  }
+}

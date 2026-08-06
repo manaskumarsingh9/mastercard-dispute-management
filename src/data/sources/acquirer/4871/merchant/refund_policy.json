@@ -1,0 +1,12 @@
+{
+  "source": "FreshMart Supermarket — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4871",
+  "reasonCodeDescription": "Chip/PIN Liability Shift — Lost/Stolen/NRI",
+  "policy": {
+    "refundWindow": "N/A — grocery purchase",
+    "policy": "Grocery items: exchanges or store credit for defective products within 7 days with receipt.",
+    "disclosureMethod": "Printed on receipt.",
+    "customerAcknowledgment": "Receipt provided."
+  }
+}

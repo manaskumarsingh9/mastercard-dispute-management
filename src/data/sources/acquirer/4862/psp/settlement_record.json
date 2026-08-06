@@ -1,0 +1,9 @@
+{
+  "source": "Prestige Leather Boutique — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4862",
+  "reasonCodeDescription": "Counterfeit Transaction (Magnetic Stripe)",
+  "settlementRecord": {
+    "notes": "Settled for $650.00. The merchant's terminal does not support EMV chip. The card's magnetic stripe data was processed successfully, but forensic analysis by the issuer indicates the stripe data was cloned."
+  }
+}

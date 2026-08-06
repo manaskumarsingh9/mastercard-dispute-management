@@ -1,0 +1,22 @@
+{
+  "source": "FreeTrial Corp — 3DS Authentication Provider",
+  "dataType": "3D Secure Authentication Record",
+  "caseReference": "CASE-22",
+  "records": [
+    {
+      "transactionId": "TXN-927809341",
+      "threeDSVersion": "2.2.0",
+      "authenticationStatus": "Authenticated",
+      "eci": "05",
+      "cavv": "CAVV2292780934",
+      "dsTransactionId": "DS-927809341",
+      "challengeRequired": false,
+      "challengeCompleted": false,
+      "cardholderName": "Eleanor Vance",
+      "merchantName": "FreeTrial Corp",
+      "amount": 0,
+      "currency": "USD",
+      "timestamp": "2026-01-28T14:30:00Z"
+    }
+  ]
+}

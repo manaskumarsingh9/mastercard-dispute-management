@@ -1,0 +1,16 @@
+{
+  "source": "CaseArtisan — Authentication",
+  "dataType": "3D Secure Authentication Record",
+  "reasonCode": "4863",
+  "reasonCodeDescription": "Cardholder Does Not Recognize Transaction",
+  "threeDSecure": {
+    "version": "2.0",
+    "enrolled": true,
+    "status": "Y — Fully Authenticated",
+    "eci": "05",
+    "cavv": "Verified",
+    "challenge": true,
+    "liabilityShift": "Yes — liability shifted to issuer",
+    "notes": "3D Secure completed. One-time passcode verified."
+  }
+}

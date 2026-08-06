@@ -1,0 +1,26 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "caseReference": "CASE-26",
+  "statement": {
+    "cardholderName": "Sarah Chen",
+    "dateSubmitted": "2026-01-15",
+    "disputeReason": "Unauthorized Transaction (Fraud)",
+    "detailedDescription": "On reviewing my recent credit card statement, I discovered a transaction dated 2026-01-10 for $1250.00 USD made to 'Luxury Goods Ltd'. I absolutely did not make this purchase, nor did I authorize anyone else to use my card for this transaction. I have never shopped at 'Luxury Goods Ltd' and do not recognize this merchant or purchase whatsoever. My card was in my possession at all times around the date of the transaction.\n\nI am deeply concerned that my credit card information has been compromised and used fraudulently. This transaction is completely foreign to my spending habits and lifestyle. I regularly monitor my accounts for suspicious activity, and this charge immediately stood out as fraudulent. I have not shared my card details with anyone and I am meticulous about online security.\n\nI am requesting an immediate investigation into this unauthorized charge. I believe my card details were stolen and used without my knowledge or consent. This has caused significant distress, and I urge the bank to take swift action to resolve this matter.",
+    "contactedMerchant": false,
+    "merchantResponseSummary": "N/A - Cardholder did not contact the merchant directly as this is believed to be a clear case of fraud.",
+    "previousDisputeHistory": "None reported for the past 36 months.",
+    "requestedResolution": "A full refund of the unauthorized charge of $1250.00 USD and immediate cancellation of the compromised card to prevent further fraudulent activity.",
+    "cardholderDeclaration": "I, Sarah Chen, declare that the information provided in this dispute statement is true and accurate to the best of my knowledge and belief. I understand that providing false information may result in my claim being denied."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "High - Cardholder states clear unauthorized activity. Consistent with typical fraud patterns (4837). No prior dispute history, indicating genuine distress.",
+    "recommendedAction": "Initiate chargeback immediately under Mastercard Reason Code 4837 (No Cardholder Authorization). Issue new card to cardholder and advise on monitoring credit report for suspicious activity.",
+    "caseOfficer": "Marcus Reed",
+    "priority": "High",
+    "issuerCaseId": "94151021",
+    "issuerBIN": "941745"
+  },
+  "claimReference": "900002096644",
+  "chargebackReferenceNumber": "9900110002"
+}

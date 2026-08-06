@@ -1,0 +1,24 @@
+{
+  "source": "Issuing Bank — Transaction Processing",
+  "dataType": "Issuer Transaction Record",
+  "reasonCode": "4801",
+  "reasonCodeDescription": "Requested Transaction Data Not Received",
+  "authorization": {
+    "responseCode": "00",
+    "merchantCategoryCode": "5999",
+    "posEntryMode": "81",
+    "cardNotPresent": true,
+    "avsResult": {
+      "code": "U",
+      "description": "Address information unavailable"
+    },
+    "cvvResult": {
+      "code": "P",
+      "description": "Not processed"
+    }
+  },
+  "riskFlags": {
+    "geolocationMismatch": "Unknown — insufficient data",
+    "deviceTrustScore": "Unknown"
+  }
+}

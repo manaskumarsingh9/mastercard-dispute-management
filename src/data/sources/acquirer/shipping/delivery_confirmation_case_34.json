@@ -1,0 +1,26 @@
+{
+  "source": "Jewelry Online — Delivery Service",
+  "dataType": "Delivery Confirmation",
+  "caseReference": "CASE-34",
+  "records": [
+    {
+      "orderId": "ORD-000034",
+      "transactionId": "TXN-921598787",
+      "deliveryDate": "2026-01-17T14:22:00Z",
+      "deliveryStatus": "Delivered",
+      "recipientName": "Jessica Thompson",
+      "signatureOnFile": true,
+      "deliveryAddress": {
+        "name": "Jessica Thompson",
+        "street": "338 Poplar Way",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98101",
+        "country": "US"
+      },
+      "photoProof": true,
+      "deliveryNotes": "Left with resident, signature obtained",
+      "carrier": "UPS"
+    }
+  ]
+}

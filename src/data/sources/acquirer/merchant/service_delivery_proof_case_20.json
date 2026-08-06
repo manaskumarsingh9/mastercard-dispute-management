@@ -1,0 +1,29 @@
+{
+  "source": "Digital Goods LLC — Service Platform",
+  "dataType": "Service Delivery Proof",
+  "caseReference": "CASE-20",
+  "records": [
+    {
+      "orderId": "ORD-000020",
+      "transactionId": "TXN-983841698",
+      "serviceType": "Single-use software license key",
+      "activationDate": "2026-02-10T14:30:00Z",
+      "serviceStatus": "Active",
+      "lastAccessDate": "2026-02-13T00:00:00.000Z",
+      "accessLogs": [
+        {
+          "date": "2026-02-10T14:30:00Z",
+          "action": "Service activated",
+          "ip": "92.160.140.5"
+        },
+        {
+          "date": "2026-02-11T00:00:00.000Z",
+          "action": "User login",
+          "ip": "92.160.140.5"
+        }
+      ],
+      "customerName": "Emily R. Chen",
+      "customerEmail": "emily.chen@email.com"
+    }
+  ]
+}

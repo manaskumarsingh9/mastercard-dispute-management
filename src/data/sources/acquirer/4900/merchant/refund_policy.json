@@ -1,0 +1,12 @@
+{
+  "source": "DevToolsPro — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4900",
+  "reasonCodeDescription": "Mastercard Compliance",
+  "policy": {
+    "refundWindow": "30 days from purchase",
+    "policy": "Full refund within 30 days if license is not activated.",
+    "disclosureMethod": "On checkout page and in confirmation email.",
+    "customerAcknowledgment": "Customer agreed to terms at checkout."
+  }
+}

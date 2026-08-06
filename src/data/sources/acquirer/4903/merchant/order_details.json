@@ -1,0 +1,19 @@
+{
+  "source": "TimePiece Gallery — Authorized Dealer — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4903",
+  "reasonCodeDescription": "Mastercard Compliance — Exceeds Limit",
+  "orderRecord": {
+    "orderStatus": "Completed — customer left with merchandise",
+    "items": [
+      {
+        "name": "Swiss Automatic Chronograph Watch — Stainless Steel",
+        "quantity": 1,
+        "unitPrice": 3200,
+        "sku": "TPG-SAC-SS"
+      }
+    ],
+    "shippingAddress": null,
+    "orderNotes": "In-store purchase at authorized dealer. EMV chip transaction with PIN verified. Real-time authorization was requested and received with approval code. The authorization request included the full amount of $3,200.00 and was approved by the issuer without a referral or decline."
+  }
+}

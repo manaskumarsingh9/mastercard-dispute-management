@@ -1,0 +1,29 @@
+{
+  "source": "Payment Gateway — Fraud Detection Service",
+  "dataType": "Device Fingerprint Analysis",
+  "caseReference": "CASE-25",
+  "records": [
+    {
+      "transactionId": "TXN-980382766",
+      "sessionId": "SES-25-980382",
+      "ipAddress": "97.175.175.70",
+      "deviceType": "Desktop",
+      "browser": "Chrome 121.0",
+      "os": "Windows 11",
+      "screenResolution": "1920x1080",
+      "vpnDetected": false,
+      "proxyDetected": false,
+      "torDetected": false,
+      "riskScore": 10,
+      "riskLevel": "Low",
+      "knownDevice": true,
+      "previousTransactions": 8,
+      "geolocation": {
+        "country": "US",
+        "region": "PA",
+        "city": "Philadelphia"
+      },
+      "cardholderName": "Emily R. Davidson"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4902",
+  "reasonCodeDescription": "Mastercard Compliance — Below Floor Limit",
+  "statement": {
+    "disputeReason": "4902 - Mastercard Compliance — Below Floor Limit",
+    "detailedDescription": "The issuer asserts that a $12.50 transaction at 'MORNING BREW CAFÉ' was processed without authorization. Even though the amount is below the floor limit, the issuer contends that the merchant should have obtained authorization given the card's risk status.",
+    "contactedMerchant": false,
+    "merchantResponseSummary": "N/A — compliance issue raised by the issuer.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Reversal for processing without authorization.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium — merchant may have valid defense documentation.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4902 (Mastercard Compliance — Below Floor Limit).",
+    "priority": "Standard"
+  }
+}

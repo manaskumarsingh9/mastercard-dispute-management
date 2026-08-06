@@ -1,0 +1,20 @@
+{
+  "source": "The Olive Garden Terrace — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4831",
+  "reasonCodeDescription": "Transaction Amount Differs",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "N/A — card-present restaurant",
+      "trust": "N/A",
+      "match": true
+    },
+    "ipAnalysis": {
+      "level": "N/A",
+      "proxy": false,
+      "geoMatch": true,
+      "notes": "Card used at restaurant's physical location."
+    },
+    "overallRiskScore": "Low — standard restaurant tip adjustment"
+  }
+}

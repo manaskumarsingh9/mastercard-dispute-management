@@ -1,0 +1,50 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "caseReference": "CASE-30",
+  "chargebackFiling": {
+    "filingDate": "2026-03-01",
+    "chargebackAmount": 2100,
+    "currency": "USD",
+    "reasonCode": "4859",
+    "reasonCodeDescription": "Addendum, No-show, or ATM Dispute",
+    "issuerBIN": "948762",
+    "acquirerBIN": "009222",
+    "cardholderNotificationDate": "2026-02-20",
+    "chargebackDeadline": "2026-05-15",
+    "supportingDocuments": [
+      {
+        "documentType": "Cardholder Dispute Form",
+        "description": "Signed declaration by cardholder detailing the dispute.",
+        "dateProvided": "2026-02-18"
+      },
+      {
+        "documentType": "Cardholder Bank Statement",
+        "description": "Statement showing the disputed transaction posting.",
+        "dateProvided": "2026-02-18"
+      },
+      {
+        "documentType": "Merchant Communication Record",
+        "description": "Emails/call logs demonstrating cardholder's attempt to resolve directly with Travel Agency.",
+        "dateProvided": "2026-02-25"
+      },
+      {
+        "documentType": "Booking Confirmation/Itinerary",
+        "description": "Original booking details provided by the cardholder, confirming the service booked.",
+        "dateProvided": "2026-02-18"
+      }
+    ],
+    "issuerCommentary": "The cardholder, Ms. Jane Doe, reports that she was charged USD 2100.00 by 'Travel Agency' for a travel service (a flight booking) that was ultimately not provided. According to Ms. Doe, the flight was confirmed for January 25, 2026, but due to unforeseen circumstances, she attempted to cancel or modify the booking on January 20, 2026, within what she believed was the merchant's cancellation policy. Despite her efforts to communicate and resolve the matter directly with 'Travel Agency', the merchant processed the full charge, treating it as a 'no-show' without offering a refund or alternative.\n\nThis chargeback is being initiated under Mastercard Reason Code 4859, which covers 'Addendum, No-show, or ATM Dispute.' Specifically, it relates to a 'no-show' scenario where the cardholder did not receive the expected service and the merchant failed to appropriately handle the cancellation request or provide a refund. Mastercard Rule 05.04.05 mandates that for a 'no-show,' the issuer must demonstrate that the cardholder made a good-faith attempt to resolve the dispute with the merchant. Our records and the submitted communication logs confirm such attempts were made by Ms. Doe without a satisfactory resolution being achieved prior to filing this dispute.",
+    "representmentDeadline": "2026-04-15",
+    "arbitrationEligible": true,
+    "claimReference": "900002109152"
+  },
+  "transactionDetails": {
+    "originalTransactionDate": "2026-01-15",
+    "postingDate": "2026-01-16",
+    "authorizationCode": "APC3012",
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI 5 (Secure eCommerce)",
+    "recurringPayment": false
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source": "Seaside Grand Hotel — Authentication",
+  "dataType": "3D Secure Authentication Record",
+  "reasonCode": "4859",
+  "reasonCodeDescription": "Addendum, No-show, or ATM Dispute",
+  "threeDSecure": {
+    "version": "2.0",
+    "enrolled": true,
+    "status": "Y — Authenticated at booking",
+    "eci": "05",
+    "cavv": "Verified",
+    "challenge": true,
+    "liabilityShift": "Yes",
+    "notes": "3D Secure completed at time of booking."
+  }
+}

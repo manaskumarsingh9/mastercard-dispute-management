@@ -1,0 +1,24 @@
+{
+  "source": "Online Marketplace — Payment Processor",
+  "dataType": "AVS/CVV Verification Results",
+  "caseReference": "CASE-28",
+  "records": [
+    {
+      "transactionId": "TXN-982137321",
+      "cardLastFour": "3005",
+      "avsResult": "Y",
+      "streetMatch": true,
+      "zipMatch": true,
+      "cvvMatch": true,
+      "cvvResult": "M",
+      "cardholderNameMatch": true,
+      "cardholderName": "Sarah J. Miller",
+      "emailVerified": true,
+      "email": "sarah.miller@email.com",
+      "phoneVerified": true,
+      "cvc2Result": "M",
+      "cvc2Match": true,
+      "cardNetwork": "Mastercard"
+    }
+  ]
+}

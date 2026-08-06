@@ -1,0 +1,19 @@
+{
+  "source": "Streaming Service — Fulfillment System",
+  "dataType": "Fulfillment Record",
+  "caseReference": "CASE-35",
+  "records": [
+    {
+      "fulfillmentId": "FUL-000035",
+      "orderId": "ORD-000035",
+      "fulfillmentType": "Digital Delivery",
+      "fulfillmentStatus": "Completed",
+      "fulfilledDate": "2026-02-10T14:30:00Z",
+      "carrier": null,
+      "trackingNumber": null,
+      "itemsFulfilled": 1,
+      "customerName": "Evelyn R. Hayes",
+      "customerEmail": "evelyn.hayes@email.com"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "source": "Vogue Street Fashion — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4870",
+  "reasonCodeDescription": "Chip Liability Shift — Counterfeit",
+  "settlementRecord": {
+    "notes": "Settled for $412.00. Terminal does not support EMV chip. Liability shifts to acquirer under EMV counterfeit liability shift."
+  }
+}

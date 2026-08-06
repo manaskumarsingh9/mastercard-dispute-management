@@ -1,0 +1,53 @@
+{
+  "source": "Issuing Bank — Transaction Processing",
+  "dataType": "Issuer Transaction Record",
+  "caseReference": "CASE-34",
+  "authorization": {
+    "authorizationCode": "MCL567DF",
+    "authorizationDate": "2026-01-15T10:30:15Z",
+    "responseCode": "00",
+    "amount": 3500,
+    "currency": "USD",
+    "merchantName": "Jewelry Online",
+    "merchantCategoryCode": "5094",
+    "terminalId": "WEB000123",
+    "posEntryMode": "81",
+    "cardNotPresent": true,
+    "avsResult": {
+      "code": "M",
+      "description": "Street Address Match, Zip Code Match"
+    },
+    "cvvResult": {
+      "code": "M",
+      "description": "CVV/CVC Match"
+    },
+    "acquirerReferenceNumber": "91032462590758344003005",
+    "merchantId": "009403221909"
+  },
+  "posting": {
+    "postingDate": "2026-01-17T09:15:00Z",
+    "settledAmount": 3500,
+    "settlementDate": "2026-01-17",
+    "batchNumber": "BAT20260117001",
+    "interchangeFee": 52.5,
+    "networkProcessingFee": 0.1,
+    "switchSerialNumber": "961299172",
+    "auditControlNumber": "923487708154783"
+  },
+  "cardholderAccount": {
+    "accountType": "Credit Card",
+    "cardProduct": "World Elite Mastercard",
+    "accountStanding": "Good",
+    "previousChargebacks": 0,
+    "accountAge": "5 years",
+    "maskedPAN": "912343****5277",
+    "issuerBIN": "938744"
+  },
+  "riskFlags": {
+    "velocityCheck": "Normal",
+    "geolocationMismatch": "None detected",
+    "unusualAmount": "Elevated",
+    "firstTimeAtMerchant": true,
+    "deviceTrustScore": "Medium"
+  }
+}

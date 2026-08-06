@@ -1,0 +1,26 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "caseReference": "CASE-25",
+  "statement": {
+    "cardholderName": "Emily R. Davidson",
+    "dateSubmitted": "2026-02-10",
+    "disputeReason": "Duplicate Processing - Transaction processed twice",
+    "detailedDescription": "On January 28, 2026, I attempted to make an $8.00 payment to 'Payment Gateway' for an online service. After entering my card details and clicking 'submit,' the page seemed to hang for an unusually long time. I did not receive an immediate confirmation, nor did the page redirect or provide any clear indication that the transaction went through successfully.\n\nFearing the payment hadn't processed, I refreshed the page and tried to make the payment again on January 29, 2026, assuming the first attempt had failed. However, upon reviewing my bank statement on February 3, 2026, I discovered two separate charges of $8.00 each from 'Payment Gateway' appearing on January 28th and January 29th, 2026, respectively. I only intended to make one payment for this service, and I only authorized one successful transaction. One of these charges is clearly a duplicate.\n\nI have attached screenshots of my statement showing both transactions, as well as a screenshot of the 'Payment Gateway' portal confirming only one active subscription associated with my account. There is no justifiable reason for two separate charges of the same amount for the same service within such a short timeframe.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "Cardholder states she contacted 'Payment Gateway' customer service via their online chat portal on February 5, 2026. The merchant representative advised her that their system only shows one successful payment linked to her account for the service, and suggested that any duplicate charges might be a bank-side error or a 'pending' transaction that would eventually drop off. They were unhelpful in resolving the issue and directed her to contact her bank.",
+    "previousDisputeHistory": false,
+    "requestedResolution": "Credit for the duplicate transaction of $8.00 USD.",
+    "cardholderDeclaration": "I declare that the information provided in this statement is true and accurate to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Low - Clear evidence of duplicate charge based on cardholder statement and narrative.",
+    "recommendedAction": "Initiate chargeback request under Mastercard Reason Code 4834 (Duplicate Processing). Advise cardholder of the process and timeline.",
+    "caseOfficer": "Sarah J. Chen",
+    "priority": "Medium",
+    "issuerCaseId": "9415990",
+    "issuerBIN": "945046"
+  },
+  "claimReference": "900002093517",
+  "chargebackReferenceNumber": "9900105681"
+}

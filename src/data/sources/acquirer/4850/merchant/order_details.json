@@ -1,0 +1,19 @@
+{
+  "source": "FitPro Equipment Co. — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4850",
+  "reasonCodeDescription": "Installment Billing Dispute",
+  "orderRecord": {
+    "orderStatus": "Active installment plan — installment 4 of 12",
+    "items": [
+      {
+        "name": "FitPro Home Gym Package — Multi-Station, 150lb Stack",
+        "quantity": 1,
+        "unitPrice": 1500,
+        "sku": "FP-HGP-150"
+      }
+    ],
+    "shippingAddress": "Cardholder's billing address",
+    "orderNotes": "12-month installment plan at $125.00/month. Total: $1,500.00. Equipment delivered [4 months ago]. The $99/month was a promotional estimate shown during a limited-time sale that had ended before this customer completed checkout. The final agreement signed by the customer shows $125/month."
+  }
+}

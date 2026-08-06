@@ -1,0 +1,14 @@
+{
+  "source": "SunCoast Travel Agency — Fulfillment",
+  "dataType": "Fulfillment & Delivery Record",
+  "reasonCode": "4842",
+  "reasonCodeDescription": "Late Presentment",
+  "fulfillmentRecord": {
+    "type": "Hospitality Service",
+    "status": "Completed — guest checked in and checked out [4 months before]",
+    "method": "Hotel stay — 2 nights",
+    "timing": "[4 months before the clearing]",
+    "confirmed": true,
+    "notes": "Guest completed the stay. The service was fully rendered but clearing was delayed due to a system issue."
+  }
+}

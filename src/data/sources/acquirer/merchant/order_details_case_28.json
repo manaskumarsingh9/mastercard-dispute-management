@@ -1,0 +1,43 @@
+{
+  "source": "Online Marketplace — Order Management System",
+  "dataType": "Order Details",
+  "caseReference": "CASE-28",
+  "records": [
+    {
+      "orderId": "ORD-000028",
+      "transactionId": "TXN-982137321",
+      "orderDate": "2026-01-20T14:30:00Z",
+      "orderStatus": "Fulfilled",
+      "amount": 89.99,
+      "currency": "USD",
+      "items": [
+        {
+          "name": "Custom Hand-Painted Ceramic Mug",
+          "quantity": 1,
+          "unitPrice": 89.99,
+          "sku": "SKU-OM-28"
+        }
+      ],
+      "billingDescriptor": "ONLINE MARKETPLACE*ORD-000028",
+      "billingAddress": {
+        "name": "Sarah J. Miller",
+        "street": "296 Spruce Pl",
+        "city": "Dallas",
+        "state": "TX",
+        "zip": "75201",
+        "country": "US"
+      },
+      "shippingAddress": {
+        "name": "Sarah J. Miller",
+        "street": "296 Spruce Pl",
+        "city": "Dallas",
+        "state": "TX",
+        "zip": "75201",
+        "country": "US"
+      },
+      "ipAddress": "100.184.196.109",
+      "customerEmail": "sarah.miller@email.com",
+      "customerPhone": "+12003111108"
+    }
+  ]
+}

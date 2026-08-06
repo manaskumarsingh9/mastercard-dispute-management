@@ -1,0 +1,9 @@
+{
+  "source": "DevToolsPro — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4900",
+  "reasonCodeDescription": "Mastercard Compliance",
+  "settlementRecord": {
+    "notes": "Settled for $79.00. The acquirer has verified that all required Mastercard data elements are present in the transaction record. The acquirer's compliance team has confirmed the transaction meets all current processing standards."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "source": "FreshMart Supermarket — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4871",
+  "reasonCodeDescription": "Chip/PIN Liability Shift — Lost/Stolen/NRI",
+  "orderRecord": {
+    "orderStatus": "Completed — customer left with groceries",
+    "items": [
+      {
+        "name": "Assorted groceries — produce, dairy, household items",
+        "quantity": 1,
+        "unitPrice": 156.78,
+        "sku": "FM-GROC-MIX"
+      }
+    ],
+    "shippingAddress": null,
+    "orderNotes": "In-store grocery purchase. EMV chip was read successfully. PIN was entered correctly on the first attempt. The terminal is fully chip-and-PIN capable. Per Mastercard's liability shift rules, when a chip card is used with correct PIN verification at a chip-enabled terminal, liability for lost/stolen card fraud shifts to the issuer."
+  }
+}

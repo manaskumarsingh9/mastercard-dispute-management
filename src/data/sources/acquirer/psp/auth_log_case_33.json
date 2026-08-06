@@ -1,0 +1,25 @@
+{
+  "source": "Auto Parts Store — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "caseReference": "CASE-33",
+  "records": [
+    {
+      "transactionId": "TXN-938155939",
+      "authorizationCode": "AUTH361327",
+      "requestTimestamp": "2026-01-28T14:30:00Z",
+      "responseTimestamp": "2026-01-28T14:30:02.000Z",
+      "amount": 780,
+      "currency": "USD",
+      "cardLastFour": "9399",
+      "cardholderName": "Eleanor Vance",
+      "entryMode": "Chip",
+      "responseCode": "00",
+      "responseMessage": "Approved",
+      "merchantId": "009403137236",
+      "merchantName": "Auto Parts Store",
+      "terminalId": "TERM-33",
+      "acquirerBIN": "009222",
+      "issuerBIN": "933649"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "source": "Prestige Leather Boutique — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4862",
+  "reasonCodeDescription": "Counterfeit Transaction (Magnetic Stripe)",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "N/A",
+      "description": "Card-present"
+    },
+    "cvv": {
+      "responseCode": "N/A",
+      "description": "CVV1 on cloned magnetic stripe"
+    }
+  }
+}

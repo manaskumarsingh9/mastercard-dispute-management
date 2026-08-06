@@ -1,0 +1,26 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "caseReference": "CASE-24",
+  "statement": {
+    "cardholderName": "Eleanor Vance",
+    "dateSubmitted": "2026-01-20",
+    "disputeReason": "Cancelled Recurring Transaction (Reason Code 4841)",
+    "detailedDescription": "I am disputing a charge of $8.00 USD from 'SaaS Platform' that appeared on my statement dated January 15, 2026. This charge is for a monthly subscription service that I explicitly canceled on December 10, 2025. I received an email confirmation on December 10, 2025, confirming that my subscription would not renew after my current billing cycle ended on December 31, 2025. I had no intention of continuing the service as I no longer needed it.\n\nUpon seeing the charge for January, I immediately checked my account with 'SaaS Platform' and confirmed that my subscription status was indeed marked as 'canceled, effective December 31, 2025'. I then contacted their customer support via email on January 16, 2026, explaining the erroneous charge and providing proof of my cancellation. Their response, received on January 17, 2026, stated that 'charges can take up to 3-5 business days to clear' and suggested I 'monitor my statement', which was unhelpful as the charge had already posted and was clearly for a new billing cycle. I followed up, but received no further clarification or resolution.\n\nI have not used any services from 'SaaS Platform' since December 31, 2025, and have not logged into the platform. This charge is for a service I canceled, did not receive, and did not intend to receive. I believe this charge is unauthorized.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "Merchant responded via email on January 17, 2026, stating that charges may take time to clear and advised monitoring my statement. They did not acknowledge the cancellation proof or offer a refund for the disputed charge, and subsequent follow-ups were ignored. Their response did not resolve the issue.",
+    "previousDisputeHistory": "None with this merchant.",
+    "requestedResolution": "Credit for the unauthorized charge of $8.00 USD.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true and accurate to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Low - Cardholder provided clear details and proof of cancellation attempt and communication with merchant.",
+    "recommendedAction": "Proceed with chargeback under Reason Code 4841. Request supporting documentation from merchant if necessary.",
+    "caseOfficer": "Marcus Chen",
+    "priority": "Medium",
+    "issuerCaseId": "9415959",
+    "issuerBIN": "918823"
+  },
+  "claimReference": "900002090390",
+  "chargebackReferenceNumber": "9900101360"
+}

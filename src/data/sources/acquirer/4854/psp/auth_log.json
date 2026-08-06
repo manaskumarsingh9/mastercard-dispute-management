@@ -1,0 +1,19 @@
+{
+  "source": "MasterLens Academy — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4854",
+  "reasonCodeDescription": "Cardholder Dispute — Not Elsewhere Classified",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Ecommerce",
+    "threeDSecure": {
+      "enrolled": true,
+      "authenticated": true,
+      "eci": "05",
+      "cavv": "Verified"
+    },
+    "notes": "Standard e-commerce authorization with 3D Secure."
+  }
+}

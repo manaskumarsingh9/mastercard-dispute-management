@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4903",
+  "reasonCodeDescription": "Mastercard Compliance — Exceeds Limit",
+  "statement": {
+    "disputeReason": "4903 - Mastercard Compliance — Exceeds Limit",
+    "detailedDescription": "The issuer asserts that a $3,200.00 transaction at 'TIMEPIECE GALLERY' exceeded the applicable processing limit and authorization was not properly obtained. The issuer claims the transaction should have required enhanced authorization.",
+    "contactedMerchant": false,
+    "merchantResponseSummary": "N/A — compliance issue raised by the issuer.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Reversal for exceeding processing limits without proper authorization.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium — merchant may have valid defense documentation.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4903 (Mastercard Compliance — Exceeds Limit).",
+    "priority": "Standard"
+  }
+}

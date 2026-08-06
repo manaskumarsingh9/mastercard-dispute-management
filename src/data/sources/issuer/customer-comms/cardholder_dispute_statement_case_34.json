@@ -1,0 +1,26 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "caseReference": "CASE-34",
+  "statement": {
+    "cardholderName": "Jessica Thompson",
+    "dateSubmitted": "2026-01-15",
+    "disputeReason": "Cardholder Does Not Recognize Transaction (Reason Code 4863)",
+    "detailedDescription": "Upon reviewing my latest credit card statement, I noticed a transaction from 'Jewelry Online' for $3500.00 USD on or around January 12, 2026. I absolutely did not make this purchase. I have never heard of 'Jewelry Online' before and certainly have no recollection of visiting their website or authorizing any such transaction.\n\nI do not purchase jewelry online, especially not items of this value, and I can confirm that my credit card was in my physical possession at all times around the transaction date. No one else has access to my card or its details. This transaction appears to be completely unauthorized and fraudulent.\n\nI am deeply concerned about this charge and believe my card information may have been compromised. I am requesting a full investigation into this matter and for the unauthorized charge to be removed from my account.",
+    "contactedMerchant": false,
+    "merchantResponseSummary": null,
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Full credit for the disputed amount of $3500.00 USD and an investigation into the unauthorized use of my card.",
+    "cardholderDeclaration": "I, Jessica Thompson, declare that the information provided above is true and accurate to the best of my knowledge and belief. I understand that providing false information may result in my liability for the disputed transaction."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "High. Significant transaction amount ($3500.00 USD). Cardholder explicitly denies recognition of merchant and transaction, strongly suggesting potential card compromise or fraudulent activity. Requires urgent attention.",
+    "recommendedAction": "Initiate chargeback under Reason Code 4863. Provisionally credit cardholder's account. Recommend immediate card cancellation and reissuance. Monitor for any other suspicious activity on related accounts.",
+    "caseOfficer": "Marcus Velez",
+    "priority": "High",
+    "issuerCaseId": "94151269",
+    "issuerBIN": "938744"
+  },
+  "claimReference": "900002121660",
+  "chargebackReferenceNumber": "9900144570"
+}

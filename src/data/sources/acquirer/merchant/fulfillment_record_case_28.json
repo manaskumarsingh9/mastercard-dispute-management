@@ -1,0 +1,19 @@
+{
+  "source": "Online Marketplace — Fulfillment System",
+  "dataType": "Fulfillment Record",
+  "caseReference": "CASE-28",
+  "records": [
+    {
+      "fulfillmentId": "FUL-000028",
+      "orderId": "ORD-000028",
+      "fulfillmentType": "Physical Shipment",
+      "fulfillmentStatus": "Completed",
+      "fulfilledDate": "2026-01-21T00:00:00.000Z",
+      "carrier": "UPS",
+      "trackingNumber": "1Z999345660",
+      "itemsFulfilled": 1,
+      "customerName": "Sarah J. Miller",
+      "customerEmail": "sarah.miller@email.com"
+    }
+  ]
+}
