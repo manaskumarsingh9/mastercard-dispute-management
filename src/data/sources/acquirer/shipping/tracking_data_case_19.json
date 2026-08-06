@@ -1,0 +1,57 @@
+{
+  "source": "Shipping Provider",
+  "dataType": "Tracking Data",
+  "retrievedAt": "2026-03-25T08:08:00Z",
+  "provider": "UPS",
+  "caseReference": "CASE-19",
+  "records": [
+    {
+      "trackingNumber": "1877022790",
+      "carrier": "UPS",
+      "serviceType": "UPS Express",
+      "shipDate": "2026-02-24",
+      "estimatedDelivery": "2026-02-28",
+      "actualDelivery": "2026-02-25T04:16:00Z",
+      "status": "Delivered",
+      "signedBy": "J. SMITH",
+      "deliveryLocation": "Reception",
+      "weight": "9.5 lbs",
+      "dimensions": "15x4x3 in",
+      "shippingAddress": {
+        "name": "John Smith",
+        "street": "456 Maple Ave",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zip": "90001",
+        "country": "US"
+      },
+      "events": [
+        {
+          "timestamp": "2026-03-28T23:29:00Z",
+          "location": "Los Angeles, CA",
+          "description": "Delivered - Signed for by J. SMITH"
+        },
+        {
+          "timestamp": "2026-03-28T11:17:00Z",
+          "location": "Los Angeles, CA",
+          "description": "Out for delivery"
+        },
+        {
+          "timestamp": "2026-03-05T20:44:00Z",
+          "location": "Los Angeles, CA",
+          "description": "At local UPS facility"
+        },
+        {
+          "timestamp": "2026-03-15T14:14:00Z",
+          "location": "Philadelphia, PA",
+          "description": "In transit"
+        },
+        {
+          "timestamp": "2026-03-28T11:17:00Z",
+          "location": "Denver, CO",
+          "description": "Picked up"
+        }
+      ]
+    }
+  ]
+}

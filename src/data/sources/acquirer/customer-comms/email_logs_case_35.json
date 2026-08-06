@@ -1,0 +1,52 @@
+{
+  "source": "Streaming Service — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "caseReference": "CASE-35",
+  "records": [
+    {
+      "email": "evelyn.hayes@email.com",
+      "customerName": "Evelyn R. Hayes",
+      "merchantEmail": "support@streamingservice.com",
+      "merchantName": "Streaming Service",
+      "transactionReference": "TXN-970960742",
+      "communications": [
+        {
+          "type": "Cancellation Request",
+          "direction": "customer_to_merchant",
+          "sentAt": "2026-01-10T09:15:00Z",
+          "opened": true,
+          "openedAt": "2026-01-10T09:20:00Z",
+          "subject": "Cancellation Request",
+          "body": "Hi,\n\nI would like to cancel my subscription with Streaming Service. Please confirm cancellation and ensure I will not be charged again.\n\nThank you,\nEvelyn R. Hayes"
+        },
+        {
+          "type": "Cancellation Confirmation",
+          "direction": "merchant_to_customer",
+          "sentAt": "2026-01-11T11:00:00Z",
+          "opened": true,
+          "openedAt": "2026-01-11T11:30:00Z",
+          "subject": "RE: Cancellation Request",
+          "body": "Hi Evelyn,\n\nYour cancellation request has been received and processed. Your service will remain active until the end of your current billing period. You will not be charged after that date.\n\nCustomer Support\nStreaming Service"
+        },
+        {
+          "type": "Customer Inquiry",
+          "direction": "customer_to_merchant",
+          "sentAt": "2026-02-10T16:00:00Z",
+          "opened": true,
+          "openedAt": "2026-02-10T16:05:00Z",
+          "subject": "Charge inquiry - TXN-970960742",
+          "body": "Hi,\n\nI noticed a charge of $99.99 on my statement from Streaming Service. I would like to understand this charge and request a resolution.\n\nRegards,\nEvelyn R. Hayes"
+        },
+        {
+          "type": "Merchant Response",
+          "direction": "merchant_to_customer",
+          "sentAt": "2026-02-11T10:30:00Z",
+          "opened": true,
+          "openedAt": "2026-02-11T11:00:00Z",
+          "subject": "RE: Charge inquiry - TXN-970960742",
+          "body": "Cardholder contacted 'Streaming Service' customer support on 2026-02-12. Merchant acknowledged cancellation but claimed a 'system glitch' for the charge. Offered a refund but stated a processing time of 'up to 30 business days'. Cardholder found this timeframe unacceptable."
+        }
+      ]
+    }
+  ]
+}

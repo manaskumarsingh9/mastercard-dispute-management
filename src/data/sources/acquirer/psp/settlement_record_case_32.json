@@ -1,0 +1,19 @@
+{
+  "source": "Food Delivery App — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "caseReference": "CASE-32",
+  "records": [
+    {
+      "transactionId": "TXN-952871447",
+      "settlementDate": "2026-02-12",
+      "settlementAmount": 45,
+      "settlementCurrency": "USD",
+      "merchantId": "009403096761",
+      "merchantName": "Food Delivery App",
+      "batchId": "BATCH-32-001",
+      "status": "Settled",
+      "cardholderName": "Eleanor Vance",
+      "cardLastFour": "7903"
+    }
+  ]
+}

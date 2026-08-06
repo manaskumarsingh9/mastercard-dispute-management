@@ -1,0 +1,53 @@
+{
+  "source": "Issuing Bank — Transaction Processing",
+  "dataType": "Issuer Transaction Record",
+  "caseReference": "CASE-31",
+  "authorization": {
+    "authorizationCode": "M1G4XJ",
+    "authorizationDate": "2026-01-15T10:30:00Z",
+    "responseCode": "00",
+    "amount": 150,
+    "currency": "USD",
+    "merchantName": "Subscription Box Co",
+    "merchantCategoryCode": "5968",
+    "terminalId": "WEBTRM001",
+    "posEntryMode": "81",
+    "cardNotPresent": true,
+    "avsResult": {
+      "code": "Y",
+      "description": "Street address and 5-digit ZIP match"
+    },
+    "cvvResult": {
+      "code": "M",
+      "description": "CVV matches"
+    },
+    "acquirerReferenceNumber": "91032462590487886406639",
+    "merchantId": "009403312323"
+  },
+  "posting": {
+    "postingDate": "2026-01-17T12:05:00Z",
+    "settledAmount": 160,
+    "settlementDate": "2026-01-18T15:30:00Z",
+    "batchNumber": "BATCH20260117001",
+    "interchangeFee": 2.88,
+    "networkProcessingFee": 0.1,
+    "switchSerialNumber": "948671442",
+    "auditControlNumber": "923326988206122"
+  },
+  "cardholderAccount": {
+    "accountType": "Credit Card",
+    "cardProduct": "World Elite Mastercard",
+    "accountStanding": "Good",
+    "previousChargebacks": 0,
+    "accountAge": "2 years 6 months",
+    "maskedPAN": "912343****0727",
+    "issuerBIN": "979228"
+  },
+  "riskFlags": {
+    "velocityCheck": false,
+    "geolocationMismatch": false,
+    "unusualAmount": true,
+    "firstTimeAtMerchant": false,
+    "deviceTrustScore": 95
+  }
+}

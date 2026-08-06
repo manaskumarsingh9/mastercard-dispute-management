@@ -1,0 +1,16 @@
+{
+  "source": "RenewTech Store — Authentication",
+  "dataType": "3D Secure Authentication Record",
+  "reasonCode": "4808",
+  "reasonCodeDescription": "Authorization-Related Chargeback",
+  "threeDSecure": {
+    "version": "2.0",
+    "enrolled": true,
+    "status": "Y — Fully Authenticated",
+    "eci": "05",
+    "cavv": "Verified by issuer",
+    "challenge": true,
+    "liabilityShift": "Yes — liability shifted to issuer",
+    "notes": "One-time passcode sent to cardholder's registered phone and entered correctly."
+  }
+}

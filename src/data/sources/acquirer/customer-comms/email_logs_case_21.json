@@ -1,0 +1,34 @@
+{
+  "source": "Enterprise Solutions — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "caseReference": "CASE-21",
+  "records": [
+    {
+      "email": "eleanor.vance@email.com",
+      "customerName": "Eleanor Vance",
+      "merchantEmail": "support@enterprisesolutions.com",
+      "merchantName": "Enterprise Solutions",
+      "transactionReference": "TXN-980145359",
+      "communications": [
+        {
+          "type": "Customer Inquiry",
+          "direction": "customer_to_merchant",
+          "sentAt": "2026-01-15T16:00:00Z",
+          "opened": true,
+          "openedAt": "2026-01-15T16:05:00Z",
+          "subject": "Charge inquiry - TXN-980145359",
+          "body": "Hi,\n\nI noticed a charge of $24000 on my statement from Enterprise Solutions. I would like to understand this charge and request a resolution.\n\nRegards,\nEleanor Vance"
+        },
+        {
+          "type": "Merchant Response",
+          "direction": "merchant_to_customer",
+          "sentAt": "2026-01-16T10:30:00Z",
+          "opened": true,
+          "openedAt": "2026-01-16T11:00:00Z",
+          "subject": "RE: Charge inquiry - TXN-980145359",
+          "body": "The merchant, Enterprise Solutions, stated they only see one transaction on their system and could not resolve the duplicate charge. They advised the cardholder to contact their issuing bank."
+        }
+      ]
+    }
+  ]
+}

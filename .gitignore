@@ -34,3 +34,9 @@ build/
 *.p12
 
 src/main/resources/application.properties
+
+### Agent tooling (Replit/Claude runtime state, not project source) ###
+.local/state/
+.local/skills/
+.local/secondary_skills/
+.agents/

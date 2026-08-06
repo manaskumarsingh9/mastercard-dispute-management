@@ -1,0 +1,19 @@
+{
+  "source": "FitZone Fitness Center — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4905",
+  "reasonCodeDescription": "Mastercard Compliance — Card Not Valid",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Recurring — card on file (updated via Account Updater)",
+    "threeDSecure": {
+      "enrolled": true,
+      "authenticated": true,
+      "eci": "05",
+      "cavv": "Verified at enrollment"
+    },
+    "notes": "Recurring charge processed using card credentials updated through Mastercard's Account Updater service. The issuer's own Account Updater provided the new card details after the original card was reissued. Authorization was requested with the updated credentials and was approved by the issuer."
+  }
+}

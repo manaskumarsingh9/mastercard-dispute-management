@@ -1,0 +1,20 @@
+{
+  "source": "Prestige Leather Boutique — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4862",
+  "reasonCodeDescription": "Counterfeit Transaction (Magnetic Stripe)",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "N/A — card-present, non-EMV terminal",
+      "trust": "N/A",
+      "match": false
+    },
+    "ipAnalysis": {
+      "level": "N/A",
+      "proxy": false,
+      "geoMatch": false,
+      "notes": "Card-present at merchant's store location."
+    },
+    "overallRiskScore": "High — counterfeit card used at non-chip terminal"
+  }
+}

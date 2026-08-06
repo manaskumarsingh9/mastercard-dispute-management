@@ -1,0 +1,16 @@
+{
+  "source": "PhoneShield Pro — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4834",
+  "reasonCodeDescription": "Point of Interaction Error / Duplicate Processing",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "Y",
+      "description": "Full match on both"
+    },
+    "cvv": {
+      "responseCode": "M",
+      "description": "CVV matched on both"
+    }
+  }
+}

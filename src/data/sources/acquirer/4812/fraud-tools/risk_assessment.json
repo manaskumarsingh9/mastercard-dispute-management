@@ -1,0 +1,20 @@
+{
+  "source": "Metro Fashion Department Store — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4812",
+  "reasonCodeDescription": "Account Number Not on File",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "N/A — card-present POS",
+      "trust": "N/A",
+      "match": false
+    },
+    "ipAnalysis": {
+      "level": "N/A",
+      "proxy": false,
+      "geoMatch": false,
+      "notes": "Card-present at store."
+    },
+    "overallRiskScore": "Medium — manual key entry increases error risk"
+  }
+}

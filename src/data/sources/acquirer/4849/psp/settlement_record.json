@@ -1,0 +1,9 @@
+{
+  "source": "SlimFit Wellness — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4849",
+  "reasonCodeDescription": "Questionable Merchant Activity",
+  "settlementRecord": {
+    "notes": "Settled for $89.99. The merchant's overall chargeback ratio has been flagged as elevated by the acquirer."
+  }
+}

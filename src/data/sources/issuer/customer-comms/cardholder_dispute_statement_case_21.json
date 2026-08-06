@@ -1,0 +1,26 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "caseReference": "CASE-21",
+  "statement": {
+    "cardholderName": "Eleanor Vance",
+    "dateSubmitted": "2026-01-20",
+    "disputeReason": "Duplicate Processing",
+    "detailedDescription": "On January 15, 2026, I authorized a single payment of 24000.00 USD to 'Enterprise Solutions' for the annual subscription of their advanced analytics software. The transaction appeared to process normally, and I received an immediate email confirmation for my purchase.\n\nHowever, upon reviewing my online bank statement on January 19, 2026, I discovered two identical charges of 24000.00 USD from 'Enterprise Solutions', both reflecting a transaction date of January 15, 2026. I explicitly only authorized one payment for this service, and I do not have a separate purchase or outstanding balance that would justify a second charge. This clearly indicates a duplicate charge for a single transaction.\n\nI contacted Enterprise Solutions' customer support on January 19, 2026, to rectify this error. After explaining the situation, their representative confirmed that only one subscription was active under my account and stated they could only see a single charge on their internal system. They were unable to void the second transaction and advised me to dispute it with my bank, as it might be a processing error on the bank's or payment network's side.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "The merchant, Enterprise Solutions, stated they only see one transaction on their system and could not resolve the duplicate charge. They advised the cardholder to contact their issuing bank.",
+    "previousDisputeHistory": "No previous chargeback disputes initiated by this cardholder for similar reasons.",
+    "requestedResolution": "I request a credit for the duplicate charge of 24000.00 USD, as I only authorized and received service for a single transaction.",
+    "cardholderDeclaration": "I, Eleanor Vance, declare that the information provided in this statement is true and accurate to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Low risk of fraud, appears to be a genuine processing error based on cardholder's description and merchant's response.",
+    "recommendedAction": "Initiate chargeback under Mastercard reason code 4834 (Duplicate Processing). Request necessary documentation from the cardholder if needed for representment.",
+    "caseOfficer": "Marcus Chen",
+    "priority": "Medium",
+    "issuerCaseId": "9415866",
+    "issuerBIN": "953309"
+  },
+  "claimReference": "900002081009",
+  "chargebackReferenceNumber": "9900088397"
+}

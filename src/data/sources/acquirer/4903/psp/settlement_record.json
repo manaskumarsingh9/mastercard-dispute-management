@@ -1,0 +1,9 @@
+{
+  "source": "TimePiece Gallery — Authorized Dealer — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4903",
+  "reasonCodeDescription": "Mastercard Compliance — Exceeds Limit",
+  "settlementRecord": {
+    "notes": "Settled for $3,200.00 — matches the authorized amount exactly. The issuer approved the full amount at the time of authorization. EMV chip was read and PIN was verified. The transaction was processed in full compliance with Mastercard authorization requirements."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "source": "FitPro Equipment Co. — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4850",
+  "reasonCodeDescription": "Installment Billing Dispute",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "Known device — same as initial purchase",
+      "trust": "High",
+      "match": true
+    },
+    "ipAnalysis": {
+      "level": "Low",
+      "proxy": false,
+      "geoMatch": true,
+      "notes": "IP consistent with cardholder's location."
+    },
+    "overallRiskScore": "Low — established installment plan with prior payments"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4863",
+  "reasonCodeDescription": "Cardholder Does Not Recognize Transaction",
+  "statement": {
+    "disputeReason": "4863 - Cardholder Does Not Recognize Transaction",
+    "detailedDescription": "The cardholder does not recognize a $39.99 charge from 'CASEARTISAN' on their statement. The merchant name does not correspond to any purchase the cardholder recalls. The cardholder states they never ordered a phone case or visited this website.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "The cardholder tried to look up 'CASEARTISAN' online [5 days after noticing the charge] but wasn't sure it was the same store. They did not contact the merchant directly.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Full reversal for unrecognized transaction.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium — merchant may have valid defense documentation.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4863 (Cardholder Does Not Recognize Transaction).",
+    "priority": "Standard"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "source": "Bistro on Main — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4802",
+  "reasonCodeDescription": "Requested Item Not Received",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "EMV Chip — Card Present",
+    "threeDSecure": null,
+    "notes": "Authorization for base meal amount of $85.00. Final settled amount of $104.50 includes a tip added post-authorization. The signed receipt with the tip entry is unavailable."
+  }
+}

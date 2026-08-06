@@ -1,0 +1,43 @@
+{
+  "source": "RenewTech Store — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4808",
+  "reasonCodeDescription": "Authorization-Related Chargeback",
+  "communications": [
+    {
+      "type": "Order Confirmation",
+      "dir": "merchant_to_customer",
+      "timing": "Immediately after purchase",
+      "subject": "Your RenewTech Order #RT-44821 — Refurbished ThinkPad T14",
+      "body": "Thank you for your purchase! Your Refurbished ThinkPad T14 (16GB RAM, 512GB SSD) is confirmed. Total: $549.00. Shipping to your address on file. Delivery: [5-7 business days]."
+    },
+    {
+      "type": "Shipping Notification",
+      "dir": "merchant_to_customer",
+      "timing": "[2 days after purchase]",
+      "subject": "Your RenewTech Order #RT-44821 Has Shipped",
+      "body": "Your laptop has shipped via UPS Ground! Tracking number included. Estimated delivery: [5 days after purchase]."
+    },
+    {
+      "type": "Delivery Confirmation",
+      "dir": "merchant_to_customer",
+      "timing": "[5 days after purchase]",
+      "subject": "Your RenewTech Order #RT-44821 — Delivered",
+      "body": "Your package has been delivered and signed for at your shipping address. If you have any issues, contact us within 30 days."
+    },
+    {
+      "type": "Customer Dispute",
+      "dir": "customer_to_merchant",
+      "timing": "[8 days after purchase]",
+      "subject": "I did not make this purchase",
+      "body": "I see a charge of $549.00 from your store on my statement. I did not authorize this purchase. Please reverse this charge immediately."
+    },
+    {
+      "type": "Merchant Response",
+      "dir": "merchant_to_customer",
+      "timing": "[9 days after purchase]",
+      "subject": "RE: I did not make this purchase",
+      "body": "We have reviewed your order #RT-44821. The purchase was authenticated via 3D Secure (Mastercard Identity Check) with a one-time passcode sent to your registered phone. The billing and shipping addresses match, and the package was delivered and signed for at your address [5 days after purchase]. Our records confirm this was a verified transaction. If you believe your card was used without consent, please contact your bank."
+    }
+  ]
+}

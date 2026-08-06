@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4842",
+  "reasonCodeDescription": "Late Presentment",
+  "chargebackFiling": {
+    "reasonCode": "4842",
+    "reasonCodeDescription": "Late Presentment",
+    "supportingDocuments": [
+      {
+        "type": "Transaction Timeline",
+        "desc": "Showing transaction date was [4 months before] the clearing submission."
+      },
+      {
+        "type": "Cardholder Statement",
+        "desc": "Current statement showing the late-posted charge."
+      }
+    ],
+    "issuerCommentary": "Filing under 4842. The transaction was presented for clearing [4 months after the transaction date], well beyond Mastercard's maximum presentment window of 30 calendar days from the transaction date.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI_07",
+    "posEntryMode": "81"
+  }
+}

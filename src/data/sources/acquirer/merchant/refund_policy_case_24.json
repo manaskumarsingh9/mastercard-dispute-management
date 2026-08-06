@@ -1,0 +1,18 @@
+{
+  "source": "SaaS Platform — Policy Department",
+  "dataType": "Refund/Cancellation Policy",
+  "caseReference": "CASE-24",
+  "records": [
+    {
+      "merchantName": "SaaS Platform",
+      "policyVersion": "2025-12-01",
+      "refundWindow": "30 days from purchase",
+      "cancellationPolicy": "Subscriptions can be cancelled at any time. Cancellation takes effect at the end of the current billing period. No prorated refunds for partial months.",
+      "chargebackPolicy": "All chargebacks are reviewed and responded to with supporting documentation within the required timeframe.",
+      "termsAcceptedByCustomer": true,
+      "termsAcceptedDate": "2026-01-15T14:30:00Z",
+      "customerName": "Eleanor Vance",
+      "customerEmail": "eleanor.vance@email.com"
+    }
+  ]
+}

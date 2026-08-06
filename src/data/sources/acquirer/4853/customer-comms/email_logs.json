@@ -1,0 +1,57 @@
+{
+  "source": "AudioPeak Electronics — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4853",
+  "reasonCodeDescription": "Goods/Services Not as Described or Defective",
+  "communications": [
+    {
+      "type": "Order Confirmation",
+      "dir": "merchant_to_customer",
+      "timing": "Immediately after purchase",
+      "subject": "AudioPeak — Order Confirmation #AP-6674",
+      "body": "Your ProSilence ANC Wireless Headphones are confirmed! Total: $199.99. Ships within 1-2 business days. Review our return policy: items may be returned within 30 days of delivery in original packaging."
+    },
+    {
+      "type": "Shipping Notification",
+      "dir": "merchant_to_customer",
+      "timing": "[1 day after purchase]",
+      "subject": "Your AudioPeak Order Has Shipped — #AP-6674",
+      "body": "Your headphones have shipped. Tracking included. Delivery: [3-5 business days after purchase]."
+    },
+    {
+      "type": "Delivery Confirmation",
+      "dir": "merchant_to_customer",
+      "timing": "[4 days after purchase]",
+      "subject": "Delivered — AudioPeak Order #AP-6674",
+      "body": "Your ProSilence headphones have been delivered! To get the best experience, please update the firmware via our app. Battery life varies by usage: up to 30hrs (ANC off) or 12-15hrs (ANC on). If you have any issues, contact us within 30 days."
+    },
+    {
+      "type": "Customer Complaint",
+      "dir": "customer_to_merchant",
+      "timing": "[18 days after delivery]",
+      "subject": "Headphones not as advertised",
+      "body": "The noise cancellation on these headphones is much weaker than I expected and the battery only lasts about 12 hours, not 30 as advertised. This product is not as described. I want a refund."
+    },
+    {
+      "type": "Merchant Response",
+      "dir": "merchant_to_customer",
+      "timing": "[19 days after delivery]",
+      "subject": "RE: Headphones not as advertised",
+      "body": "Thank you for your feedback. The 30-hour battery life is rated under standard conditions (ANC off, 50% volume) as noted in the detailed product specifications on our website. With ANC enabled, the expected battery life is 12-15 hours, which is consistent with your experience. We'd be happy to process a return within our 30-day window — items must be returned in original packaging. We also recommend updating the firmware via our app, which can improve ANC performance."
+    },
+    {
+      "type": "Customer Follow-up",
+      "dir": "customer_to_merchant",
+      "timing": "[20 days after delivery]",
+      "subject": "RE: RE: Headphones not as advertised",
+      "body": "I already threw away the packaging because I didn't think I'd need to return them. I shouldn't have to keep packaging for a product that doesn't work as advertised."
+    },
+    {
+      "type": "Merchant Final Response",
+      "dir": "merchant_to_customer",
+      "timing": "[21 days after delivery]",
+      "subject": "RE: RE: RE: Headphones not as advertised",
+      "body": "We understand your frustration. Unfortunately, our return policy, which was shared in your order confirmation and at checkout, requires items to be returned in original packaging for a full refund. We can offer a 15% discount on a future purchase as a goodwill gesture. The product is performing within its documented specifications."
+    }
+  ]
+}

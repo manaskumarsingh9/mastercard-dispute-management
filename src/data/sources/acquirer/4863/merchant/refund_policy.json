@@ -1,0 +1,12 @@
+{
+  "source": "CaseArtisan — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4863",
+  "reasonCodeDescription": "Cardholder Does Not Recognize Transaction",
+  "policy": {
+    "refundWindow": "N/A — custom/personalized products",
+    "policy": "Custom personalized products are non-refundable unless there is a manufacturing defect. This was stated at checkout before payment.",
+    "disclosureMethod": "Non-refundable notice displayed next to the 'Place Order' button and in confirmation email.",
+    "customerAcknowledgment": "Customer acknowledged 'Custom items are non-refundable' checkbox at checkout."
+  }
+}

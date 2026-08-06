@@ -1,0 +1,20 @@
+{
+  "source": "Vogue Street Fashion — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4870",
+  "reasonCodeDescription": "Chip Liability Shift — Counterfeit",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "N/A — non-EMV card-present",
+      "trust": "N/A",
+      "match": false
+    },
+    "ipAnalysis": {
+      "level": "N/A",
+      "proxy": false,
+      "geoMatch": false,
+      "notes": "Card-present at store."
+    },
+    "overallRiskScore": "High — counterfeit card, non-chip terminal"
+  }
+}

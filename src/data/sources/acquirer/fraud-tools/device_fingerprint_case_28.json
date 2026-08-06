@@ -1,0 +1,29 @@
+{
+  "source": "Online Marketplace — Fraud Detection Service",
+  "dataType": "Device Fingerprint Analysis",
+  "caseReference": "CASE-28",
+  "records": [
+    {
+      "transactionId": "TXN-982137321",
+      "sessionId": "SES-28-982137",
+      "ipAddress": "100.184.196.109",
+      "deviceType": "Desktop",
+      "browser": "Chrome 121.0",
+      "os": "Windows 11",
+      "screenResolution": "1920x1080",
+      "vpnDetected": false,
+      "proxyDetected": false,
+      "torDetected": false,
+      "riskScore": 10,
+      "riskLevel": "Low",
+      "knownDevice": true,
+      "previousTransactions": 11,
+      "geolocation": {
+        "country": "US",
+        "region": "TX",
+        "city": "Dallas"
+      },
+      "cardholderName": "Sarah J. Miller"
+    }
+  ]
+}

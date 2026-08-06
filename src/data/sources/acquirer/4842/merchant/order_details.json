@@ -1,0 +1,19 @@
+{
+  "source": "SunCoast Travel Agency — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4842",
+  "reasonCodeDescription": "Late Presentment",
+  "orderRecord": {
+    "orderStatus": "Completed — guest stayed [4 months ago]",
+    "items": [
+      {
+        "name": "Hotel Reservation — 2 nights, Ocean View Room",
+        "quantity": 1,
+        "unitPrice": 312,
+        "sku": "SCT-HVR-2N"
+      }
+    ],
+    "shippingAddress": null,
+    "orderNotes": "Hotel stay was completed [4 months before the clearing submission]. The travel agency's batch processing system experienced an extended outage that delayed the submission of multiple transactions."
+  }
+}

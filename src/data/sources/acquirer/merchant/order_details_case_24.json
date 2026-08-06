@@ -1,0 +1,36 @@
+{
+  "source": "SaaS Platform — Order Management System",
+  "dataType": "Order Details",
+  "caseReference": "CASE-24",
+  "records": [
+    {
+      "orderId": "ORD-000024",
+      "transactionId": "TXN-940584054",
+      "orderDate": "2026-01-15T14:30:00Z",
+      "orderStatus": "Completed",
+      "amount": 8,
+      "currency": "USD",
+      "items": [
+        {
+          "name": "SaaS Basic Plan",
+          "quantity": 1,
+          "unitPrice": 8,
+          "sku": "SKU-SP-24"
+        }
+      ],
+      "billingDescriptor": "SAAS PLATFORM*ORD-000024",
+      "billingAddress": {
+        "name": "Eleanor Vance",
+        "street": "268 Elm Dr",
+        "city": "Phoenix",
+        "state": "AZ",
+        "zip": "85001",
+        "country": "US"
+      },
+      "shippingAddress": null,
+      "ipAddress": "96.172.168.57",
+      "customerEmail": "eleanor.vance@email.com",
+      "customerPhone": "+12002666664"
+    }
+  ]
+}

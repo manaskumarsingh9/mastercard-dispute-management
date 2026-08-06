@@ -1,0 +1,25 @@
+{
+  "source": "Fashion Outlet — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "caseReference": "CASE-36",
+  "records": [
+    {
+      "transactionId": "TXN-904712821",
+      "authorizationCode": "AUTH385084",
+      "requestTimestamp": "2026-01-20T14:30:00Z",
+      "responseTimestamp": "2026-01-20T14:30:02.000Z",
+      "amount": 210.5,
+      "currency": "USD",
+      "cardLastFour": "3924",
+      "cardholderName": "Sarah Chen",
+      "entryMode": "Ecommerce",
+      "responseCode": "00",
+      "responseMessage": "Approved",
+      "merchantId": "009403150424",
+      "merchantName": "Fashion Outlet",
+      "terminalId": "ECOM-36",
+      "acquirerBIN": "009222",
+      "issuerBIN": "968950"
+    }
+  ]
+}

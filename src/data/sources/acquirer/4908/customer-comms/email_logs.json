@@ -1,0 +1,29 @@
+{
+  "source": "BookHaven — Rare & Collectible Books — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4908",
+  "reasonCodeDescription": "Mastercard Compliance — Authorization Related",
+  "communications": [
+    {
+      "type": "Pre-Order Confirmation",
+      "dir": "merchant_to_customer",
+      "timing": "[60 days before shipment]",
+      "subject": "BookHaven — Pre-Order Confirmed: 'The Art of Coding' Limited Edition",
+      "body": "Your pre-order is confirmed! Limited Edition 'The Art of Coding' (Signed by Author). Total: $95.00. Expected publication and shipment date: approximately [60 days from now]. Your card will be charged when the book ships. A temporary hold may appear and will be released."
+    },
+    {
+      "type": "Shipping & Charge Notification",
+      "dir": "merchant_to_customer",
+      "timing": "[2 days before delivery]",
+      "subject": "BookHaven — Your Pre-Order Has Shipped! 'The Art of Coding'",
+      "body": "Great news! 'The Art of Coding' Limited Edition has been published and your copy (#342/500) is on its way! Your card has been charged $95.00. Tracking number included."
+    },
+    {
+      "type": "Delivery Confirmation",
+      "dir": "merchant_to_customer",
+      "timing": "On delivery date",
+      "subject": "Delivered — BookHaven Pre-Order 'The Art of Coding'",
+      "body": "Your signed limited edition copy has been delivered to your address. Enjoy!"
+    }
+  ]
+}

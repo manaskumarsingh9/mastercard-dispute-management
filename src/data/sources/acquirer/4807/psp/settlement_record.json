@@ -1,0 +1,9 @@
+{
+  "source": "QuickFuel Station #247 — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4807",
+  "reasonCodeDescription": "Warning Bulletin File",
+  "settlementRecord": {
+    "notes": "Settled at $68.45 for fuel dispensed. Pay-at-pump terminal processed card automatically upon receiving approval."
+  }
+}

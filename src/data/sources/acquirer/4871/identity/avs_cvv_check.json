@@ -1,0 +1,16 @@
+{
+  "source": "FreshMart Supermarket — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4871",
+  "reasonCodeDescription": "Chip/PIN Liability Shift — Lost/Stolen/NRI",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "N/A",
+      "description": "Card-present EMV+PIN"
+    },
+    "cvv": {
+      "responseCode": "N/A",
+      "description": "Chip cryptogram validated"
+    }
+  }
+}

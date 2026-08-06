@@ -1,0 +1,19 @@
+{
+  "source": "RenewTech Store — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4808",
+  "reasonCodeDescription": "Authorization-Related Chargeback",
+  "orderRecord": {
+    "orderStatus": "Completed — delivered and signed for",
+    "items": [
+      {
+        "name": "Refurbished ThinkPad T14 Laptop — 16GB RAM, 512GB SSD",
+        "quantity": 1,
+        "unitPrice": 549,
+        "sku": "RT-T14-R"
+      }
+    ],
+    "shippingAddress": "Matches cardholder's billing address exactly",
+    "orderNotes": "Customer created account, completed checkout with 3D Secure authentication, shipped to billing address, signed for at delivery."
+  }
+}

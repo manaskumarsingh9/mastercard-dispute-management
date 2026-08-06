@@ -1,0 +1,19 @@
+{
+  "source": "DevToolsPro — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4900",
+  "reasonCodeDescription": "Mastercard Compliance",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Ecommerce",
+    "threeDSecure": {
+      "enrolled": true,
+      "authenticated": true,
+      "eci": "05",
+      "cavv": "Verified"
+    },
+    "notes": "Authorization request included all required data fields: merchant category code, terminal ID, acquirer reference number, and all mandatory Mastercard data elements. Transaction processed through PCI-DSS Level 1 certified gateway."
+  }
+}

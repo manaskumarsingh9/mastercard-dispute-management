@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4862",
+  "reasonCodeDescription": "Counterfeit Transaction (Magnetic Stripe)",
+  "chargebackFiling": {
+    "reasonCode": "4862",
+    "reasonCodeDescription": "Counterfeit Transaction (Magnetic Stripe)",
+    "supportingDocuments": [
+      {
+        "type": "Fraud Investigation Report",
+        "desc": "Forensic analysis showing Track 2 data anomalies consistent with magnetic stripe cloning."
+      },
+      {
+        "type": "Cardholder Location Verification",
+        "desc": "Evidence that the cardholder was in their home city at the time of the transaction (mobile banking login from home IP)."
+      }
+    ],
+    "issuerCommentary": "Filing under 4862. Transaction processed via magnetic stripe at a terminal that does not support EMV chip. The magnetic stripe data shows cloning indicators. The genuine cardholder was in a different city at the time.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": true,
+    "ecommerceIndicator": null,
+    "posEntryMode": "90"
+  }
+}

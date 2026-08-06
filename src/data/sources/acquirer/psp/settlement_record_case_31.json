@@ -1,0 +1,19 @@
+{
+  "source": "Subscription Box Co — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "caseReference": "CASE-31",
+  "records": [
+    {
+      "transactionId": "TXN-955547661",
+      "settlementDate": "2026-02-07",
+      "settlementAmount": 150,
+      "settlementCurrency": "USD",
+      "merchantId": "009403312323",
+      "merchantName": "Subscription Box Co",
+      "batchId": "BATCH-31-001",
+      "status": "Settled",
+      "cardholderName": "Eleanor Vance",
+      "cardLastFour": "0727"
+    }
+  ]
+}

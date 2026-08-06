@@ -1,0 +1,53 @@
+{
+  "source": "Issuing Bank — Transaction Processing",
+  "dataType": "Issuer Transaction Record",
+  "caseReference": "CASE-29",
+  "authorization": {
+    "authorizationCode": "583921",
+    "authorizationDate": "2026-01-15T10:30:00Z",
+    "responseCode": "Approved",
+    "amount": 320,
+    "currency": "USD",
+    "merchantName": "Retail Store",
+    "merchantCategoryCode": "5311",
+    "terminalId": "TERM12345",
+    "posEntryMode": "05",
+    "cardNotPresent": false,
+    "avsResult": {
+      "code": "NA",
+      "description": "Not Applicable for Card-Present Transaction"
+    },
+    "cvvResult": {
+      "code": "NA",
+      "description": "Not Applicable for Chip/PIN Transaction"
+    },
+    "acquirerReferenceNumber": "91032462590048219201240",
+    "merchantId": "009403304411"
+  },
+  "posting": {
+    "postingDate": "2026-01-15T18:00:00Z",
+    "settledAmount": 320,
+    "settlementDate": "2026-01-16T08:00:00Z",
+    "batchNumber": "BAT98765",
+    "interchangeFee": 5.44,
+    "networkProcessingFee": 0.32,
+    "switchSerialNumber": "933199025",
+    "auditControlNumber": "923219045109278"
+  },
+  "cardholderAccount": {
+    "accountType": "Credit Card",
+    "cardProduct": "World Elite Mastercard",
+    "accountStanding": "Good",
+    "previousChargebacks": 0,
+    "accountAge": "5 years",
+    "maskedPAN": "912343****7946",
+    "issuerBIN": "910204"
+  },
+  "riskFlags": {
+    "velocityCheck": true,
+    "geolocationMismatch": true,
+    "unusualAmount": false,
+    "firstTimeAtMerchant": true,
+    "deviceTrustScore": 85
+  }
+}

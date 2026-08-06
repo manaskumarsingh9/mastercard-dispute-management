@@ -1,0 +1,354 @@
+Absolutely. Below is a **complete, consolidated, and structured list of all features** that we have discussed **from the very beginning up to now**, faithfully reflecting **your intent**, **scope**, and **design principles**.
+
+This is written so that:
+
+*   ✅ you can use it as a **feature inventory for the POC/demo**
+*   ✅ it can double up as **product documentation**
+*   ✅ it maps cleanly to the architecture and diagrams you validated
+*   ✅ nothing is invented or assumed beyond what *you explicitly described or approved*
+
+***
+
+# ✅ Dispute Management Application – Complete Feature List
+
+***
+
+## 1️⃣ Core Dispute (Chargeback) Management
+
+### 1.1 Issuer‑Initiated Case Ingestion
+
+*   Integration with **Mastercard Mastercom APIs**
+*   Automatic ingestion when:
+    *   Issuer raises a chargeback
+    *   System polls / receives webhooks
+*   System stores:
+    *   Reason codes
+    *   Cardholder complaint text
+    *   Issuer notes
+    *   Issuer‑submitted evidence
+    *   Amount, currency, dates, deadlines, SLA metadata
+
+✅ Happens at ingestion time, **not** on user click
+
+***
+
+### 1.2 Instant Case Readiness (No UI Waiting)
+
+*   All issuer‑side data is:
+    *   Extracted
+    *   Normalized
+    *   Persisted
+    *   Pre‑processed
+*   Clicking a case on the dashboard is a **pure read operation**
+*   No runtime calls to:
+    *   Mastercard
+    *   LLMs
+    *   External systems
+
+✅ Merchant opens a case and everything is already available
+
+***
+
+### 1.3 AI‑Generated Issuer Case Summary
+
+*   Gemini‑powered **Case Summarizer Agent**
+*   Creates a:
+    *   2‑minute readable summary for merchants
+    *   Structured narrative explaining:
+        *   Why the cardholder raised the dispute
+        *   What the issuer claims
+*   Stored permanently with the case
+
+✅ Generated once at ingestion  
+✅ Improves comprehension, not automation
+
+***
+
+## 2️⃣ Dashboard (Raised Chargebacks Tab)
+
+### 2.1 Chargeback List View
+
+*   Table of all raised disputes
+*   Key columns:
+    *   Case ID
+    *   Network
+    *   Reason code & category
+    *   Amount
+    *   Status
+    *   Deadlines / SLA countdown
+    *   Urgency indicators
+
+***
+
+### 2.2 Case Detail View (Single Source of Truth)
+
+When a merchant clicks a case, they see:
+
+*   Issuer summary (AI‑generated)
+*   Issuer reason code explanation
+*   Cardholder complaint details
+*   Issuer-provided evidence
+*   Transaction metadata:
+    *   Product / service
+    *   Merchant name
+    *   Payment method
+    *   Date, time, amount
+*   Network deadlines
+
+✅ Designed for **< 2‑minute understanding**  
+✅ No actions are forced at this stage
+
+***
+
+## 3️⃣ Pre‑Chargeback Alerts (Ethoca Tab)
+
+### 3.1 Ethoca Integration
+
+*   Integration with **Ethoca APIs**
+*   Receives:
+    *   Early dispute alerts
+    *   Fraud notifications
+*   Alerts represent:
+    *   Disputes that may become chargebacks
+    *   Opportunities for early resolution
+
+***
+
+### 3.2 Preventive Collaboration
+
+*   Dedicated tab separate from chargebacks
+*   Enables merchants to:
+    *   Acknowledge issuer alerts
+    *   Take corrective action (refund, clarification, fulfillment check)
+    *   Send outcomes back to issuers
+
+✅ Goal: **prevent chargebacks entirely**
+
+***
+
+## 4️⃣ Merchant‑Driven Evidence Enrichment (Post‑Decision)
+
+### 4.1 Intent‑Based Enrichment
+
+*   Enrichment is triggered **only if merchant decides to challenge**
+*   System does **not** proactively fetch 500+ data points
+
+✅ Saves cost, compute, and complexity
+
+***
+
+### 4.2 PSP Integrations (On Demand)
+
+*   Support for PSP APIs such as:
+    *   Stripe
+    *   Adyen
+    *   Razorpay
+    *   PayPal (as examples)
+*   Data retrieved includes:
+    *   Authorization details
+    *   CVV / AVS checks
+    *   3DS authentication
+    *   Risk scores
+    *   Customer communication records
+
+***
+
+### 4.3 Delivery Partner Integrations (On Demand)
+
+*   Support for multiple delivery providers
+*   Per claim, only the relevant delivery partner is queried
+*   Data includes:
+    *   Proof of delivery
+    *   Tracking events
+    *   Geolocation
+    *   Signatures (if applicable)
+
+***
+
+## 5️⃣ AI‑Assisted Evidence Processing (Gemini‑Powered)
+
+### 5.1 Evidence Relevance Agent
+
+*   Runs after enrichment completes
+*   Reviews all collected merchant‑side data
+*   Selects:
+    *   The **strongest 3–5 pieces of evidence**
+    *   Excludes irrelevant or weak material
+
+✅ Improves issuer readability  
+✅ Reduces noise  
+✅ Improves win rates
+
+***
+
+### 5.2 Evidence Document Composer Agent
+
+*   Uses filtered evidence only
+*   Generates a:
+    *   Clean
+    *   Scannable
+    *   Issuer‑friendly rebuttal narrative
+*   Optimized so issuer personnel can review in **2–3 minutes**
+
+✅ No static templates  
+✅ Dynamic, context‑aware documents
+
+***
+
+## 6️⃣ Optional Decision Recommendation (Post‑Enrichment Only)
+
+### 6.1 Challenge Recommendation Agent
+
+*   Runs **only after enrichment**
+*   Runs **only if merchant enables it**
+*   Provides:
+    *   “Strong / Weak / Borderline” challenge indication
+    *   Explanation of reasoning
+*   Based on:
+    *   Evidence quality
+    *   Evidence completeness
+    *   Historical outcomes
+
+✅ Advisory only  
+✅ Never auto‑submits  
+✅ Can be completely disabled to save computation
+
+***
+
+## 7️⃣ Submission to Mastercard
+
+### 7.1 Customizable Submission Modes
+
+Each merchant can choose one or more modes:
+
+#### ✅ Manual Submission
+
+*   Merchant reviews everything
+*   Optionally edits AI draft
+*   Clicks “Submit to Mastercom”
+
+#### ✅ Threshold‑Based Auto‑Submit
+
+*   Merchant defines rules, e.g.:
+    *   Amount < X
+    *   Strong challenge recommendation
+*   Submission happens automatically **only if rules match**
+
+#### ✅ Collaborative Review
+
+*   Multiple users participate
+*   Approval required before submission
+*   Suitable for enterprise workflows
+
+✅ The **policy**, not AI, authorizes submission
+
+***
+
+## 8️⃣ Settings Tab (Control Plane)
+
+### 8.1 Normal User View
+
+Allows merchants to configure:
+
+*   Whether AI assistance is enabled
+*   Whether enrichment is automatic or manual
+*   Whether challenge recommendations are shown
+*   Submission mode preferences
+*   Thresholds and rules
+
+***
+
+### 8.2 Admin View
+
+Administrative controls include:
+
+*   Uploading network policy documents:
+    *   Mastercard
+    *   Visa
+    *   Discover (extensible)
+*   Managing governance boundaries
+
+***
+
+## 9️⃣ AI‑Powered Policy Intelligence
+
+### 9.1 Policy Diff & Impact Analysis
+
+*   Admin uploads a new network policy document
+*   **Policy Intelligence Agent**:
+    *   Compares with previous version
+    *   Highlights changes
+    *   Explains operational impact
+
+***
+
+### 9.2 Suggested Configuration Review
+
+*   AI suggests where merchant settings *may* need review:
+    *   SLA highlight thresholds
+    *   Urgency rules
+*   No settings are auto‑changed
+
+✅ Human remains in full control
+
+***
+
+## 🔐 10️⃣ Privacy, Compliance & Safety
+
+### 10.1 PII Scrubbing
+
+*   All PII is:
+    *   Masked
+    *   Tokenized
+*   Before sending data to Gemini LLMs
+
+✅ GDPR & PCI aligned  
+✅ No raw customer PII to LLM
+
+***
+
+## 11️⃣ Analytics & Insights (Later Phase / Optional)
+
+### 11.1 Outcome Tracking
+
+*   Store results of disputes:
+    *   Won / lost
+    *   Amount recovered
+*   Feed:
+    *   Analytics DB
+    *   Vector store (pgvector) for learning
+
+***
+
+### 11.2 Analytics Insight Agent (Future)
+
+*   Explains trends such as:
+    *   Reason‑code win rates
+    *   PSP / delivery partner performance
+    *   Root causes of loss
+
+✅ Read‑only  
+✅ Human‑interpretable insights
+
+***
+
+## ✅ Final Summary
+
+You are building a system that supports:
+
+*   ✅ Reactive dispute management
+*   ✅ Preventive pre‑chargeback collaboration
+*   ✅ Intent‑based, cost‑aware enrichment
+*   ✅ Human‑in‑the‑loop AI assistance
+*   ✅ Configurable automation (per merchant)
+*   ✅ Governance‑aware compliance
+*   ✅ Future‑ready analytics
+
+Nothing important is missing.  
+Nothing unnecessary has been added.
+
+If you want next, we can:
+
+*   Convert this into a **PRD-style feature list**
+*   Map features → **backend modules**
+*   Identify **what to mock vs implement** for the POC

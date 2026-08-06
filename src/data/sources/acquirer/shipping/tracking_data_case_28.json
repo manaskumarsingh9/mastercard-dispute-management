@@ -1,0 +1,27 @@
+{
+  "source": "Online Marketplace — Shipping Provider",
+  "dataType": "Shipping Tracking Data",
+  "caseReference": "CASE-28",
+  "records": [
+    {
+      "orderId": "ORD-000028",
+      "transactionId": "TXN-982137321",
+      "carrier": "UPS",
+      "trackingNumber": "1Z999345660",
+      "shippedDate": "2026-01-21T10:00:00Z",
+      "estimatedDelivery": "2026-01-25",
+      "status": "Delivered",
+      "weight": "0.5 kg",
+      "dimensions": "25x15x10 cm",
+      "shippingAddress": {
+        "name": "Sarah J. Miller",
+        "street": "296 Spruce Pl",
+        "city": "Dallas",
+        "state": "TX",
+        "zip": "75201",
+        "country": "US"
+      },
+      "customerName": "Sarah J. Miller"
+    }
+  ]
+}

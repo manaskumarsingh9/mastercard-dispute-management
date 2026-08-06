@@ -1,0 +1,22 @@
+{
+  "source": "Streaming Service — 3DS Authentication Provider",
+  "dataType": "3D Secure Authentication Record",
+  "caseReference": "CASE-35",
+  "records": [
+    {
+      "transactionId": "TXN-970960742",
+      "threeDSVersion": "2.2.0",
+      "authenticationStatus": "Authenticated",
+      "eci": "05",
+      "cavv": "CAVV3597096074",
+      "dsTransactionId": "DS-970960742",
+      "challengeRequired": false,
+      "challengeCompleted": false,
+      "cardholderName": "Evelyn R. Hayes",
+      "merchantName": "Streaming Service",
+      "amount": 99.99,
+      "currency": "USD",
+      "timestamp": "2026-02-10T14:30:00Z"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "source": "Electronics Hub — IP Intelligence Service",
+  "dataType": "IP Risk Assessment",
+  "caseReference": "CASE-27",
+  "records": [
+    {
+      "transactionId": "TXN-972850548",
+      "ipAddress": "99.181.189.96",
+      "riskScore": 5,
+      "riskLevel": "Low",
+      "country": "US",
+      "region": "CA",
+      "city": "San Diego",
+      "isp": "Major US ISP",
+      "isVPN": false,
+      "isProxy": false,
+      "isTor": false,
+      "isHosting": false,
+      "threatCategory": "None",
+      "previousActivity": "Normal consumer behavior",
+      "cardholderName": "Eleanor Vance"
+    }
+  ]
+}

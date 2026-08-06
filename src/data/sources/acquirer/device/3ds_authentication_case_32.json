@@ -1,0 +1,22 @@
+{
+  "source": "Food Delivery App — 3DS Authentication Provider",
+  "dataType": "3D Secure Authentication Record",
+  "caseReference": "CASE-32",
+  "records": [
+    {
+      "transactionId": "TXN-952871447",
+      "threeDSVersion": "2.2.0",
+      "authenticationStatus": "Authenticated",
+      "eci": "05",
+      "cavv": "CAVV3295287144",
+      "dsTransactionId": "DS-952871447",
+      "challengeRequired": false,
+      "challengeCompleted": false,
+      "cardholderName": "Eleanor Vance",
+      "merchantName": "Food Delivery App",
+      "amount": 45,
+      "currency": "USD",
+      "timestamp": "2026-02-10T14:30:00Z"
+    }
+  ]
+}

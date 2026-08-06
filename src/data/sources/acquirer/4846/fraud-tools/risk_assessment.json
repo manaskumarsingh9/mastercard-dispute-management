@@ -1,0 +1,20 @@
+{
+  "source": "EuroLux Boutique — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4846",
+  "reasonCodeDescription": "Correct Currency Code Not Provided",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "Known device",
+      "trust": "High",
+      "match": true
+    },
+    "ipAnalysis": {
+      "level": "Low",
+      "proxy": false,
+      "geoMatch": true,
+      "notes": "US-based cardholder accessing French merchant website — expected for cross-border."
+    },
+    "overallRiskScore": "Low risk of fraud — but currency configuration error present"
+  }
+}

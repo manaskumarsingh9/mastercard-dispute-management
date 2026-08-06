@@ -1,0 +1,34 @@
+{
+  "source": "FreeTrial Corp — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "caseReference": "CASE-22",
+  "records": [
+    {
+      "email": "eleanor.vance@email.com",
+      "customerName": "Eleanor Vance",
+      "merchantEmail": "support@freetrialcorp.com",
+      "merchantName": "FreeTrial Corp",
+      "transactionReference": "TXN-927809341",
+      "communications": [
+        {
+          "type": "Customer Inquiry",
+          "direction": "customer_to_merchant",
+          "sentAt": "2026-01-28T16:00:00Z",
+          "opened": true,
+          "openedAt": "2026-01-28T16:05:00Z",
+          "subject": "Charge inquiry - TXN-927809341",
+          "body": "Hi,\n\nI noticed a charge of $0 on my statement from FreeTrial Corp. I would like to understand this charge and request a resolution.\n\nRegards,\nEleanor Vance"
+        },
+        {
+          "type": "Merchant Response",
+          "direction": "merchant_to_customer",
+          "sentAt": "2026-01-29T10:30:00Z",
+          "opened": true,
+          "openedAt": "2026-01-29T11:00:00Z",
+          "subject": "RE: Charge inquiry - TXN-927809341",
+          "body": "I contacted FreeTrial Corp's customer support via their website chat on February 05, 2026. The representative, 'Maya,' confirmed that their system showed only one active free trial under my email. When I explained the duplicate $0.00 transaction on my bank statement, she was unable to explain why it appeared twice and advised me to contact my bank as it might be a 'bank-side processing issue' or a 'visual error' on my statement. She confirmed there was no financial impact from their end and couldn't process a cancellation for a $0.00 transaction."
+        }
+      ]
+    }
+  ]
+}

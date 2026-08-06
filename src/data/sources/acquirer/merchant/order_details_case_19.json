@@ -1,0 +1,46 @@
+{
+  "source": "Merchant Platform",
+  "dataType": "Order Details",
+  "retrievedAt": "2026-03-20T23:17:00Z",
+  "provider": "TechStore Pro",
+  "caseReference": "CASE-19",
+  "records": [
+    {
+      "orderId": "ORD-001234",
+      "transactionId": "TXN-001234",
+      "orderDate": "2026-03-02T05:47:00Z",
+      "orderStatus": "Fulfilled",
+      "amount": 34.99,
+      "currency": "USD",
+      "items": [
+        {
+          "name": "USB-C Hub Adapter (Model: TSP-4700)",
+          "quantity": 1,
+          "unitPrice": 29.99,
+          "sku": "SKU-13055"
+        }
+      ],
+      "shippingCost": 5.00,
+      "billingDescriptor": "TECHSTORE PRO*ORD-001234",
+      "billingAddress": {
+        "name": "John Smith",
+        "street": "456 Maple Ave",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zip": "90001",
+        "country": "US"
+      },
+      "shippingAddress": {
+        "name": "John Smith",
+        "street": "456 Maple Ave",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zip": "90001",
+        "country": "US"
+      },
+      "ipAddress": "65.56.72.107",
+      "customerEmail": "john.smith@email.com",
+      "customerPhone": "+12152363055"
+    }
+  ]
+}

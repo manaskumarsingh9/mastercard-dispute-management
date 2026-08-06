@@ -1,0 +1,45 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "caseReference": "CASE-25",
+  "chargebackFiling": {
+    "filingDate": "2026-02-15",
+    "chargebackAmount": 8,
+    "currency": "USD",
+    "reasonCode": "4834",
+    "reasonCodeDescription": "Duplicate Processing",
+    "issuerBIN": "945046",
+    "acquirerBIN": "009222",
+    "cardholderNotificationDate": "2026-02-01",
+    "chargebackDeadline": "2026-05-10",
+    "supportingDocuments": [
+      {
+        "documentType": "Cardholder Dispute Form",
+        "description": "Signed dispute form from cardholder detailing duplicate charge",
+        "dateProvided": "2026-02-05"
+      },
+      {
+        "documentType": "Transaction History",
+        "description": "Portion of cardholder statement clearly showing two identical 8.00 USD charges from 'Payment Gateway' on January 10, 2026.",
+        "dateProvided": "2026-02-10"
+      },
+      {
+        "documentType": "Merchant Communication",
+        "description": "Email correspondence between cardholder and merchant's support regarding the duplicate charge, without resolution.",
+        "dateProvided": "2026-02-08"
+      }
+    ],
+    "issuerCommentary": "The cardholder reported a duplicate charge for a single transaction. On January 10, 2026, two separate debits of 8.00 USD appeared on their statement from 'Payment Gateway' with identical amounts, dates, and apparent transaction details, despite only one intended purchase being made. Evidence provided by the cardholder, including their statement, clearly shows both entries.\n\nPer Mastercard Chargeback Guide, Reason Code 4834 (Duplicate Processing) is being filed as the cardholder was charged more than once for the same transaction. This chargeback seeks to reverse the erroneous second charge of 8.00 USD, in accordance with Mastercard Rule 05.01.01, which states that a chargeback is permitted for duplicate transactions. We request the reversal of one of the duplicate transactions.",
+    "representmentDeadline": "2026-04-01",
+    "arbitrationEligible": false,
+    "claimReference": "900002093517"
+  },
+  "transactionDetails": {
+    "originalTransactionDate": "2026-01-10",
+    "postingDate": "2026-01-11",
+    "authorizationCode": "DLT2507",
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI 5 - Single Transaction (3-D Secure)",
+    "recurringPayment": false
+  }
+}

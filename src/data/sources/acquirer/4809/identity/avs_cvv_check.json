@@ -1,0 +1,16 @@
+{
+  "source": "CulinaryEdge Pro — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4809",
+  "reasonCodeDescription": "Non-Receipt of Requested Information",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "Y",
+      "description": "Full match"
+    },
+    "cvv": {
+      "responseCode": "M",
+      "description": "CVV matches"
+    }
+  }
+}

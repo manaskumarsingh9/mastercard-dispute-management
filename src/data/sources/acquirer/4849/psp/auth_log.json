@@ -1,0 +1,14 @@
+{
+  "source": "SlimFit Wellness — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4849",
+  "reasonCodeDescription": "Questionable Merchant Activity",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Ecommerce",
+    "threeDSecure": null,
+    "notes": "Authorization obtained. No 3D Secure authentication was performed. AVS did not match. The merchant has received multiple chargeback complaints from different cardholders."
+  }
+}

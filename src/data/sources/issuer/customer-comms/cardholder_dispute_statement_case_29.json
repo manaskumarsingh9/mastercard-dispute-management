@@ -1,0 +1,26 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "caseReference": "CASE-29",
+  "statement": {
+    "cardholderName": "Ms. Eleanor Vance",
+    "dateSubmitted": "2026-02-10",
+    "disputeReason": "Chip/PIN Transaction — Lost/Stolen/Not Received",
+    "detailedDescription": "I am writing to dispute a transaction that appeared on my recent statement. On January 30, 2026, a charge of $320.00 was made to 'Retail Store'. I absolutely did not make this purchase, nor was I in possession of my Mastercard at the time of the transaction.\n\nMy wallet, containing my Mastercard, was unfortunately lost on or around January 28, 2026. I realized it was missing and reported the card lost and stolen to the bank on February 1, 2026, as soon as I became aware of its absence and after reviewing my online banking statement where I saw this unauthorized transaction. I was shocked to see this particular transaction as it was processed with a chip and PIN, which I believed should have prevented unauthorized use. I never shared my PIN with anyone, and I was not present at the 'Retail Store' on January 30, 2026. I have no knowledge of how my PIN could have been compromised.\n\nI confirm that I did not authorize this transaction, and it was performed without my knowledge or consent while my card was lost. I request a full investigation into this fraudulent activity and a credit for the disputed amount.",
+    "contactedMerchant": false,
+    "merchantResponseSummary": "N/A - Cardholder did not contact merchant due to nature of fraud.",
+    "previousDisputeHistory": "None within the last 24 months.",
+    "requestedResolution": "Full credit for the unauthorized charge of $320.00.",
+    "cardholderDeclaration": "I declare that the information provided in this statement is true, complete, and accurate to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "High. Cardholder reported card lost/stolen after the transaction but prior to knowing about this specific transaction, consistent with fraud. The claim of a compromised PIN for a chip/PIN transaction is concerning but not uncommon in lost/stolen scenarios.",
+    "recommendedAction": "Initiate chargeback under Mastercard Reason Code 4871. Cardholder's timeline and details align with a genuine lost/stolen scenario where the PIN was compromised.",
+    "caseOfficer": "Brenda Lopez",
+    "priority": "High",
+    "issuerCaseId": "94151114",
+    "issuerBIN": "910204"
+  },
+  "claimReference": "900002106025",
+  "chargebackReferenceNumber": "9900122965"
+}

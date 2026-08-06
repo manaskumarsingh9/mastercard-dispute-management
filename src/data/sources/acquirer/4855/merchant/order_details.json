@@ -1,0 +1,19 @@
+{
+  "source": "HomeStitch Custom Décor — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4855",
+  "reasonCodeDescription": "Goods or Services Not Provided",
+  "orderRecord": {
+    "orderStatus": "Processing — never shipped",
+    "items": [
+      {
+        "name": "Custom Blackout Curtains — 84x52 inches, Navy Blue, Pair",
+        "quantity": 1,
+        "unitPrice": 275,
+        "sku": "HS-CBC-84NB"
+      }
+    ],
+    "shippingAddress": "Cardholder's billing address",
+    "orderNotes": "Custom order placed. Production was started but the merchant experienced severe supply chain disruptions. The order was never completed or shipped. The merchant's operations have been suspended."
+  }
+}

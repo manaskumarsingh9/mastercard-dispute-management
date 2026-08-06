@@ -1,0 +1,16 @@
+{
+  "source": "SunCoast Travel Agency — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4842",
+  "reasonCodeDescription": "Late Presentment",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "Y",
+      "description": "Full match at time of booking"
+    },
+    "cvv": {
+      "responseCode": "M",
+      "description": "CVV matched at time of booking"
+    }
+  }
+}

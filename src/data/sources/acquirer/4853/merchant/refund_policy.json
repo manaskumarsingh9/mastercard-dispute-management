@@ -1,0 +1,12 @@
+{
+  "source": "AudioPeak Electronics — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4853",
+  "reasonCodeDescription": "Goods/Services Not as Described or Defective",
+  "policy": {
+    "refundWindow": "30 days from delivery in original packaging",
+    "policy": "Full refund within 30 days of delivery. Items must be returned in original, undamaged packaging with all accessories. Opened items accepted only if packaging is intact.",
+    "disclosureMethod": "Policy displayed at checkout page, included in order confirmation email, and in delivery confirmation email.",
+    "customerAcknowledgment": "Customer agreed to return policy during checkout."
+  }
+}

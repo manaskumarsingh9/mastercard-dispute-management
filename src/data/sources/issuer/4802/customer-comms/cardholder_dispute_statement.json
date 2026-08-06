@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4802",
+  "reasonCodeDescription": "Requested Item Not Received",
+  "statement": {
+    "disputeReason": "4802 - Requested Item Not Received",
+    "detailedDescription": "The cardholder disputes a charge from 'BISTRO ON MAIN' stating the posted amount of $104.50 is higher than the meal total they recall of approximately $85.00. The issuing bank sent a retrieval request to the acquirer [8 days after the transaction] specifically requesting a copy of the signed sales receipt showing the final total and tip. As of [45 days after the request], the acquirer has not provided the signed receipt.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "The cardholder called the restaurant [5 days after dining]. The host said they would check records but never called back with a copy of the receipt.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Reversal of the disputed amount due to non-receipt of the requested signed sales receipt.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium-High — evidence supports cardholder's position.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4802 (Requested Item Not Received).",
+    "priority": "Standard"
+  }
+}

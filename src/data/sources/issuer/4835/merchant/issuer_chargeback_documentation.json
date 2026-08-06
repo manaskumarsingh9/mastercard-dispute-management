@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4835",
+  "reasonCodeDescription": "Card Not Valid or Expired",
+  "chargebackFiling": {
+    "reasonCode": "4835",
+    "reasonCodeDescription": "Card Not Valid or Expired",
+    "supportingDocuments": [
+      {
+        "type": "Card Lifecycle Record",
+        "desc": "Records showing card expired [2 months before this transaction] and replacement issued on a different number."
+      },
+      {
+        "type": "Cardholder Statement",
+        "desc": "Cardholder confirms expired card was destroyed."
+      }
+    ],
+    "issuerCommentary": "Filing under 4835. The card expired [2 months before this transaction]. Per Mastercard rules, merchants must verify card validity before completing a transaction.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": true,
+    "ecommerceIndicator": null,
+    "posEntryMode": "90"
+  }
+}

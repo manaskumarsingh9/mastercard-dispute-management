@@ -1,0 +1,59 @@
+{
+  "source": "Issuing Bank — Transaction Processing",
+  "dataType": "Issuer Transaction Record",
+  "caseReference": "CASE-23",
+  "authorization": {
+    "authorizationCode": "09876R",
+    "authorizationDate": "2026-01-15T10:30:15Z",
+    "responseCode": "Approved",
+    "amount": 8,
+    "currency": "USD",
+    "merchantName": "Cloud Services Inc",
+    "merchantCategoryCode": {
+      "code": "7372",
+      "description": "Computer Programming, Data Processing, and Other Computer Related Services"
+    },
+    "terminalId": "WEB12345",
+    "posEntryMode": {
+      "code": "81",
+      "description": "Electronic Commerce"
+    },
+    "cardNotPresent": true,
+    "avsResult": {
+      "code": "N",
+      "description": "No Match"
+    },
+    "cvvResult": {
+      "code": "N",
+      "description": "No Match"
+    },
+    "acquirerReferenceNumber": "91032462590338077640531",
+    "merchantId": "009403620499"
+  },
+  "posting": {
+    "postingDate": "2026-01-17T03:00:00Z",
+    "settledAmount": 8,
+    "settlementDate": "2026-01-18T12:00:00Z",
+    "batchNumber": "BATCH-CS-876543",
+    "interchangeFee": 0.15,
+    "networkProcessingFee": 0.02,
+    "switchSerialNumber": "933285667",
+    "auditControlNumber": "923656189984766"
+  },
+  "cardholderAccount": {
+    "accountType": "Credit",
+    "cardProduct": "World Elite Mastercard",
+    "accountStanding": "Good",
+    "previousChargebacks": 0,
+    "accountAge": "5 years",
+    "maskedPAN": "912343****2092",
+    "issuerBIN": "970767"
+  },
+  "riskFlags": {
+    "velocityCheck": false,
+    "geolocationMismatch": true,
+    "unusualAmount": false,
+    "firstTimeAtMerchant": true,
+    "deviceTrustScore": "Low"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "source": "CulinaryEdge Pro — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4809",
+  "reasonCodeDescription": "Non-Receipt of Requested Information",
+  "communications": [
+    {
+      "type": "Order Confirmation",
+      "dir": "merchant_to_customer",
+      "timing": "Immediately after purchase",
+      "subject": "CulinaryEdge Pro — Order #CE-29184",
+      "body": "Thank you for your purchase of the Professional Chef's Knife Set (8-piece, German steel). Total: $189.95. Ships within 1-2 business days."
+    },
+    {
+      "type": "Shipping Confirmation",
+      "dir": "merchant_to_customer",
+      "timing": "[1 day after purchase]",
+      "subject": "Your CulinaryEdge Pro Order Has Shipped — #CE-29184",
+      "body": "Your knife set has shipped via FedEx. Tracking number included. Expected delivery: [4-6 business days after purchase]."
+    },
+    {
+      "type": "Delivery Confirmation",
+      "dir": "merchant_to_customer",
+      "timing": "[5 days after purchase]",
+      "subject": "Your CulinaryEdge Pro Order Delivered — #CE-29184",
+      "body": "Your package has been delivered and signed for at your address. Enjoy your new knife set!"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "caseReference": "CASE-22",
+  "chargebackFiling": {
+    "filingDate": "2026-01-20",
+    "chargebackAmount": 0,
+    "currency": "USD",
+    "reasonCode": "4834",
+    "reasonCodeDescription": "Duplicate Processing",
+    "issuerBIN": "916334",
+    "acquirerBIN": "009222",
+    "cardholderNotificationDate": "2026-01-15",
+    "chargebackDeadline": "2026-05-10",
+    "supportingDocuments": [
+      {
+        "documentType": "Cardholder Affidavit",
+        "description": "Cardholder statement confirming duplicate entries",
+        "dateProvided": "2026-01-18"
+      },
+      {
+        "documentType": "Transaction History",
+        "description": "Issuing bank's internal transaction log showing two identical 0.00 USD postings",
+        "dateProvided": "2026-01-19"
+      },
+      {
+        "documentType": "Issuing Bank Internal Notes",
+        "description": "Notes from cardholder dispute intake call",
+        "dateProvided": "2026-01-15"
+      }
+    ],
+    "issuerCommentary": "Mastercard Rule 5.9.1, 'Duplicate Processing,' permits a chargeback when a single transaction is posted to the Cardholder's account more than once. In this instance, the Cardholder reports two identical transactions for 0.00 USD from 'FreeTrial Corp' processed on 2026-01-10, both with the same authorization characteristics. The Cardholder attests that only one initiation of the free trial was performed, indicating an erroneous duplicate processing event by the merchant or their processor.\n\nWhile the monetary value of these specific transactions is zero, the duplicate processing creates unnecessary entries on the Cardholder's statement and represents a processing error that falls under the purview of Rule 5.9.1. The issuer is filing this chargeback to correct the duplicate entry and prevent potential future billing errors related to this repeated authorization.",
+    "representmentDeadline": "2026-02-04",
+    "arbitrationEligible": true,
+    "claimReference": "900002084136"
+  },
+  "transactionDetails": {
+    "originalTransactionDate": "2026-01-10",
+    "postingDate": "2026-01-10",
+    "authorizationCode": "SLS2204",
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI_7",
+    "recurringPayment": false
+  }
+}

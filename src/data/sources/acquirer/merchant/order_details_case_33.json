@@ -1,0 +1,36 @@
+{
+  "source": "Auto Parts Store — Order Management System",
+  "dataType": "Order Details",
+  "caseReference": "CASE-33",
+  "records": [
+    {
+      "orderId": "ORD-000033",
+      "transactionId": "TXN-938155939",
+      "orderDate": "2026-01-28T14:30:00Z",
+      "orderStatus": "Completed",
+      "amount": 780,
+      "currency": "USD",
+      "items": [
+        {
+          "name": "Auto Parts Bundle",
+          "quantity": 1,
+          "unitPrice": 780,
+          "sku": "SKU-AP-33"
+        }
+      ],
+      "billingDescriptor": "AUTO PARTS STORE*ORD-000033",
+      "billingAddress": {
+        "name": "Eleanor Vance",
+        "street": "331 Sycamore St",
+        "city": "Charlotte",
+        "state": "NC",
+        "zip": "28201",
+        "country": "US"
+      },
+      "shippingAddress": null,
+      "ipAddress": null,
+      "customerEmail": "eleanor.vance@email.com",
+      "customerPhone": "+12003666663"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "source": "Cloud Services Inc — 3DS Authentication Provider",
+  "dataType": "3D Secure Authentication Record",
+  "caseReference": "CASE-23",
+  "records": [
+    {
+      "transactionId": "TXN-931889038",
+      "threeDSVersion": "2.2.0",
+      "authenticationStatus": "Attempted",
+      "eci": "06",
+      "cavv": "CAVV2393188903",
+      "dsTransactionId": "DS-931889038",
+      "challengeRequired": false,
+      "challengeCompleted": false,
+      "cardholderName": "Eleanor V. Vance",
+      "merchantName": "Cloud Services Inc",
+      "amount": 8,
+      "currency": "USD",
+      "timestamp": "2026-01-28T14:30:00Z"
+    }
+  ]
+}

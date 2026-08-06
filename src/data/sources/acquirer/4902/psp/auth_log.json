@@ -1,0 +1,14 @@
+{
+  "source": "Morning Brew Café — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4902",
+  "reasonCodeDescription": "Mastercard Compliance — Below Floor Limit",
+  "authorizationRecord": {
+    "authorizationObtained": false,
+    "responseCode": "N/A — below floor limit",
+    "responseMessage": "Post-authorization obtained and approved",
+    "entryMode": "EMV Chip — Card Present",
+    "threeDSecure": null,
+    "notes": "Transaction amount of $12.50 is within the applicable floor limit for Merchant Category Code 5812 (Eating Places/Restaurants). Mastercard rules permit processing without real-time authorization for below-floor-limit transactions. A post-authorization was submitted and approved, confirming the transaction's legitimacy."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "source": "Travel Agency — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "caseReference": "CASE-30",
+  "records": [
+    {
+      "transactionId": "TXN-956366942",
+      "settlementDate": "2026-01-17",
+      "settlementAmount": 2100,
+      "settlementCurrency": "USD",
+      "merchantId": "009403384445",
+      "merchantName": "Travel Agency",
+      "batchId": "BATCH-30-001",
+      "status": "Settled",
+      "cardholderName": "Ms. Eleanor Vance",
+      "cardLastFour": "6435"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "caseReference": "CASE-34",
+  "chargebackFiling": {
+    "filingDate": "2026-03-10",
+    "chargebackAmount": 3500,
+    "currency": "USD",
+    "reasonCode": "4863",
+    "reasonCodeDescription": "Cardholder Does Not Recognize Transaction",
+    "issuerBIN": "938744",
+    "acquirerBIN": "009222",
+    "cardholderNotificationDate": "2026-02-28",
+    "chargebackDeadline": "2026-05-05",
+    "supportingDocuments": [
+      {
+        "documentType": "Cardholder Affidavit",
+        "description": "Signed statement affirming non-recognition of the transaction.",
+        "dateProvided": "2026-03-05"
+      },
+      {
+        "documentType": "Transaction Details Confirmation",
+        "description": "Relevant section of the cardholder's bank statement highlighting the disputed transaction.",
+        "dateProvided": "2026-03-01"
+      }
+    ],
+    "issuerCommentary": "Our cardholder has unequivocally reported that they do not recognize, recall, or authorize the transaction with 'Jewelry Online' for 3500.00 USD on 2026-01-15. The cardholder maintains they have no knowledge of this merchant or any purchase made on the aforementioned date, and states that they have not participated in or benefited from this transaction. All attempts to resolve the matter directly with the cardholder have confirmed their assertion of non-recognition.\n\nPursuant to Mastercard Chargeback Guide Reason Code 4863 (Cardholder Does Not Recognize Transaction), the issuer is filing this chargeback on behalf of our cardholder. Mastercard rules stipulate that the acquirer is responsible for providing compelling evidence that the cardholder authorized or participated in the transaction. In the absence of such evidence, or if the provided evidence fails to establish cardholder authorization, the chargeback will be upheld.",
+    "representmentDeadline": "2026-04-24",
+    "arbitrationEligible": true,
+    "claimReference": "900002121660"
+  },
+  "transactionDetails": {
+    "originalTransactionDate": "2026-01-15",
+    "postingDate": "2026-01-16",
+    "authorizationCode": "FPT3416",
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI 5",
+    "recurringPayment": false
+  }
+}

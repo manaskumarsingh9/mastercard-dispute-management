@@ -1,0 +1,22 @@
+{
+  "source": "Jewelry Online — 3DS Authentication Provider",
+  "dataType": "3D Secure Authentication Record",
+  "caseReference": "CASE-34",
+  "records": [
+    {
+      "transactionId": "TXN-921598787",
+      "threeDSVersion": "2.2.0",
+      "authenticationStatus": "Attempted",
+      "eci": "06",
+      "cavv": "CAVV3492159878",
+      "dsTransactionId": "DS-921598787",
+      "challengeRequired": false,
+      "challengeCompleted": false,
+      "cardholderName": "Jessica Thompson",
+      "merchantName": "Jewelry Online",
+      "amount": 3500,
+      "currency": "USD",
+      "timestamp": "2026-01-12T14:30:00Z"
+    }
+  ]
+}

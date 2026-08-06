@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4901",
+  "reasonCodeDescription": "Mastercard Compliance — Violation of Standards",
+  "chargebackFiling": {
+    "reasonCode": "4901",
+    "reasonCodeDescription": "Mastercard Compliance — Violation of Standards",
+    "supportingDocuments": [
+      {
+        "type": "Terminal Security Assessment",
+        "desc": "Report showing the merchant's terminal firmware is outdated with known vulnerabilities."
+      },
+      {
+        "type": "PCI Compliance Status",
+        "desc": "Records showing the merchant's PCI-DSS certification has expired."
+      }
+    ],
+    "issuerCommentary": "Filing under 4901. The merchant is operating with outdated terminal security and lapsed PCI-DSS compliance. This violates Mastercard's standards for transaction processing security.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": true,
+    "ecommerceIndicator": null,
+    "posEntryMode": "90"
+  }
+}

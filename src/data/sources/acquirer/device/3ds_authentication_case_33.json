@@ -1,0 +1,31 @@
+{
+  "source": "3D Secure Provider (Mastercard SecureCode)",
+  "dataType": "3D Secure Authentication",
+  "retrievedAt": "2026-01-05T12:12:00Z",
+  "provider": "Mastercard Identity Check",
+  "caseReference": "CASE-33",
+  "records": [
+    {
+      "transactionId": "TXN-001248",
+      "threeDSVersion": "2.2.0",
+      "authenticationStatus": "Y",
+      "authenticationValue": "AUTH1021174789",
+      "eci": "05",
+      "dsTransId": "DS-493962497",
+      "challengeCompleted": true,
+      "challengeType": "App-based",
+      "liabilityShift": true,
+      "merchantName": "Auto Parts Store",
+      "amount": 780,
+      "currency": "USD",
+      "riskAnalysis": {
+        "riskScore": 14,
+        "riskLevel": "Medium",
+        "recommendation": "Proceed"
+      },
+      "protocol": "Mastercard Identity Check",
+      "scaCompliant": true,
+      "emvThreeDSVersion": "2.2.0"
+    }
+  ]
+}

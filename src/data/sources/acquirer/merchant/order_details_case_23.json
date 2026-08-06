@@ -1,0 +1,36 @@
+{
+  "source": "Cloud Services Inc — Order Management System",
+  "dataType": "Order Details",
+  "caseReference": "CASE-23",
+  "records": [
+    {
+      "orderId": "ORD-000023",
+      "transactionId": "TXN-931889038",
+      "orderDate": "2026-01-28T14:30:00Z",
+      "orderStatus": "Completed",
+      "amount": 8,
+      "currency": "USD",
+      "items": [
+        {
+          "name": "Cloud Storage Plan",
+          "quantity": 1,
+          "unitPrice": 8,
+          "sku": "SKU-CS-23"
+        }
+      ],
+      "billingDescriptor": "CLOUD SERVICES INC*ORD-000023",
+      "billingAddress": {
+        "name": "Eleanor V. Vance",
+        "street": "261 Cedar Ln",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77001",
+        "country": "US"
+      },
+      "shippingAddress": null,
+      "ipAddress": "95.169.161.44",
+      "customerEmail": "eleanor.vance@email.com",
+      "customerPhone": "+12002555553"
+    }
+  ]
+}

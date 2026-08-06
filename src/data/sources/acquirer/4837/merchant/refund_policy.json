@@ -1,0 +1,12 @@
+{
+  "source": "LuxeVision Online — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4837",
+  "reasonCodeDescription": "No Cardholder Authorization (Fraud)",
+  "policy": {
+    "refundWindow": "30 days from delivery",
+    "policy": "Full refund within 30 days if returned in original condition.",
+    "disclosureMethod": "Policy on website.",
+    "customerAcknowledgment": "Standard website terms."
+  }
+}

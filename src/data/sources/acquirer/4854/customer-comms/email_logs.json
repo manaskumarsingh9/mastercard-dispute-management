@@ -1,0 +1,36 @@
+{
+  "source": "MasterLens Academy — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4854",
+  "reasonCodeDescription": "Cardholder Dispute — Not Elsewhere Classified",
+  "communications": [
+    {
+      "type": "Enrollment Confirmation",
+      "dir": "merchant_to_customer",
+      "timing": "Immediately after purchase",
+      "subject": "Welcome to MasterLens Academy — Your Course Is Ready!",
+      "body": "You're enrolled in the Professional Photography Masterclass! Total: $149.00. Your 12-module course is ready to start. Log in to access Module 1. Course outline: Composition, Lighting, Exposure, Portraits, Landscapes, Night Photography, Editing, Color Theory, Street Photography, Wildlife, Studio Setup, and Final Project. Satisfaction guarantee: Full refund within 7 days if you've completed fewer than 3 modules."
+    },
+    {
+      "type": "Progress Update",
+      "dir": "merchant_to_customer",
+      "timing": "[7 days after purchase]",
+      "subject": "Great progress! You've completed 5 modules",
+      "body": "Congratulations! You've completed 5 of 12 modules in your Photography Masterclass. Keep up the great work! Next up: Night Photography."
+    },
+    {
+      "type": "Customer Complaint",
+      "dir": "customer_to_merchant",
+      "timing": "[12 days after purchase]",
+      "subject": "Requesting a refund — course not as expected",
+      "body": "I've gone through 8 modules and the content quality is not what I expected. The course feels basic and the video quality is poor. I want a full refund."
+    },
+    {
+      "type": "Merchant Response",
+      "dir": "merchant_to_customer",
+      "timing": "[13 days after purchase]",
+      "subject": "RE: Requesting a refund",
+      "body": "Thank you for your feedback. We're sorry the course didn't meet your expectations. Our records show you've completed 8 of 12 modules over the past 12 days. The course curriculum matches our advertised outline exactly. Our satisfaction guarantee allows a full refund within 7 days if fewer than 3 modules have been completed. Since you've completed 8 modules over 12 days, the refund window has passed. We can offer you access to our Advanced Editing Masterclass at no additional charge as a goodwill gesture."
+    }
+  ]
+}

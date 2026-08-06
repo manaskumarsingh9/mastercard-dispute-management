@@ -1,0 +1,36 @@
+{
+  "source": "FreeTrial Corp — Order Management System",
+  "dataType": "Order Details",
+  "caseReference": "CASE-22",
+  "records": [
+    {
+      "orderId": "ORD-000022",
+      "transactionId": "TXN-927809341",
+      "orderDate": "2026-01-28T14:30:00Z",
+      "orderStatus": "Completed",
+      "amount": 0,
+      "currency": "USD",
+      "items": [
+        {
+          "name": "Free Trial Enrollment",
+          "quantity": 1,
+          "unitPrice": 0,
+          "sku": "SKU-FT-22"
+        }
+      ],
+      "billingDescriptor": "FREETRIAL CORP*ORD-000022",
+      "billingAddress": {
+        "name": "Eleanor Vance",
+        "street": "254 Pine Rd",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60601",
+        "country": "US"
+      },
+      "shippingAddress": null,
+      "ipAddress": "94.166.154.31",
+      "customerEmail": "eleanor.vance@email.com",
+      "customerPhone": "+12002444442"
+    }
+  ]
+}

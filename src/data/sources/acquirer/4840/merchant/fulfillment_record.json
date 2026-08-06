@@ -1,0 +1,14 @@
+{
+  "source": "GiftCardVault — Fulfillment",
+  "dataType": "Fulfillment & Delivery Record",
+  "reasonCode": "4840",
+  "reasonCodeDescription": "Fraudulent Processing of Transaction",
+  "fulfillmentRecord": {
+    "type": "Digital Delivery",
+    "status": "Delivered — all 5 gift cards redeemed",
+    "method": "Email delivery",
+    "timing": "Immediately after purchase",
+    "confirmed": true,
+    "notes": "Gift card codes sent to email address on file. All 5 cards redeemed within [30 minutes of purchase]. The email address used does not appear to belong to the cardholder."
+  }
+}

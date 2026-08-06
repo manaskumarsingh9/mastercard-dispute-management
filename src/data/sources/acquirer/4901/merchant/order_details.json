@@ -1,0 +1,19 @@
+{
+  "source": "BargainTech Electronics — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4901",
+  "reasonCodeDescription": "Mastercard Compliance — Violation of Standards",
+  "orderRecord": {
+    "orderStatus": "Completed",
+    "items": [
+      {
+        "name": "Bluetooth Portable Speaker — Waterproof",
+        "quantity": 1,
+        "unitPrice": 189,
+        "sku": "BTE-BPS-WP"
+      }
+    ],
+    "shippingAddress": null,
+    "orderNotes": "In-store purchase. The merchant's POS terminal is running firmware version that is 2 generations behind the current required version. The merchant's PCI-DSS compliance assessment expired [3 months before this transaction]. The acquirer was in the process of working with the merchant on re-certification."
+  }
+}

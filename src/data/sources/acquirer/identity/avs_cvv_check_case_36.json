@@ -1,0 +1,24 @@
+{
+  "source": "Fashion Outlet — Payment Processor",
+  "dataType": "AVS/CVV Verification Results",
+  "caseReference": "CASE-36",
+  "records": [
+    {
+      "transactionId": "TXN-904712821",
+      "cardLastFour": "3924",
+      "avsResult": "Y",
+      "streetMatch": true,
+      "zipMatch": true,
+      "cvvMatch": true,
+      "cvvResult": "M",
+      "cardholderNameMatch": true,
+      "cardholderName": "Sarah Chen",
+      "emailVerified": true,
+      "email": "sarah.chen@email.com",
+      "phoneVerified": true,
+      "cvc2Result": "M",
+      "cvc2Match": true,
+      "cardNetwork": "Mastercard"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+Update local deployment guide with frontend additions and Windows fixes
+
+Replaced docs/LOCAL_DEPLOYMENT_GUIDE.md with the frontend team's enhanced version
+that adds frontend setup instructions (React+Vite proxy, Node.js, pnpm), then
+applied Windows 11 compatibility fixes throughout:
+
+1. Added curl.exe vs curl distinction — PowerShell aliases curl to Invoke-WebRequest,
+   so all Windows command blocks now use curl.exe explicitly
+2. Fixed python3 → python for Windows — Python installs as 'python' on Windows
+3. Added Windows PowerShell blocks for all verification, test, and common task sections
+4. Fixed JSON escaping in PowerShell curl.exe commands (escaped double quotes)
+5. Added Windows file paths (C:\path\to\) in evidence upload and policy examples
+6. Added prominent Windows note callout after Quick Verify section

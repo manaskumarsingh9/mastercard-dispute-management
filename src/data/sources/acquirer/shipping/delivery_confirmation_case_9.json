@@ -1,0 +1,11 @@
+{
+  "source": "FedEx Delivery Services",
+  "dataType": "Signed Delivery Confirmation",
+  "trackingNumber": "789456123654",
+  "deliveryDate": "2026-03-23T11:42:00Z",
+  "recipientSignature": "W. Thomas",
+  "deliveryLocation": "Front door",
+  "photoConfirmation": true,
+  "gpsCoordinates": {"lat": 39.7817, "lng": -89.6501},
+  "deliveryNotes": "Package left at front door. Signed by recipient."
+}

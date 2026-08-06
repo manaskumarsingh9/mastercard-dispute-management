@@ -1,0 +1,43 @@
+{
+  "source": "Luxury Goods Ltd — Order Management System",
+  "dataType": "Order Details",
+  "caseReference": "CASE-26",
+  "records": [
+    {
+      "orderId": "ORD-000026",
+      "transactionId": "TXN-953344667",
+      "orderDate": "2026-01-15T14:30:00Z",
+      "orderStatus": "Fulfilled",
+      "amount": 1250,
+      "currency": "USD",
+      "items": [
+        {
+          "name": "Luxury Handbag",
+          "quantity": 1,
+          "unitPrice": 1250,
+          "sku": "SKU-LG-26"
+        }
+      ],
+      "billingDescriptor": "LUXURY GOODS LTD*ORD-000026",
+      "billingAddress": {
+        "name": "Sarah Chen",
+        "street": "282 Willow Ct",
+        "city": "San Antonio",
+        "state": "TX",
+        "zip": "78201",
+        "country": "US"
+      },
+      "shippingAddress": {
+        "name": "Sarah Chen",
+        "street": "282 Willow Ct",
+        "city": "San Antonio",
+        "state": "TX",
+        "zip": "78201",
+        "country": "US"
+      },
+      "ipAddress": "98.178.182.83",
+      "customerEmail": "sarah.chen@email.com",
+      "customerPhone": "+12002888886"
+    }
+  ]
+}

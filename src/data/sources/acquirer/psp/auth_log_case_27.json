@@ -1,0 +1,25 @@
+{
+  "source": "Electronics Hub — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "caseReference": "CASE-27",
+  "records": [
+    {
+      "transactionId": "TXN-972850548",
+      "authorizationCode": "AUTH313813",
+      "requestTimestamp": "2026-02-10T14:30:00Z",
+      "responseTimestamp": "2026-02-10T14:30:02.000Z",
+      "amount": 567.5,
+      "currency": "USD",
+      "cardLastFour": "2141",
+      "cardholderName": "Eleanor Vance",
+      "entryMode": "Ecommerce",
+      "responseCode": "00",
+      "responseMessage": "Approved",
+      "merchantId": "009403041036",
+      "merchantName": "Electronics Hub",
+      "terminalId": "ECOM-27",
+      "acquirerBIN": "009222",
+      "issuerBIN": "928445"
+    }
+  ]
+}

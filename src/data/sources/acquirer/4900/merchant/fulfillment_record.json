@@ -1,0 +1,14 @@
+{
+  "source": "DevToolsPro — Fulfillment",
+  "dataType": "Fulfillment & Delivery Record",
+  "reasonCode": "4900",
+  "reasonCodeDescription": "Mastercard Compliance",
+  "fulfillmentRecord": {
+    "type": "Digital Delivery",
+    "status": "Delivered — license key sent via email",
+    "method": "Email delivery of license key",
+    "timing": "Immediately after purchase",
+    "confirmed": true,
+    "notes": "License key delivered and activated by the customer [1 day after purchase]."
+  }
+}

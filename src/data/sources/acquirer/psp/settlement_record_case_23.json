@@ -1,0 +1,19 @@
+{
+  "source": "Cloud Services Inc — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "caseReference": "CASE-23",
+  "records": [
+    {
+      "transactionId": "TXN-931889038",
+      "settlementDate": "2026-01-30",
+      "settlementAmount": 8,
+      "settlementCurrency": "USD",
+      "merchantId": "009403620499",
+      "merchantName": "Cloud Services Inc",
+      "batchId": "BATCH-23-001",
+      "status": "Settled",
+      "cardholderName": "Eleanor V. Vance",
+      "cardLastFour": "2092"
+    }
+  ]
+}

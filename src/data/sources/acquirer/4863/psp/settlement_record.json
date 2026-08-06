@@ -1,0 +1,9 @@
+{
+  "source": "CaseArtisan — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4863",
+  "reasonCodeDescription": "Cardholder Does Not Recognize Transaction",
+  "settlementRecord": {
+    "notes": "Settled for $39.99. Product was a custom phone case with the cardholder's personal photo. Delivered to billing address."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "source": "ProAccess Business Tools — Fulfillment",
+  "dataType": "Fulfillment & Delivery Record",
+  "reasonCode": "4899",
+  "reasonCodeDescription": "Mastercard Dispute Resolution — Violation of Rules",
+  "fulfillmentRecord": {
+    "type": "Digital Service",
+    "status": "Active — cardholder has full access",
+    "method": "Online platform access",
+    "timing": "Continuous since original signup",
+    "confirmed": true,
+    "notes": "The cardholder's account is active and accessible. However, the pre-renewal notification required by Mastercard rules was not sent."
+  }
+}

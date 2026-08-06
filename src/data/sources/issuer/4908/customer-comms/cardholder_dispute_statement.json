@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4908",
+  "reasonCodeDescription": "Mastercard Compliance — Authorization Related",
+  "statement": {
+    "disputeReason": "4908 - Mastercard Compliance — Authorization Related",
+    "detailedDescription": "The issuer asserts that a $95.00 charge from 'BOOKHAVEN' did not follow proper authorization procedures. The charge was made [60 days after the original authorization], which the issuer claims exceeds the valid authorization window.",
+    "contactedMerchant": false,
+    "merchantResponseSummary": "N/A — authorization compliance issue raised by the issuer.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Reversal for authorization-related compliance violation — authorization may have expired.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium — merchant may have valid defense documentation.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4908 (Mastercard Compliance — Authorization Related).",
+    "priority": "Standard"
+  }
+}

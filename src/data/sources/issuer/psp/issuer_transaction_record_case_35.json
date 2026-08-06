@@ -1,0 +1,53 @@
+{
+  "source": "Issuing Bank — Transaction Processing",
+  "dataType": "Issuer Transaction Record",
+  "caseReference": "CASE-35",
+  "authorization": {
+    "authorizationCode": "M7P3Q2",
+    "authorizationDate": "2026-01-15T10:30:00Z",
+    "responseCode": "Approved",
+    "amount": 99.99,
+    "currency": "USD",
+    "merchantName": "Streaming Service",
+    "merchantCategoryCode": "4899",
+    "terminalId": "TID987654",
+    "posEntryMode": "81",
+    "cardNotPresent": true,
+    "avsResult": {
+      "code": "Y",
+      "description": "Street address and 5-digit postal code match"
+    },
+    "cvvResult": {
+      "code": "M",
+      "description": "CVV/CVC match"
+    },
+    "acquirerReferenceNumber": "91032462590762113377581",
+    "merchantId": "009403605824"
+  },
+  "posting": {
+    "postingDate": "2026-01-17T03:00:00Z",
+    "settledAmount": 99.99,
+    "settlementDate": "2026-01-18T12:00:00Z",
+    "batchNumber": "BN-20260117-001",
+    "interchangeFee": 1.5,
+    "networkProcessingFee": 0.1,
+    "switchSerialNumber": "964466247",
+    "auditControlNumber": "923244669592235"
+  },
+  "cardholderAccount": {
+    "accountType": "Credit Card",
+    "cardProduct": "World Elite Mastercard",
+    "accountStanding": "Good",
+    "previousChargebacks": 0,
+    "accountAge": "5 years 3 months",
+    "maskedPAN": "912343****8344",
+    "issuerBIN": "938465"
+  },
+  "riskFlags": {
+    "velocityCheck": "Normal",
+    "geolocationMismatch": "None",
+    "unusualAmount": false,
+    "firstTimeAtMerchant": false,
+    "deviceTrustScore": "High"
+  }
+}

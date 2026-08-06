@@ -1,0 +1,31 @@
+{
+  "source": "3D Secure Provider (Mastercard SecureCode)",
+  "dataType": "3D Secure Authentication",
+  "retrievedAt": "2026-01-20T15:09:00Z",
+  "provider": "Mastercard Identity Check",
+  "caseReference": "CASE-29",
+  "records": [
+    {
+      "transactionId": "TXN-001244",
+      "threeDSVersion": "2.2.0",
+      "authenticationStatus": "Y",
+      "authenticationValue": "AUTH965953292",
+      "eci": "05",
+      "dsTransId": "DS-321974327",
+      "challengeCompleted": true,
+      "challengeType": "OTP",
+      "liabilityShift": true,
+      "merchantName": "Retail Store",
+      "amount": 320,
+      "currency": "USD",
+      "riskAnalysis": {
+        "riskScore": 17,
+        "riskLevel": "Low",
+        "recommendation": "Proceed"
+      },
+      "protocol": "Mastercard Identity Check",
+      "scaCompliant": true,
+      "emvThreeDSVersion": "2.2.0"
+    }
+  ]
+}

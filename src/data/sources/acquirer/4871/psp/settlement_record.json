@@ -1,0 +1,9 @@
+{
+  "source": "FreshMart Supermarket — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4871",
+  "reasonCodeDescription": "Chip/PIN Liability Shift — Lost/Stolen/NRI",
+  "settlementRecord": {
+    "notes": "Settled for $156.78. Chip+PIN transaction at a chip-capable terminal. Liability shifts to issuer per EMV liability shift framework."
+  }
+}

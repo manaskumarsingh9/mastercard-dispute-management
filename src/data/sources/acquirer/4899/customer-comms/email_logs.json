@@ -1,0 +1,36 @@
+{
+  "source": "ProAccess Business Tools — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4899",
+  "reasonCodeDescription": "Mastercard Dispute Resolution — Violation of Rules",
+  "communications": [
+    {
+      "type": "Original Signup Confirmation",
+      "dir": "merchant_to_customer",
+      "timing": "[1 year before the disputed charge]",
+      "subject": "Welcome to ProAccess Business Tools — Annual Plan",
+      "body": "Your annual membership is active! Plan: Annual ($299.00/year). Your membership renews automatically each year. We will notify you before each renewal. You can cancel anytime from your account settings."
+    },
+    {
+      "type": "Renewal Charge Notification (NOT SENT)",
+      "dir": "system_note",
+      "timing": "[7 days before the disputed charge — notification was scheduled but NOT sent]",
+      "subject": "SYSTEM ERROR: Pre-renewal notification email was NOT sent",
+      "body": "The automated pre-renewal notification email, which should have been sent 7 days before the annual renewal date, failed to send due to a misconfiguration in the email notification system after a platform update. The merchant acknowledges this failure."
+    },
+    {
+      "type": "Customer Complaint",
+      "dir": "customer_to_merchant",
+      "timing": "[5 days after the disputed charge]",
+      "subject": "Unauthorized renewal charge — $299.00",
+      "body": "I was charged $299.00 for an annual renewal but I was never notified this was coming. I would have cancelled if I had been reminded. I want a full refund."
+    },
+    {
+      "type": "Merchant Response",
+      "dir": "merchant_to_customer",
+      "timing": "[6 days after the disputed charge]",
+      "subject": "RE: Unauthorized renewal charge",
+      "body": "We sincerely apologize for the lack of notification before your renewal. Due to a system update, the pre-renewal reminder email was not sent. However, your annual membership has been renewed and you have full access to all features. We're unable to process a refund at this time but have escalated your case to our billing department."
+    }
+  ]
+}

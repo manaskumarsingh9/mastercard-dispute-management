@@ -1,0 +1,14 @@
+{
+  "source": "EuroLux Boutique — Fulfillment",
+  "dataType": "Fulfillment & Delivery Record",
+  "reasonCode": "4846",
+  "reasonCodeDescription": "Correct Currency Code Not Provided",
+  "fulfillmentRecord": {
+    "type": "Physical Shipment — International",
+    "status": "Delivered",
+    "method": "International express — DHL",
+    "timing": "[7 days after purchase]",
+    "confirmed": true,
+    "notes": "Package delivered to cardholder's US address via international shipping from France."
+  }
+}

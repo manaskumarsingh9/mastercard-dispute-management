@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4847",
+  "reasonCodeDescription": "Exceeds Floor Limit — Not Authorized and Fraud",
+  "statement": {
+    "disputeReason": "4847 - Exceeds Floor Limit — Not Authorized and Fraud",
+    "detailedDescription": "A $1,250.00 purchase of a high-end television from 'ELECTROWORLD MEGASTORE' was processed without authorization from the issuer. The transaction amount exceeds the applicable floor limit and the merchant was required to obtain real-time authorization. The cardholder's card was stolen [1 day before this transaction] and they did not make this purchase.",
+    "contactedMerchant": false,
+    "merchantResponseSummary": "N/A — card was stolen; cardholder did not visit this store.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Full reversal. Transaction exceeds floor limit, no authorization obtained, and the transaction is fraudulent.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium-High — evidence supports cardholder's position.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4847 (Exceeds Floor Limit — Not Authorized and Fraud).",
+    "priority": "Standard"
+  }
+}

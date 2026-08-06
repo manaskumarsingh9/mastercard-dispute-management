@@ -1,0 +1,15 @@
+{
+  "source": "BargainTech Electronics — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4901",
+  "reasonCodeDescription": "Mastercard Compliance — Violation of Standards",
+  "communications": [
+    {
+      "type": "No Communications",
+      "dir": "system_note",
+      "timing": "N/A",
+      "subject": "N/A",
+      "body": "In-store card-present transaction. The merchant's POS terminal firmware is outdated and PCI-DSS compliance has lapsed. The acquirer acknowledges the compliance gap and has been working with the merchant on re-certification."
+    }
+  ]
+}

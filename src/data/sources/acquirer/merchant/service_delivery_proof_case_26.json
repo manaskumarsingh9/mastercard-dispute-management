@@ -1,0 +1,28 @@
+{
+  "source": "Merchant Platform",
+  "dataType": "Service Delivery Proof",
+  "retrievedAt": "2026-01-01T00:00:00Z",
+  "provider": "Luxury Goods Ltd",
+  "caseReference": "CASE-26",
+  "records": [
+    {
+      "serviceId": "SVC-001241",
+      "serviceType": "Digital Access",
+      "deliveryDate": "2026-01-06T09:27:00Z",
+      "completionStatus": "Completed",
+      "customerConfirmation": false,
+      "confirmationMethod": "In-app",
+      "serviceDetails": "Service delivered for Luxury Goods Ltd - Transaction TXN-001241",
+      "accessLogs": [
+        {
+          "timestamp": "2026-01-28T15:21:00Z",
+          "action": "Service accessed"
+        },
+        {
+          "timestamp": "2026-01-20T03:09:00Z",
+          "action": "Service completed"
+        }
+      ]
+    }
+  ]
+}

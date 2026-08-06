@@ -1,0 +1,9 @@
+{
+  "source": "Bistro on Main — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4802",
+  "reasonCodeDescription": "Requested Item Not Received",
+  "settlementRecord": {
+    "notes": "Settled at $104.50 including tip. The signed receipt showing the customer's tip entry has been misplaced and cannot be provided."
+  }
+}

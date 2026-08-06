@@ -1,0 +1,45 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "caseReference": "CASE-28",
+  "chargebackFiling": {
+    "filingDate": "2026-02-15",
+    "chargebackAmount": 89.99,
+    "currency": "USD",
+    "reasonCode": "4855",
+    "reasonCodeDescription": "Goods or Services Not Provided",
+    "issuerBIN": "977452",
+    "acquirerBIN": "009222",
+    "cardholderNotificationDate": "2026-02-10",
+    "chargebackDeadline": "2026-05-15",
+    "supportingDocuments": [
+      {
+        "documentType": "Cardholder Dispute Form",
+        "description": "Signed Cardholder Dispute Form confirming non-receipt of goods.",
+        "dateProvided": "2026-02-10"
+      },
+      {
+        "documentType": "Transaction History",
+        "description": "Cardholder's statement highlighting the disputed transaction.",
+        "dateProvided": "2026-02-15"
+      },
+      {
+        "documentType": "Communication Log",
+        "description": "Record of cardholder's attempts to contact the merchant regarding non-delivery.",
+        "dateProvided": "2026-02-15"
+      }
+    ],
+    "issuerCommentary": "The cardholder initiated this dispute stating that the goods purchased from 'Online Marketplace' on 2026-01-15 for 89.99 USD were never received. According to the cardholder, despite multiple attempts to contact the merchant via email and customer service lines, they have not received the ordered items nor any communication regarding shipping status or a refund.\n\nThis chargeback is being filed under Mastercard Reason Code 4855 (Goods or Services Not Provided), in accordance with Mastercard Rule 5.11.2.1.1, which permits a chargeback when the cardholder did not receive the goods or services for which the transaction was processed. The merchant has failed to fulfill their obligation to deliver the purchased items, making this transaction valid for chargeback proceedings.",
+    "representmentDeadline": "2026-04-01",
+    "arbitrationEligible": true,
+    "claimReference": "900002102898"
+  },
+  "transactionDetails": {
+    "originalTransactionDate": "2026-01-15",
+    "postingDate": "2026-01-16",
+    "authorizationCode": "TJB2810",
+    "cardPresent": false,
+    "ecommerceIndicator": "Electronic Commerce",
+    "recurringPayment": false
+  }
+}

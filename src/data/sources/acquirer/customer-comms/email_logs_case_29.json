@@ -1,0 +1,15 @@
+{
+  "source": "Retail Store — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "caseReference": "CASE-29",
+  "records": [
+    {
+      "email": "eleanor.vance@email.com",
+      "customerName": "Ms. Eleanor Vance",
+      "merchantEmail": "support@retailstore.com",
+      "merchantName": "Retail Store",
+      "transactionReference": "TXN-919016207",
+      "communications": []
+    }
+  ]
+}

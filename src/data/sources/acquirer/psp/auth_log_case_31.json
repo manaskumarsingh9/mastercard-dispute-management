@@ -1,0 +1,25 @@
+{
+  "source": "Subscription Box Co — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "caseReference": "CASE-31",
+  "records": [
+    {
+      "transactionId": "TXN-955547661",
+      "authorizationCode": "AUTH345489",
+      "requestTimestamp": "2026-02-05T14:30:00Z",
+      "responseTimestamp": "2026-02-05T14:30:02.000Z",
+      "amount": 150,
+      "currency": "USD",
+      "cardLastFour": "0727",
+      "cardholderName": "Eleanor Vance",
+      "entryMode": "Ecommerce",
+      "responseCode": "00",
+      "responseMessage": "Approved",
+      "merchantId": "009403312323",
+      "merchantName": "Subscription Box Co",
+      "terminalId": "ECOM-31",
+      "acquirerBIN": "009222",
+      "issuerBIN": "979228"
+    }
+  ]
+}

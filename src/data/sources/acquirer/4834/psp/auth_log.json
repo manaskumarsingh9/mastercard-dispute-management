@@ -1,0 +1,19 @@
+{
+  "source": "PhoneShield Pro — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4834",
+  "reasonCodeDescription": "Point of Interaction Error / Duplicate Processing",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Ecommerce",
+    "threeDSecure": {
+      "enrolled": true,
+      "authenticated": true,
+      "eci": "05",
+      "cavv": "Verified on both transactions"
+    },
+    "notes": "Two separate authorizations 20 minutes apart. Auth #1 at 2:15 PM (phone case), Auth #2 at 2:35 PM (screen protector). Each has unique auth code and transaction ID. Different products, not duplicates."
+  }
+}

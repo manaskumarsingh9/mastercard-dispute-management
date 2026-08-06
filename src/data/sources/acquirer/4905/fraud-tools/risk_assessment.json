@@ -1,0 +1,20 @@
+{
+  "source": "FitZone Fitness Center — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4905",
+  "reasonCodeDescription": "Mastercard Compliance — Card Not Valid",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "N/A — recurring billing",
+      "trust": "High",
+      "match": true
+    },
+    "ipAnalysis": {
+      "level": "N/A",
+      "proxy": false,
+      "geoMatch": true,
+      "notes": "Recurring — no IP for this transaction."
+    },
+    "overallRiskScore": "Low — established recurring membership with Account Updater credentials"
+  }
+}

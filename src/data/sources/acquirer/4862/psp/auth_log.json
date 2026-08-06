@@ -1,0 +1,14 @@
+{
+  "source": "Prestige Leather Boutique — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4862",
+  "reasonCodeDescription": "Counterfeit Transaction (Magnetic Stripe)",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Magnetic Stripe Swipe — Non-EMV Terminal",
+    "threeDSecure": null,
+    "notes": "Authorization obtained via magnetic stripe swipe. The terminal does not support EMV chip reading. If a chip-capable terminal had been used, the counterfeit card's chip would likely have failed authentication."
+  }
+}

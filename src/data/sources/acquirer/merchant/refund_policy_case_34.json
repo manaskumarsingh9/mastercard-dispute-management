@@ -1,0 +1,18 @@
+{
+  "source": "Jewelry Online — Policy Department",
+  "dataType": "Refund/Cancellation Policy",
+  "caseReference": "CASE-34",
+  "records": [
+    {
+      "merchantName": "Jewelry Online",
+      "policyVersion": "2025-12-01",
+      "refundWindow": "30 days from purchase",
+      "cancellationPolicy": "Items may be returned within 30 days of delivery for a full refund. Items must be in original condition.",
+      "chargebackPolicy": "All chargebacks are reviewed and responded to with supporting documentation within the required timeframe.",
+      "termsAcceptedByCustomer": true,
+      "termsAcceptedDate": "2026-01-12T14:30:00Z",
+      "customerName": "Jessica Thompson",
+      "customerEmail": "jessica.thompson@email.com"
+    }
+  ]
+}

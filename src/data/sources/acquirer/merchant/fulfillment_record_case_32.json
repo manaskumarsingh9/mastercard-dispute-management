@@ -1,0 +1,19 @@
+{
+  "source": "Food Delivery App — Fulfillment System",
+  "dataType": "Fulfillment Record",
+  "caseReference": "CASE-32",
+  "records": [
+    {
+      "fulfillmentId": "FUL-000032",
+      "orderId": "ORD-000032",
+      "fulfillmentType": "Physical Shipment",
+      "fulfillmentStatus": "Completed",
+      "fulfilledDate": "2026-02-11T00:00:00.000Z",
+      "carrier": "UPS",
+      "trackingNumber": "1Z999395040",
+      "itemsFulfilled": 1,
+      "customerName": "Eleanor Vance",
+      "customerEmail": "eleanor.vance@email.com"
+    }
+  ]
+}

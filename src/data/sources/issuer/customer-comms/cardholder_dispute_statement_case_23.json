@@ -1,0 +1,26 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "caseReference": "CASE-23",
+  "statement": {
+    "cardholderName": "Eleanor V. Vance",
+    "dateSubmitted": "2026-02-15",
+    "disputeReason": "Cardholder Does Not Recognize Transaction",
+    "detailedDescription": "I am writing to dispute a charge of $8.00 USD from 'Cloud Services Inc' that appeared on my statement dated January 28, 2026. I have thoroughly reviewed my recent purchases, subscriptions, and any online services I might use, and I cannot find any record or memory of authorizing this specific transaction or signing up for any service from a company named 'Cloud Services Inc'. I do not recognize this merchant at all.\n\nI am usually very careful about my online subscriptions and track all my recurring payments. This charge is completely unfamiliar to me. I have not provided my card details to any cloud service provider recently, nor have I initiated any trial subscriptions that might have auto-renewed under this merchant name. The amount is small, but the merchant name is completely foreign, which leads me to believe this is an unauthorized charge.\n\nI genuinely have no recollection of engaging with 'Cloud Services Inc' in any capacity. I am confident that this transaction was not authorized by me, and I am requesting a full investigation and reversal of this charge.",
+    "contactedMerchant": false,
+    "merchantResponseSummary": null,
+    "previousDisputeHistory": "None within the last 24 months.",
+    "requestedResolution": "Credit for the disputed amount ($8.00 USD).",
+    "cardholderDeclaration": "I declare that the information provided in this statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Low risk for systemic fraud; appears to be a genuine instance of a cardholder not recognizing a specific, likely small, transaction. No immediate red flags for compromised card details.",
+    "recommendedAction": "Proceed with chargeback under Mastercard Reason Code 4863. Advise cardholder to monitor future statements for similar unrecognized charges.",
+    "caseOfficer": "Marcus Thorne",
+    "priority": "Medium",
+    "issuerCaseId": "9415928",
+    "issuerBIN": "970767"
+  },
+  "claimReference": "900002087263",
+  "chargebackReferenceNumber": "9900097039"
+}

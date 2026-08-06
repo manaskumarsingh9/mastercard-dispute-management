@@ -1,0 +1,21 @@
+{
+  "source": "Retail Store — Point of Sale System",
+  "dataType": "POS Terminal Log",
+  "caseReference": "CASE-29",
+  "records": [
+    {
+      "transactionId": "TXN-919016207",
+      "terminalId": "TERM-29",
+      "storeLocation": "Retail Store - San Jose, CA",
+      "timestamp": "2026-01-30T14:30:00Z",
+      "entryMode": "Chip/EMV",
+      "pinVerified": true,
+      "amount": 320,
+      "currency": "USD",
+      "cardLastFour": "7946",
+      "cardholderName": "Ms. Eleanor Vance",
+      "approvalCode": "AUTH329651",
+      "receiptGenerated": true
+    }
+  ]
+}

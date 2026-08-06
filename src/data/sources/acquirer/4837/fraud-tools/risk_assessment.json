@@ -1,0 +1,20 @@
+{
+  "source": "LuxeVision Online — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4837",
+  "reasonCodeDescription": "No Cardholder Authorization (Fraud)",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "Unknown device — not seen before on any account",
+      "trust": "Low",
+      "match": false
+    },
+    "ipAnalysis": {
+      "level": "High",
+      "proxy": true,
+      "geoMatch": false,
+      "notes": "IP address originates from a VPN/proxy service in a different country from the billing address."
+    },
+    "overallRiskScore": "High — AVS mismatch, unknown device, foreign IP via proxy, no 3DS"
+  }
+}

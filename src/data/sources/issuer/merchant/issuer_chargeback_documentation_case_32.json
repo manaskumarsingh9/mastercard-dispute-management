@@ -1,0 +1,45 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "caseReference": "CASE-32",
+  "chargebackFiling": {
+    "filingDate": "2026-03-05",
+    "chargebackAmount": 45,
+    "currency": "USD",
+    "reasonCode": "4853",
+    "reasonCodeDescription": "Goods/Services Not as Described or Defective",
+    "issuerBIN": "965123",
+    "acquirerBIN": "009222",
+    "cardholderNotificationDate": "2026-02-25",
+    "chargebackDeadline": "2026-05-10",
+    "supportingDocuments": [
+      {
+        "documentType": "Cardholder Dispute Form",
+        "description": "Signed dispute form from cardholder outlining the issue.",
+        "dateProvided": "2026-02-25"
+      },
+      {
+        "documentType": "Cardholder Communication",
+        "description": "Screenshot of email/chat correspondence with merchant regarding the defective order.",
+        "dateProvided": "2026-02-28"
+      },
+      {
+        "documentType": "Proof of Purchase/Order Confirmation",
+        "description": "Screenshot of the order details from the Food Delivery App, showing ordered items and amount.",
+        "dateProvided": "2026-02-25"
+      }
+    ],
+    "issuerCommentary": "The cardholder initiated a dispute for transaction ID [Unique Transaction ID], stating that the goods received (a food order from 'Food Delivery App') were not as described and were defective. Specifically, the cardholder claims the food arrived cold, was missing key ingredients, and was of poor quality compared to the ordered items, making it unusable for consumption. This situation directly falls under Mastercard Reason Code 4853, which addresses Goods/Services Not as Described or Defective.\n\nPrior to filing this chargeback, the cardholder attempted to resolve the issue directly with the merchant, 'Food Delivery App,' via their in-app support chat on 2026-01-15. The merchant's proposed resolution (e.g., partial refund, future credit) was deemed unsatisfactory by the cardholder, or no satisfactory resolution was provided. As per Mastercard Chargeback Guide, Chapter 6, Section 6.2.2.3, 'Goods/Services Not as Described or Defective,' the issuer is filing this chargeback because the cardholder did not receive the goods as described or the goods were defective, and reasonable attempts were made to resolve the dispute with the merchant without success.",
+    "representmentDeadline": "2026-04-19",
+    "arbitrationEligible": false,
+    "claimReference": "900002115406"
+  },
+  "transactionDetails": {
+    "originalTransactionDate": "2026-01-10",
+    "postingDate": "2026-01-11",
+    "authorizationCode": "DLT3214",
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI 5",
+    "recurringPayment": false
+  }
+}

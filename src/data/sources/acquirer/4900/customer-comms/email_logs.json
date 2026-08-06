@@ -1,0 +1,15 @@
+{
+  "source": "DevToolsPro — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4900",
+  "reasonCodeDescription": "Mastercard Compliance",
+  "communications": [
+    {
+      "type": "Order Confirmation & License Delivery",
+      "dir": "merchant_to_customer",
+      "timing": "Immediately after purchase",
+      "subject": "DevToolsPro — Your License Key for IDE Annual",
+      "body": "Thank you for purchasing DevToolsPro IDE! Your annual license key is included below. Total: $79.00. Activate your license in the application settings. Support available at support@devtoolspro.com."
+    }
+  ]
+}

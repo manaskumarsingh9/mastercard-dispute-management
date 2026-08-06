@@ -1,0 +1,20 @@
+{
+  "source": "QuickFuel Station #247 — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4807",
+  "reasonCodeDescription": "Warning Bulletin File",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "N/A — automated fuel pump",
+      "trust": "N/A",
+      "match": false
+    },
+    "ipAnalysis": {
+      "level": "N/A",
+      "proxy": false,
+      "geoMatch": false,
+      "notes": "Card-present at fuel pump."
+    },
+    "overallRiskScore": "N/A — automated terminal"
+  }
+}

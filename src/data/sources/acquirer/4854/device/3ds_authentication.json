@@ -1,0 +1,16 @@
+{
+  "source": "MasterLens Academy — Authentication",
+  "dataType": "3D Secure Authentication Record",
+  "reasonCode": "4854",
+  "reasonCodeDescription": "Cardholder Dispute — Not Elsewhere Classified",
+  "threeDSecure": {
+    "version": "2.0",
+    "enrolled": true,
+    "status": "Y — Authenticated",
+    "eci": "05",
+    "cavv": "Verified",
+    "challenge": true,
+    "liabilityShift": "Yes",
+    "notes": "3D Secure completed at purchase."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "source": "Issuing Bank — Transaction Processing",
+  "dataType": "Issuer Transaction Record",
+  "reasonCode": "4837",
+  "reasonCodeDescription": "No Cardholder Authorization (Fraud)",
+  "authorization": {
+    "responseCode": "00",
+    "merchantCategoryCode": "5999",
+    "posEntryMode": "81",
+    "cardNotPresent": true,
+    "avsResult": {
+      "code": "N",
+      "description": "Address does not match"
+    },
+    "cvvResult": {
+      "code": "M",
+      "description": "CVV matched — but card data may have been compromised"
+    }
+  },
+  "riskFlags": {
+    "geolocationMismatch": "Yes — transaction IP is in a different country from cardholder's home",
+    "deviceTrustScore": "Low — unknown device not in cardholder's profile"
+  }
+}

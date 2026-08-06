@@ -1,0 +1,25 @@
+{
+  "source": "Online Marketplace — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "caseReference": "CASE-28",
+  "records": [
+    {
+      "transactionId": "TXN-982137321",
+      "authorizationCode": "AUTH321732",
+      "requestTimestamp": "2026-01-20T14:30:00Z",
+      "responseTimestamp": "2026-01-20T14:30:02.000Z",
+      "amount": 89.99,
+      "currency": "USD",
+      "cardLastFour": "3005",
+      "cardholderName": "Sarah J. Miller",
+      "entryMode": "Ecommerce",
+      "responseCode": "00",
+      "responseMessage": "Approved",
+      "merchantId": "009403818752",
+      "merchantName": "Online Marketplace",
+      "terminalId": "ECOM-28",
+      "acquirerBIN": "009222",
+      "issuerBIN": "977452"
+    }
+  ]
+}

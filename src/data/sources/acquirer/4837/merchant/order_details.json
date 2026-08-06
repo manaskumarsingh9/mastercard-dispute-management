@@ -1,0 +1,19 @@
+{
+  "source": "LuxeVision Online — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4837",
+  "reasonCodeDescription": "No Cardholder Authorization (Fraud)",
+  "orderRecord": {
+    "orderStatus": "Completed — shipped to address on order",
+    "items": [
+      {
+        "name": "Designer Aviator Sunglasses — Polarized, Gold Frame",
+        "quantity": 1,
+        "unitPrice": 327,
+        "sku": "LV-AV-GLD"
+      }
+    ],
+    "shippingAddress": "Different from cardholder's billing address — shipped to a forwarding address",
+    "orderNotes": "Order placed online. Shipping address does not match billing address. 3D Secure was not enabled on the merchant's payment gateway at the time of this transaction."
+  }
+}

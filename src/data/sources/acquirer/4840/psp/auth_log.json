@@ -1,0 +1,14 @@
+{
+  "source": "GiftCardVault — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4840",
+  "reasonCodeDescription": "Fraudulent Processing of Transaction",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Ecommerce",
+    "threeDSecure": null,
+    "notes": "Authorization obtained. 3D Secure was not implemented for this transaction. AVS did not match. The merchant's fraud rules did not flag this high-risk pattern (multiple gift cards, new account, instant redemption). The merchant acknowledges their fraud screening was insufficient for digital goods."
+  }
+}

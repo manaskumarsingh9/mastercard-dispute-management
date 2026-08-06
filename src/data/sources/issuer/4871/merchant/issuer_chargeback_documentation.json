@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4871",
+  "reasonCodeDescription": "Chip/PIN Liability Shift — Lost/Stolen/NRI",
+  "chargebackFiling": {
+    "reasonCode": "4871",
+    "reasonCodeDescription": "Chip/PIN Liability Shift — Lost/Stolen/NRI",
+    "supportingDocuments": [
+      {
+        "type": "Stolen Card Report",
+        "desc": "Cardholder's report of the stolen card filed with the bank [1 day before this transaction]."
+      },
+      {
+        "type": "Transaction Record",
+        "desc": "Record showing the transaction at FreshMart."
+      }
+    ],
+    "issuerCommentary": "Filing under 4871. The card was reported stolen before this transaction. However, the transaction was processed at a chip-enabled terminal with correct PIN entry.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": true,
+    "ecommerceIndicator": null,
+    "posEntryMode": "05"
+  }
+}

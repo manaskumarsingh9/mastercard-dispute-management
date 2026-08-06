@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4842",
+  "reasonCodeDescription": "Late Presentment",
+  "statement": {
+    "disputeReason": "4842 - Late Presentment",
+    "detailedDescription": "The cardholder stayed at a hotel booked through 'SUNCOAST TRAVEL AGENCY' [4 months before this charge appeared]. The charge of $312.00 did not appear on the cardholder's statement until now — well beyond the normal processing window. The cardholder had assumed the charge was settled long ago and did not budget for this late posting.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "The cardholder called SunCoast Travel [2 days after noticing the late charge]. The agency acknowledged a processing delay and said their payment system had a backlog. They offered no refund.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Full reversal due to late presentment outside the Mastercard-permitted window.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium-High — evidence supports cardholder's position.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4842 (Late Presentment).",
+    "priority": "Standard"
+  }
+}

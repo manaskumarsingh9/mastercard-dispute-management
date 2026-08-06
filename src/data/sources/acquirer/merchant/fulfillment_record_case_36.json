@@ -1,0 +1,19 @@
+{
+  "source": "Fashion Outlet — Fulfillment System",
+  "dataType": "Fulfillment Record",
+  "caseReference": "CASE-36",
+  "records": [
+    {
+      "fulfillmentId": "FUL-000036",
+      "orderId": "ORD-000036",
+      "fulfillmentType": "Physical Shipment",
+      "fulfillmentStatus": "Completed",
+      "fulfilledDate": "2026-01-21T00:00:00.000Z",
+      "carrier": "UPS",
+      "trackingNumber": "1Z999444420",
+      "itemsFulfilled": 1,
+      "customerName": "Sarah Chen",
+      "customerEmail": "sarah.chen@email.com"
+    }
+  ]
+}

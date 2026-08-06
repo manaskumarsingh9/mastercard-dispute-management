@@ -1,0 +1,29 @@
+{
+  "source": "Fashion Outlet — Fraud Detection Service",
+  "dataType": "Device Fingerprint Analysis",
+  "caseReference": "CASE-36",
+  "records": [
+    {
+      "transactionId": "TXN-904712821",
+      "sessionId": "SES-36-904712",
+      "ipAddress": "108.208.252.213",
+      "deviceType": "Desktop",
+      "browser": "Chrome 121.0",
+      "os": "Windows 11",
+      "screenResolution": "1920x1080",
+      "vpnDetected": false,
+      "proxyDetected": false,
+      "torDetected": false,
+      "riskScore": 10,
+      "riskLevel": "Low",
+      "knownDevice": true,
+      "previousTransactions": 9,
+      "geolocation": {
+        "country": "US",
+        "region": "OR",
+        "city": "Portland"
+      },
+      "cardholderName": "Sarah Chen"
+    }
+  ]
+}

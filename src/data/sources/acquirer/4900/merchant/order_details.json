@@ -1,0 +1,19 @@
+{
+  "source": "DevToolsPro — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4900",
+  "reasonCodeDescription": "Mastercard Compliance",
+  "orderRecord": {
+    "orderStatus": "Completed — license delivered",
+    "items": [
+      {
+        "name": "DevToolsPro IDE License — Annual, Single User",
+        "quantity": 1,
+        "unitPrice": 79,
+        "sku": "DTP-IDE-ANN"
+      }
+    ],
+    "shippingAddress": null,
+    "orderNotes": "Digital product. Software license key delivered via email. Transaction was processed through a PCI-compliant payment gateway with all required Mastercard data elements."
+  }
+}

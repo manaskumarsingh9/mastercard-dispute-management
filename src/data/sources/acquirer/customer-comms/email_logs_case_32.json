@@ -1,0 +1,34 @@
+{
+  "source": "Food Delivery App — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "caseReference": "CASE-32",
+  "records": [
+    {
+      "email": "eleanor.vance@email.com",
+      "customerName": "Eleanor Vance",
+      "merchantEmail": "support@fooddeliveryapp.com",
+      "merchantName": "Food Delivery App",
+      "transactionReference": "TXN-952871447",
+      "communications": [
+        {
+          "type": "Customer Inquiry",
+          "direction": "customer_to_merchant",
+          "sentAt": "2026-02-10T16:00:00Z",
+          "opened": true,
+          "openedAt": "2026-02-10T16:05:00Z",
+          "subject": "Charge inquiry - TXN-952871447",
+          "body": "Hi,\n\nI noticed a charge of $45 on my statement from Food Delivery App. I would like to understand this charge and request a resolution.\n\nRegards,\nEleanor Vance"
+        },
+        {
+          "type": "Merchant Response",
+          "direction": "merchant_to_customer",
+          "sentAt": "2026-02-11T10:30:00Z",
+          "opened": true,
+          "openedAt": "2026-02-11T11:00:00Z",
+          "subject": "RE: Charge inquiry - TXN-952871447",
+          "body": "I immediately contacted the Food Delivery App's customer service via their in-app chat function on February 10, 2026. I explained the issues with the cold, congealed pasta and the incomplete/wilted salad. They apologized for the inconvenience and offered me a $10 credit for a future order. I rejected this as unsatisfactory because the entire meal was a write-off and not what I paid for. I requested a full refund, but they refused, stating their policy only allows for partial credits or re-delivery in some cases, neither of which I found acceptable given the quality and missing items."
+        }
+      ]
+    }
+  ]
+}

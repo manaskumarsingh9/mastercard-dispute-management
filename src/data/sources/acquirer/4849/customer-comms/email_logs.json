@@ -1,0 +1,15 @@
+{
+  "source": "SlimFit Wellness — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4849",
+  "reasonCodeDescription": "Questionable Merchant Activity",
+  "communications": [
+    {
+      "type": "Order Confirmation",
+      "dir": "merchant_to_customer",
+      "timing": "Immediately after purchase",
+      "subject": "SlimFit Wellness — Your Order",
+      "body": "Thank you for ordering SlimFit Advanced Weight Loss Formula! Total: $89.99. Ships within 2-3 business days."
+    }
+  ]
+}

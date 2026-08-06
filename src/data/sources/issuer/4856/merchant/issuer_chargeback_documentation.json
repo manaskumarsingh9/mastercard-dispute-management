@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4856",
+  "reasonCodeDescription": "Defective or Not as Described (Chip Liability Shift)",
+  "chargebackFiling": {
+    "reasonCode": "4856",
+    "reasonCodeDescription": "Defective or Not as Described (Chip Liability Shift)",
+    "supportingDocuments": [
+      {
+        "type": "Cardholder Dispute Form",
+        "desc": "Description of defects: heart rate sensor failure and dead pixels."
+      },
+      {
+        "type": "Product Photos",
+        "desc": "Cardholder's photos showing dead pixels on the watch screen."
+      }
+    ],
+    "issuerCommentary": "Filing under 4856. Product purchased at a chip-enabled terminal is defective. Heart rate sensor intermittently fails and screen has dead pixels.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": true,
+    "ecommerceIndicator": null,
+    "posEntryMode": "05"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "source": "Issuing Bank — Transaction Processing",
+  "dataType": "Issuer Transaction Record",
+  "caseReference": "CASE-20",
+  "authorization": {
+    "authorizationCode": "A1B2C3",
+    "authorizationDate": "2026-01-10T14:30:00Z",
+    "responseCode": "00",
+    "amount": 34.99,
+    "currency": "USD",
+    "merchantName": "Digital Goods LLC",
+    "merchantCategoryCode": "5734",
+    "terminalId": "WEB000101",
+    "posEntryMode": "05",
+    "cardNotPresent": true,
+    "avsResult": {
+      "code": "Y",
+      "description": "Street address and 5-digit zip match"
+    },
+    "cvvResult": {
+      "code": "M",
+      "description": "CVV Match"
+    },
+    "acquirerReferenceNumber": "91032462590549264558137",
+    "merchantId": "009403780074"
+  },
+  "posting": {
+    "postingDate": "2026-01-11T03:00:00Z",
+    "settledAmount": 34.99,
+    "settlementDate": "2026-01-11T18:00:00Z",
+    "batchNumber": "BCH20260111001",
+    "interchangeFee": 0.63,
+    "networkProcessingFee": 0.15,
+    "switchSerialNumber": "958139895",
+    "auditControlNumber": "923506843183926"
+  },
+  "cardholderAccount": {
+    "accountType": "Credit Card",
+    "cardProduct": "Standard Mastercard",
+    "accountStanding": "Good",
+    "previousChargebacks": 0,
+    "accountAge": "3 years",
+    "maskedPAN": "912343****6424",
+    "issuerBIN": "949456"
+  },
+  "riskFlags": {
+    "velocityCheck": "Normal",
+    "geolocationMismatch": "None",
+    "unusualAmount": "No",
+    "firstTimeAtMerchant": false,
+    "deviceTrustScore": "High"
+  }
+}

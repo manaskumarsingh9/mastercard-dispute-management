@@ -1,0 +1,14 @@
+{
+  "source": "PhoneShield Pro — Fulfillment",
+  "dataType": "Fulfillment & Delivery Record",
+  "reasonCode": "4834",
+  "reasonCodeDescription": "Point of Interaction Error / Duplicate Processing",
+  "fulfillmentRecord": {
+    "type": "Physical Shipment — two separate packages",
+    "status": "Both delivered",
+    "method": "USPS Priority — separate tracking numbers",
+    "timing": "[4 days after purchase] and [5 days after purchase]",
+    "confirmed": true,
+    "notes": "Two packages shipped separately. Both delivered to cardholder's billing address."
+  }
+}

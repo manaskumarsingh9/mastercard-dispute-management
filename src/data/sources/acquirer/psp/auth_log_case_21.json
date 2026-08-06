@@ -1,0 +1,25 @@
+{
+  "source": "Enterprise Solutions — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "caseReference": "CASE-21",
+  "records": [
+    {
+      "transactionId": "TXN-980145359",
+      "authorizationCode": "AUTH266299",
+      "requestTimestamp": "2026-01-15T14:30:00Z",
+      "responseTimestamp": "2026-01-15T14:30:02.000Z",
+      "amount": 24000,
+      "currency": "USD",
+      "cardLastFour": "0909",
+      "cardholderName": "Eleanor Vance",
+      "entryMode": "Ecommerce",
+      "responseCode": "00",
+      "responseMessage": "Approved",
+      "merchantId": "009403091254",
+      "merchantName": "Enterprise Solutions",
+      "terminalId": "ECOM-21",
+      "acquirerBIN": "009222",
+      "issuerBIN": "953309"
+    }
+  ]
+}

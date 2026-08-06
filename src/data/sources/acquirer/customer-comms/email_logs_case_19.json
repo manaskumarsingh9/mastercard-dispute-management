@@ -1,0 +1,63 @@
+{
+  "source": "Customer Communication Platform",
+  "dataType": "Email Communication Logs",
+  "retrievedAt": "2026-03-20T10:00:00Z",
+  "provider": "SendGrid",
+  "caseReference": "CASE-19",
+  "records": [
+    {
+      "email": "john.smith@email.com",
+      "customerName": "John Smith",
+      "merchantEmail": "support@techstorepro.com",
+      "merchantName": "TechStore Pro",
+      "transactionReference": "TXN-001234",
+      "communications": [
+        {
+          "type": "Order Confirmation",
+          "direction": "merchant_to_customer",
+          "sentAt": "2026-02-10T09:15:00Z",
+          "opened": true,
+          "openedAt": "2026-02-10T09:42:00Z",
+          "subject": "Order Confirmation - TXN-001234",
+          "body": "Hi John,\n\nThank you for your purchase at TechStore Pro!\n\nOrder #TXN-001234\nItem: USB-C Hub Adapter (Model: TSP-4700)\nPrice: $29.99\nShipping: $5.00\nTotal: $34.99\n\nYour order will ship within 1-2 business days.\n\nBest regards,\nTechStore Pro"
+        },
+        {
+          "type": "Customer Complaint",
+          "direction": "customer_to_merchant",
+          "sentAt": "2026-02-14T16:22:00Z",
+          "opened": true,
+          "openedAt": "2026-02-14T16:22:00Z",
+          "subject": "RE: Order Confirmation - Wrong amount charged",
+          "body": "Hello,\n\nI just noticed the charge on my card statement shows $34.99 but the price listed on your website when I purchased was $24.99 plus $5 shipping, which should be $29.99 total. You charged me $5 extra.\n\nPlease explain this discrepancy or issue a refund for the difference.\n\nJohn Smith"
+        },
+        {
+          "type": "Merchant Response",
+          "direction": "merchant_to_customer",
+          "sentAt": "2026-02-15T10:05:00Z",
+          "opened": true,
+          "openedAt": "2026-02-15T11:30:00Z",
+          "subject": "RE: Order Confirmation - Wrong amount charged",
+          "body": "Hi John,\n\nThank you for reaching out. I've looked into your order and the $34.99 charge is correct. The USB-C Hub Adapter is priced at $29.99, and the $5.00 is for standard shipping. The price on the website was $29.99 at the time of your purchase — you may be confusing it with a sale price that ended the day before.\n\nI can provide a screenshot of the pricing page from the date of your order if that would help.\n\nBest regards,\nCustomer Support\nTechStore Pro"
+        },
+        {
+          "type": "Customer Follow-up",
+          "direction": "customer_to_merchant",
+          "sentAt": "2026-02-16T08:45:00Z",
+          "opened": true,
+          "openedAt": "2026-02-16T08:45:00Z",
+          "subject": "RE: Order Confirmation - Wrong amount charged",
+          "body": "I disagree. The website showed $24.99 when I added it to cart. I took a screenshot and I'm disputing this charge with my bank.\n\nJohn"
+        }
+      ],
+      "totalEmails": 4,
+      "customerInitiatedComplaints": 1,
+      "merchantResponseCount": 1,
+      "refundRequested": true,
+      "refundOffered": false,
+      "disputeEscalated": false,
+      "lastContactDate": "2026-02-16",
+      "noRefundRequested": false,
+      "noComplaintAboutNonDelivery": true
+    }
+  ]
+}

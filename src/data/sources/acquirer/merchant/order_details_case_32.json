@@ -1,0 +1,43 @@
+{
+  "source": "Food Delivery App — Order Management System",
+  "dataType": "Order Details",
+  "caseReference": "CASE-32",
+  "records": [
+    {
+      "orderId": "ORD-000032",
+      "transactionId": "TXN-952871447",
+      "orderDate": "2026-02-10T14:30:00Z",
+      "orderStatus": "Fulfilled",
+      "amount": 45,
+      "currency": "USD",
+      "items": [
+        {
+          "name": "Food Delivery Order - The Pasta Spot",
+          "quantity": 1,
+          "unitPrice": 45,
+          "sku": "SKU-FD-32"
+        }
+      ],
+      "billingDescriptor": "FOOD DELIVERY APP*ORD-000032",
+      "billingAddress": {
+        "name": "Eleanor Vance",
+        "street": "324 Juniper Ave",
+        "city": "Columbus",
+        "state": "OH",
+        "zip": "43085",
+        "country": "US"
+      },
+      "shippingAddress": {
+        "name": "Eleanor Vance",
+        "street": "324 Juniper Ave",
+        "city": "Columbus",
+        "state": "OH",
+        "zip": "43085",
+        "country": "US"
+      },
+      "ipAddress": "104.196.224.161",
+      "customerEmail": "eleanor.vance@email.com",
+      "customerPhone": "+12003555552"
+    }
+  ]
+}

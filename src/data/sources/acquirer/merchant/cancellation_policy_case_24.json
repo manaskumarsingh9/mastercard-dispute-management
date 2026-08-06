@@ -1,0 +1,22 @@
+{
+  "source": "SaaS Platform — Subscription Management",
+  "dataType": "Cancellation Policy & Records",
+  "caseReference": "CASE-24",
+  "records": [
+    {
+      "merchantName": "SaaS Platform",
+      "subscriptionId": "SUB-24-9405",
+      "customerName": "Eleanor Vance",
+      "customerEmail": "eleanor.vance@email.com",
+      "planName": "SaaS Basic Plan",
+      "monthlyAmount": 8,
+      "currency": "USD",
+      "cancellationPolicy": "Cancellations take effect at end of current billing period. Must be submitted before renewal date.",
+      "cancellationReceived": true,
+      "cancellationDate": "2025-12-10",
+      "billingCycleEnd": "2025-12-31",
+      "chargeAfterCancellation": true,
+      "merchantNotes": "System processed recurring charge after cancellation was received. Reviewing billing system for processing delay."
+    }
+  ]
+}

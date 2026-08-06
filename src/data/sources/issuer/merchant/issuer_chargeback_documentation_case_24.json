@@ -1,0 +1,45 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "caseReference": "CASE-24",
+  "chargebackFiling": {
+    "filingDate": "2026-02-20",
+    "chargebackAmount": 8,
+    "currency": "USD",
+    "reasonCode": "4841",
+    "reasonCodeDescription": "Cancelled Recurring Transaction",
+    "issuerBIN": "918823",
+    "acquirerBIN": "009222",
+    "cardholderNotificationDate": "2026-02-15",
+    "chargebackDeadline": "2026-04-06",
+    "supportingDocuments": [
+      {
+        "documentType": "Cardholder Written Statement",
+        "description": "Cardholder's signed dispute form detailing cancellation and unauthorized charge.",
+        "dateProvided": "2026-02-17"
+      },
+      {
+        "documentType": "Cancellation Confirmation",
+        "description": "Email confirmation from SaaS Platform confirming subscription cancellation on 2026-01-25.",
+        "dateProvided": "2026-02-17"
+      },
+      {
+        "documentType": "Bank Statement",
+        "description": "Portion of cardholder's statement showing the disputed charge post-cancellation.",
+        "dateProvided": "2026-02-18"
+      }
+    ],
+    "issuerCommentary": "The cardholder asserts that they cancelled their recurring subscription with 'SaaS Platform' on January 25, 2026. Despite receiving a confirmation of cancellation, a subsequent charge of $8.00 USD was posted to their account on February 10, 2026, for a service they had cancelled and no longer wished to receive. The cardholder attempted to resolve this directly with the merchant but was unsuccessful in obtaining a refund.\n\nThis chargeback is being filed under Mastercard Reason Code 4841, 'Cancelled Recurring Transaction', as the merchant debited the cardholder's account after the cardholder had validly cancelled the recurring service. Mastercard rules stipulate that a merchant must cease billing a cardholder for recurring transactions upon proper notification of cancellation. Supporting documentation, including the cardholder's statement and evidence of cancellation, is attached to substantiate this claim, demonstrating that the service was cancelled prior to the disputed charge.",
+    "representmentDeadline": "2026-04-06",
+    "arbitrationEligible": true,
+    "claimReference": "900002090390"
+  },
+  "transactionDetails": {
+    "originalTransactionDate": "2026-02-10",
+    "postingDate": "2026-02-11",
+    "authorizationCode": "MRK2406",
+    "cardPresent": false,
+    "ecommerceIndicator": "R",
+    "recurringPayment": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "source": "BookHaven — Rare & Collectible Books — Fulfillment",
+  "dataType": "Fulfillment & Delivery Record",
+  "reasonCode": "4908",
+  "reasonCodeDescription": "Mastercard Compliance — Authorization Related",
+  "fulfillmentRecord": {
+    "type": "Physical Shipment",
+    "status": "Delivered",
+    "method": "USPS Priority — insured",
+    "timing": "Delivered [60 days after pre-order]",
+    "confirmed": true,
+    "notes": "Limited edition book (#342/500) delivered to cardholder's billing address."
+  }
+}

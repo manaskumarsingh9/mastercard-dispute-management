@@ -1,0 +1,9 @@
+{
+  "source": "GiftCardVault — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4840",
+  "reasonCodeDescription": "Fraudulent Processing of Transaction",
+  "settlementRecord": {
+    "notes": "Settled for $500.00. Gift cards were instantly delivered and redeemed. Funds are unrecoverable as the gift card balances have been spent."
+  }
+}

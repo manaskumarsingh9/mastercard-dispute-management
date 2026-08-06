@@ -1,0 +1,12 @@
+{
+  "source": "SlimFit Wellness — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4849",
+  "reasonCodeDescription": "Questionable Merchant Activity",
+  "policy": {
+    "refundWindow": "30 days from shipment",
+    "policy": "Full refund within 30 days if product returned unopened. Fine print: subscription auto-enrolls after trial.",
+    "disclosureMethod": "Terms on website — small print at bottom of product page.",
+    "customerAcknowledgment": "Purchaser agreed to terms — however, this cardholder states they never visited the website."
+  }
+}

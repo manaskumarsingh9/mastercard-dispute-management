@@ -1,0 +1,16 @@
+{
+  "source": "GiftCardVault — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4840",
+  "reasonCodeDescription": "Fraudulent Processing of Transaction",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "N",
+      "description": "No match — billing address provided is fictitious"
+    },
+    "cvv": {
+      "responseCode": "M",
+      "description": "CVV matched — likely obtained from data breach"
+    }
+  }
+}

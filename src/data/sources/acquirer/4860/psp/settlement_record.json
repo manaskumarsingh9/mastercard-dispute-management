@@ -1,0 +1,9 @@
+{
+  "source": "StrideFit Running — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4860",
+  "reasonCodeDescription": "Credit Not Processed",
+  "settlementRecord": {
+    "notes": "Original transaction settled for $134.95. Refund was initiated in merchant's internal system but never reached the payment processor. The credit has not been posted to the cardholder's account."
+  }
+}

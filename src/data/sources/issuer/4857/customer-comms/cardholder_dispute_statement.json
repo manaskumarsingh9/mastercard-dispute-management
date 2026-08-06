@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4857",
+  "reasonCodeDescription": "Card-Activated Telephone Transaction",
+  "statement": {
+    "disputeReason": "4857 - Card-Activated Telephone Transaction",
+    "detailedDescription": "The cardholder found a $74.95 charge from 'NUTRIDIRECT PHONE SALES' on their statement. The cardholder states they never called this company or ordered anything by phone. The cardholder does not recognize the merchant name and did not provide their card details over the phone to anyone.",
+    "contactedMerchant": false,
+    "merchantResponseSummary": "N/A — the cardholder denies any telephone interaction with this merchant.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Full reversal — unauthorized telephone transaction without proper cardholder verification.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium-High — evidence supports cardholder's position.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4857 (Card-Activated Telephone Transaction).",
+    "priority": "Standard"
+  }
+}

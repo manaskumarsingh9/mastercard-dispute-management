@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4837",
+  "reasonCodeDescription": "No Cardholder Authorization (Fraud)",
+  "chargebackFiling": {
+    "reasonCode": "4837",
+    "reasonCodeDescription": "No Cardholder Authorization (Fraud)",
+    "supportingDocuments": [
+      {
+        "type": "Cardholder Affidavit of Fraud",
+        "desc": "Sworn statement that cardholder did not authorize or make this purchase."
+      },
+      {
+        "type": "Device/IP Analysis",
+        "desc": "Issuer's analysis showing IP and device mismatch with cardholder's profile."
+      }
+    ],
+    "issuerCommentary": "Filing under 4837. The cardholder categorically denies this transaction. IP geolocation and device analysis are inconsistent with the cardholder's known profile. No 3D Secure authentication was performed. This appears to be a card-not-present fraud.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI_07",
+    "posEntryMode": "81"
+  }
+}

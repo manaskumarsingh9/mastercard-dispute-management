@@ -1,0 +1,43 @@
+{
+  "source": "Jewelry Online — Order Management System",
+  "dataType": "Order Details",
+  "caseReference": "CASE-34",
+  "records": [
+    {
+      "orderId": "ORD-000034",
+      "transactionId": "TXN-921598787",
+      "orderDate": "2026-01-12T14:30:00Z",
+      "orderStatus": "Fulfilled",
+      "amount": 3500,
+      "currency": "USD",
+      "items": [
+        {
+          "name": "Fine Jewelry Piece",
+          "quantity": 1,
+          "unitPrice": 3500,
+          "sku": "SKU-JO-34"
+        }
+      ],
+      "billingDescriptor": "JEWELRY ONLINE*ORD-000034",
+      "billingAddress": {
+        "name": "Jessica Thompson",
+        "street": "338 Poplar Way",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98101",
+        "country": "US"
+      },
+      "shippingAddress": {
+        "name": "Jessica Thompson",
+        "street": "338 Poplar Way",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98101",
+        "country": "US"
+      },
+      "ipAddress": "106.202.238.187",
+      "customerEmail": "jessica.thompson@email.com",
+      "customerPhone": "+12003777774"
+    }
+  ]
+}

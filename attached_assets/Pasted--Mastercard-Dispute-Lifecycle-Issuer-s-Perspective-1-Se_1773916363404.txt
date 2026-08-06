@@ -1,0 +1,56 @@
+### Mastercard Dispute Lifecycle: Issuer's Perspective
+
+1.  **Search for the Original Transaction**
+    *   **`transactionSearch`** (`POST /v6/transactions/search`): The issuer initiates the process by searching for details of the original transaction that the cardholder is disputing. This helps gather necessary information before creating a claim.
+
+2.  **Retrieve Transaction Details (Optional)**
+    *   **`getTransactionClearingDetail`** (`GET /v6/claims/{claim-id}/transactions/clearing/{transaction-id}`): After creating a claim (see next step), the issuer can retrieve clearing details for the original transaction.
+    *   **`retrieveAuthorizationDetail`** (`GET /v6/claims/{claim-id}/transactions/authorization/{transaction-id}`): Also after claim creation, the issuer can retrieve authorization details for the original transaction.
+
+3.  **Create a New Claim**
+    *   **`createClaim`** (`POST /v6/claims`): This is a crucial first step. Once the transaction is identified and the issuer decides to proceed with a dispute, they create a new claim. This claim ID will be used for all subsequent dispute activities related to this transaction.
+
+4.  **Create a Retrieval Request (Optional, for documentation)**
+    *   **`createRetrievalRequest`** (`POST /v6/claims/{claim-id}/retrievalrequests`): Before a chargeback, the issuer may create a retrieval request to ask the acquirer for transaction information documents (TID) to satisfy an inquiry or investigation.
+    *   **`getDataForCreateRetrievalRequest`** (`GET /v6/claims/{claim-id}/retrievalrequests/loaddataforretrievalrequests`): Used to get data needed to prepare for a retrieval request.
+
+5.  **Respond to Retrieval Request Fulfillment**
+    *   **`issuerResponseRetrievalRequest`** (`POST /v6/claims/{claim-id}/retrievalrequests/{request-id}/fulfillments/response`): If the acquirer fulfills the retrieval request, the issuer uses this API to approve or reject the provided documentation.
+    *   **`getRetrievalDoc`** (`GET /v6/claims/{claim-id}/retrievalrequests/{request-id}/documents`): To retrieve the documents provided by the acquirer.
+    *   **`retrieveFulfillmentStatus`** (`PUT /v6/retrievalrequests/status`): To check the status of documents associated with retrieval requests.
+
+6.  **Create a Chargeback or Second Presentment**
+    *   **`createChargeback`** (`POST /v6/claims/{claim-id}/chargebacks`): If the dispute isn't resolved by a retrieval request or other means, the issuer creates a formal chargeback against the acquirer. Supporting documents can be optionally uploaded.
+    *   **`getDataForCreateChargeback`** (`POST /v6/claims/{claim-id}/chargebacks/loaddataforchargebacks`): To obtain information before creating a chargeback.
+
+7.  **Reverse a Chargeback (If Error Occurs)**
+    *   **`createChargebackReversal`** (`POST /v6/claims/{claim-id}/chargebacks/{chargeback-id}/reversal`): If the issuer created a chargeback in error, this API allows them to reverse it.
+
+8.  **Update a Chargeback (Add Documents)**
+    *   **`updateChargeback`** (`PUT /v6/claims/{claim-id}/chargebacks/{chargeback-id}`): If the issuer needs to add memos or additional documents to an existing chargeback.
+
+9.  **Monitor and Acknowledge Chargeback Status**
+    *   **`retrieveChargebackStatus`** (`PUT /v6/chargebacks/status`): The issuer can check the processing status of chargeback documents.
+    *   **`acknowledgeChargebacks`** (`PUT /v6/chargebacks/acknowledge`): The issuer acknowledges receiving a chargeback, moving the claim from the "Unworked" to the "Worked" queue.
+
+10. **Create a Case Filing (for Escalation)**
+    *   **`createCaseFiling`** (`POST /v6/cases`): If the dispute escalates beyond a simple chargeback (e.g., to pre-arbitration or arbitration), the issuer files a case.
+
+11. **Update or Respond to a Case**
+    *   **`updateCaseFiling`** (`PUT /v6/cases/{case-id}`): To take further action on an open case (e.g., rebut, withdraw).
+
+12. **Retrieve Case Documents**
+    *   **`getCaseFilingDoc`** (`GET /v6/cases/{case-id}/documents`): To retrieve all documents related to an escalated case.
+
+13. **Create Fraud Event (If Applicable)**
+    *   **`createFraudMasterCard`** (`POST /v6/claims/{claim-id}/fraud/mastercard`): If the transaction is confirmed as fraudulent, the issuer can create a fraud item in the Fraud and Loss database.
+    *   **`getDataForCreateFraud`** (`GET /v6/claims/{claim-id}/fraud/loaddataforfraud`): To retrieve necessary information before creating a fraud item.
+
+14. **Create Fee Collection Event (If Applicable)**
+    *   **`createFee`** (`POST /v6/claims/{claim-id}/fee`): If a fee needs to be collected as part of the dispute resolution.
+    *   **`getDataForCreateFee`** (`POST /v6/claims/{claim-id}/fees/loaddataforfees`): To obtain information before creating a fee collection.
+
+15. **Retrieve Overall Claim Details**
+    *   **`getClaimDetail`** (`GET /v6/claims/{claim-id}`): At any point, the issuer can retrieve comprehensive details for a claim, including statuses of all associated dispute events and documents.
+
+This sequence covers the main interactions an issuer would have with the Mastercom APIs throughout a typical dispute lifecycle.

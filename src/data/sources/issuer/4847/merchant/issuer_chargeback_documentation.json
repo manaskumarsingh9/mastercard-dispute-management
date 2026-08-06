@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4847",
+  "reasonCodeDescription": "Exceeds Floor Limit — Not Authorized and Fraud",
+  "chargebackFiling": {
+    "reasonCode": "4847",
+    "reasonCodeDescription": "Exceeds Floor Limit — Not Authorized and Fraud",
+    "supportingDocuments": [
+      {
+        "type": "Stolen Card Report",
+        "desc": "Police report filed by the cardholder."
+      },
+      {
+        "type": "Authorization Log",
+        "desc": "Issuer's records showing no authorization request was received for this transaction."
+      }
+    ],
+    "issuerCommentary": "Filing under 4847. The $1,250.00 transaction exceeded the floor limit and no authorization was obtained. The card was reported stolen. The merchant was obligated to request authorization for above-floor-limit transactions.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": true,
+    "ecommerceIndicator": null,
+    "posEntryMode": "90"
+  }
+}

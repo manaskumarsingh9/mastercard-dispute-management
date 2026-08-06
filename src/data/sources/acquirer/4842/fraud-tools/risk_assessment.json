@@ -1,0 +1,20 @@
+{
+  "source": "SunCoast Travel Agency — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4842",
+  "reasonCodeDescription": "Late Presentment",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "Known device from original booking",
+      "trust": "High",
+      "match": true
+    },
+    "ipAnalysis": {
+      "level": "Low",
+      "proxy": false,
+      "geoMatch": true,
+      "notes": "IP from original booking matches cardholder."
+    },
+    "overallRiskScore": "Low — legitimate transaction but late presentment"
+  }
+}

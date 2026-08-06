@@ -1,0 +1,16 @@
+{
+  "source": "FitZone Fitness Center — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4905",
+  "reasonCodeDescription": "Mastercard Compliance — Card Not Valid",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "Y",
+      "description": "On file from enrollment"
+    },
+    "cvv": {
+      "responseCode": "M",
+      "description": "On file — Account Updater provided updated credentials"
+    }
+  }
+}

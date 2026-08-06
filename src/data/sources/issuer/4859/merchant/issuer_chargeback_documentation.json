@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4859",
+  "reasonCodeDescription": "Addendum, No-show, or ATM Dispute",
+  "chargebackFiling": {
+    "reasonCode": "4859",
+    "reasonCodeDescription": "Addendum, No-show, or ATM Dispute",
+    "supportingDocuments": [
+      {
+        "type": "Cardholder Dispute Form",
+        "desc": "Statement that reservation was cancelled by phone [2 days before check-in]."
+      },
+      {
+        "type": "Cardholder's Phone Record",
+        "desc": "Call log showing a call to the hotel's number [2 days before check-in]."
+      }
+    ],
+    "issuerCommentary": "Filing under 4859. The cardholder claims they cancelled the reservation by phone before the cancellation deadline. The hotel has no cancellation record.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI_07",
+    "posEntryMode": "81"
+  }
+}

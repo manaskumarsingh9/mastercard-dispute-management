@@ -1,0 +1,14 @@
+{
+  "source": "StrideFit Running — Fulfillment",
+  "dataType": "Fulfillment & Delivery Record",
+  "reasonCode": "4860",
+  "reasonCodeDescription": "Credit Not Processed",
+  "fulfillmentRecord": {
+    "type": "Physical Shipment",
+    "status": "Delivered, then returned to merchant",
+    "method": "USPS — prepaid return label",
+    "timing": "Delivered [4 days after purchase], returned [14 days after purchase]",
+    "confirmed": true,
+    "notes": "Shoes delivered, then returned by cardholder using prepaid label. Merchant confirmed receipt of return [15 days after purchase]. Refund promised but never posted."
+  }
+}

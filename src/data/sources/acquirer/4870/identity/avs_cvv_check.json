@@ -1,0 +1,16 @@
+{
+  "source": "Vogue Street Fashion — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4870",
+  "reasonCodeDescription": "Chip Liability Shift — Counterfeit",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "N/A",
+      "description": "Card-present"
+    },
+    "cvv": {
+      "responseCode": "N/A",
+      "description": "CVV1 on magnetic stripe"
+    }
+  }
+}

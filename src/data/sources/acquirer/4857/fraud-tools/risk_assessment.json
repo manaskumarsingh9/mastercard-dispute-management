@@ -1,0 +1,20 @@
+{
+  "source": "NutriDirect Phone Sales — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4857",
+  "reasonCodeDescription": "Card-Activated Telephone Transaction",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "N/A — telephone order",
+      "trust": "N/A",
+      "match": false
+    },
+    "ipAnalysis": {
+      "level": "N/A",
+      "proxy": false,
+      "geoMatch": false,
+      "notes": "Telephone order — no IP data."
+    },
+    "overallRiskScore": "Medium-High — MOTO transaction, no recording, AVS mismatch"
+  }
+}

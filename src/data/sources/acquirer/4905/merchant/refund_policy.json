@@ -1,0 +1,12 @@
+{
+  "source": "FitZone Fitness Center — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4905",
+  "reasonCodeDescription": "Mastercard Compliance — Card Not Valid",
+  "policy": {
+    "refundWindow": "N/A — membership",
+    "policy": "Cancel anytime with 30 days notice. No refund for the current billing period.",
+    "disclosureMethod": "In membership agreement and signup confirmation.",
+    "customerAcknowledgment": "Customer signed membership agreement at signup."
+  }
+}

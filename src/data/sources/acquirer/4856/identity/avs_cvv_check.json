@@ -1,0 +1,16 @@
+{
+  "source": "TechFit Store — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4856",
+  "reasonCodeDescription": "Defective or Not as Described (Chip Liability Shift)",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "N/A",
+      "description": "Card-present EMV"
+    },
+    "cvv": {
+      "responseCode": "N/A",
+      "description": "Chip cryptogram verified"
+    }
+  }
+}

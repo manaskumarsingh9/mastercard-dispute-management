@@ -1,0 +1,36 @@
+This refined logic for **Agent 2** transforms it from a simple data fetcher into a sophisticated **Evidence Strategist**. By allowing it to reason beyond standard templates and verify its own results, you're building a system that can handle "weird" or edge-case disputes that usually trip up automated tools.
+
+Here is the updated **Sequence of Operations** and the revised **Agent Map** to reflect these changes:
+
+### The Refined Case Detail & Enrichment Flow
+
+1.  **Initial View (Instant):** The merchant clicks a claim row and sees the **Issuer Side data** and the **Agent 1 Summary**.
+2.  **Enrichment Trigger (Merchant Action):** The merchant clicks "Enrich."
+3.  **Agent 2 - Task 1 (Planning):** Gemini looks at the specific claim and "weird" details. It checks the standard template for that reason code but **adds dynamic requirements** (e.g., "Request warehouse packing video because customer claims the box was empty").
+4.  **Evidence Engine (Execution):** The engine makes the API calls to PSPs and Delivery partners as instructed by Agent 2.
+5.  **Agent 2 - Task 2 (Verification & Annotation):** Gemini reviews the API responses. It creates an **Annotated Evidence Map** (e.g., "✅ Signature obtained; ❌ Packing video unavailable in API").
+6.  **Manual Top-up (Optional):** The merchant sees the "❌" flags. If they have that video or a manual email from the courier, they **upload it manually**.
+7.  **Agent 4 - Recommendation (Configurable):** If enabled, Agent 4 reviews the *final* map (Auto + Manual) and suggests whether to challenge.
+8.  **Agent 3b - Drafting:** If the merchant hits "Submit," Agent 3b writes the rebuttal using the verified evidence.
+
+-----
+
+### Updated Agent Map (Detailed)
+
+| Agent | Task Name | Input | Output / Action |
+| :--- | :--- | :--- | :--- |
+| **Agent 1** | **Case Summarizer** | Raw Issuer Data | **2-min summary** for instant dashboard view. |
+| **Agent 2** | **Evidence Strategist** | Claim Details + Reason Code | **1. Fetch Plan:** (Template + Dynamic needs). <br> **2. Annotated Map:** Verified results with clear gap flagging. |
+| **Agent 3a**| **Merchant Summary** | Enriched Evidence | A readable summary of the **Merchant’s side** of the story. |
+| **Agent 4** | **Challenge Advisor** | Full Annotated Map | **Recommendation:** "Challenge" or "Accept" based on evidence strength. |
+| **Agent 3b**| **Rebuttal Architect** | Final Evidence Set | The **final submission document** for Mastercard. |
+
+-----
+
+### Impact on Architecture & POC
+
+  * **The "Human-in-the-Loop" highlight:** Your POC now has a very strong "collaboration" story. The AI identifies what is missing, and the human provides it.
+  * **API Resilience:** By allowing manual uploads to patch "API gaps" identified by Agent 2, your system is more robust than a "pure automation" tool.
+  * **Decision Confidence:** Agent 4 is no longer "guessing." It is making a recommendation based on a verified checklist of evidence.
+
+**Would you like me to update the Mermaid.js code for the "Three-Phase Flow" diagram to specifically include the "Agent 2 Verification" and "Manual Upload Path" loops?**

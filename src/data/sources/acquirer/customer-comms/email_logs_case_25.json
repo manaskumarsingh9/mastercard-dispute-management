@@ -1,0 +1,34 @@
+{
+  "source": "Payment Gateway — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "caseReference": "CASE-25",
+  "records": [
+    {
+      "email": "emily.davidson@email.com",
+      "customerName": "Emily R. Davidson",
+      "merchantEmail": "support@paymentgateway.com",
+      "merchantName": "Payment Gateway",
+      "transactionReference": "TXN-980382766",
+      "communications": [
+        {
+          "type": "Customer Inquiry",
+          "direction": "customer_to_merchant",
+          "sentAt": "2026-01-28T16:00:00Z",
+          "opened": true,
+          "openedAt": "2026-01-28T16:05:00Z",
+          "subject": "Charge inquiry - TXN-980382766",
+          "body": "Hi,\n\nI noticed a charge of $8 on my statement from Payment Gateway. I would like to understand this charge and request a resolution.\n\nRegards,\nEmily R. Davidson"
+        },
+        {
+          "type": "Merchant Response",
+          "direction": "merchant_to_customer",
+          "sentAt": "2026-01-29T10:30:00Z",
+          "opened": true,
+          "openedAt": "2026-01-29T11:00:00Z",
+          "subject": "RE: Charge inquiry - TXN-980382766",
+          "body": "Cardholder states she contacted 'Payment Gateway' customer service via their online chat portal on February 5, 2026. The merchant representative advised her that their system only shows one successful payment linked to her account for the service, and suggested that any duplicate charges might be a bank-side error or a 'pending' transaction that would eventually drop off. They were unhelpful in resolving the issue and directed her to contact her bank."
+        }
+      ]
+    }
+  ]
+}

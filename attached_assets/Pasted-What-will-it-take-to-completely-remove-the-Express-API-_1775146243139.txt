@@ -1,0 +1,35 @@
+What will it take to completely remove the Express API Server? I remember you saying that it was not an architectural necessity but you had created it just for convenience.
+
+--------------------------------------------------------------------------------
+Great question. Here's a straightforward assessment of what it would take:
+
+What the Express API Server currently does:
+
+Proxies all dispute CRUD to the Spring Boot backend (list, get, create, update, delete)
+Proxies agent calls (Issuer Summary, Evidence Planning, Merchant Summary, Rebuttal, Recommendation, Policy Diff, Analytics) to Spring Boot
+Proxies Mastercom/Ethoca API calls to Spring Boot
+Runs the enrichment pipeline — reason code analysis, evidence retrieval, the 6-step enrichment flow with local evidence files
+Runs the recommendation engine — in-memory analysis that produces challenge/accept decisions with confidence scores
+Hosts the JSON supplement store — local persistence for fields the backend doesn't store (merchantCategory, customerEmail, cardNumber, evidenceFileId, etc.)
+Serves as the Vite dev proxy target — the frontend's /api calls route through it
+What would need to happen to remove it:
+
+Frontend talks directly to Spring Boot — Update the Vite proxy (or remove it entirely) to point the React app at the Spring Boot URL. All API calls would go straight to Spring Boot.
+
+Spring Boot needs to absorb remaining Express logic:
+
+The enrichment pipeline (reason code rules, evidence file retrieval, the 6-step flow)
+The recommendation engine (challenge/accept logic, confidence scoring)
+Any supplement-store fields it doesn't yet provide (merchantCategory, customerEmail, cardNumber)
+Evidence file serving (the local JSON case files used during enrichment)
+CORS configuration on Spring Boot to allow the frontend origin.
+
+Remove the Express artifact — delete artifacts/api-server, its workflow, and the @workspace/api-server package.
+
+Bottom line:
+
+The Express server is essentially a thin proxy + two business logic modules (enrichment and recommendations). Most of the proxy work is already redundant now that the backend provides rich data. The real blockers are:
+
+Enrichment pipeline — the 6-step evidence gathering flow with local evidence files. This is the heaviest piece of logic still in Express.
+Recommendation engine — the challenge/accept analysis. Lighter, but still meaningful.
+If Spring Boot can take over those two features (or if you're willing to move them into the frontend as client-side logic temporarily), the Express server can be removed entirely. Everything else is just proxying, which the frontend can do directly.

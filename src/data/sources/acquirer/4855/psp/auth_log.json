@@ -1,0 +1,14 @@
+{
+  "source": "HomeStitch Custom Décor — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4855",
+  "reasonCodeDescription": "Goods or Services Not Provided",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Ecommerce",
+    "threeDSecure": null,
+    "notes": "Authorization obtained at time of order. The custom product was never manufactured or shipped. No refund was issued."
+  }
+}

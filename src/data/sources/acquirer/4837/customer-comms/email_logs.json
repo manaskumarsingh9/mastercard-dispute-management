@@ -1,0 +1,22 @@
+{
+  "source": "LuxeVision Online — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4837",
+  "reasonCodeDescription": "No Cardholder Authorization (Fraud)",
+  "communications": [
+    {
+      "type": "Order Confirmation",
+      "dir": "merchant_to_customer",
+      "timing": "Immediately after purchase",
+      "subject": "LuxeVision Online — Order #LV-7829",
+      "body": "Your order for Designer Aviator Sunglasses (Polarized, Gold Frame) is confirmed. Total: $327.00. Shipping to: [address different from billing]."
+    },
+    {
+      "type": "Shipping Notification",
+      "dir": "merchant_to_customer",
+      "timing": "[1 day after purchase]",
+      "subject": "Your LuxeVision Order Has Shipped — #LV-7829",
+      "body": "Your sunglasses have shipped. Tracking number included."
+    }
+  ]
+}

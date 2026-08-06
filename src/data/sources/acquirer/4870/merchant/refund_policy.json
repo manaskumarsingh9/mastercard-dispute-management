@@ -1,0 +1,12 @@
+{
+  "source": "Vogue Street Fashion — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4870",
+  "reasonCodeDescription": "Chip Liability Shift — Counterfeit",
+  "policy": {
+    "refundWindow": "14 days from purchase",
+    "policy": "Exchange or refund within 14 days with receipt.",
+    "disclosureMethod": "Printed on receipt.",
+    "customerAcknowledgment": "Receipt provided."
+  }
+}

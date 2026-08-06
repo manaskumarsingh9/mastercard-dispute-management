@@ -1,0 +1,27 @@
+{
+  "source": "Jewelry Online — Shipping Provider",
+  "dataType": "Shipping Tracking Data",
+  "caseReference": "CASE-34",
+  "records": [
+    {
+      "orderId": "ORD-000034",
+      "transactionId": "TXN-921598787",
+      "carrier": "UPS",
+      "trackingNumber": "1Z999419730",
+      "shippedDate": "2026-01-13T10:00:00Z",
+      "estimatedDelivery": "2026-01-17",
+      "status": "Delivered",
+      "weight": "0.5 kg",
+      "dimensions": "25x15x10 cm",
+      "shippingAddress": {
+        "name": "Jessica Thompson",
+        "street": "338 Poplar Way",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98101",
+        "country": "US"
+      },
+      "customerName": "Jessica Thompson"
+    }
+  ]
+}

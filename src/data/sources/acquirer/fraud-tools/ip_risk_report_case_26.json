@@ -1,0 +1,24 @@
+{
+  "source": "Luxury Goods Ltd — IP Intelligence Service",
+  "dataType": "IP Risk Assessment",
+  "caseReference": "CASE-26",
+  "records": [
+    {
+      "transactionId": "TXN-953344667",
+      "ipAddress": "98.178.182.83",
+      "riskScore": 20,
+      "riskLevel": "Low",
+      "country": "US",
+      "region": "TX",
+      "city": "San Antonio",
+      "isp": "Major US ISP",
+      "isVPN": false,
+      "isProxy": false,
+      "isTor": false,
+      "isHosting": false,
+      "threatCategory": "None",
+      "previousActivity": "Normal consumer behavior",
+      "cardholderName": "Sarah Chen"
+    }
+  ]
+}

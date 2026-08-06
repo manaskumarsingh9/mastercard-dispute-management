@@ -1,0 +1,20 @@
+{
+  "source": "ElectroWorld Megastore — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4847",
+  "reasonCodeDescription": "Exceeds Floor Limit — Not Authorized and Fraud",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "N/A — offline POS terminal",
+      "trust": "N/A",
+      "match": false
+    },
+    "ipAnalysis": {
+      "level": "N/A",
+      "proxy": false,
+      "geoMatch": false,
+      "notes": "Card-present offline transaction."
+    },
+    "overallRiskScore": "High — no authorization, above floor limit, offline processing"
+  }
+}

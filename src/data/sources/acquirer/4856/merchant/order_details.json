@@ -1,0 +1,19 @@
+{
+  "source": "TechFit Store — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4856",
+  "reasonCodeDescription": "Defective or Not as Described (Chip Liability Shift)",
+  "orderRecord": {
+    "orderStatus": "Completed — sold in store",
+    "items": [
+      {
+        "name": "FitTrack Pro Smart Watch — GPS, Heart Rate, 5ATM Water Resistant",
+        "quantity": 1,
+        "unitPrice": 249.99,
+        "sku": "TF-FTP-BLK"
+      }
+    ],
+    "shippingAddress": null,
+    "orderNotes": "In-store purchase. Chip transaction processed correctly with full EMV data. Cardholder returned [5 days later] claiming defects. Store staff tested the watch — heart rate sensor worked during the test. Staff recommended a firmware update. Cardholder left with the watch and did not initiate a return."
+  }
+}

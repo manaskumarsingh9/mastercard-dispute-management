@@ -1,0 +1,34 @@
+{
+  "source": "Auto Parts Store — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "caseReference": "CASE-33",
+  "records": [
+    {
+      "email": "eleanor.vance@email.com",
+      "customerName": "Eleanor Vance",
+      "merchantEmail": "support@autopartsstore.com",
+      "merchantName": "Auto Parts Store",
+      "transactionReference": "TXN-938155939",
+      "communications": [
+        {
+          "type": "Customer Inquiry",
+          "direction": "customer_to_merchant",
+          "sentAt": "2026-01-28T16:00:00Z",
+          "opened": true,
+          "openedAt": "2026-01-28T16:05:00Z",
+          "subject": "Charge inquiry - TXN-938155939",
+          "body": "Hi,\n\nI noticed a charge of $780 on my statement from Auto Parts Store. I would like to understand this charge and request a resolution.\n\nRegards,\nEleanor Vance"
+        },
+        {
+          "type": "Merchant Response",
+          "direction": "merchant_to_customer",
+          "sentAt": "2026-01-29T10:30:00Z",
+          "opened": true,
+          "openedAt": "2026-01-29T11:00:00Z",
+          "subject": "RE: Charge inquiry - TXN-938155939",
+          "body": "I contacted the Auto Parts Store on February 5, 2026. The store manager, Mr. Jensen, stated that their system showed the Mastercard transaction as 'approved' despite what appeared on the POS terminal. He was unable to offer an immediate refund and advised me to contact my bank as it seemed to be a 'processing error' on their end."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4853",
+  "reasonCodeDescription": "Goods/Services Not as Described or Defective",
+  "chargebackFiling": {
+    "reasonCode": "4853",
+    "reasonCodeDescription": "Goods/Services Not as Described or Defective",
+    "supportingDocuments": [
+      {
+        "type": "Cardholder Dispute Form",
+        "desc": "Detailed description of how the product differs from the advertisement."
+      },
+      {
+        "type": "Product Listing Comparison",
+        "desc": "Cardholder's notes comparing advertised specs vs actual performance."
+      }
+    ],
+    "issuerCommentary": "Filing under 4853. The cardholder received headphones that do not meet the advertised specifications for noise cancellation and battery life.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI_07",
+    "posEntryMode": "81"
+  }
+}

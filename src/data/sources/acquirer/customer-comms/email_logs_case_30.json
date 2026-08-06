@@ -1,0 +1,34 @@
+{
+  "source": "Travel Agency — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "caseReference": "CASE-30",
+  "records": [
+    {
+      "email": "eleanor.vance@email.com",
+      "customerName": "Ms. Eleanor Vance",
+      "merchantEmail": "support@travelagency.com",
+      "merchantName": "Travel Agency",
+      "transactionReference": "TXN-956366942",
+      "communications": [
+        {
+          "type": "Customer Inquiry",
+          "direction": "customer_to_merchant",
+          "sentAt": "2026-01-15T16:00:00Z",
+          "opened": true,
+          "openedAt": "2026-01-15T16:05:00Z",
+          "subject": "Charge inquiry - TXN-956366942",
+          "body": "Hi,\n\nI noticed a charge of $2100 on my statement from Travel Agency. I would like to understand this charge and request a resolution.\n\nRegards,\nMs. Eleanor Vance"
+        },
+        {
+          "type": "Merchant Response",
+          "direction": "merchant_to_customer",
+          "sentAt": "2026-01-16T10:30:00Z",
+          "opened": true,
+          "openedAt": "2026-01-16T11:00:00Z",
+          "subject": "RE: Charge inquiry - TXN-956366942",
+          "body": "Global Travel Solutions claimed the booking was confirmed on their end but failed to provide any evidence of a confirmed reservation with the Grand Vista Hotel. They refused a refund, stating their standard no-show policy applied, despite their evident failure to transmit the booking to the hotel."
+        }
+      ]
+    }
+  ]
+}

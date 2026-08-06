@@ -1,0 +1,14 @@
+{
+  "source": "RenewTech Store — Fulfillment",
+  "dataType": "Fulfillment & Delivery Record",
+  "reasonCode": "4808",
+  "reasonCodeDescription": "Authorization-Related Chargeback",
+  "fulfillmentRecord": {
+    "type": "Physical Shipment",
+    "status": "Delivered — signed for at billing address",
+    "method": "UPS Ground — signature required",
+    "timing": "[5 days after purchase]",
+    "confirmed": true,
+    "notes": "Package delivered and signed for. Signature on file matches cardholder name."
+  }
+}

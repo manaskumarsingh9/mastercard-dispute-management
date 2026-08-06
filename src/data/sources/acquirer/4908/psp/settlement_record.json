@@ -1,0 +1,9 @@
+{
+  "source": "BookHaven — Rare & Collectible Books — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4908",
+  "reasonCodeDescription": "Mastercard Compliance — Authorization Related",
+  "settlementRecord": {
+    "notes": "Settled for $95.00. A fresh authorization was obtained [2 days before shipment and clearing], within the valid authorization window. The merchant followed Mastercard's pre-order authorization procedures correctly."
+  }
+}

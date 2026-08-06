@@ -1,0 +1,47 @@
+{
+  "source": "Issuing Bank — Transaction Processing",
+  "dataType": "Issuer Transaction Record",
+  "caseReference": "CASE-32",
+  "authorization": {
+    "authorizationCode": "567890",
+    "authorizationDate": "2026-01-15T10:30:00Z",
+    "responseCode": "00",
+    "amount": 45,
+    "currency": "USD",
+    "merchantName": "Food Delivery App",
+    "merchantCategoryCode": "5812",
+    "terminalId": "WEB_FD_00789",
+    "posEntryMode": "81",
+    "cardNotPresent": true,
+    "avsResult": "X - No AVS data provided by merchant/processor",
+    "cvvResult": "M - CVV Matched",
+    "acquirerReferenceNumber": "91032462590674698522821",
+    "merchantId": "009403096761"
+  },
+  "posting": {
+    "postingDate": "2026-01-17T08:00:00Z",
+    "settledAmount": 45,
+    "settlementDate": "2026-01-18T09:30:00Z",
+    "batchNumber": "BATCH-FD-20260116-001",
+    "interchangeFee": 0.81,
+    "networkProcessingFee": 0.1,
+    "switchSerialNumber": "912861368",
+    "auditControlNumber": "923734836086333"
+  },
+  "cardholderAccount": {
+    "accountType": "Credit",
+    "cardProduct": "Standard Mastercard",
+    "accountStanding": "Good",
+    "previousChargebacks": 0,
+    "accountAge": "3 years",
+    "maskedPAN": "912343****7903",
+    "issuerBIN": "965123"
+  },
+  "riskFlags": {
+    "velocityCheck": "Pass",
+    "geolocationMismatch": "No",
+    "unusualAmount": "No",
+    "firstTimeAtMerchant": true,
+    "deviceTrustScore": 85
+  }
+}

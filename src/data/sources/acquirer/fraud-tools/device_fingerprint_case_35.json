@@ -1,0 +1,29 @@
+{
+  "source": "Streaming Service — Fraud Detection Service",
+  "dataType": "Device Fingerprint Analysis",
+  "caseReference": "CASE-35",
+  "records": [
+    {
+      "transactionId": "TXN-970960742",
+      "sessionId": "SES-35-970960",
+      "ipAddress": "107.205.245.200",
+      "deviceType": "Desktop",
+      "browser": "Chrome 121.0",
+      "os": "Windows 11",
+      "screenResolution": "1920x1080",
+      "vpnDetected": false,
+      "proxyDetected": false,
+      "torDetected": false,
+      "riskScore": 10,
+      "riskLevel": "Low",
+      "knownDevice": true,
+      "previousTransactions": 8,
+      "geolocation": {
+        "country": "US",
+        "region": "CO",
+        "city": "Denver"
+      },
+      "cardholderName": "Evelyn R. Hayes"
+    }
+  ]
+}

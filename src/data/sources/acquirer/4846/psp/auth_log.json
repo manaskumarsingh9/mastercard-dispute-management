@@ -1,0 +1,14 @@
+{
+  "source": "EuroLux Boutique — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4846",
+  "reasonCodeDescription": "Correct Currency Code Not Provided",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Ecommerce",
+    "threeDSecure": null,
+    "notes": "Authorization was requested in EUR (€215.00) despite the website displaying USD. The cardholder's bank applied a currency conversion, resulting in a higher charged amount than what the cardholder saw at checkout."
+  }
+}

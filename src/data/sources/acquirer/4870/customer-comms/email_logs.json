@@ -1,0 +1,15 @@
+{
+  "source": "Vogue Street Fashion — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4870",
+  "reasonCodeDescription": "Chip Liability Shift — Counterfeit",
+  "communications": [
+    {
+      "type": "No Communications",
+      "dir": "system_note",
+      "timing": "N/A",
+      "subject": "N/A",
+      "body": "In-store card-present transaction. Card swiped via magnetic stripe at a non-EMV terminal. Authorization approved. Customer left with merchandise. The merchant's terminal does not have chip capability."
+    }
+  ]
+}

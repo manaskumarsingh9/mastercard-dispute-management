@@ -1,0 +1,14 @@
+{
+  "source": "The Olive Garden Terrace — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4831",
+  "reasonCodeDescription": "Transaction Amount Differs",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "EMV Chip — Card Present",
+    "threeDSecure": null,
+    "notes": "Authorization for base amount of $85.00. Final settlement of $102.00 includes $17.00 tip added by cardholder on the signed receipt. Tip is within Mastercard's permitted tolerance for restaurant transactions."
+  }
+}

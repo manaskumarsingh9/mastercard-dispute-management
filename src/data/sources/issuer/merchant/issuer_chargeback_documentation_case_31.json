@@ -1,0 +1,40 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "caseReference": "CASE-31",
+  "chargebackFiling": {
+    "filingDate": "2026-02-10",
+    "chargebackAmount": 150,
+    "currency": "USD",
+    "reasonCode": "4831",
+    "reasonCodeDescription": "Transaction Amount Differs",
+    "issuerBIN": "979228",
+    "acquirerBIN": "009222",
+    "cardholderNotificationDate": "2026-02-01",
+    "chargebackDeadline": "2026-05-20",
+    "supportingDocuments": [
+      {
+        "documentType": "Cardholder Written Statement",
+        "description": "Cardholder's declaration regarding the incorrect transaction amount.",
+        "dateProvided": "2026-02-05"
+      },
+      {
+        "documentType": "Subscription Confirmation/Offer",
+        "description": "Evidence (e.g., email confirmation, website screenshot) showing the agreed-upon subscription price.",
+        "dateProvided": "2026-02-05"
+      }
+    ],
+    "issuerCommentary": "The cardholder asserts that the final amount debited for the transaction with 'Subscription Box Co' on 2026-01-20 was USD 150.00, which fundamentally differs from the agreed-upon amount of USD 100.00 for the subscription service. This discrepancy falls directly under Mastercard Reason Code 4831, 'Transaction Amount Differs', as outlined in the Mastercard Chargeback Guide, requiring the merchant to ensure the transaction amount matches the value authorized or agreed upon by the cardholder.\n\nThe cardholder has provided a written statement and supporting evidence (e.g., subscription confirmation email, original pricing page screenshot) indicating an expected charge of USD 100.00 for their monthly subscription. However, their bank statement reflects a charge of USD 150.00 for the transaction. The cardholder did not authorize a charge of USD 150.00 and is therefore disputing the full amount as incorrect. We request the merchant to provide documentation substantiating the USD 150.00 charge or accept this chargeback.",
+    "representmentDeadline": "2026-03-27",
+    "arbitrationEligible": true,
+    "claimReference": "900002112279"
+  },
+  "transactionDetails": {
+    "originalTransactionDate": "2026-01-20",
+    "postingDate": "2026-01-22",
+    "authorizationCode": "MRK3113",
+    "cardPresent": false,
+    "ecommerceIndicator": "Internet Transaction",
+    "recurringPayment": true
+  }
+}

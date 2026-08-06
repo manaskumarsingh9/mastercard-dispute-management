@@ -1,0 +1,19 @@
+{
+  "source": "BookHaven — Rare & Collectible Books — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4908",
+  "reasonCodeDescription": "Mastercard Compliance — Authorization Related",
+  "orderRecord": {
+    "orderStatus": "Completed — delivered",
+    "items": [
+      {
+        "name": "Limited Edition Hardcover — 'The Art of Coding' (Signed by Author, #342/500)",
+        "quantity": 1,
+        "unitPrice": 95,
+        "sku": "BH-TAOC-LE"
+      }
+    ],
+    "shippingAddress": "Cardholder's billing address",
+    "orderNotes": "Pre-order for a limited edition book. Customer placed the order [60 days before delivery] with the understanding that the book would ship when published. A new authorization was obtained [2 days before shipment] per Mastercard's pre-order authorization rules. The original authorization was only a verification, not the settlement authorization."
+  }
+}

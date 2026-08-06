@@ -1,0 +1,29 @@
+{
+  "source": "Travel Agency — Fraud Detection Service",
+  "dataType": "Device Fingerprint Analysis",
+  "caseReference": "CASE-30",
+  "records": [
+    {
+      "transactionId": "TXN-956366942",
+      "sessionId": "SES-30-956366",
+      "ipAddress": "102.190.210.135",
+      "deviceType": "Desktop",
+      "browser": "Chrome 121.0",
+      "os": "Windows 11",
+      "screenResolution": "1920x1080",
+      "vpnDetected": false,
+      "proxyDetected": false,
+      "torDetected": false,
+      "riskScore": 10,
+      "riskLevel": "Low",
+      "knownDevice": true,
+      "previousTransactions": 3,
+      "geolocation": {
+        "country": "US",
+        "region": "TX",
+        "city": "Austin"
+      },
+      "cardholderName": "Ms. Eleanor Vance"
+    }
+  ]
+}

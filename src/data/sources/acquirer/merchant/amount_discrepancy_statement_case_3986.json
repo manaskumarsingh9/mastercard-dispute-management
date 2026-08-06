@@ -1,0 +1,27 @@
+{
+  "documentType": "Merchant Statement - Amount Discrepancy Clarification",
+  "date": "2026-04-07",
+  "merchantId": "002403869281",
+  "claimId": "200002074173",
+  "statement": "We have conducted a thorough review of our transaction records for the cardholder associated with this dispute. Our records confirm that the only transaction processed under this card number was a single purchase of Premium Multi-Vitamin for $74.95 on the transaction date. We have no record of any transaction totaling $533.54 or any multiple transactions that could sum to that amount. We respectfully request the issuing bank to provide documentation or a breakdown substantiating the $533.54 claim amount, as it does not correspond to any charge initiated by our merchant account.",
+  "transactionRecordSummary": {
+    "totalCharges": 1,
+    "itemizedCharges": [
+      {
+        "item": "Premium Multi-Vitamin (90-day supply)",
+        "amount": "$74.95",
+        "date": "2026-03-15",
+        "authorizationCode": "00"
+      }
+    ],
+    "totalAmount": "$74.95",
+    "disputedAmount": "$533.54",
+    "discrepancy": "$458.59",
+    "merchantPosition": "We have no record of the disputed amount. Only $74.95 was charged."
+  },
+  "supportingEvidence": [
+    "Payment gateway settlement report showing single $74.95 charge",
+    "No recurring billing or subscription associated with this card",
+    "No additional orders placed under this card number"
+  ]
+}

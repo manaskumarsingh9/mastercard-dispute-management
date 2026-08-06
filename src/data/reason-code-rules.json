@@ -1,0 +1,280 @@
+{
+  "4837": {
+    "name": "No Cardholder Authorization",
+    "category": "Fraud",
+    "description": "The cardholder claims they did not authorize the transaction. Per Mastercard rules, the merchant must prove the cardholder or an authorized party participated in the transaction. Successful 3D Secure (Mastercard Identity Check) authentication shifts liability to the issuer.",
+    "requiredSources": [
+      { "source": "psp", "file": "auth_log.json", "label": "PSP Authorization Log", "priority": "critical" },
+      { "source": "device", "file": "3ds_authentication.json", "label": "3D Secure / Mastercard Identity Check", "priority": "critical" },
+      { "source": "identity", "file": "avs_cvv_check.json", "label": "AVS/CVC2 Verification", "priority": "critical" },
+      { "source": "fraud-tools", "file": "device_fingerprint.json", "label": "Device Fingerprint Analysis", "priority": "high" },
+      { "source": "customer-comms", "file": "email_logs.json", "label": "Customer Communication Logs", "priority": "medium" }
+    ],
+    "conditionalSources": {
+      "physical_goods": [
+        { "source": "shipping", "file": "delivery_confirmation.json", "label": "Signed Delivery Confirmation", "priority": "critical" },
+        { "source": "shipping", "file": "tracking_data.json", "label": "Shipping & Tracking Data", "priority": "high" },
+        { "source": "merchant", "file": "order_details.json", "label": "Order Details & Billing Descriptor", "priority": "high" }
+      ],
+      "digital_service": [
+        { "source": "merchant", "file": "usage_logs.json", "label": "Service Usage Logs", "priority": "critical" },
+        { "source": "fraud-tools", "file": "ip_risk_report.json", "label": "IP Geolocation & Risk Assessment", "priority": "high" },
+        { "source": "merchant", "file": "order_details.json", "label": "Order Details & Billing Descriptor", "priority": "high" }
+      ],
+      "subscription": [
+        { "source": "merchant", "file": "subscription_record.json", "label": "Subscription & Billing History", "priority": "critical" },
+        { "source": "merchant", "file": "usage_logs.json", "label": "Service Usage Logs", "priority": "high" },
+        { "source": "merchant", "file": "order_details.json", "label": "Order Details & Billing Descriptor", "priority": "high" }
+      ],
+      "travel": [
+        { "source": "merchant", "file": "service_delivery_proof.json", "label": "Service Delivery Proof", "priority": "critical" },
+        { "source": "merchant", "file": "order_details.json", "label": "Booking & Itinerary Details", "priority": "high" },
+        { "source": "fraud-tools", "file": "ip_risk_report.json", "label": "IP Geolocation & Risk Assessment", "priority": "high" }
+      ],
+      "food_delivery": [
+        { "source": "shipping", "file": "delivery_confirmation.json", "label": "Delivery Confirmation with GPS", "priority": "critical" },
+        { "source": "merchant", "file": "order_details.json", "label": "Order Details & Billing Descriptor", "priority": "high" },
+        { "source": "fraud-tools", "file": "ip_risk_report.json", "label": "IP Geolocation & Risk Assessment", "priority": "high" }
+      ]
+    },
+    "winRate": 62,
+    "tips": "Successful Mastercard Identity Check (3D Secure) authentication is the strongest defense — it shifts liability to the issuer. Also provide AVS/CVC2 match results, device fingerprinting, and signed delivery confirmation for physical goods."
+  },
+  "4853": {
+    "name": "Goods/Services Not as Described or Defective",
+    "category": "Consumer Dispute",
+    "description": "The cardholder claims goods or services were not as described, defective, or not received. Mastercard requires evidence of delivery, product quality, and prominently disclosed refund/return policies accepted by the cardholder.",
+    "requiredSources": [
+      { "source": "customer-comms", "file": "email_logs.json", "label": "Customer Communication Logs", "priority": "high" },
+      { "source": "merchant", "file": "refund_policy.json", "label": "Refund & Return Policy Disclosure", "priority": "high" },
+      { "source": "merchant", "file": "terms_acceptance.json", "label": "Terms of Service Acceptance", "priority": "high" }
+    ],
+    "conditionalSources": {
+      "physical_goods": [
+        { "source": "shipping", "file": "tracking_data.json", "label": "Shipping & Tracking Data", "priority": "critical" },
+        { "source": "shipping", "file": "delivery_confirmation.json", "label": "Signed Delivery Confirmation", "priority": "critical" },
+        { "source": "merchant", "file": "order_details.json", "label": "Order Details & Product Description", "priority": "high" },
+        { "source": "merchant", "file": "fulfillment_record.json", "label": "Fulfillment Record", "priority": "high" }
+      ],
+      "digital_service": [
+        { "source": "merchant", "file": "usage_logs.json", "label": "Service Usage Logs", "priority": "critical" },
+        { "source": "merchant", "file": "service_delivery_proof.json", "label": "Service Delivery Proof", "priority": "critical" },
+        { "source": "merchant", "file": "order_details.json", "label": "Service Agreement & Details", "priority": "high" }
+      ],
+      "subscription": [
+        { "source": "merchant", "file": "subscription_record.json", "label": "Subscription & Billing History", "priority": "critical" },
+        { "source": "merchant", "file": "usage_logs.json", "label": "Service Usage Logs", "priority": "critical" },
+        { "source": "merchant", "file": "order_details.json", "label": "Order Details & Pricing", "priority": "high" }
+      ],
+      "travel": [
+        { "source": "merchant", "file": "service_delivery_proof.json", "label": "Service Delivery Proof", "priority": "critical" },
+        { "source": "merchant", "file": "order_details.json", "label": "Booking & Itinerary Details", "priority": "critical" }
+      ],
+      "food_delivery": [
+        { "source": "shipping", "file": "delivery_confirmation.json", "label": "Delivery Confirmation with GPS", "priority": "critical" },
+        { "source": "merchant", "file": "order_details.json", "label": "Order Details", "priority": "high" },
+        { "source": "merchant", "file": "fulfillment_record.json", "label": "Fulfillment Record", "priority": "high" }
+      ]
+    },
+    "winRate": 45,
+    "tips": "Mastercard requires merchants to prominently disclose refund and return policies on receipts, website, and at checkout. Signed delivery confirmation with photo evidence is the strongest proof. Include terms the cardholder accepted at purchase."
+  },
+  "4863": {
+    "name": "Cardholder Does Not Recognize Transaction",
+    "category": "Fraud",
+    "description": "The cardholder states they do not recognize the transaction on their statement. Per Mastercard, evidence must link the cardholder to the transaction through billing descriptor clarity, prior purchase history, and identity verification.",
+    "requiredSources": [
+      { "source": "psp", "file": "auth_log.json", "label": "PSP Authorization Log", "priority": "critical" },
+      { "source": "merchant", "file": "order_details.json", "label": "Order Details & Billing Descriptor", "priority": "critical" },
+      { "source": "identity", "file": "avs_cvv_check.json", "label": "AVS/CVC2 Verification", "priority": "high" },
+      { "source": "customer-comms", "file": "email_logs.json", "label": "Customer Email Transcripts", "priority": "high" }
+    ],
+    "conditionalSources": {
+      "physical_goods": [
+        { "source": "shipping", "file": "delivery_confirmation.json", "label": "Signed Delivery Confirmation", "priority": "critical" },
+        { "source": "shipping", "file": "tracking_data.json", "label": "Shipping & Tracking Data", "priority": "critical" },
+        { "source": "fraud-tools", "file": "device_fingerprint.json", "label": "Device Fingerprint Analysis", "priority": "high" }
+      ],
+      "digital_service": [
+        { "source": "merchant", "file": "usage_logs.json", "label": "Service Usage Logs", "priority": "critical" },
+        { "source": "device", "file": "3ds_authentication.json", "label": "3D Secure / Mastercard Identity Check", "priority": "critical" },
+        { "source": "fraud-tools", "file": "device_fingerprint.json", "label": "Device Fingerprint Analysis", "priority": "high" }
+      ],
+      "subscription": [
+        { "source": "merchant", "file": "subscription_record.json", "label": "Subscription & Billing History", "priority": "critical" },
+        { "source": "merchant", "file": "usage_logs.json", "label": "Service Usage Logs", "priority": "critical" },
+        { "source": "device", "file": "3ds_authentication.json", "label": "3D Secure / Mastercard Identity Check", "priority": "high" }
+      ],
+      "travel": [
+        { "source": "merchant", "file": "service_delivery_proof.json", "label": "Service Delivery Proof", "priority": "critical" },
+        { "source": "fraud-tools", "file": "device_fingerprint.json", "label": "Device Fingerprint Analysis", "priority": "high" },
+        { "source": "device", "file": "3ds_authentication.json", "label": "3D Secure / Mastercard Identity Check", "priority": "high" }
+      ],
+      "food_delivery": [
+        { "source": "shipping", "file": "delivery_confirmation.json", "label": "Delivery Confirmation with GPS", "priority": "critical" },
+        { "source": "fraud-tools", "file": "device_fingerprint.json", "label": "Device Fingerprint Analysis", "priority": "high" }
+      ]
+    },
+    "winRate": 55,
+    "tips": "A clear billing descriptor that matches the merchant name is the primary defense. Mastercard emphasizes email transcripts showing order confirmation and prior purchase history from the same device/account."
+  },
+  "4834": {
+    "name": "Point of Interaction Error",
+    "category": "Processing Error",
+    "description": "Mastercard consolidated all POI-related issues under reason code 4834. Covers duplicate processing, incorrect amounts, transaction did not complete, and no-show hotel charges. The issuer includes a Member Message Text specifying the sub-issue.",
+    "requiredSources": [
+      { "source": "psp", "file": "auth_log.json", "label": "PSP Authorization Log", "priority": "critical" },
+      { "source": "psp", "file": "settlement_record.json", "label": "Settlement & Clearing Record", "priority": "critical" },
+      { "source": "merchant", "file": "order_details.json", "label": "Order Details & Invoice", "priority": "high" }
+    ],
+    "conditionalSources": {
+      "physical_goods": [
+        { "source": "merchant", "file": "pos_terminal_log.json", "label": "POS Terminal & Transaction Log", "priority": "high" },
+        { "source": "shipping", "file": "delivery_confirmation.json", "label": "Delivery Confirmation", "priority": "medium" }
+      ],
+      "digital_service": [
+        { "source": "merchant", "file": "usage_logs.json", "label": "Service Usage Logs", "priority": "high" },
+        { "source": "merchant", "file": "service_delivery_proof.json", "label": "Service Delivery Proof", "priority": "medium" }
+      ],
+      "subscription": [
+        { "source": "merchant", "file": "subscription_record.json", "label": "Subscription & Billing History", "priority": "high" }
+      ],
+      "travel": [
+        { "source": "merchant", "file": "terms_acceptance.json", "label": "Cancellation Policy Disclosure", "priority": "high" },
+        { "source": "merchant", "file": "service_delivery_proof.json", "label": "Service Delivery Proof", "priority": "high" }
+      ]
+    },
+    "winRate": 58,
+    "tips": "Show only one transaction was processed and the settled amount matches the authorized amount. For no-show hotel disputes, provide the cancellation policy disclosure and proof that no cancellation was received."
+  },
+  "4831": {
+    "name": "Transaction Amount Differs",
+    "category": "Processing Error",
+    "description": "The cardholder claims the transaction amount differs from what they agreed to pay. Mastercard requires proof of the agreed amount via signed receipt, digital acceptance, or order confirmation showing taxes and fees.",
+    "requiredSources": [
+      { "source": "psp", "file": "auth_log.json", "label": "PSP Authorization Log", "priority": "critical" },
+      { "source": "psp", "file": "settlement_record.json", "label": "Settlement & Clearing Record", "priority": "critical" },
+      { "source": "merchant", "file": "order_details.json", "label": "Order Details & Pricing Breakdown", "priority": "critical" },
+      { "source": "merchant", "file": "terms_acceptance.json", "label": "Terms & Pricing Acceptance", "priority": "high" },
+      { "source": "customer-comms", "file": "email_logs.json", "label": "Customer Communication Logs", "priority": "medium" }
+    ],
+    "conditionalSources": {
+      "subscription": [
+        { "source": "merchant", "file": "subscription_record.json", "label": "Subscription & Billing History", "priority": "critical" },
+        { "source": "merchant", "file": "cancellation_policy.json", "label": "Cancellation Policy & Terms", "priority": "high" }
+      ]
+    },
+    "winRate": 52,
+    "tips": "Provide the signed receipt or digital acceptance showing the agreed amount including taxes, fees, and surcharges. Settlement must match the authorized amount — any discrepancy weakens the case."
+  },
+  "4855": {
+    "name": "Goods or Services Not Provided",
+    "category": "Consumer Dispute",
+    "description": "The cardholder claims they did not receive the goods or services they paid for. Mastercard requires compelling evidence of delivery or service fulfillment.",
+    "requiredSources": [
+      { "source": "merchant", "file": "order_details.json", "label": "Order Details & Fulfillment Status", "priority": "high" },
+      { "source": "customer-comms", "file": "email_logs.json", "label": "Customer Communication Logs", "priority": "high" }
+    ],
+    "conditionalSources": {
+      "physical_goods": [
+        { "source": "shipping", "file": "tracking_data.json", "label": "Shipping & Tracking Data", "priority": "critical" },
+        { "source": "shipping", "file": "delivery_confirmation.json", "label": "Signed Delivery Confirmation", "priority": "critical" },
+        { "source": "merchant", "file": "fulfillment_record.json", "label": "Fulfillment Record", "priority": "high" }
+      ],
+      "digital_service": [
+        { "source": "merchant", "file": "usage_logs.json", "label": "Service Usage Logs", "priority": "critical" },
+        { "source": "merchant", "file": "service_delivery_proof.json", "label": "Service Delivery Proof", "priority": "critical" }
+      ],
+      "subscription": [
+        { "source": "merchant", "file": "subscription_record.json", "label": "Subscription & Billing History", "priority": "critical" },
+        { "source": "merchant", "file": "usage_logs.json", "label": "Service Usage Logs", "priority": "critical" }
+      ],
+      "travel": [
+        { "source": "merchant", "file": "service_delivery_proof.json", "label": "Service Delivery Proof", "priority": "critical" },
+        { "source": "merchant", "file": "terms_acceptance.json", "label": "Booking Terms & Conditions", "priority": "high" }
+      ],
+      "food_delivery": [
+        { "source": "shipping", "file": "delivery_confirmation.json", "label": "Delivery Confirmation with GPS", "priority": "critical" },
+        { "source": "merchant", "file": "fulfillment_record.json", "label": "Fulfillment Record", "priority": "high" }
+      ]
+    },
+    "winRate": 48,
+    "tips": "Carrier tracking with signed delivery confirmation to the cardholder's verified address is essential. GPS-confirmed delivery photos increase win rates. For digital services, show the cardholder accessed or used the service after purchase."
+  },
+  "4841": {
+    "name": "Cancelled Recurring Transaction",
+    "category": "Consumer Dispute",
+    "description": "The cardholder claims a recurring transaction was charged after they cancelled the subscription. Per Mastercard, merchants must show: the transaction was not recurring, the cardholder failed to meet cancellation terms, services were used after alleged cancellation, or proper disclosure was accepted.",
+    "requiredSources": [
+      { "source": "merchant", "file": "subscription_record.json", "label": "Subscription & Billing History", "priority": "critical" },
+      { "source": "merchant", "file": "cancellation_policy.json", "label": "Cancellation Policy & Terms Disclosure", "priority": "critical" },
+      { "source": "merchant", "file": "usage_logs.json", "label": "Post-Cancellation Usage Logs", "priority": "critical" },
+      { "source": "customer-comms", "file": "email_logs.json", "label": "Customer Communication Logs", "priority": "high" },
+      { "source": "merchant", "file": "terms_acceptance.json", "label": "Recurring Billing Agreement", "priority": "high" },
+      { "source": "psp", "file": "auth_log.json", "label": "PSP Authorization Log", "priority": "medium" }
+    ],
+    "conditionalSources": {},
+    "winRate": 40,
+    "tips": "Mastercard requires separate disclosure of subscription/recurring billing terms from other terms. Show the cardholder continued using the service after the alleged cancellation date. Provide the signed recurring billing agreement and cancellation policy they acknowledged."
+  },
+  "4808": {
+    "name": "Authorization-Related Chargeback",
+    "category": "Authorization",
+    "description": "The transaction was processed without a valid authorization, the authorization was declined, or settlement occurred more than 7 calendar days after authorization. Per Mastercard, non-pre-authorized transactions must settle within 7 days of the authorization date.",
+    "requiredSources": [
+      { "source": "psp", "file": "auth_log.json", "label": "PSP Authorization Log & Approval Code", "priority": "critical" },
+      { "source": "psp", "file": "settlement_record.json", "label": "Settlement & Clearing Record", "priority": "critical" },
+      { "source": "merchant", "file": "order_details.json", "label": "Order Details & Transaction Receipt", "priority": "high" },
+      { "source": "device", "file": "3ds_authentication.json", "label": "3D Secure Authentication", "priority": "high" },
+      { "source": "identity", "file": "avs_cvv_check.json", "label": "AVS/CVC2 Verification", "priority": "medium" }
+    ],
+    "conditionalSources": {},
+    "winRate": 65,
+    "tips": "The primary defense is a valid authorization approval code with matching transaction amounts, and proof that settlement occurred within 7 calendar days of the authorization date. If the auth expired, show the original processing date was correct or present a receipt demonstrating finalization."
+  },
+  "4859": {
+    "name": "Services Not Rendered",
+    "category": "Consumer Dispute",
+    "description": "The cardholder claims services were not rendered or the merchant refused to provide the service. Mastercard weighs the merchant's failure to resolve the dispute directly with the cardholder.",
+    "requiredSources": [
+      { "source": "customer-comms", "file": "email_logs.json", "label": "Customer Communication & Resolution Attempts", "priority": "critical" },
+      { "source": "merchant", "file": "refund_policy.json", "label": "Refund & Resolution Policy", "priority": "high" }
+    ],
+    "conditionalSources": {
+      "digital_service": [
+        { "source": "merchant", "file": "service_delivery_proof.json", "label": "Service Delivery Proof", "priority": "critical" },
+        { "source": "merchant", "file": "usage_logs.json", "label": "Service Usage/Access Logs", "priority": "critical" },
+        { "source": "merchant", "file": "order_details.json", "label": "Service Agreement & Details", "priority": "high" }
+      ],
+      "subscription": [
+        { "source": "merchant", "file": "subscription_record.json", "label": "Subscription & Billing History", "priority": "critical" },
+        { "source": "merchant", "file": "usage_logs.json", "label": "Service Usage/Access Logs", "priority": "critical" },
+        { "source": "merchant", "file": "service_delivery_proof.json", "label": "Service Delivery Proof", "priority": "high" }
+      ],
+      "travel": [
+        { "source": "merchant", "file": "service_delivery_proof.json", "label": "Service Delivery Proof", "priority": "critical" },
+        { "source": "merchant", "file": "order_details.json", "label": "Booking & Itinerary Details", "priority": "critical" }
+      ],
+      "physical_goods": [
+        { "source": "shipping", "file": "delivery_confirmation.json", "label": "Delivery Confirmation & Proof", "priority": "critical" },
+        { "source": "merchant", "file": "fulfillment_record.json", "label": "Fulfillment Record", "priority": "critical" },
+        { "source": "merchant", "file": "order_details.json", "label": "Order Details", "priority": "high" }
+      ]
+    },
+    "winRate": 50,
+    "tips": "Mastercard places significant weight on the merchant's effort to resolve the issue directly with the cardholder. Document all resolution attempts. For digital services, show the cardholder accessed or used the service."
+  },
+  "4871": {
+    "name": "Chip/PIN Liability Shift — Lost/Stolen Card",
+    "category": "Fraud",
+    "description": "A chip card reported lost or stolen was used at a non-EMV-compliant terminal, shifting liability to the merchant. Per Mastercard, the merchant must prove the chip was read and PIN verified. Disputes under 4871 bypass pre-arbitration and go directly to arbitration if escalated.",
+    "requiredSources": [
+      { "source": "psp", "file": "auth_log.json", "label": "PSP Authorization Log", "priority": "critical" },
+      { "source": "merchant", "file": "pos_terminal_log.json", "label": "POS Terminal & EMV Configuration", "priority": "critical" },
+      { "source": "identity", "file": "avs_cvv_check.json", "label": "Cardholder Verification Method", "priority": "high" }
+    ],
+    "conditionalSources": {},
+    "winRate": 30,
+    "tips": "Only use EMV-compliant terminals. Proving the chip was read and PIN was verified is the only strong defense. Without chip capability, win rates are very low. Note: 4871 disputes bypass pre-arbitration — if the case escalates, it goes directly to arbitration with a $500 network fee to the losing party."
+  }
+}

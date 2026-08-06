@@ -1,0 +1,29 @@
+{
+  "source": "Luxury Goods Ltd — Fraud Detection Service",
+  "dataType": "Device Fingerprint Analysis",
+  "caseReference": "CASE-26",
+  "records": [
+    {
+      "transactionId": "TXN-953344667",
+      "sessionId": "SES-26-953344",
+      "ipAddress": "98.178.182.83",
+      "deviceType": "Desktop",
+      "browser": "Chrome 121.0",
+      "os": "Windows 11",
+      "screenResolution": "1920x1080",
+      "vpnDetected": false,
+      "proxyDetected": false,
+      "torDetected": false,
+      "riskScore": 25,
+      "riskLevel": "Low",
+      "knownDevice": true,
+      "previousTransactions": 9,
+      "geolocation": {
+        "country": "US",
+        "region": "TX",
+        "city": "San Antonio"
+      },
+      "cardholderName": "Sarah Chen"
+    }
+  ]
+}

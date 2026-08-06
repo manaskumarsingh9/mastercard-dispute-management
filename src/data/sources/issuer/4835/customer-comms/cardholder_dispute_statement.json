@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4835",
+  "reasonCodeDescription": "Card Not Valid or Expired",
+  "statement": {
+    "disputeReason": "4835 - Card Not Valid or Expired",
+    "detailedDescription": "The cardholder's Mastercard expired [2 months before this transaction]. A replacement card with a new number was issued and the expired card was destroyed. A $385.00 charge from 'BRILLIANCE JEWELERS' was processed using the expired card number via magnetic stripe. The cardholder did not visit this store or make this purchase.",
+    "contactedMerchant": false,
+    "merchantResponseSummary": "N/A — card was expired and destroyed; cardholder has no knowledge of this transaction.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Full reversal. The card used was expired and no longer valid.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium-High — evidence supports cardholder's position.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4835 (Card Not Valid or Expired).",
+    "priority": "Standard"
+  }
+}

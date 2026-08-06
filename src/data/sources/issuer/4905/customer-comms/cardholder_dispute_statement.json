@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4905",
+  "reasonCodeDescription": "Mastercard Compliance — Card Not Valid",
+  "statement": {
+    "disputeReason": "4905 - Mastercard Compliance — Card Not Valid",
+    "detailedDescription": "The issuer asserts that a $49.99 monthly charge from 'FITZONE FITNESS CENTER' was processed on a card that the issuer had flagged as not valid. The card's status was changed due to a suspected compromise, but the recurring charge continued to process.",
+    "contactedMerchant": false,
+    "merchantResponseSummary": "N/A — compliance issue identified by the issuer.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Reversal for processing on a card flagged as not valid.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium — merchant may have valid defense documentation.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4905 (Mastercard Compliance — Card Not Valid).",
+    "priority": "Standard"
+  }
+}

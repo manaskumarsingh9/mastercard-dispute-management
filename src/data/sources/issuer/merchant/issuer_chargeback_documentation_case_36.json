@@ -1,0 +1,55 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "caseReference": "CASE-36",
+  "chargebackFiling": {
+    "filingDate": "2026-01-20",
+    "chargebackAmount": 210.5,
+    "currency": "USD",
+    "reasonCode": "4853",
+    "reasonCodeDescription": "Goods/Services Not as Described or Defective",
+    "issuerBIN": "968950",
+    "acquirerBIN": "009222",
+    "cardholderNotificationDate": "2026-01-05",
+    "chargebackDeadline": "2026-03-06",
+    "supportingDocuments": [
+      {
+        "documentType": "Cardholder Dispute Form",
+        "description": "Signed declaration from cardholder detailing the dispute.",
+        "dateProvided": "2026-01-05"
+      },
+      {
+        "documentType": "Cardholder Statement",
+        "description": "Relevant section of cardholder's billing statement showing disputed transaction.",
+        "dateProvided": "2026-01-05"
+      },
+      {
+        "documentType": "Communication Log",
+        "description": "Records of cardholder's attempts to resolve directly with Fashion Outlet.",
+        "dateProvided": "2026-01-15"
+      },
+      {
+        "documentType": "Photographic Evidence",
+        "description": "Photos provided by cardholder illustrating the discrepancy/defect of the received item.",
+        "dateProvided": "2026-01-10"
+      },
+      {
+        "documentType": "Original Order Confirmation",
+        "description": "Copy of the order confirmation detailing the item purchased.",
+        "dateProvided": "2026-01-05"
+      }
+    ],
+    "issuerCommentary": "This chargeback is being filed under Mastercard Reason Code 4853 due to Goods/Services Not as Described or Defective. Our cardholder initiated a dispute claiming that an item purchased from 'Fashion Outlet' (Transaction ID: AB1C2D3E4F) on 2025-12-10 for $210.50 USD was materially different from its description on the merchant's website. Specifically, the cardholder ordered a 'Navy Blue Merino Wool Sweater, Size Medium' and received a 'Black Acrylic Blend Sweater, Size Small' which is significantly inferior in quality and incorrect in both color and size. The cardholder attempted to resolve this directly with the merchant on multiple occasions, providing photographic evidence and requesting an appropriate resolution (e.g., refund or correct item shipment), but was met with unresponsiveness from Fashion Outlet.\n\nPer Mastercard Chargeback Guide, Reason Code 4853 applies when merchandise or services are defective, damaged, or not as described, and the cardholder attempted to resolve the issue with the merchant without success. Our investigation confirms the cardholder's claim, supported by submitted photographic evidence and communication logs with the merchant. This filing is in accordance with Mastercard rules, acting on behalf of our cardholder who did not receive the goods as advertised or intended.",
+    "representmentDeadline": "2026-03-06",
+    "arbitrationEligible": true,
+    "claimReference": "900002127914"
+  },
+  "transactionDetails": {
+    "originalTransactionDate": "2025-12-10",
+    "postingDate": "2025-12-11",
+    "authorizationCode": "SLS3618",
+    "cardPresent": false,
+    "ecommerceIndicator": true,
+    "recurringPayment": false
+  }
+}

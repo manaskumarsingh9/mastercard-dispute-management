@@ -1,0 +1,43 @@
+{
+  "source": "Fashion Outlet — Order Management System",
+  "dataType": "Order Details",
+  "caseReference": "CASE-36",
+  "records": [
+    {
+      "orderId": "ORD-000036",
+      "transactionId": "TXN-904712821",
+      "orderDate": "2026-01-20T14:30:00Z",
+      "orderStatus": "Fulfilled",
+      "amount": 210.5,
+      "currency": "USD",
+      "items": [
+        {
+          "name": "Deluxe Merino Wool Sweater",
+          "quantity": 1,
+          "unitPrice": 210.5,
+          "sku": "SKU-FO-36"
+        }
+      ],
+      "billingDescriptor": "FASHION OUTLET*ORD-000036",
+      "billingAddress": {
+        "name": "Sarah Chen",
+        "street": "352 Alder Ln",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97201",
+        "country": "US"
+      },
+      "shippingAddress": {
+        "name": "Sarah Chen",
+        "street": "352 Alder Ln",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97201",
+        "country": "US"
+      },
+      "ipAddress": "108.208.252.213",
+      "customerEmail": "sarah.chen@email.com",
+      "customerPhone": "+12003999996"
+    }
+  ]
+}

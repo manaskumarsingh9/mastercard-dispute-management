@@ -1,0 +1,29 @@
+{
+  "source": "Streaming Service — Service Platform",
+  "dataType": "Service Delivery Proof",
+  "caseReference": "CASE-35",
+  "records": [
+    {
+      "orderId": "ORD-000035",
+      "transactionId": "TXN-970960742",
+      "serviceType": "Annual premium streaming plan",
+      "activationDate": "2026-02-10T14:30:00Z",
+      "serviceStatus": "Active",
+      "lastAccessDate": "2026-02-13T00:00:00.000Z",
+      "accessLogs": [
+        {
+          "date": "2026-02-10T14:30:00Z",
+          "action": "Service activated",
+          "ip": "107.205.245.200"
+        },
+        {
+          "date": "2026-02-11T00:00:00.000Z",
+          "action": "User login",
+          "ip": "107.205.245.200"
+        }
+      ],
+      "customerName": "Evelyn R. Hayes",
+      "customerEmail": "evelyn.hayes@email.com"
+    }
+  ]
+}

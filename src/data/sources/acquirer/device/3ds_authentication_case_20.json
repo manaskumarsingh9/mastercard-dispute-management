@@ -1,0 +1,22 @@
+{
+  "source": "Digital Goods LLC — 3DS Authentication Provider",
+  "dataType": "3D Secure Authentication Record",
+  "caseReference": "CASE-20",
+  "records": [
+    {
+      "transactionId": "TXN-983841698",
+      "threeDSVersion": "2.2.0",
+      "authenticationStatus": "Authenticated",
+      "eci": "05",
+      "cavv": "CAVV2098384169",
+      "dsTransactionId": "DS-983841698",
+      "challengeRequired": false,
+      "challengeCompleted": false,
+      "cardholderName": "Emily R. Chen",
+      "merchantName": "Digital Goods LLC",
+      "amount": 34.99,
+      "currency": "USD",
+      "timestamp": "2026-02-10T14:30:00Z"
+    }
+  ]
+}

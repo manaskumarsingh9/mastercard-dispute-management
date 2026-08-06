@@ -1,0 +1,12 @@
+{
+  "source": "Bistro on Main — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4802",
+  "reasonCodeDescription": "Requested Item Not Received",
+  "policy": {
+    "refundWindow": "N/A — restaurant services",
+    "policy": "Dining charges final. Tip disputes require signed receipt.",
+    "disclosureMethod": "Tip line presented on receipt for cardholder to complete before signing.",
+    "customerAcknowledgment": "Customer signed receipt with final total."
+  }
+}

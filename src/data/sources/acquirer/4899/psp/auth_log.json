@@ -1,0 +1,19 @@
+{
+  "source": "ProAccess Business Tools — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4899",
+  "reasonCodeDescription": "Mastercard Dispute Resolution — Violation of Rules",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Recurring — card on file",
+    "threeDSecure": {
+      "enrolled": true,
+      "authenticated": true,
+      "eci": "05",
+      "cavv": "Verified at initial signup"
+    },
+    "notes": "Recurring charge using card-on-file from original signup. Authorization obtained. The pre-renewal notification required by Mastercard rules was not sent due to a system error."
+  }
+}

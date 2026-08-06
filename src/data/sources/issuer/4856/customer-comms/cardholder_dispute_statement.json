@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4856",
+  "reasonCodeDescription": "Defective or Not as Described (Chip Liability Shift)",
+  "statement": {
+    "disputeReason": "4856 - Defective or Not as Described (Chip Liability Shift)",
+    "detailedDescription": "The cardholder purchased a smart fitness watch from 'TECHFIT STORE' for $249.99 at a chip-enabled terminal. The cardholder states the watch's heart rate sensor stopped working [3 days after purchase] and the screen developed dead pixels [5 days after purchase]. The cardholder considers the product defective.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "The cardholder returned to the store [5 days after purchase]. The store staff tested the watch and confirmed the heart rate sensor was responsive during their test. They suggested a firmware update. The cardholder left with the watch.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Full reversal for defective product purchased at chip-enabled terminal.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium — merchant may have valid defense documentation.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4856 (Defective or Not as Described (Chip Liability Shift)).",
+    "priority": "Standard"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "source": "NutriDirect Phone Sales — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4857",
+  "reasonCodeDescription": "Card-Activated Telephone Transaction",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Manual Key Entry — Telephone/Mail Order (MOTO)",
+    "threeDSecure": null,
+    "notes": "Card number manually keyed by telephone sales agent. Authorization obtained. AVS returned no match. CVV was not collected during the phone call. No 3D Secure possible for MOTO transactions. The call was not recorded."
+  }
+}

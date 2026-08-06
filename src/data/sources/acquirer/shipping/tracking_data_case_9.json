@@ -1,0 +1,26 @@
+{
+  "source": "Merchant Shipping System",
+  "dataType": "Shipping Tracking Data",
+  "carrier": "FedEx",
+  "trackingNumber": "789456123654",
+  "shipDate": "2026-03-20",
+  "deliveryDate": "2026-03-23",
+  "recipientName": "William Thomas",
+  "deliveryAddress": {
+    "city": "Springfield",
+    "state": "IL",
+    "zipCode": "62704",
+    "country": "US"
+  },
+  "trackingHistory": [
+    {"date": "2026-03-20T09:00:00Z", "status": "Picked up", "location": "Warehouse, Chicago IL"},
+    {"date": "2026-03-21T14:30:00Z", "status": "In transit", "location": "Distribution Center, Indianapolis IN"},
+    {"date": "2026-03-22T08:15:00Z", "status": "Out for delivery", "location": "Springfield IL"},
+    {"date": "2026-03-23T11:42:00Z", "status": "Delivered", "location": "Front door, Springfield IL", "signedBy": "W. Thomas"}
+  ],
+  "deliveryConfirmation": {
+    "confirmed": true,
+    "signatureOnFile": true,
+    "proofOfDeliveryUrl": "https://fedex.com/pod/789456123654"
+  }
+}

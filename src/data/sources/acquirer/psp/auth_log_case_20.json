@@ -1,0 +1,25 @@
+{
+  "source": "Digital Goods LLC — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "caseReference": "CASE-20",
+  "records": [
+    {
+      "transactionId": "TXN-983841698",
+      "authorizationCode": "AUTH258380",
+      "requestTimestamp": "2026-02-10T14:30:00Z",
+      "responseTimestamp": "2026-02-10T14:30:02.000Z",
+      "amount": 34.99,
+      "currency": "USD",
+      "cardLastFour": "6424",
+      "cardholderName": "Emily R. Chen",
+      "entryMode": "Ecommerce",
+      "responseCode": "00",
+      "responseMessage": "Approved",
+      "merchantId": "009403780074",
+      "merchantName": "Digital Goods LLC",
+      "terminalId": "ECOM-20",
+      "acquirerBIN": "009222",
+      "issuerBIN": "949456"
+    }
+  ]
+}

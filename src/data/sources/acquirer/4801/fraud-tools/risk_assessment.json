@@ -1,0 +1,20 @@
+{
+  "source": "TechGear Online — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4801",
+  "reasonCodeDescription": "Requested Transaction Data Not Received",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "Device data no longer available due to system migration",
+      "trust": "Unknown",
+      "match": false
+    },
+    "ipAnalysis": {
+      "level": "Unknown",
+      "proxy": false,
+      "geoMatch": false,
+      "notes": "IP records not retained."
+    },
+    "overallRiskScore": "Unable to assess — records unavailable"
+  }
+}

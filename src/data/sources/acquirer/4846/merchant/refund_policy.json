@@ -1,0 +1,12 @@
+{
+  "source": "EuroLux Boutique — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4846",
+  "reasonCodeDescription": "Correct Currency Code Not Provided",
+  "policy": {
+    "refundWindow": "30 days from delivery",
+    "policy": "Full refund within 30 days if item returned in original condition. International return shipping paid by customer.",
+    "disclosureMethod": "Policy on website in French and English.",
+    "customerAcknowledgment": "Customer agreed to terms at checkout."
+  }
+}

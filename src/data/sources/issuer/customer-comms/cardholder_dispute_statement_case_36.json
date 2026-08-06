@@ -1,0 +1,26 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "caseReference": "CASE-36",
+  "statement": {
+    "cardholderName": "Sarah Chen",
+    "dateSubmitted": "2026-02-10",
+    "disputeReason": "Goods/Services Not as Described or Defective",
+    "detailedDescription": "On January 20, 2026, I purchased a 'Deluxe Merino Wool Sweater' from Fashion Outlet's online store for $210.50 USD. The item was advertised with high-resolution images showcasing a thick, soft texture, a rich heather gray color, and described as 100% Merino wool. I specifically chose this item for its purported material quality and classic design.\n\nUpon receiving the sweater on January 28, 2026, I was immediately disappointed. The sweater delivered was visibly thinner, coarse to the touch, and made from a blend of acrylic and a small percentage of wool, not 100% Merino as advertised. The color was also a dull, faded gray, significantly different from the vibrant heather gray shown on the website. Furthermore, there was a noticeable loose thread and a small snag on the front of the sweater, indicating poor manufacturing quality. This item is clearly not the product I believed I was purchasing based on the merchant's description and images.\n\nI feel I have been misled by Fashion Outlet's deceptive advertising. The item I received does not match the product description in terms of material, color, or overall quality, and it also arrived with a defect. I would not have purchased this sweater if the true characteristics had been accurately represented.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "I contacted Fashion Outlet's customer service via their website's contact form on February 1, 2026, explaining the discrepancy and the defect. After several days, they responded on February 5, 2026, stating that all sales are final and that 'slight variations' in color and material composition are possible due to screen settings and supplier changes. They offered a 10% discount on a future purchase but refused a refund or return, claiming the item 'meets their quality standards.' This resolution is unacceptable as the difference is substantial, not a 'slight variation,' and the item is defective.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "A full refund of $210.50 USD for the misrepresented and defective sweater.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief. I understand that providing false information may result in adverse actions."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Low - Clear discrepancy between advertised product and received product. Cardholder has attempted merchant resolution.",
+    "recommendedAction": "Initiate chargeback under Mastercard Reason Code 4853 (Goods/Services Not as Described or Defective). Request supporting documentation from the cardholder regarding the purchase and communication with the merchant.",
+    "caseOfficer": "Liam O'Connell",
+    "priority": "Medium",
+    "issuerCaseId": "94151331",
+    "issuerBIN": "968950"
+  },
+  "claimReference": "900002127914",
+  "chargebackReferenceNumber": "9900153212"
+}

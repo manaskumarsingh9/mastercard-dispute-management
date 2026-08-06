@@ -1,0 +1,16 @@
+{
+  "source": "BargainTech Electronics — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4901",
+  "reasonCodeDescription": "Mastercard Compliance — Violation of Standards",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "N/A",
+      "description": "Card-present"
+    },
+    "cvv": {
+      "responseCode": "N/A",
+      "description": "Magnetic stripe"
+    }
+  }
+}

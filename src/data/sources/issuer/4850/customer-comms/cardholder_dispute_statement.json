@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4850",
+  "reasonCodeDescription": "Installment Billing Dispute",
+  "statement": {
+    "disputeReason": "4850 - Installment Billing Dispute",
+    "detailedDescription": "The cardholder disputes a $125.00 installment payment from 'FITPRO EQUIPMENT CO.' The cardholder states the per-installment amount was supposed to be $99.00 based on what was shown during checkout. The $125.00 charged is higher than expected.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "The cardholder contacted FitPro [10 days after the disputed installment]. The merchant referenced the signed agreement and said the $99 was a promotional estimate and the actual installment is $125.00 per the terms. The cardholder disagrees.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Reversal of the $26.00 difference between expected and actual installment amount.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium — merchant may have valid defense documentation.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4850 (Installment Billing Dispute).",
+    "priority": "Standard"
+  }
+}

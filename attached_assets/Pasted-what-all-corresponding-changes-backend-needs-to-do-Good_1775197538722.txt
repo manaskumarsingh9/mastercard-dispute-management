@@ -1,0 +1,38 @@
+what all corresponding changes backend needs to do?
+
+Good question. Let me audit exactly what the backend (Spring Boot) would need to change vs what the frontend can absorb. Let me check the current Spring Boot API behavior:
+
+Here's what the Spring Boot backend would need to handle for a clean Express removal:
+
+Changes the backend team needs to make: ZERO (most likely)
+
+Let me explain. Almost everything Express does can move to the frontend. Here's the breakdown:
+
+Things the frontend will absorb (no backend changes needed):
+
+Field name mapping — chargebackDisplayId → chargebackId, disputeType → type, etc. This is just a JavaScript transform function in the browser. Trivial.
+
+Status mapping — INITIATED → open, REPRESENTED → represented. Same thing, a simple lookup table in the frontend.
+
+Pagination — Spring Boot already returns the full list. The frontend already has pagination UI. It can slice the data client-side, or Spring Boot may already support ?page=&size= (standard Spring Data behavior).
+
+Simulated fallbacks — These are dev-only stubs. They can be hardcoded in the frontend if needed, or simply dropped.
+
+Recommendation sync — After an agent responds, Express writes the recommendation back to Spring Boot via updateDispute. The frontend can make that same call directly.
+
+One area to verify with the backend team:
+
+Dispute context injection for agents — Before calling an agent, Express builds a disputeContext object containing reason code rules, evidence files, and supplement data, then injects it into the request body. The question is: does Spring Boot's agent service already have access to this data internally?
+
+If yes (Spring Boot already has the dispute data, reason codes, and evidence in its own database), then the frontend just calls the agent endpoint and Spring Boot handles context internally. No changes needed.
+
+If no (Spring Boot agents rely on the disputeContext being passed in the request body), then the frontend would need to fetch the dispute data first, build the context object, and send it along. Still no backend change — just a frontend orchestration step.
+
+One thing that lives only in Express today:
+
+Supplement store (dispute-supplements.json) — This is a local JSON file storing fields like customerEmail, merchantCategory, cardNumber that Spring Boot doesn't persist. Ask the backend team: are these fields already in your database, or do you need to add them? If they're already there, we just read them from the API. If not, either the backend adds those columns, or we drop those fields from the UI.
+Bottom line: The backend team likely needs zero changes. The only questions to confirm with them are:
+
+Does Spring Boot support paginated dispute queries (?page=1&size=50)?
+Do the agent endpoints work without disputeContext in the request body (i.e., does Spring Boot already have the data internally)?
+Are supplement fields (customerEmail, merchantCategory, etc.) available in the dispute API response?

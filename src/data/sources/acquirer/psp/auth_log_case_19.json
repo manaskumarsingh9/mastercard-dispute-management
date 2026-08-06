@@ -1,0 +1,35 @@
+{
+  "source": "Payment Service Provider",
+  "dataType": "Authorization Log",
+  "retrievedAt": "2026-01-22T21:51:00Z",
+  "provider": "Stripe",
+  "caseReference": "CASE-19",
+  "records": [
+    {
+      "authorizationCode": "78759Z",
+      "authorizationDate": "2026-03-20T23:41:00Z",
+      "responseCode": "00",
+      "responseDescription": "Approved",
+      "amount": 34.99,
+      "currency": "USD",
+      "cardPresent": false,
+      "ecommerceIndicator": "05",
+      "posEntryMode": "05",
+      "terminalId": "TERM-1759",
+      "merchantCategoryCode": "5812",
+      "acquirerBIN": "510149",
+      "issuerBIN": "541249",
+      "networkTransactionId": "NTX2006478759",
+      "avsResponseCode": "N",
+      "cvvResponseCode": "M",
+      "recurringPayment": false,
+      "tokenizedPAN": false,
+      "walletType": null,
+      "merchantName": "TechStore Pro",
+      "transactionId": "TXN-001234",
+      "cardNetwork": "Mastercard",
+      "deBitCreditIndicator": "Credit",
+      "mastercardProductId": "MCC"
+    }
+  ]
+}

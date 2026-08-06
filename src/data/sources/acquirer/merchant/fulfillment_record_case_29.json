@@ -1,0 +1,19 @@
+{
+  "source": "Retail Store — Fulfillment System",
+  "dataType": "Fulfillment Record",
+  "caseReference": "CASE-29",
+  "records": [
+    {
+      "fulfillmentId": "FUL-000029",
+      "orderId": "ORD-000029",
+      "fulfillmentType": "Physical Shipment",
+      "fulfillmentStatus": "Completed",
+      "fulfilledDate": "2026-01-31T00:00:00.000Z",
+      "carrier": "UPS",
+      "trackingNumber": "1Z999358005",
+      "itemsFulfilled": 1,
+      "customerName": "Ms. Eleanor Vance",
+      "customerEmail": "eleanor.vance@email.com"
+    }
+  ]
+}

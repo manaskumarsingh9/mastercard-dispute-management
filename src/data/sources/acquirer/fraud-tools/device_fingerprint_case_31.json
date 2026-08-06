@@ -1,0 +1,29 @@
+{
+  "source": "Subscription Box Co — Fraud Detection Service",
+  "dataType": "Device Fingerprint Analysis",
+  "caseReference": "CASE-31",
+  "records": [
+    {
+      "transactionId": "TXN-955547661",
+      "sessionId": "SES-31-955547",
+      "ipAddress": "103.193.217.148",
+      "deviceType": "Desktop",
+      "browser": "Chrome 121.0",
+      "os": "Windows 11",
+      "screenResolution": "1920x1080",
+      "vpnDetected": false,
+      "proxyDetected": false,
+      "torDetected": false,
+      "riskScore": 10,
+      "riskLevel": "Low",
+      "knownDevice": true,
+      "previousTransactions": 4,
+      "geolocation": {
+        "country": "US",
+        "region": "FL",
+        "city": "Jacksonville"
+      },
+      "cardholderName": "Eleanor Vance"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "source": "Enterprise Solutions — Order Management System",
+  "dataType": "Order Details",
+  "caseReference": "CASE-21",
+  "records": [
+    {
+      "orderId": "ORD-000021",
+      "transactionId": "TXN-980145359",
+      "orderDate": "2026-01-15T14:30:00Z",
+      "orderStatus": "Completed",
+      "amount": 24000,
+      "currency": "USD",
+      "items": [
+        {
+          "name": "Annual Analytics Subscription",
+          "quantity": 1,
+          "unitPrice": 24000,
+          "sku": "SKU-ES-21"
+        }
+      ],
+      "billingDescriptor": "ENTERPRISE SOLUTIONS*ORD-000021",
+      "billingAddress": {
+        "name": "Eleanor Vance",
+        "street": "247 Maple Ave",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zip": "90001",
+        "country": "US"
+      },
+      "shippingAddress": null,
+      "ipAddress": "93.163.147.18",
+      "customerEmail": "eleanor.vance@email.com",
+      "customerPhone": "+12002333331"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "source": "Digital Goods LLC — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "caseReference": "CASE-20",
+  "records": [
+    {
+      "transactionId": "TXN-983841698",
+      "settlementDate": "2026-02-12",
+      "settlementAmount": 34.99,
+      "settlementCurrency": "USD",
+      "merchantId": "009403780074",
+      "merchantName": "Digital Goods LLC",
+      "batchId": "BATCH-20-001",
+      "status": "Settled",
+      "cardholderName": "Emily R. Chen",
+      "cardLastFour": "6424"
+    }
+  ]
+}

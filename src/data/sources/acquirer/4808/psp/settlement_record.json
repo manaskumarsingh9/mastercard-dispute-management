@@ -1,0 +1,9 @@
+{
+  "source": "RenewTech Store — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4808",
+  "reasonCodeDescription": "Authorization-Related Chargeback",
+  "settlementRecord": {
+    "notes": "Settled for $549.00. Delivered to billing address with signature confirmation."
+  }
+}

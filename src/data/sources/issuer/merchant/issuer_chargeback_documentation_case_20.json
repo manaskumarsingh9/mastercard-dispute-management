@@ -1,0 +1,40 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "caseReference": "CASE-20",
+  "chargebackFiling": {
+    "filingDate": "2026-02-05",
+    "chargebackAmount": 34.99,
+    "currency": "USD",
+    "reasonCode": "4834",
+    "reasonCodeDescription": "Duplicate Processing",
+    "issuerBIN": "949456",
+    "acquirerBIN": "009222",
+    "cardholderNotificationDate": "2026-01-20",
+    "chargebackDeadline": "2026-04-11",
+    "supportingDocuments": [
+      {
+        "documentType": "Cardholder Dispute Form",
+        "description": "Signed form from cardholder disputing duplicate charge.",
+        "dateProvided": "2026-01-20"
+      },
+      {
+        "documentType": "Cardholder Statement Excerpt",
+        "description": "Statement excerpt clearly showing two identical transactions for Digital Goods LLC on consecutive days.",
+        "dateProvided": "2026-01-22"
+      }
+    ],
+    "issuerCommentary": "We are filing a chargeback for reason code 4834 (Duplicate Processing) as the cardholder has identified two identical transactions for $34.99 USD from 'Digital Goods LLC' appearing on their statement with consecutive processing dates. The cardholder explicitly states they only authorized and intended to make a single purchase from this merchant, and the second transaction is an unauthorized duplicate. This claim is supported by the attached cardholder dispute form.\n\nPer Mastercard Rule 5.3.4.1 (Duplicate Transaction), a chargeback is permitted when two or more identical transactions are processed on the same account for the same amount, same merchant, and occurring within a short timeframe. The provided cardholder statement clearly illustrates two such transactions, and the cardholder's sworn statement confirms the intent for only one. We request the merchant to reverse the duplicate charge.",
+    "representmentDeadline": "2026-03-22",
+    "arbitrationEligible": true,
+    "claimReference": "900002077882"
+  },
+  "transactionDetails": {
+    "originalTransactionDate": "2026-01-10",
+    "postingDate": "2026-01-11",
+    "authorizationCode": "FPT2002",
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI_05",
+    "recurringPayment": false
+  }
+}

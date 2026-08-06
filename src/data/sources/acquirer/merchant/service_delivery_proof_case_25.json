@@ -1,0 +1,29 @@
+{
+  "source": "Payment Gateway — Service Platform",
+  "dataType": "Service Delivery Proof",
+  "caseReference": "CASE-25",
+  "records": [
+    {
+      "orderId": "ORD-000025",
+      "transactionId": "TXN-980382766",
+      "serviceType": "Online payment processing fee",
+      "activationDate": "2026-01-28T14:30:00Z",
+      "serviceStatus": "Active",
+      "lastAccessDate": "2026-01-31T00:00:00.000Z",
+      "accessLogs": [
+        {
+          "date": "2026-01-28T14:30:00Z",
+          "action": "Service activated",
+          "ip": "97.175.175.70"
+        },
+        {
+          "date": "2026-01-29T00:00:00.000Z",
+          "action": "User login",
+          "ip": "97.175.175.70"
+        }
+      ],
+      "customerName": "Emily R. Davidson",
+      "customerEmail": "emily.davidson@email.com"
+    }
+  ]
+}

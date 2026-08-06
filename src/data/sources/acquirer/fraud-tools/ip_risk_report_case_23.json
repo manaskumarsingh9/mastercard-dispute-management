@@ -1,0 +1,24 @@
+{
+  "source": "Cloud Services Inc — IP Intelligence Service",
+  "dataType": "IP Risk Assessment",
+  "caseReference": "CASE-23",
+  "records": [
+    {
+      "transactionId": "TXN-931889038",
+      "ipAddress": "95.169.161.44",
+      "riskScore": 20,
+      "riskLevel": "Low",
+      "country": "US",
+      "region": "TX",
+      "city": "Houston",
+      "isp": "Major US ISP",
+      "isVPN": false,
+      "isProxy": false,
+      "isTor": false,
+      "isHosting": false,
+      "threatCategory": "None",
+      "previousActivity": "Normal consumer behavior",
+      "cardholderName": "Eleanor V. Vance"
+    }
+  ]
+}

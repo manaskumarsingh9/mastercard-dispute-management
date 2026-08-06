@@ -1,0 +1,25 @@
+{
+  "source": "Streaming Service — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "caseReference": "CASE-35",
+  "records": [
+    {
+      "transactionId": "TXN-970960742",
+      "authorizationCode": "AUTH377165",
+      "requestTimestamp": "2026-02-10T14:30:00Z",
+      "responseTimestamp": "2026-02-10T14:30:02.000Z",
+      "amount": 99.99,
+      "currency": "USD",
+      "cardLastFour": "8344",
+      "cardholderName": "Evelyn R. Hayes",
+      "entryMode": "Ecommerce",
+      "responseCode": "00",
+      "responseMessage": "Approved",
+      "merchantId": "009403605824",
+      "merchantName": "Streaming Service",
+      "terminalId": "ECOM-35",
+      "acquirerBIN": "009222",
+      "issuerBIN": "938465"
+    }
+  ]
+}

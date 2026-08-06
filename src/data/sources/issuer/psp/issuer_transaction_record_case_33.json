@@ -1,0 +1,53 @@
+{
+  "source": "Issuing Bank — Transaction Processing",
+  "dataType": "Issuer Transaction Record",
+  "caseReference": "CASE-33",
+  "authorization": {
+    "authorizationCode": "024567",
+    "authorizationDate": "2026-01-10T14:30:00Z",
+    "responseCode": "Approved",
+    "amount": 780,
+    "currency": "USD",
+    "merchantName": "Auto Parts Store",
+    "merchantCategoryCode": "5533",
+    "terminalId": "WEBSTORE-AP01",
+    "posEntryMode": "E-commerce",
+    "cardNotPresent": true,
+    "avsResult": {
+      "code": "M",
+      "description": "Street address and 5-digit ZIP match"
+    },
+    "cvvResult": {
+      "code": "M",
+      "description": "CVV match"
+    },
+    "acquirerReferenceNumber": "91032462590647084749885",
+    "merchantId": "009403137236"
+  },
+  "posting": {
+    "postingDate": "2026-01-12T09:00:00Z",
+    "settledAmount": 780,
+    "settlementDate": "2026-01-13T09:00:00Z",
+    "batchNumber": "BAT-20260112-001",
+    "interchangeFee": 11.7,
+    "networkProcessingFee": 0.15,
+    "switchSerialNumber": "967734269",
+    "auditControlNumber": "923473745815151"
+  },
+  "cardholderAccount": {
+    "accountType": "Credit Card",
+    "cardProduct": "World Elite Mastercard",
+    "accountStanding": "Good",
+    "previousChargebacks": 0,
+    "accountAge": "5 years 3 months",
+    "maskedPAN": "912343****9399",
+    "issuerBIN": "933649"
+  },
+  "riskFlags": {
+    "velocityCheck": "Within Limits",
+    "geolocationMismatch": "No Mismatch",
+    "unusualAmount": "Yes - Higher than average for cardholder",
+    "firstTimeAtMerchant": true,
+    "deviceTrustScore": 75
+  }
+}

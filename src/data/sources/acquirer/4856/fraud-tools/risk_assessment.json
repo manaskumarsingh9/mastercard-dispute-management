@@ -1,0 +1,20 @@
+{
+  "source": "TechFit Store — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4856",
+  "reasonCodeDescription": "Defective or Not as Described (Chip Liability Shift)",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "N/A — card-present POS",
+      "trust": "N/A",
+      "match": true
+    },
+    "ipAnalysis": {
+      "level": "N/A",
+      "proxy": false,
+      "geoMatch": true,
+      "notes": "Card-present at store."
+    },
+    "overallRiskScore": "Low — legitimate card-present purchase"
+  }
+}

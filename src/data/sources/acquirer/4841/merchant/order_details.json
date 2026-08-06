@@ -1,0 +1,19 @@
+{
+  "source": "CloudVault Premium — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4841",
+  "reasonCodeDescription": "Cancelled Recurring or Digital Goods Transaction",
+  "orderRecord": {
+    "orderStatus": "Active subscription — billed monthly",
+    "items": [
+      {
+        "name": "CloudVault Premium — Monthly Cloud Storage Plan (2TB)",
+        "quantity": 1,
+        "unitPrice": 14.99,
+        "sku": "CV-PREM-MO"
+      }
+    ],
+    "shippingAddress": null,
+    "orderNotes": "Monthly recurring subscription. Cardholder signed up [6 months before the disputed charge]. The cancellation request was received [7 days before the next billing date], but per the terms agreed at signup, cancellation takes effect at the end of the current paid period. The disputed charge is for the final billing cycle."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "source": "Metro Fashion Department Store — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4812",
+  "reasonCodeDescription": "Account Number Not on File",
+  "orderRecord": {
+    "orderStatus": "Completed — customer left with merchandise",
+    "items": [
+      {
+        "name": "Women's winter coat — size M",
+        "quantity": 1,
+        "unitPrice": 229,
+        "sku": "MF-WC-M-BK"
+      },
+      {
+        "name": "Cashmere scarf — grey",
+        "quantity": 1,
+        "unitPrice": 65,
+        "sku": "MF-CS-GR"
+      }
+    ],
+    "shippingAddress": null,
+    "orderNotes": "In-store purchase. Card number manually keyed by cashier after chip reader failed to read the card. Customer left with items."
+  }
+}

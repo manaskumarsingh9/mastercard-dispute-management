@@ -1,0 +1,24 @@
+{
+  "source": "FreeTrial Corp — Payment Processor",
+  "dataType": "AVS/CVV Verification Results",
+  "caseReference": "CASE-22",
+  "records": [
+    {
+      "transactionId": "TXN-927809341",
+      "cardLastFour": "1739",
+      "avsResult": "Y",
+      "streetMatch": true,
+      "zipMatch": true,
+      "cvvMatch": true,
+      "cvvResult": "M",
+      "cardholderNameMatch": true,
+      "cardholderName": "Eleanor Vance",
+      "emailVerified": true,
+      "email": "eleanor.vance@email.com",
+      "phoneVerified": true,
+      "cvc2Result": "M",
+      "cvc2Match": true,
+      "cardNetwork": "Mastercard"
+    }
+  ]
+}

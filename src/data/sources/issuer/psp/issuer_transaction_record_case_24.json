@@ -1,0 +1,56 @@
+{
+  "source": "Issuing Bank — Transaction Processing",
+  "dataType": "Issuer Transaction Record",
+  "caseReference": "CASE-24",
+  "authorization": {
+    "authorizationCode": "567890",
+    "authorizationDate": "2026-01-10T10:30:00Z",
+    "responseCode": "00",
+    "responseDescription": "Approved",
+    "amount": 8,
+    "currency": "USD",
+    "merchantName": "SaaS Platform",
+    "merchantCategoryCode": "5817",
+    "merchantCategoryDescription": "Digital Goods: Games, Applications, etc.",
+    "terminalId": "WEB0001",
+    "posEntryMode": "81",
+    "posEntryModeDescription": "E-commerce - encrypted transaction",
+    "cardNotPresent": true,
+    "avsResult": {
+      "code": "Y",
+      "description": "Street address and 5-digit postal code match"
+    },
+    "cvvResult": {
+      "code": "M",
+      "description": "CVV match"
+    },
+    "acquirerReferenceNumber": "91032462590925022242237",
+    "merchantId": "009403586477"
+  },
+  "posting": {
+    "postingDate": "2026-01-12T08:00:00Z",
+    "settledAmount": 8,
+    "settlementDate": "2026-01-13T12:00:00Z",
+    "batchNumber": "20260112003",
+    "interchangeFee": 0.18,
+    "networkProcessingFee": 0.02,
+    "switchSerialNumber": "982156321",
+    "auditControlNumber": "923931575645174"
+  },
+  "cardholderAccount": {
+    "accountType": "Credit",
+    "cardProduct": "Standard Mastercard",
+    "accountStanding": "Good",
+    "previousChargebacks": 0,
+    "accountAge": "3 years",
+    "maskedPAN": "912343****7685",
+    "issuerBIN": "918823"
+  },
+  "riskFlags": {
+    "velocityCheck": false,
+    "geolocationMismatch": false,
+    "unusualAmount": false,
+    "firstTimeAtMerchant": false,
+    "deviceTrustScore": "High"
+  }
+}

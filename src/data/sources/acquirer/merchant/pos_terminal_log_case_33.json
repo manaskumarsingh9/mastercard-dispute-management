@@ -1,0 +1,21 @@
+{
+  "source": "Auto Parts Store — Point of Sale System",
+  "dataType": "POS Terminal Log",
+  "caseReference": "CASE-33",
+  "records": [
+    {
+      "transactionId": "TXN-938155939",
+      "terminalId": "TERM-33",
+      "storeLocation": "Auto Parts Store - Charlotte, NC",
+      "timestamp": "2026-01-28T14:30:00Z",
+      "entryMode": "Chip/EMV",
+      "pinVerified": true,
+      "amount": 780,
+      "currency": "USD",
+      "cardLastFour": "9399",
+      "cardholderName": "Eleanor Vance",
+      "approvalCode": "AUTH361327",
+      "receiptGenerated": true
+    }
+  ]
+}

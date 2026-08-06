@@ -1,0 +1,29 @@
+{
+  "source": "Jewelry Online — Fraud Detection Service",
+  "dataType": "Device Fingerprint Analysis",
+  "caseReference": "CASE-34",
+  "records": [
+    {
+      "transactionId": "TXN-921598787",
+      "sessionId": "SES-34-921598",
+      "ipAddress": "106.202.238.187",
+      "deviceType": "Desktop",
+      "browser": "Chrome 121.0",
+      "os": "Windows 11",
+      "screenResolution": "1920x1080",
+      "vpnDetected": false,
+      "proxyDetected": false,
+      "torDetected": false,
+      "riskScore": 25,
+      "riskLevel": "Low",
+      "knownDevice": true,
+      "previousTransactions": 7,
+      "geolocation": {
+        "country": "US",
+        "region": "WA",
+        "city": "Seattle"
+      },
+      "cardholderName": "Jessica Thompson"
+    }
+  ]
+}

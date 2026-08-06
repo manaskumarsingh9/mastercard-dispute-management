@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4850",
+  "reasonCodeDescription": "Installment Billing Dispute",
+  "chargebackFiling": {
+    "reasonCode": "4850",
+    "reasonCodeDescription": "Installment Billing Dispute",
+    "supportingDocuments": [
+      {
+        "type": "Cardholder Dispute Form",
+        "desc": "Statement indicating expected installment of $99.00."
+      },
+      {
+        "type": "Account Statement",
+        "desc": "Showing the $125.00 charge."
+      }
+    ],
+    "issuerCommentary": "Filing under 4850. The cardholder disputes the installment amount, claiming it is higher than what was presented during the purchase.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI_07",
+    "posEntryMode": "81"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "source": "ProAccess Business Tools — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4899",
+  "reasonCodeDescription": "Mastercard Dispute Resolution — Violation of Rules",
+  "orderRecord": {
+    "orderStatus": "Renewed — annual membership",
+    "items": [
+      {
+        "name": "ProAccess Business Tools — Annual Membership Renewal",
+        "quantity": 1,
+        "unitPrice": 299,
+        "sku": "PA-BT-ANN"
+      }
+    ],
+    "shippingAddress": null,
+    "orderNotes": "Annual recurring charge. The cardholder's original signup was [1 year before this charge]. The pre-renewal notification email was not sent due to a system configuration error during a platform update. The merchant acknowledges this was an oversight."
+  }
+}

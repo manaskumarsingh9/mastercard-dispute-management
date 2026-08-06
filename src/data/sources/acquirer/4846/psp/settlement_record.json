@@ -1,0 +1,9 @@
+{
+  "source": "EuroLux Boutique — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4846",
+  "reasonCodeDescription": "Correct Currency Code Not Provided",
+  "settlementRecord": {
+    "notes": "Settled in EUR (€215.00). The merchant's payment gateway configuration does not align with the display currency on their website. The cardholder experienced unexpected conversion fees."
+  }
+}

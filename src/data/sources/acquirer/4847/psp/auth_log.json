@@ -1,0 +1,14 @@
+{
+  "source": "ElectroWorld Megastore — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4847",
+  "reasonCodeDescription": "Exceeds Floor Limit — Not Authorized and Fraud",
+  "authorizationRecord": {
+    "authorizationObtained": false,
+    "responseCode": "N/A",
+    "responseMessage": "No authorization requested — terminal offline",
+    "entryMode": "Magnetic Stripe — Offline Mode",
+    "threeDSecure": null,
+    "notes": "No real-time authorization was obtained. The POS terminal was in offline mode due to a network outage. The merchant processed the $1,250.00 transaction without contacting the issuer. This exceeds the applicable floor limit, which requires authorization."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "source": "FreeTrial Corp — Service Platform",
+  "dataType": "Service Delivery Proof",
+  "caseReference": "CASE-22",
+  "records": [
+    {
+      "orderId": "ORD-000022",
+      "transactionId": "TXN-927809341",
+      "serviceType": "7-day free trial with $0.00 authorization",
+      "activationDate": "2026-01-28T14:30:00Z",
+      "serviceStatus": "Active",
+      "lastAccessDate": "2026-01-31T00:00:00.000Z",
+      "accessLogs": [
+        {
+          "date": "2026-01-28T14:30:00Z",
+          "action": "Service activated",
+          "ip": "94.166.154.31"
+        },
+        {
+          "date": "2026-01-29T00:00:00.000Z",
+          "action": "User login",
+          "ip": "94.166.154.31"
+        }
+      ],
+      "customerName": "Eleanor Vance",
+      "customerEmail": "eleanor.vance@email.com"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4900",
+  "reasonCodeDescription": "Mastercard Compliance",
+  "chargebackFiling": {
+    "reasonCode": "4900",
+    "reasonCodeDescription": "Mastercard Compliance",
+    "supportingDocuments": [
+      {
+        "type": "Compliance Review Report",
+        "desc": "Issuer's review identifying missing data elements in the transaction record."
+      }
+    ],
+    "issuerCommentary": "Filing under 4900. The transaction record is missing data elements required by Mastercard compliance standards.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI_07",
+    "posEntryMode": "81"
+  }
+}

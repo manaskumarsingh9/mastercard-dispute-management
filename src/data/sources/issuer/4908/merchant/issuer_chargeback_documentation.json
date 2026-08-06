@@ -1,0 +1,23 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4908",
+  "reasonCodeDescription": "Mastercard Compliance — Authorization Related",
+  "chargebackFiling": {
+    "reasonCode": "4908",
+    "reasonCodeDescription": "Mastercard Compliance — Authorization Related",
+    "supportingDocuments": [
+      {
+        "type": "Authorization Timeline",
+        "desc": "Showing the original authorization date and the clearing date."
+      }
+    ],
+    "issuerCommentary": "Filing under 4908. The clearing occurred [60 days after authorization], which may exceed the valid authorization window.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI_07",
+    "posEntryMode": "81"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "source": "Retail Store — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "caseReference": "CASE-29",
+  "records": [
+    {
+      "transactionId": "TXN-919016207",
+      "settlementDate": "2026-02-01",
+      "settlementAmount": 320,
+      "settlementCurrency": "USD",
+      "merchantId": "009403304411",
+      "merchantName": "Retail Store",
+      "batchId": "BATCH-29-001",
+      "status": "Settled",
+      "cardholderName": "Ms. Eleanor Vance",
+      "cardLastFour": "7946"
+    }
+  ]
+}

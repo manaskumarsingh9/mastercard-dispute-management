@@ -1,0 +1,14 @@
+{
+  "source": "BargainTech Electronics — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4901",
+  "reasonCodeDescription": "Mastercard Compliance — Violation of Standards",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Magnetic Stripe — Outdated Terminal",
+    "threeDSecure": null,
+    "notes": "Authorization obtained. However, the terminal's security firmware is outdated and the merchant's PCI compliance has lapsed. The acquirer acknowledges the compliance deficiency."
+  }
+}

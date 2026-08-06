@@ -1,0 +1,12 @@
+{
+  "source": "QuickFuel Station #247 — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4807",
+  "reasonCodeDescription": "Warning Bulletin File",
+  "policy": {
+    "refundWindow": "N/A — fuel purchase",
+    "policy": "Fuel purchases non-refundable once dispensed.",
+    "disclosureMethod": "Posted at the pump.",
+    "customerAcknowledgment": "Customer initiated dispensing by inserting card."
+  }
+}

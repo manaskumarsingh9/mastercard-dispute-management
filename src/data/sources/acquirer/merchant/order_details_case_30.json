@@ -1,0 +1,36 @@
+{
+  "source": "Travel Agency — Order Management System",
+  "dataType": "Order Details",
+  "caseReference": "CASE-30",
+  "records": [
+    {
+      "orderId": "ORD-000030",
+      "transactionId": "TXN-956366942",
+      "orderDate": "2026-01-15T14:30:00Z",
+      "orderStatus": "Completed",
+      "amount": 2100,
+      "currency": "USD",
+      "items": [
+        {
+          "name": "Hotel Reservation - Grand Vista Hotel Miami",
+          "quantity": 1,
+          "unitPrice": 2100,
+          "sku": "SKU-TA-30"
+        }
+      ],
+      "billingDescriptor": "TRAVEL AGENCY*ORD-000030",
+      "billingAddress": {
+        "name": "Ms. Eleanor Vance",
+        "street": "310 Walnut Dr",
+        "city": "Austin",
+        "state": "TX",
+        "zip": "73301",
+        "country": "US"
+      },
+      "shippingAddress": null,
+      "ipAddress": "102.190.210.135",
+      "customerEmail": "eleanor.vance@email.com",
+      "customerPhone": "+12003333330"
+    }
+  ]
+}

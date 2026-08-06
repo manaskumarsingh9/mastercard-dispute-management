@@ -1,0 +1,24 @@
+{
+  "source": "Luxury Goods Ltd — Payment Processor",
+  "dataType": "AVS/CVV Verification Results",
+  "caseReference": "CASE-26",
+  "records": [
+    {
+      "transactionId": "TXN-953344667",
+      "cardLastFour": "8380",
+      "avsResult": "Y",
+      "streetMatch": true,
+      "zipMatch": true,
+      "cvvMatch": true,
+      "cvvResult": "M",
+      "cardholderNameMatch": true,
+      "cardholderName": "Sarah Chen",
+      "emailVerified": true,
+      "email": "sarah.chen@email.com",
+      "phoneVerified": true,
+      "cvc2Result": "M",
+      "cvc2Match": true,
+      "cardNetwork": "Mastercard"
+    }
+  ]
+}

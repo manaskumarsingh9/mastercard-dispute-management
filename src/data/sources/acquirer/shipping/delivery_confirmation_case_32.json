@@ -1,0 +1,26 @@
+{
+  "source": "Food Delivery App — Delivery Service",
+  "dataType": "Delivery Confirmation",
+  "caseReference": "CASE-32",
+  "records": [
+    {
+      "orderId": "ORD-000032",
+      "transactionId": "TXN-952871447",
+      "deliveryDate": "2026-02-15T14:22:00Z",
+      "deliveryStatus": "Delivered",
+      "recipientName": "Eleanor Vance",
+      "signatureOnFile": true,
+      "deliveryAddress": {
+        "name": "Eleanor Vance",
+        "street": "324 Juniper Ave",
+        "city": "Columbus",
+        "state": "OH",
+        "zip": "43085",
+        "country": "US"
+      },
+      "photoProof": true,
+      "deliveryNotes": "Left with resident, signature obtained",
+      "carrier": "UPS"
+    }
+  ]
+}

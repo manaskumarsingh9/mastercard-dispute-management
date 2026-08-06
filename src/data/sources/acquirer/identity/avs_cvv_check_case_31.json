@@ -1,0 +1,24 @@
+{
+  "source": "Subscription Box Co — Payment Processor",
+  "dataType": "AVS/CVV Verification Results",
+  "caseReference": "CASE-31",
+  "records": [
+    {
+      "transactionId": "TXN-955547661",
+      "cardLastFour": "0727",
+      "avsResult": "Y",
+      "streetMatch": true,
+      "zipMatch": true,
+      "cvvMatch": true,
+      "cvvResult": "M",
+      "cardholderNameMatch": true,
+      "cardholderName": "Eleanor Vance",
+      "emailVerified": true,
+      "email": "eleanor.vance@email.com",
+      "phoneVerified": true,
+      "cvc2Result": "M",
+      "cvc2Match": true,
+      "cardNetwork": "Mastercard"
+    }
+  ]
+}

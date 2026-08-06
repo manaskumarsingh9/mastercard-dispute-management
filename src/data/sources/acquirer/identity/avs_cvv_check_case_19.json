@@ -1,0 +1,26 @@
+{
+  "source": "Identity Verification Service",
+  "dataType": "AVS/CVC2 Verification",
+  "retrievedAt": "2026-01-25T12:12:00Z",
+  "provider": "Issuer Bank Verification",
+  "caseReference": "CASE-19",
+  "records": [
+    {
+      "transactionId": "TXN-001234",
+      "cardLastFour": "4521",
+      "avsResult": "Y",
+      "streetMatch": true,
+      "zipMatch": false,
+      "cvvMatch": true,
+      "cvvResult": "M",
+      "cardholderNameMatch": true,
+      "cardholderName": "John Smith",
+      "emailVerified": true,
+      "email": "john.smith@email.com",
+      "phoneVerified": true,
+      "cvc2Result": "M",
+      "cvc2Match": true,
+      "cardNetwork": "Mastercard"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "source": "TechGear Online — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4801",
+  "reasonCodeDescription": "Requested Transaction Data Not Received",
+  "communications": [
+    {
+      "type": "Order Confirmation",
+      "dir": "merchant_to_customer",
+      "timing": "Immediately after purchase",
+      "subject": "Your TechGear Online Order Confirmation",
+      "body": "Thank you for your order of the Wireless Charging Pad (15W Fast Charge). Order total: $42.99. Shipping to your address on file. Expected delivery: [5-7 business days after purchase]."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "source": "SlimFit Wellness — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4849",
+  "reasonCodeDescription": "Questionable Merchant Activity",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "N",
+      "description": "No match"
+    },
+    "cvv": {
+      "responseCode": "N",
+      "description": "CVV not submitted"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "source": "Streaming Service — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "caseReference": "CASE-35",
+  "records": [
+    {
+      "transactionId": "TXN-970960742",
+      "settlementDate": "2026-02-12",
+      "settlementAmount": 99.99,
+      "settlementCurrency": "USD",
+      "merchantId": "009403605824",
+      "merchantName": "Streaming Service",
+      "batchId": "BATCH-35-001",
+      "status": "Settled",
+      "cardholderName": "Evelyn R. Hayes",
+      "cardLastFour": "8344"
+    }
+  ]
+}

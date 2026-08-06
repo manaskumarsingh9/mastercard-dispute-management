@@ -1,0 +1,19 @@
+{
+  "source": "CulinaryEdge Pro — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4809",
+  "reasonCodeDescription": "Non-Receipt of Requested Information",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Ecommerce",
+    "threeDSecure": {
+      "enrolled": true,
+      "authenticated": true,
+      "eci": "05",
+      "cavv": "Verified"
+    },
+    "notes": "Authorization obtained. 3D Secure completed. Full documentation was sent in response to the retrieval request [5 days after receipt], including sales receipt, auth record, and delivery confirmation. Transmission confirmation on file."
+  }
+}

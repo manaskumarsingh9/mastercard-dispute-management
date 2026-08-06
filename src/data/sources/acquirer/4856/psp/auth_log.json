@@ -1,0 +1,14 @@
+{
+  "source": "TechFit Store — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4856",
+  "reasonCodeDescription": "Defective or Not as Described (Chip Liability Shift)",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "EMV Chip — Card Present",
+    "threeDSecure": null,
+    "notes": "EMV chip transaction processed correctly. Full chip data captured. Card authenticated via chip cryptogram."
+  }
+}

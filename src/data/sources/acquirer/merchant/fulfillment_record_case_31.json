@@ -1,0 +1,19 @@
+{
+  "source": "Subscription Box Co — Fulfillment System",
+  "dataType": "Fulfillment Record",
+  "caseReference": "CASE-31",
+  "records": [
+    {
+      "fulfillmentId": "FUL-000031",
+      "orderId": "ORD-000031",
+      "fulfillmentType": "Digital Delivery",
+      "fulfillmentStatus": "Completed",
+      "fulfilledDate": "2026-02-05T14:30:00Z",
+      "carrier": null,
+      "trackingNumber": null,
+      "itemsFulfilled": 1,
+      "customerName": "Eleanor Vance",
+      "customerEmail": "eleanor.vance@email.com"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "source": "SaaS Platform — Fulfillment System",
+  "dataType": "Fulfillment Record",
+  "caseReference": "CASE-24",
+  "records": [
+    {
+      "fulfillmentId": "FUL-000024",
+      "orderId": "ORD-000024",
+      "fulfillmentType": "Digital Delivery",
+      "fulfillmentStatus": "Completed",
+      "fulfilledDate": "2026-01-15T14:30:00Z",
+      "carrier": null,
+      "trackingNumber": null,
+      "itemsFulfilled": 1,
+      "customerName": "Eleanor Vance",
+      "customerEmail": "eleanor.vance@email.com"
+    }
+  ]
+}

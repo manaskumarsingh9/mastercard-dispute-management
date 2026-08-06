@@ -1,0 +1,43 @@
+{
+  "source": "CaseArtisan — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4863",
+  "reasonCodeDescription": "Cardholder Does Not Recognize Transaction",
+  "communications": [
+    {
+      "type": "Account Creation",
+      "dir": "merchant_to_customer",
+      "timing": "[2 minutes before purchase]",
+      "subject": "Welcome to CaseArtisan!",
+      "body": "Your CaseArtisan account has been created! You can now design and order custom phone cases. Your account email: [cardholder's email address on file with the bank]."
+    },
+    {
+      "type": "Order Confirmation",
+      "dir": "merchant_to_customer",
+      "timing": "Immediately after purchase",
+      "subject": "CaseArtisan — Your Custom Case Order #CA-1147",
+      "body": "Your custom phone case is confirmed! Design: Your uploaded photo (a family photo with 3 people) on a Matte Finish iPhone 15 case. Total: $39.99. The billing descriptor on your statement will appear as 'CASEARTISAN'. Delivery: [5-7 business days]."
+    },
+    {
+      "type": "Design Ready Notification",
+      "dir": "merchant_to_customer",
+      "timing": "[1 day after purchase]",
+      "subject": "Your Custom Case Design Is Ready for Production — #CA-1147",
+      "body": "Your custom phone case design has been finalized and is going into production! Preview attached. If this doesn't look right, contact us within 24 hours."
+    },
+    {
+      "type": "Shipping Notification",
+      "dir": "merchant_to_customer",
+      "timing": "[3 days after purchase]",
+      "subject": "Your CaseArtisan Order Has Shipped — #CA-1147",
+      "body": "Your custom phone case has shipped! Tracking number included. Expected delivery: [5 days after purchase]."
+    },
+    {
+      "type": "Delivery Confirmation",
+      "dir": "merchant_to_customer",
+      "timing": "[6 days after purchase]",
+      "subject": "Delivered — CaseArtisan Order #CA-1147",
+      "body": "Your custom phone case has been delivered to your address! We hope you love it."
+    }
+  ]
+}

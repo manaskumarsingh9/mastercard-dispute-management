@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4900",
+  "reasonCodeDescription": "Mastercard Compliance",
+  "statement": {
+    "disputeReason": "4900 - Mastercard Compliance",
+    "detailedDescription": "The issuer filed a compliance chargeback for a $79.00 transaction from 'DEVTOOLSPRO'. The issuer asserts that the merchant did not include all required data elements in the transaction record as mandated by Mastercard's processing standards.",
+    "contactedMerchant": false,
+    "merchantResponseSummary": "N/A — compliance issue identified during routine transaction review by the issuer.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Reversal for non-compliance with Mastercard processing requirements.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium — merchant may have valid defense documentation.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4900 (Mastercard Compliance).",
+    "priority": "Standard"
+  }
+}

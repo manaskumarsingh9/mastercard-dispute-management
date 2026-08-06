@@ -1,0 +1,24 @@
+{
+  "source": "Issuing Bank — Transaction Processing",
+  "dataType": "Issuer Transaction Record",
+  "reasonCode": "4905",
+  "reasonCodeDescription": "Mastercard Compliance — Card Not Valid",
+  "authorization": {
+    "responseCode": "00",
+    "merchantCategoryCode": "5999",
+    "posEntryMode": "81",
+    "cardNotPresent": true,
+    "avsResult": {
+      "code": "Y",
+      "description": "On file"
+    },
+    "cvvResult": {
+      "code": "M",
+      "description": "On file from enrollment"
+    }
+  },
+  "riskFlags": {
+    "geolocationMismatch": "None",
+    "deviceTrustScore": "High"
+  }
+}

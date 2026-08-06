@@ -1,0 +1,16 @@
+{
+  "source": "Brilliance Jewelers — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4835",
+  "reasonCodeDescription": "Card Not Valid or Expired",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "N/A",
+      "description": "Card-present"
+    },
+    "cvv": {
+      "responseCode": "N/A",
+      "description": "CVV1 on magnetic stripe — not independently verified"
+    }
+  }
+}

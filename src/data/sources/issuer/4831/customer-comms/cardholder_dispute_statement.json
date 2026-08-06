@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4831",
+  "reasonCodeDescription": "Transaction Amount Differs",
+  "statement": {
+    "disputeReason": "4831 - Transaction Amount Differs",
+    "detailedDescription": "The cardholder dined at 'THE OLIVE GARDEN TERRACE' and the bill presented was $85.00. The posted amount is $102.00 — $17.00 more. The cardholder believes they were overcharged and is uncertain about the tip amount shown on the receipt.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "The cardholder called the restaurant [4 days after dining]. The staff said they would check records but never called back.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Reversal of the $17.00 difference between expected and posted amounts.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium — merchant may have valid defense documentation.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4831 (Transaction Amount Differs).",
+    "priority": "Standard"
+  }
+}

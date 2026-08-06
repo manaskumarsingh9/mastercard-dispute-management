@@ -1,0 +1,15 @@
+{
+  "source": "Morning Brew Café — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "reasonCode": "4902",
+  "reasonCodeDescription": "Mastercard Compliance — Below Floor Limit",
+  "communications": [
+    {
+      "type": "No Communications",
+      "dir": "system_note",
+      "timing": "N/A",
+      "subject": "N/A",
+      "body": "In-store café purchase for $12.50. EMV chip was read. Transaction is below the applicable floor limit for cafés/restaurants. A post-authorization was obtained later and was approved."
+    }
+  ]
+}

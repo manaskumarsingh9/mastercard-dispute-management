@@ -1,0 +1,12 @@
+{
+  "source": "MasterLens Academy — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4854",
+  "reasonCodeDescription": "Cardholder Dispute — Not Elsewhere Classified",
+  "policy": {
+    "refundWindow": "7 days from purchase (fewer than 3 modules completed)",
+    "policy": "Full refund within 7 days if fewer than 3 modules completed. After 3 modules, no refund — course access remains permanent.",
+    "disclosureMethod": "Clearly stated on enrollment page and in confirmation email.",
+    "customerAcknowledgment": "Customer agreed to satisfaction guarantee terms at checkout."
+  }
+}

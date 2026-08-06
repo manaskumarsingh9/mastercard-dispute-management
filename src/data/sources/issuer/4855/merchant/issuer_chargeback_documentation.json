@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4855",
+  "reasonCodeDescription": "Goods or Services Not Provided",
+  "chargebackFiling": {
+    "reasonCode": "4855",
+    "reasonCodeDescription": "Goods or Services Not Provided",
+    "supportingDocuments": [
+      {
+        "type": "Order Confirmation",
+        "desc": "Confirmation email showing order placed and payment collected."
+      },
+      {
+        "type": "Communication Attempts",
+        "desc": "Emails and call logs showing multiple failed attempts to reach the merchant."
+      }
+    ],
+    "issuerCommentary": "Filing under 4855. The cardholder paid for custom curtains that were never delivered. The merchant has become unresponsive and their website is now closed. The delivery deadline has long passed.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI_07",
+    "posEntryMode": "81"
+  }
+}

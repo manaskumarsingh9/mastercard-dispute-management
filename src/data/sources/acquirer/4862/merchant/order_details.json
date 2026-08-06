@@ -1,0 +1,19 @@
+{
+  "source": "Prestige Leather Boutique — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4862",
+  "reasonCodeDescription": "Counterfeit Transaction (Magnetic Stripe)",
+  "orderRecord": {
+    "orderStatus": "Completed — customer left with merchandise",
+    "items": [
+      {
+        "name": "Italian Leather Tote Bag — Limited Edition",
+        "quantity": 1,
+        "unitPrice": 650,
+        "sku": "PLB-ILTB-LE"
+      }
+    ],
+    "shippingAddress": null,
+    "orderNotes": "In-store purchase. Card swiped via magnetic stripe. The merchant's POS terminal does not support EMV chip reading — it is an older magnetic stripe-only terminal. The transaction was approved."
+  }
+}

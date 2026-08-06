@@ -1,0 +1,45 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "caseReference": "CASE-35",
+  "chargebackFiling": {
+    "filingDate": "2026-03-10",
+    "chargebackAmount": 99.99,
+    "currency": "USD",
+    "reasonCode": "4841",
+    "reasonCodeDescription": "Cancelled Recurring Transaction",
+    "issuerBIN": "938465",
+    "acquirerBIN": "009222",
+    "cardholderNotificationDate": "2026-02-28",
+    "chargebackDeadline": "2026-04-24",
+    "supportingDocuments": [
+      {
+        "documentType": "Cardholder Dispute Form",
+        "description": "Signed cardholder dispute form detailing cancellation claim.",
+        "dateProvided": "2026-02-27"
+      },
+      {
+        "documentType": "Cancellation Confirmation",
+        "description": "Screenshot of email/account page confirming cancellation request dated January 20, 2026.",
+        "dateProvided": "2026-02-27"
+      },
+      {
+        "documentType": "Account Statement",
+        "description": "Relevant portion of cardholder's statement showing the disputed charge.",
+        "dateProvided": "2026-03-05"
+      }
+    ],
+    "issuerCommentary": "The cardholder initiated a cancellation of their recurring subscription with 'Streaming Service' on January 20, 2026. Despite this timely request, the merchant subsequently processed a recurring charge of 99.99 USD on February 10, 2026, which is the transaction subject to this dispute. Evidence of the cancellation request has been provided by the cardholder and is attached.\n\nThis chargeback is filed under Mastercard Reason Code 4841 (Cancelled Recurring Transaction), which applies when a recurring transaction occurs after a cardholder has cancelled or terminated the relationship. Per Mastercard Chargeback Guide, Section 5.10.1, a merchant is obligated to cease billing for recurring transactions upon proper cancellation. The cardholder confirms the service was cancelled prior to the disputed transaction date, rendering this charge unauthorized.",
+    "representmentDeadline": "2026-04-24",
+    "arbitrationEligible": true,
+    "claimReference": "900002124787"
+  },
+  "transactionDetails": {
+    "originalTransactionDate": "2026-02-10",
+    "postingDate": "2026-02-11",
+    "authorizationCode": "TJB3517",
+    "cardPresent": false,
+    "ecommerceIndicator": "5",
+    "recurringPayment": true
+  }
+}

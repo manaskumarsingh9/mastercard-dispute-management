@@ -1,0 +1,24 @@
+{
+  "source": "Payment Gateway — IP Intelligence Service",
+  "dataType": "IP Risk Assessment",
+  "caseReference": "CASE-25",
+  "records": [
+    {
+      "transactionId": "TXN-980382766",
+      "ipAddress": "97.175.175.70",
+      "riskScore": 5,
+      "riskLevel": "Low",
+      "country": "US",
+      "region": "PA",
+      "city": "Philadelphia",
+      "isp": "Major US ISP",
+      "isVPN": false,
+      "isProxy": false,
+      "isTor": false,
+      "isHosting": false,
+      "threatCategory": "None",
+      "previousActivity": "Normal consumer behavior",
+      "cardholderName": "Emily R. Davidson"
+    }
+  ]
+}

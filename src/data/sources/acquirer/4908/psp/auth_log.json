@@ -1,0 +1,19 @@
+{
+  "source": "BookHaven — Rare & Collectible Books — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4908",
+  "reasonCodeDescription": "Mastercard Compliance — Authorization Related",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Ecommerce — pre-order",
+    "threeDSecure": {
+      "enrolled": true,
+      "authenticated": true,
+      "eci": "05",
+      "cavv": "Verified at pre-order"
+    },
+    "notes": "Per Mastercard's delayed/pre-order shipment rules, a new authorization was obtained [2 days before shipment], within the valid authorization window. The original pre-order authorization was used only for card verification and was not used for settlement. The settlement authorization matches the clearing date and is within the permitted timeframe."
+  }
+}

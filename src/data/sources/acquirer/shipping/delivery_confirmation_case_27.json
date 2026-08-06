@@ -1,0 +1,26 @@
+{
+  "source": "Electronics Hub — Delivery Service",
+  "dataType": "Delivery Confirmation",
+  "caseReference": "CASE-27",
+  "records": [
+    {
+      "orderId": "ORD-000027",
+      "transactionId": "TXN-972850548",
+      "deliveryDate": "2026-02-15T14:22:00Z",
+      "deliveryStatus": "Delivered",
+      "recipientName": "Eleanor Vance",
+      "signatureOnFile": true,
+      "deliveryAddress": {
+        "name": "Eleanor Vance",
+        "street": "289 Ash Blvd",
+        "city": "San Diego",
+        "state": "CA",
+        "zip": "92101",
+        "country": "US"
+      },
+      "photoProof": true,
+      "deliveryNotes": "Left with resident, signature obtained",
+      "carrier": "UPS"
+    }
+  ]
+}

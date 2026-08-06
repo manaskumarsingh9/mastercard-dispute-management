@@ -1,0 +1,25 @@
+{
+  "source": "Retail Store — Fraud Detection Service",
+  "dataType": "Device Fingerprint Analysis",
+  "caseReference": "CASE-29",
+  "records": [
+    {
+      "transactionId": "TXN-919016207",
+      "sessionId": "SES-29-919016",
+      "ipAddress": null,
+      "deviceType": "POS Terminal",
+      "browser": null,
+      "os": null,
+      "screenResolution": null,
+      "vpnDetected": false,
+      "proxyDetected": false,
+      "torDetected": false,
+      "riskScore": 25,
+      "riskLevel": "Low",
+      "knownDevice": true,
+      "previousTransactions": 12,
+      "geolocation": null,
+      "cardholderName": "Ms. Eleanor Vance"
+    }
+  ]
+}

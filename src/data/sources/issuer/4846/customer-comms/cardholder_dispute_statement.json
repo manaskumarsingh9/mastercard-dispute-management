@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4846",
+  "reasonCodeDescription": "Correct Currency Code Not Provided",
+  "statement": {
+    "disputeReason": "4846 - Correct Currency Code Not Provided",
+    "detailedDescription": "The cardholder purchased a leather bag from 'EUROLUX BOUTIQUE' (based in France). The website displayed the price as $220.00 USD at checkout. However, the cardholder was billed in EUR (€215.00) which, after currency conversion and fees, resulted in a charge of $247.50 — $27.50 more than expected. The cardholder was not informed of the currency change.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "The cardholder contacted EuroLux Boutique [3 days after noticing the charge]. The merchant said their system defaults to EUR for processing regardless of what is displayed in the cart. They offered a €10 store credit but refused a refund of the conversion difference.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Reversal of the full amount due to incorrect currency code — cardholder expected USD.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium-High — evidence supports cardholder's position.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4846 (Correct Currency Code Not Provided).",
+    "priority": "Standard"
+  }
+}

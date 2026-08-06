@@ -1,0 +1,24 @@
+{
+  "source": "Streaming Service — IP Intelligence Service",
+  "dataType": "IP Risk Assessment",
+  "caseReference": "CASE-35",
+  "records": [
+    {
+      "transactionId": "TXN-970960742",
+      "ipAddress": "107.205.245.200",
+      "riskScore": 5,
+      "riskLevel": "Low",
+      "country": "US",
+      "region": "CO",
+      "city": "Denver",
+      "isp": "Major US ISP",
+      "isVPN": false,
+      "isProxy": false,
+      "isTor": false,
+      "isHosting": false,
+      "threatCategory": "None",
+      "previousActivity": "Normal consumer behavior",
+      "cardholderName": "Evelyn R. Hayes"
+    }
+  ]
+}

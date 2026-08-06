@@ -1,0 +1,20 @@
+{
+  "source": "HomeStitch Custom Décor — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4855",
+  "reasonCodeDescription": "Goods or Services Not Provided",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "Customer's device is known and legitimate",
+      "trust": "High",
+      "match": true
+    },
+    "ipAnalysis": {
+      "level": "Low",
+      "proxy": false,
+      "geoMatch": true,
+      "notes": "IP consistent with cardholder."
+    },
+    "overallRiskScore": "N/A — risk is on the merchant side (non-delivery)"
+  }
+}

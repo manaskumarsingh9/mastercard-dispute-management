@@ -1,0 +1,24 @@
+{
+  "source": "Issuing Bank — Transaction Processing",
+  "dataType": "Issuer Transaction Record",
+  "reasonCode": "4855",
+  "reasonCodeDescription": "Goods or Services Not Provided",
+  "authorization": {
+    "responseCode": "00",
+    "merchantCategoryCode": "5999",
+    "posEntryMode": "81",
+    "cardNotPresent": true,
+    "avsResult": {
+      "code": "Y",
+      "description": "Match"
+    },
+    "cvvResult": {
+      "code": "M",
+      "description": "CVV Match"
+    }
+  },
+  "riskFlags": {
+    "geolocationMismatch": "None",
+    "deviceTrustScore": "High"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "source": "Morning Brew Café — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4902",
+  "reasonCodeDescription": "Mastercard Compliance — Below Floor Limit",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "N/A — card-present chip terminal",
+      "trust": "N/A",
+      "match": true
+    },
+    "ipAnalysis": {
+      "level": "N/A",
+      "proxy": false,
+      "geoMatch": true,
+      "notes": "Card-present at café."
+    },
+    "overallRiskScore": "Very Low — small amount, chip verified, post-auth approved"
+  }
+}

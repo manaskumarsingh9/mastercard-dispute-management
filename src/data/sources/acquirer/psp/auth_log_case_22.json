@@ -1,0 +1,25 @@
+{
+  "source": "FreeTrial Corp — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "caseReference": "CASE-22",
+  "records": [
+    {
+      "transactionId": "TXN-927809341",
+      "authorizationCode": "AUTH274218",
+      "requestTimestamp": "2026-01-28T14:30:00Z",
+      "responseTimestamp": "2026-01-28T14:30:02.000Z",
+      "amount": 0,
+      "currency": "USD",
+      "cardLastFour": "1739",
+      "cardholderName": "Eleanor Vance",
+      "entryMode": "Ecommerce",
+      "responseCode": "00",
+      "responseMessage": "Approved",
+      "merchantId": "009403638252",
+      "merchantName": "FreeTrial Corp",
+      "terminalId": "ECOM-22",
+      "acquirerBIN": "009222",
+      "issuerBIN": "916334"
+    }
+  ]
+}

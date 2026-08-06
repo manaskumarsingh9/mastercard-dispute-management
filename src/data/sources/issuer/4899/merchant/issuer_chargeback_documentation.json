@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4899",
+  "reasonCodeDescription": "Mastercard Dispute Resolution — Violation of Rules",
+  "chargebackFiling": {
+    "reasonCode": "4899",
+    "reasonCodeDescription": "Mastercard Dispute Resolution — Violation of Rules",
+    "supportingDocuments": [
+      {
+        "type": "Cardholder Statement",
+        "desc": "No pre-renewal notification email was received."
+      },
+      {
+        "type": "Mastercard Rule Reference",
+        "desc": "Mastercard requires merchants to provide advance notification before recurring charges."
+      }
+    ],
+    "issuerCommentary": "Filing under 4899. The merchant failed to comply with Mastercard's rule requiring advance notification before processing recurring charges. The merchant acknowledged the notification failure.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI_07",
+    "posEntryMode": "81"
+  }
+}

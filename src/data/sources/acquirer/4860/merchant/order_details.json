@@ -1,0 +1,19 @@
+{
+  "source": "StrideFit Running — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4860",
+  "reasonCodeDescription": "Credit Not Processed",
+  "orderRecord": {
+    "orderStatus": "Returned — refund pending",
+    "items": [
+      {
+        "name": "CloudRunner Pro Running Shoes — Size 10, Black/Red",
+        "quantity": 1,
+        "unitPrice": 134.95,
+        "sku": "SF-CRP-10BR"
+      }
+    ],
+    "shippingAddress": "Cardholder's billing address",
+    "orderNotes": "Customer returned the shoes due to sizing issues. Return was received [14 days after purchase]. Return was approved and a refund was initiated in the merchant's system but was not successfully transmitted to the payment processor."
+  }
+}

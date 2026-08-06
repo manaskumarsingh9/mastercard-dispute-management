@@ -1,0 +1,14 @@
+{
+  "source": "SunCoast Travel Agency — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4842",
+  "reasonCodeDescription": "Late Presentment",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Ecommerce — booking",
+    "threeDSecure": null,
+    "notes": "Authorization was obtained [4 months before the clearing]. The clearing was submitted significantly beyond the permitted window due to a batch processing system outage at the merchant."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4902",
+  "reasonCodeDescription": "Mastercard Compliance — Below Floor Limit",
+  "chargebackFiling": {
+    "reasonCode": "4902",
+    "reasonCodeDescription": "Mastercard Compliance — Below Floor Limit",
+    "supportingDocuments": [
+      {
+        "type": "Transaction Record",
+        "desc": "Showing no authorization was requested for this transaction."
+      }
+    ],
+    "issuerCommentary": "Filing under 4902. Transaction processed below floor limit without authorization.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": true,
+    "ecommerceIndicator": null,
+    "posEntryMode": "05"
+  }
+}

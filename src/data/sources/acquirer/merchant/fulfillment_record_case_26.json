@@ -1,0 +1,19 @@
+{
+  "source": "Luxury Goods Ltd — Fulfillment System",
+  "dataType": "Fulfillment Record",
+  "caseReference": "CASE-26",
+  "records": [
+    {
+      "fulfillmentId": "FUL-000026",
+      "orderId": "ORD-000026",
+      "fulfillmentType": "Physical Shipment",
+      "fulfillmentStatus": "Completed",
+      "fulfilledDate": "2026-01-16T00:00:00.000Z",
+      "carrier": "UPS",
+      "trackingNumber": "1Z999320970",
+      "itemsFulfilled": 1,
+      "customerName": "Sarah Chen",
+      "customerEmail": "sarah.chen@email.com"
+    }
+  ]
+}

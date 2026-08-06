@@ -1,0 +1,25 @@
+{
+  "source": "Auto Parts Store — Fraud Detection Service",
+  "dataType": "Device Fingerprint Analysis",
+  "caseReference": "CASE-33",
+  "records": [
+    {
+      "transactionId": "TXN-938155939",
+      "sessionId": "SES-33-938155",
+      "ipAddress": null,
+      "deviceType": "POS Terminal",
+      "browser": null,
+      "os": null,
+      "screenResolution": null,
+      "vpnDetected": false,
+      "proxyDetected": false,
+      "torDetected": false,
+      "riskScore": 10,
+      "riskLevel": "Low",
+      "knownDevice": true,
+      "previousTransactions": 6,
+      "geolocation": null,
+      "cardholderName": "Eleanor Vance"
+    }
+  ]
+}

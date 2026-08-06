@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4840",
+  "reasonCodeDescription": "Fraudulent Processing of Transaction",
+  "chargebackFiling": {
+    "reasonCode": "4840",
+    "reasonCodeDescription": "Fraudulent Processing of Transaction",
+    "supportingDocuments": [
+      {
+        "type": "Fraud Investigation Report",
+        "desc": "Issuer's fraud analysis showing card data was likely compromised in a third-party breach."
+      },
+      {
+        "type": "Cardholder Affidavit",
+        "desc": "Sworn statement that cardholder did not make or authorize this transaction."
+      }
+    ],
+    "issuerCommentary": "Filing under 4840. Transaction was fraudulently processed using compromised card data. Multiple gift cards purchased and immediately redeemed — a known fraud pattern. Cardholder did not participate.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI_07",
+    "posEntryMode": "81"
+  }
+}

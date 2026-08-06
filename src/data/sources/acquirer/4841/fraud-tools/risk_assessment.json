@@ -1,0 +1,20 @@
+{
+  "source": "CloudVault Premium — Fraud Prevention",
+  "dataType": "Device Fingerprint & Risk Assessment",
+  "reasonCode": "4841",
+  "reasonCodeDescription": "Cancelled Recurring or Digital Goods Transaction",
+  "riskAssessment": {
+    "deviceFingerprint": {
+      "status": "Known device — same device used for initial signup and regular logins",
+      "trust": "High",
+      "match": true
+    },
+    "ipAnalysis": {
+      "level": "Low",
+      "proxy": false,
+      "geoMatch": true,
+      "notes": "Login IP consistent with cardholder's location throughout subscription."
+    },
+    "overallRiskScore": "Low — legitimate recurring charge on established subscription"
+  }
+}

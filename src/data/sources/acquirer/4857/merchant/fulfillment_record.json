@@ -1,0 +1,14 @@
+{
+  "source": "NutriDirect Phone Sales — Fulfillment",
+  "dataType": "Fulfillment & Delivery Record",
+  "reasonCode": "4857",
+  "reasonCodeDescription": "Card-Activated Telephone Transaction",
+  "fulfillmentRecord": {
+    "type": "Physical Shipment",
+    "status": "Shipped to address provided by caller",
+    "method": "Standard USPS",
+    "timing": "[2 days after order]",
+    "confirmed": false,
+    "notes": "Shipped to address given by the caller. This address does not match the cardholder's billing address on file with the issuing bank. No delivery signature was required."
+  }
+}

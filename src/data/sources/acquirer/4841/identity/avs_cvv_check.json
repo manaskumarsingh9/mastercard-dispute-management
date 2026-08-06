@@ -1,0 +1,16 @@
+{
+  "source": "CloudVault Premium — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4841",
+  "reasonCodeDescription": "Cancelled Recurring or Digital Goods Transaction",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "Y",
+      "description": "Full match — on file from initial signup"
+    },
+    "cvv": {
+      "responseCode": "M",
+      "description": "CVV on file from initial enrollment"
+    }
+  }
+}

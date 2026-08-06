@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4846",
+  "reasonCodeDescription": "Correct Currency Code Not Provided",
+  "chargebackFiling": {
+    "reasonCode": "4846",
+    "reasonCodeDescription": "Correct Currency Code Not Provided",
+    "supportingDocuments": [
+      {
+        "type": "Checkout Screenshot",
+        "desc": "Cardholder's screenshot of the checkout page showing $220.00 USD."
+      },
+      {
+        "type": "Account Statement",
+        "desc": "Statement showing the charge of $247.50 after EUR conversion."
+      }
+    ],
+    "issuerCommentary": "Filing under 4846. The transaction was presented to the cardholder in USD at $220.00 but processed in EUR, resulting in unexpected conversion fees. The merchant did not properly disclose the settlement currency.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI_07",
+    "posEntryMode": "81"
+  }
+}

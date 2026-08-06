@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4849",
+  "reasonCodeDescription": "Questionable Merchant Activity",
+  "chargebackFiling": {
+    "reasonCode": "4849",
+    "reasonCodeDescription": "Questionable Merchant Activity",
+    "supportingDocuments": [
+      {
+        "type": "Multi-Cardholder Complaint Summary",
+        "desc": "Summary of complaints received from multiple cardholders about unauthorized charges from this merchant."
+      },
+      {
+        "type": "Cardholder Affidavit",
+        "desc": "Sworn statement from this cardholder that they did not authorize this purchase."
+      }
+    ],
+    "issuerCommentary": "Filing under 4849. Pattern of questionable activity identified: multiple cardholders across different issuing banks have reported unauthorized charges from this merchant. This cardholder is one of several affected.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI_07",
+    "posEntryMode": "81"
+  }
+}

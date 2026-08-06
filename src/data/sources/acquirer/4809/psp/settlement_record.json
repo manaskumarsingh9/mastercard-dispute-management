@@ -1,0 +1,9 @@
+{
+  "source": "CulinaryEdge Pro — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4809",
+  "reasonCodeDescription": "Non-Receipt of Requested Information",
+  "settlementRecord": {
+    "notes": "Settled for $189.95. Acquirer responded to retrieval request with complete documentation within the required timeframe. Transmission log confirms delivery of response."
+  }
+}

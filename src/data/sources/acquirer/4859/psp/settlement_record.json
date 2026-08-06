@@ -1,0 +1,9 @@
+{
+  "source": "Seaside Grand Hotel — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4859",
+  "reasonCodeDescription": "Addendum, No-show, or ATM Dispute",
+  "settlementRecord": {
+    "notes": "Settled for $189.00 as a no-show charge. Reservation system audit log confirms no cancellation was recorded. Cancellation policy was disclosed at booking and in the reminder email."
+  }
+}

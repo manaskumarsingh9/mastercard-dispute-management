@@ -1,0 +1,16 @@
+{
+  "source": "CulinaryEdge Pro — Authentication",
+  "dataType": "3D Secure Authentication Record",
+  "reasonCode": "4809",
+  "reasonCodeDescription": "Non-Receipt of Requested Information",
+  "threeDSecure": {
+    "version": "2.0",
+    "enrolled": true,
+    "status": "Y — Fully Authenticated",
+    "eci": "05",
+    "cavv": "Verified",
+    "challenge": true,
+    "liabilityShift": "Yes",
+    "notes": "3D Secure authentication completed successfully."
+  }
+}

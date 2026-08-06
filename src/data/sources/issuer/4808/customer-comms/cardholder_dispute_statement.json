@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4808",
+  "reasonCodeDescription": "Authorization-Related Chargeback",
+  "statement": {
+    "disputeReason": "4808 - Authorization-Related Chargeback",
+    "detailedDescription": "The cardholder states they did not authorize a $549.00 purchase from 'RENEWTECH STORE' for a refurbished laptop. The cardholder claims they never visited the merchant's website and their card was in their possession at the time.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "The cardholder contacted RenewTech Store [3 days after the charge appeared]. The merchant said the order was placed from a verified account with 3D Secure and was delivered to the cardholder's address with a signature. The merchant refused a refund.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Reversal of the $549.00 charge pending review of authorization records.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium — merchant may have valid defense documentation.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4808 (Authorization-Related Chargeback).",
+    "priority": "Standard"
+  }
+}

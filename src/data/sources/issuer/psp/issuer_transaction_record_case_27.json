@@ -1,0 +1,53 @@
+{
+  "source": "Issuing Bank — Transaction Processing",
+  "dataType": "Issuer Transaction Record",
+  "caseReference": "CASE-27",
+  "authorization": {
+    "authorizationCode": "09876Q",
+    "authorizationDate": "2026-01-15T14:22:30Z",
+    "responseCode": "Approved",
+    "amount": 567.5,
+    "currency": "USD",
+    "merchantName": "Electronics Hub",
+    "merchantCategoryCode": "5732",
+    "terminalId": "WEBSTORE001",
+    "posEntryMode": "90",
+    "cardNotPresent": true,
+    "avsResult": {
+      "code": "M",
+      "description": "Address Match"
+    },
+    "cvvResult": {
+      "code": "M",
+      "description": "CVV Match"
+    },
+    "acquirerReferenceNumber": "91032462590764122757161",
+    "merchantId": "009403041036"
+  },
+  "posting": {
+    "postingDate": "2026-01-17",
+    "settledAmount": 567.5,
+    "settlementDate": "2026-01-18",
+    "batchNumber": "BCH12345678",
+    "interchangeFee": 10.22,
+    "networkProcessingFee": 0.15,
+    "switchSerialNumber": "965151513",
+    "auditControlNumber": "923706050654470"
+  },
+  "cardholderAccount": {
+    "accountType": "Credit Card",
+    "cardProduct": "Standard Mastercard",
+    "accountStanding": "Good",
+    "previousChargebacks": 0,
+    "accountAge": "2 years 8 months",
+    "maskedPAN": "912343****2141",
+    "issuerBIN": "928445"
+  },
+  "riskFlags": {
+    "velocityCheck": "Passed",
+    "geolocationMismatch": "None",
+    "unusualAmount": "Moderate",
+    "firstTimeAtMerchant": true,
+    "deviceTrustScore": 75
+  }
+}

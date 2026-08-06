@@ -1,0 +1,12 @@
+{
+  "source": "FitPro Equipment Co. — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4850",
+  "reasonCodeDescription": "Installment Billing Dispute",
+  "policy": {
+    "refundWindow": "N/A — installment plan",
+    "policy": "Equipment may be returned within 30 days of delivery for a full refund. After 30 days, the installment plan continues per the signed agreement.",
+    "disclosureMethod": "Terms in the digitally signed installment agreement.",
+    "customerAcknowledgment": "Customer digitally signed the installment agreement with the $125/month terms during checkout."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "source": "Cloud Services Inc — Customer Communications",
+  "dataType": "Email Communication Logs",
+  "caseReference": "CASE-23",
+  "records": [
+    {
+      "email": "eleanor.vance@email.com",
+      "customerName": "Eleanor V. Vance",
+      "merchantEmail": "support@cloudservicesinc.com",
+      "merchantName": "Cloud Services Inc",
+      "transactionReference": "TXN-931889038",
+      "communications": []
+    }
+  ]
+}

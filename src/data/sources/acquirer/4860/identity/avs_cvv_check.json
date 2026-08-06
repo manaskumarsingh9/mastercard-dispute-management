@@ -1,0 +1,16 @@
+{
+  "source": "StrideFit Running — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4860",
+  "reasonCodeDescription": "Credit Not Processed",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "Y",
+      "description": "Full match"
+    },
+    "cvv": {
+      "responseCode": "M",
+      "description": "CVV matched"
+    }
+  }
+}

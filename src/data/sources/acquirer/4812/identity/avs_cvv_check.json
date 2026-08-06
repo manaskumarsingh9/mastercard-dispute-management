@@ -1,0 +1,16 @@
+{
+  "source": "Metro Fashion Department Store — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4812",
+  "reasonCodeDescription": "Account Number Not on File",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "N",
+      "description": "Address not verified — manual entry"
+    },
+    "cvv": {
+      "responseCode": "N",
+      "description": "CVV not verified during manual entry"
+    }
+  }
+}

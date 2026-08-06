@@ -1,0 +1,16 @@
+{
+  "source": "BookHaven — Rare & Collectible Books — Identity Verification",
+  "dataType": "AVS/CVV Verification Results",
+  "reasonCode": "4908",
+  "reasonCodeDescription": "Mastercard Compliance — Authorization Related",
+  "verificationResults": {
+    "avs": {
+      "responseCode": "Y",
+      "description": "Full match"
+    },
+    "cvv": {
+      "responseCode": "M",
+      "description": "CVV matched on re-authorization"
+    }
+  }
+}

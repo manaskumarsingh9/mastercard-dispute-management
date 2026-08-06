@@ -1,0 +1,12 @@
+{
+  "source": "BookHaven — Rare & Collectible Books — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4908",
+  "reasonCodeDescription": "Mastercard Compliance — Authorization Related",
+  "policy": {
+    "refundWindow": "30 days from delivery",
+    "policy": "Full refund within 30 days if book returned in original condition. Pre-orders may be cancelled anytime before shipment for a full refund.",
+    "disclosureMethod": "In pre-order confirmation email and on website.",
+    "customerAcknowledgment": "Customer agreed to pre-order terms including delayed shipment and billing."
+  }
+}

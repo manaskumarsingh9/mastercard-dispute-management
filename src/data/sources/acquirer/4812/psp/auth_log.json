@@ -1,0 +1,14 @@
+{
+  "source": "Metro Fashion Department Store — Payment Service Provider",
+  "dataType": "Authorization Log",
+  "reasonCode": "4812",
+  "reasonCodeDescription": "Account Number Not on File",
+  "authorizationRecord": {
+    "authorizationObtained": true,
+    "responseCode": "00",
+    "responseMessage": "Approved",
+    "entryMode": "Manual Key Entry — chip fallback",
+    "threeDSecure": null,
+    "notes": "Cashier manually keyed card number after chip reader failed. Authorization was obtained, but possible data entry error may have charged wrong account number."
+  }
+}

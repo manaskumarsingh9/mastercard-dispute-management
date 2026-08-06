@@ -1,0 +1,12 @@
+{
+  "source": "BargainTech Electronics — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4901",
+  "reasonCodeDescription": "Mastercard Compliance — Violation of Standards",
+  "policy": {
+    "refundWindow": "30 days from purchase with receipt",
+    "policy": "Full refund within 30 days with receipt.",
+    "disclosureMethod": "On receipt.",
+    "customerAcknowledgment": "Receipt provided."
+  }
+}

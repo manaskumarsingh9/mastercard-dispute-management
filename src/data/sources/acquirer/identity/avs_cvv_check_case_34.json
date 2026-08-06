@@ -1,0 +1,24 @@
+{
+  "source": "Jewelry Online — Payment Processor",
+  "dataType": "AVS/CVV Verification Results",
+  "caseReference": "CASE-34",
+  "records": [
+    {
+      "transactionId": "TXN-921598787",
+      "cardLastFour": "5277",
+      "avsResult": "Y",
+      "streetMatch": true,
+      "zipMatch": true,
+      "cvvMatch": true,
+      "cvvResult": "M",
+      "cardholderNameMatch": true,
+      "cardholderName": "Jessica Thompson",
+      "emailVerified": true,
+      "email": "jessica.thompson@email.com",
+      "phoneVerified": true,
+      "cvc2Result": "M",
+      "cvc2Match": true,
+      "cardNetwork": "Mastercard"
+    }
+  ]
+}

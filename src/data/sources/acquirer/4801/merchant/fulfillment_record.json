@@ -1,0 +1,14 @@
+{
+  "source": "TechGear Online — Fulfillment",
+  "dataType": "Fulfillment & Delivery Record",
+  "reasonCode": "4801",
+  "reasonCodeDescription": "Requested Transaction Data Not Received",
+  "fulfillmentRecord": {
+    "type": "Physical Shipment",
+    "status": "Shipped — tracking details no longer available",
+    "method": "Standard shipping via carrier",
+    "timing": "[5-7 business days after purchase]",
+    "confirmed": false,
+    "notes": "Shipment records indicate order was dispatched. Carrier tracking number not retained after system migration."
+  }
+}

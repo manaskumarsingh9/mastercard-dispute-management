@@ -1,0 +1,26 @@
+{
+  "source": "Fashion Outlet — Delivery Service",
+  "dataType": "Delivery Confirmation",
+  "caseReference": "CASE-36",
+  "records": [
+    {
+      "orderId": "ORD-000036",
+      "transactionId": "TXN-904712821",
+      "deliveryDate": "2026-01-25T14:22:00Z",
+      "deliveryStatus": "Delivered",
+      "recipientName": "Sarah Chen",
+      "signatureOnFile": true,
+      "deliveryAddress": {
+        "name": "Sarah Chen",
+        "street": "352 Alder Ln",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97201",
+        "country": "US"
+      },
+      "photoProof": true,
+      "deliveryNotes": "Left with resident, signature obtained",
+      "carrier": "UPS"
+    }
+  ]
+}

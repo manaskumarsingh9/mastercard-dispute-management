@@ -1,0 +1,20 @@
+{
+  "source": "Issuing Bank — Cardholder Services",
+  "dataType": "Cardholder Dispute Statement",
+  "reasonCode": "4860",
+  "reasonCodeDescription": "Credit Not Processed",
+  "statement": {
+    "disputeReason": "4860 - Credit Not Processed",
+    "detailedDescription": "The cardholder purchased running shoes from 'STRIDEFIT RUNNING' for $134.95. The cardholder returned the shoes [10 days after purchase] due to sizing issues. The merchant confirmed receipt of the return and promised a full refund in writing [15 days after purchase]. As of [45 days after purchase], the refund has not appeared on the cardholder's statement.",
+    "contactedMerchant": true,
+    "merchantResponseSummary": "The cardholder contacted StrideFit [30 days after purchase] asking about the refund. The merchant said they were processing it and it would appear within 5-7 business days. [45 days after purchase], the credit still has not appeared. The cardholder contacted them again and received no response.",
+    "previousDisputeHistory": "None",
+    "requestedResolution": "Full reversal of $134.95. The merchant promised a refund that was never processed.",
+    "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
+  },
+  "bankInternalNotes": {
+    "riskAssessment": "Medium-High — evidence supports cardholder's position.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4860 (Credit Not Processed).",
+    "priority": "Standard"
+  }
+}

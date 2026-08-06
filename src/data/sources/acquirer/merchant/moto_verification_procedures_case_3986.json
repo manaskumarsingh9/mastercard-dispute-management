@@ -1,0 +1,39 @@
+{
+  "documentType": "MOTO Verification Procedures - Internal Policy",
+  "merchantId": "002403869281",
+  "effectiveDate": "2025-01-01",
+  "lastReviewedDate": "2026-03-01",
+  "policyVersion": "3.2",
+  "verificationProcedures": {
+    "step1_callerIdentification": {
+      "description": "Agent must collect cardholder's full name, billing address, and last four digits of card number before proceeding.",
+      "complianceStatus": "FOLLOWED"
+    },
+    "step2_cardVerification": {
+      "description": "Full card number, expiration date, and billing ZIP code are collected and submitted for real-time authorization.",
+      "complianceStatus": "FOLLOWED"
+    },
+    "step3_authorizationCheck": {
+      "description": "Transaction must receive an authorization response code of '00' (Approved) before order is confirmed to caller.",
+      "complianceStatus": "FOLLOWED - Auth code 00 received"
+    },
+    "step4_orderConfirmation": {
+      "description": "Agent reads back order details including item description, quantity, total amount, and shipping address to caller for verbal confirmation.",
+      "complianceStatus": "FOLLOWED"
+    },
+    "step5_emailConfirmation": {
+      "description": "Automated order confirmation email sent to the email address provided by the caller within 5 minutes of order completion.",
+      "complianceStatus": "FOLLOWED"
+    }
+  },
+  "callRecordingPolicy": {
+    "status": "IMPLEMENTED_AFTER_INCIDENT",
+    "note": "Call recording was not active at the time of this transaction. Following this dispute, call recording has been implemented for all MOTO transactions effective April 2026.",
+    "newProcedure": "All inbound and outbound sales calls are now recorded with automatic retention for 180 days."
+  },
+  "additionalSafeguards": [
+    "Velocity check: maximum 2 orders per card per 24-hour period",
+    "Address verification: shipping address must match billing address unless override is approved by supervisor",
+    "High-value orders (over $200): require supervisor approval and callback verification to cardholder's phone on file"
+  ]
+}

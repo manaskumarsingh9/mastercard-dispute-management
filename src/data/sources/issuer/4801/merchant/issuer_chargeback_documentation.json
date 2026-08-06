@@ -1,0 +1,27 @@
+{
+  "source": "Issuing Bank — Chargeback Department",
+  "dataType": "Issuer Chargeback Documentation",
+  "reasonCode": "4801",
+  "reasonCodeDescription": "Requested Transaction Data Not Received",
+  "chargebackFiling": {
+    "reasonCode": "4801",
+    "reasonCodeDescription": "Requested Transaction Data Not Received",
+    "supportingDocuments": [
+      {
+        "type": "Retrieval Request Record",
+        "desc": "Copy of retrieval request sent with transmission timestamp and reference number."
+      },
+      {
+        "type": "Non-Response Log",
+        "desc": "System log confirming no response was received within the 45-day fulfillment window."
+      }
+    ],
+    "issuerCommentary": "Filing under 4801. Retrieval request sent [10 days after the transaction] and the acquirer has not responded within 45 days. Per Mastercard Rule 6.1, the acquirer must provide requested transaction documentation.",
+    "arbitrationEligible": true
+  },
+  "transactionDetails": {
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI_07",
+    "posEntryMode": "81"
+  }
+}

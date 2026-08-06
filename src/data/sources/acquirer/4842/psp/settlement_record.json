@@ -1,0 +1,9 @@
+{
+  "source": "SunCoast Travel Agency — Payment Service Provider",
+  "dataType": "Settlement Record",
+  "reasonCode": "4842",
+  "reasonCodeDescription": "Late Presentment",
+  "settlementRecord": {
+    "notes": "Settlement submitted [4 months after the transaction date]. Mastercard rules require presentment within 30 calendar days. The merchant's system outage caused the delay."
+  }
+}

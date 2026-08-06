@@ -1,0 +1,19 @@
+{
+  "source": "ElectroWorld Megastore — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4847",
+  "reasonCodeDescription": "Exceeds Floor Limit — Not Authorized and Fraud",
+  "orderRecord": {
+    "orderStatus": "Completed — customer left with merchandise",
+    "items": [
+      {
+        "name": "65-inch 4K OLED Smart TV",
+        "quantity": 1,
+        "unitPrice": 1250,
+        "sku": "EW-TV65-OLED"
+      }
+    ],
+    "shippingAddress": null,
+    "orderNotes": "In-store purchase. Merchant's POS terminal was in offline mode due to a network connectivity issue. The transaction was processed without real-time authorization under offline fallback procedures. The amount exceeds the floor limit."
+  }
+}

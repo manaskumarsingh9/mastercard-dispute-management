@@ -1,0 +1,16 @@
+{
+  "source": "ProAccess Business Tools — Authentication",
+  "dataType": "3D Secure Authentication Record",
+  "reasonCode": "4899",
+  "reasonCodeDescription": "Mastercard Dispute Resolution — Violation of Rules",
+  "threeDSecure": {
+    "version": "2.0",
+    "enrolled": true,
+    "status": "Y — Authenticated at signup",
+    "eci": "05",
+    "cavv": "Verified",
+    "challenge": true,
+    "liabilityShift": "Yes — at initial enrollment",
+    "notes": "3D Secure at original signup. Subsequent recurring charges use authenticated credentials."
+  }
+}

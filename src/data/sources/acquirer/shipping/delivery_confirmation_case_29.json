@@ -1,0 +1,26 @@
+{
+  "source": "Retail Store — Delivery Service",
+  "dataType": "Delivery Confirmation",
+  "caseReference": "CASE-29",
+  "records": [
+    {
+      "orderId": "ORD-000029",
+      "transactionId": "TXN-919016207",
+      "deliveryDate": "2026-02-04T14:22:00Z",
+      "deliveryStatus": "Delivered",
+      "recipientName": "Ms. Eleanor Vance",
+      "signatureOnFile": true,
+      "deliveryAddress": {
+        "name": "Ms. Eleanor Vance",
+        "street": "303 Cherry Ln",
+        "city": "San Jose",
+        "state": "CA",
+        "zip": "95101",
+        "country": "US"
+      },
+      "photoProof": true,
+      "deliveryNotes": "Left with resident, signature obtained",
+      "carrier": "UPS"
+    }
+  ]
+}

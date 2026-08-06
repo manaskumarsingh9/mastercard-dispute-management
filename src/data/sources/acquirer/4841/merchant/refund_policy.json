@@ -1,0 +1,12 @@
+{
+  "source": "CloudVault Premium — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4841",
+  "reasonCodeDescription": "Cancelled Recurring or Digital Goods Transaction",
+  "policy": {
+    "refundWindow": "N/A — subscription service",
+    "policy": "Cancellation takes effect at end of current billing period. No prorated refunds for partial months. Agreed at signup.",
+    "disclosureMethod": "Terms displayed during signup, linked in confirmation email, and in account settings.",
+    "customerAcknowledgment": "Customer checked 'I agree to the Terms of Service and Billing Policy' during signup."
+  }
+}

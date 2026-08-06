@@ -1,0 +1,25 @@
+{
+  "source": "PhoneShield Pro — Order Management System",
+  "dataType": "Order Details",
+  "reasonCode": "4834",
+  "reasonCodeDescription": "Point of Interaction Error / Duplicate Processing",
+  "orderRecord": {
+    "orderStatus": "Both orders completed and delivered",
+    "items": [
+      {
+        "name": "Order #PS-88210: Premium Leather Phone Case — iPhone 15 Pro Max",
+        "quantity": 1,
+        "unitPrice": 79.99,
+        "sku": "PS-LC-15PM"
+      },
+      {
+        "name": "Order #PS-88247: Ultimate Screen Protector Kit — iPhone 15 Pro Max (3-pack with installation tool)",
+        "quantity": 1,
+        "unitPrice": 79.99,
+        "sku": "PS-SP3-15PM"
+      }
+    ],
+    "shippingAddress": "Both shipped to cardholder's billing address",
+    "orderNotes": "Two separate orders placed 20 minutes apart. Order #PS-88210 at 2:15 PM (phone case) and #PS-88247 at 2:35 PM (screen protector kit). Each has unique order ID, unique SKU, different product, and separate authorization code."
+  }
+}

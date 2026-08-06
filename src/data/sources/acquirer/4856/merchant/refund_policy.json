@@ -1,0 +1,12 @@
+{
+  "source": "TechFit Store — Policies",
+  "dataType": "Refund & Cancellation Policy",
+  "reasonCode": "4856",
+  "reasonCodeDescription": "Defective or Not as Described (Chip Liability Shift)",
+  "policy": {
+    "refundWindow": "30 days from purchase",
+    "policy": "Full refund or exchange within 30 days. Item must be returned with original packaging and all accessories. Defective items may be exchanged at any time under manufacturer warranty.",
+    "disclosureMethod": "Printed on receipt and posted in store.",
+    "customerAcknowledgment": "Receipt provided at POS. Customer informed of return policy during in-store visit."
+  }
+}

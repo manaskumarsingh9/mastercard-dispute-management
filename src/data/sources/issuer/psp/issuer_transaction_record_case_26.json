@@ -1,0 +1,53 @@
+{
+  "source": "Issuing Bank — Transaction Processing",
+  "dataType": "Issuer Transaction Record",
+  "caseReference": "CASE-26",
+  "authorization": {
+    "authorizationCode": "007891",
+    "authorizationDate": "2026-01-15T10:30:00Z",
+    "responseCode": "Approved",
+    "amount": 1250,
+    "currency": "USD",
+    "merchantName": "Luxury Goods Ltd",
+    "merchantCategoryCode": "5944 - Jewelry, Watch, Clock, and Silverware Stores",
+    "terminalId": "WEB987654321",
+    "posEntryMode": "E-commerce",
+    "cardNotPresent": true,
+    "avsResult": {
+      "code": "N",
+      "description": "No Match"
+    },
+    "cvvResult": {
+      "code": "N",
+      "description": "No Match"
+    },
+    "acquirerReferenceNumber": "91032462590942136939848",
+    "merchantId": "009403037985"
+  },
+  "posting": {
+    "postingDate": "2026-01-16T08:00:00Z",
+    "settledAmount": 1250,
+    "settlementDate": "2026-01-17T15:00:00Z",
+    "batchNumber": "20260116B123",
+    "interchangeFee": 22.5,
+    "networkProcessingFee": 0.75,
+    "switchSerialNumber": "909350394",
+    "auditControlNumber": "923466021606504"
+  },
+  "cardholderAccount": {
+    "accountType": "Credit Card",
+    "cardProduct": "World Elite Mastercard",
+    "accountStanding": "Good",
+    "previousChargebacks": 0,
+    "accountAge": "5 years",
+    "maskedPAN": "912343****8380",
+    "issuerBIN": "941745"
+  },
+  "riskFlags": {
+    "velocityCheck": "Normal",
+    "geolocationMismatch": true,
+    "unusualAmount": true,
+    "firstTimeAtMerchant": true,
+    "deviceTrustScore": 35
+  }
+}
