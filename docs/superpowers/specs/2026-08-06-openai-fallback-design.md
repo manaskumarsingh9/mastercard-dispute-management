@@ -64,7 +64,8 @@ Request mapping details:
 
 ## Logging
 
-- `log.warn` in `GeminiService` when falling back to OpenAI, including the Gemini failure reason.
+- `log.warn` in `GeminiService` when falling back to OpenAI because a Gemini call failed at runtime, including the failure reason.
+- `log.warn` at startup, and again on each call, when the Gemini key is missing/blank but OpenAI is configured — e.g. "Gemini API key not configured; requests will be served by OpenAI fallback." This is informational only and never blocks or delays the request — it goes straight to OpenAI with no wasted attempt against Gemini.
 - `log.info` confirming which provider actually served each response, so demo logs make it obvious which path was used.
 
 ## Config
