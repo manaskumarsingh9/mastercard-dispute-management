@@ -13,17 +13,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 @Slf4j
 @Service
@@ -33,21 +26,6 @@ public class ClaimIngestionService {
     private static final String INGESTION_STATE_ID = "queue-ingestion";
     private static final DateTimeFormatter MC_DATE_FORMAT = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm");
     private static final String[] QUEUES_TO_POLL = {"Pending", "Rejects", "Unworked"};
-    private static final Set<String> SUPPORTED_REASON_CODES = loadSupportedReasonCodes();
-
-    private static Set<String> loadSupportedReasonCodes() {
-        Path issuerDir = Paths.get("src/data/sources/issuer");
-        try (Stream<Path> dirs = Files.list(issuerDir)) {
-            Set<String> codes = dirs
-                    .filter(Files::isDirectory)
-                    .map(p -> p.getFileName().toString())
-                    .filter(name -> name.matches("\\d+"))
-                    .collect(Collectors.toSet());
-            return codes;
-        } catch (IOException e) {
-            return Set.of();
-        }
-    }
 
     @Value("${ingestion.max-new-claims:3}")
     private int maxNewClaims;
@@ -56,16 +34,19 @@ public class ClaimIngestionService {
     private final DisputeRepository disputeRepository;
     private final IngestionStateRepository ingestionStateRepository;
     private final ClaimDetailService claimDetailService;
+    private final ReasonCodeRulesService reasonCodeRulesService;
     private final Gson gson = new Gson();
 
     public ClaimIngestionService(MastercardApiClient mastercardApiClient,
                                   DisputeRepository disputeRepository,
                                   IngestionStateRepository ingestionStateRepository,
-                                  ClaimDetailService claimDetailService) {
+                                  ClaimDetailService claimDetailService,
+                                  ReasonCodeRulesService reasonCodeRulesService) {
         this.mastercardApiClient = mastercardApiClient;
         this.disputeRepository = disputeRepository;
         this.ingestionStateRepository = ingestionStateRepository;
         this.claimDetailService = claimDetailService;
+        this.reasonCodeRulesService = reasonCodeRulesService;
     }
 
     public IngestionResult ingestFromQueues(String dateFrom, String dateTo) {
@@ -224,7 +205,7 @@ public class ClaimIngestionService {
                         }
                         Dispute refreshed = disputeRepository.findById(saved.getId()).orElse(saved);
                         String rc = refreshed.getReasonCode();
-                        if (rc == null || rc.isBlank() || !SUPPORTED_REASON_CODES.contains(rc)) {
+                        if (rc == null || rc.isBlank() || !reasonCodeRulesService.getSupportedReasonCodes().contains(rc)) {
                             log.info("Dispute {} (claimId={}) has unsupported reason code '{}' — deleting",
                                     saved.getId(), saved.getClaimId(), rc);
                             disputeRepository.deleteById(saved.getId());
