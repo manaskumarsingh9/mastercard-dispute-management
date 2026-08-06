@@ -103,7 +103,7 @@ public class OpenAiService {
         return execute(requestBody, "generateMultimodalJson");
     }
 
-    private JsonObject buildChatRequest(String systemPrompt, String userPrompt,
+    JsonObject buildChatRequest(String systemPrompt, String userPrompt,
                                          List<GeminiService.ConversationTurn> history,
                                          List<MediaFile> mediaFiles,
                                          boolean jsonMode) {
@@ -158,7 +158,7 @@ public class OpenAiService {
         return requestBody;
     }
 
-    private JsonObject buildMediaPart(MediaFile mf) {
+    JsonObject buildMediaPart(MediaFile mf) {
         if (mf.isPdf()) {
             JsonObject filePart = new JsonObject();
             filePart.addProperty("type", "file");
