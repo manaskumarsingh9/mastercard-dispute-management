@@ -116,7 +116,8 @@ public class GeminiService {
         }
         if (!geminiAvailable()) {
             log.warn("Gemini API key not configured; serving generateContentWithHistory via OpenAI fallback");
-            String result = openAiService.generateContentWithHistory(systemPrompt, userPrompt, history);
+            List<ConversationTurn> trimmedHistory = trimHistoryToFit(systemPrompt, userPrompt, history);
+            String result = openAiService.generateContentWithHistory(systemPrompt, userPrompt, trimmedHistory);
             log.info("Served generateContentWithHistory via OpenAI");
             return result;
         }
@@ -128,7 +129,8 @@ public class GeminiService {
         } catch (RuntimeException geminiFailure) {
             if (openAiService.isAvailable()) {
                 log.warn("Gemini call failed for generateContentWithHistory, falling back to OpenAI: {}", geminiFailure.getMessage());
-                String result = openAiService.generateContentWithHistory(systemPrompt, userPrompt, history);
+                List<ConversationTurn> trimmedHistory = trimHistoryToFit(systemPrompt, userPrompt, history);
+                String result = openAiService.generateContentWithHistory(systemPrompt, userPrompt, trimmedHistory);
                 log.info("Served generateContentWithHistory via OpenAI fallback");
                 return result;
             }
@@ -149,7 +151,8 @@ public class GeminiService {
 
         if (!geminiAvailable()) {
             log.warn("Gemini API key not configured; serving generateJsonWithHistoryAndMedia via OpenAI fallback");
-            String result = openAiService.generateJsonWithHistoryAndMedia(systemPrompt, userPrompt, history, mediaFiles);
+            List<ConversationTurn> trimmedHistory = trimHistoryToFit(systemPrompt, userPrompt, history);
+            String result = openAiService.generateJsonWithHistoryAndMedia(systemPrompt, userPrompt, trimmedHistory, mediaFiles);
             log.info("Served generateJsonWithHistoryAndMedia via OpenAI");
             return result;
         }
@@ -164,7 +167,8 @@ public class GeminiService {
         } catch (RuntimeException geminiFailure) {
             if (openAiService.isAvailable()) {
                 log.warn("Gemini call failed for generateJsonWithHistoryAndMedia, falling back to OpenAI: {}", geminiFailure.getMessage());
-                String result = openAiService.generateJsonWithHistoryAndMedia(systemPrompt, userPrompt, history, mediaFiles);
+                List<ConversationTurn> trimmedHistory = trimHistoryToFit(systemPrompt, userPrompt, history);
+                String result = openAiService.generateJsonWithHistoryAndMedia(systemPrompt, userPrompt, trimmedHistory, mediaFiles);
                 log.info("Served generateJsonWithHistoryAndMedia via OpenAI fallback");
                 return result;
             }

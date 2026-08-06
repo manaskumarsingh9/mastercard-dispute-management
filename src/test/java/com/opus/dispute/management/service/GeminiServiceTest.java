@@ -2,6 +2,7 @@ package com.opus.dispute.management.service;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
@@ -9,6 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -63,9 +65,7 @@ class GeminiServiceTest {
     }
 
     @Test
-    void generateJson_fallsBackToOpenAi_whenGeminiThrows() {
-        // Gemini key present but invalid → real HTTP call will fail fast on a bad host is not viable here,
-        // so we exercise the "Gemini key missing" path instead, which is deterministic without network access.
+    void generateJson_usesOpenAi_whenGeminiKeyMissing() {
         when(openAiService.isAvailable()).thenReturn(true);
         when(openAiService.generateJson("sys", "user")).thenReturn("{\"ok\":true}");
 
@@ -86,6 +86,34 @@ class GeminiServiceTest {
         String result = service.generateContentWithHistory("sys", "user", history);
 
         assertEquals("history response", result);
+    }
+
+    @Test
+    void generateContentWithHistory_trimsHistory_beforeOpenAiFallback_whenGeminiKeyMissing() {
+        when(openAiService.isAvailable()).thenReturn(true);
+        when(openAiService.generateContentWithHistory(anyString(), anyString(), any())).thenReturn("trimmed response");
+
+        // Build a history whose total content size far exceeds GeminiService's MAX_TOTAL_CHARS (800_000),
+        // so a correctly-wired fallback path must drop the oldest turns before calling OpenAI.
+        String bigTurn = "x".repeat(100_000);
+        java.util.List<GeminiService.ConversationTurn> oversizedHistory = new java.util.ArrayList<>();
+        for (int i = 0; i < 20; i++) {
+            oversizedHistory.add(new GeminiService.ConversationTurn(i % 2 == 0 ? "user" : "model", bigTurn));
+        }
+
+        GeminiService service = new GeminiService("", openAiService);
+        String result = service.generateContentWithHistory("sys", "user", oversizedHistory);
+
+        assertEquals("trimmed response", result);
+
+        @SuppressWarnings("unchecked")
+        ArgumentCaptor<java.util.List<GeminiService.ConversationTurn>> historyCaptor =
+                ArgumentCaptor.forClass(java.util.List.class);
+        verify(openAiService).generateContentWithHistory(anyString(), anyString(), historyCaptor.capture());
+
+        java.util.List<GeminiService.ConversationTurn> sentHistory = historyCaptor.getValue();
+        assertTrue(sentHistory.size() < oversizedHistory.size(),
+                "expected oldest turns to be dropped before handing history to the OpenAI fallback");
     }
 
     @Test
