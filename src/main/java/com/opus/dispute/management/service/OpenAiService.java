@@ -55,6 +55,54 @@ public class OpenAiService {
         return execute(requestBody, "generateContent");
     }
 
+    public String generateJson(String systemPrompt, String userPrompt) {
+        if (!isAvailable()) {
+            throw new RuntimeException("OpenAI API key not configured");
+        }
+        JsonObject requestBody = buildChatRequest(systemPrompt, userPrompt, null, null, true);
+        return execute(requestBody, "generateJson");
+    }
+
+    public String generateContentWithHistory(String systemPrompt, String userPrompt,
+                                              List<GeminiService.ConversationTurn> history) {
+        if (!isAvailable()) {
+            throw new RuntimeException("OpenAI API key not configured");
+        }
+        JsonObject requestBody = buildChatRequest(systemPrompt, userPrompt, history, null, false);
+        return execute(requestBody, "generateContentWithHistory");
+    }
+
+    public String generateJsonWithHistory(String systemPrompt, String userPrompt,
+                                           List<GeminiService.ConversationTurn> history) {
+        return generateJsonWithHistoryAndMedia(systemPrompt, userPrompt, history, null);
+    }
+
+    public String generateJsonWithHistoryAndMedia(String systemPrompt, String userPrompt,
+                                                   List<GeminiService.ConversationTurn> history,
+                                                   List<MediaFile> mediaFiles) {
+        if (!isAvailable()) {
+            throw new RuntimeException("OpenAI API key not configured");
+        }
+        JsonObject requestBody = buildChatRequest(systemPrompt, userPrompt, history, mediaFiles, true);
+        return execute(requestBody, "generateJsonWithHistoryAndMedia");
+    }
+
+    public String generateMultimodalContent(String systemPrompt, String userPrompt, List<MediaFile> mediaFiles) {
+        if (!isAvailable()) {
+            throw new RuntimeException("OpenAI API key not configured");
+        }
+        JsonObject requestBody = buildChatRequest(systemPrompt, userPrompt, null, mediaFiles, false);
+        return execute(requestBody, "generateMultimodalContent");
+    }
+
+    public String generateMultimodalJson(String systemPrompt, String userPrompt, List<MediaFile> mediaFiles) {
+        if (!isAvailable()) {
+            throw new RuntimeException("OpenAI API key not configured");
+        }
+        JsonObject requestBody = buildChatRequest(systemPrompt, userPrompt, null, mediaFiles, true);
+        return execute(requestBody, "generateMultimodalJson");
+    }
+
     private JsonObject buildChatRequest(String systemPrompt, String userPrompt,
                                          List<GeminiService.ConversationTurn> history,
                                          List<MediaFile> mediaFiles,
