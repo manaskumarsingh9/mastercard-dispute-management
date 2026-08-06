@@ -16,7 +16,7 @@ Add an OpenAI-backed fallback so that if Gemini fails for any reason, the same l
 
 ## Architecture
 
-`GeminiService` remains the single entry point every caller already depends on. It gains a dependency on a new `OpenAiService`, which mirrors `GeminiService`'s method surface (text, JSON-mode, history, multimodal). Every public `GeminiService` method wraps its existing Gemini call: if the Gemini call throws (after Gemini's own internal 429/503 retry loop is exhausted), and an OpenAI key is configured, `GeminiService` retries the same logical request against `OpenAiService` and returns that result instead. If the OpenAI call also fails, or no OpenAI key is configured, the original Gemini exception propagates as it does today.
+`GeminiService` remains the single entry point every caller already depends on. It gains a dependency on a new `OpenAiService`, which mirrors `GeminiService`'s method surface (text, JSON-mode, history, multimodal). Every public `GeminiService` method tries Gemini first if a Gemini key is configured; otherwise, or if the Gemini call throws (after Gemini's own internal 429/503 retry loop is exhausted), it falls through to `OpenAiService` if an OpenAI key is configured. The goal is getting a usable result, not preferring one provider's identity over the other — so a missing/failing Gemini key is treated the same as a failing Gemini call: both fall through to OpenAI.
 
 ```
 Agent classes / IssuerEvidenceGenerator
@@ -26,14 +26,18 @@ Agent classes / IssuerEvidenceGenerator
          |          \
          v           v
    Gemini API    OpenAiService --> OpenAI API
-   (primary)      (fallback, used only on Gemini failure)
+   (tried first   (used if Gemini key missing,
+    if configured)  or Gemini call fails)
 ```
 
 ## Provider semantics
 
-- **Gemini is strictly primary.** `isAvailable()` keeps its current meaning (Gemini key present). If the Gemini key is missing, behavior is unchanged from today — the call throws immediately with "Gemini API key not configured". OpenAI is never used as a substitute for a missing Gemini key, only as a fallback when a configured Gemini call fails at runtime.
+- **Gemini is tried first when configured; OpenAI is used whenever Gemini can't serve the request** — whether because the Gemini key is missing/blank, or because a configured Gemini call fails at runtime. Getting a result matters more than which provider produced it.
+- `isAvailable()` becomes true if **either** key is present, since the service can now serve a request with just one provider configured.
+- If both keys are missing, behavior is unchanged from today: the call throws "AI service not configured" (message updated to no longer name only Gemini, since either provider being absent is now a valid partial state).
 - **Fallback trigger: any Gemini failure**, not just 429/503. This includes quota errors, network errors, timeouts, and malformed responses — a working demo cares more about getting an answer than about which failure category occurred.
-- If OpenAI key isn't configured, Gemini failures propagate exactly as they do today (no behavior change for users who haven't set up OpenAI).
+- If OpenAI key isn't configured and Gemini fails, the original Gemini exception propagates as it does today.
+- If Gemini key isn't configured and OpenAI is, OpenAI serves every call directly — no wasted failing call against Gemini first.
 
 ## OpenAiService
 
@@ -71,5 +75,5 @@ Request mapping details:
 
 The repo currently has no service-level unit tests (only a Spring context smoke test). This change adds the first ones, using JUnit 5 + Mockito (already on the classpath via `spring-boot-starter-test`):
 
-- `GeminiService` fallback branching: mock a Gemini failure, assert `OpenAiService` is invoked with an equivalent request and its result is returned; assert no fallback occurs when OpenAI key is absent.
+- `GeminiService` fallback branching: mock a Gemini failure, assert `OpenAiService` is invoked with an equivalent request and its result is returned; assert the original exception propagates when OpenAI key is absent; assert OpenAI is called directly (Gemini skipped) when only the OpenAI key is configured; assert `isAvailable()` is true when either key is present and false when both are absent.
 - `OpenAiService` request building and response parsing: text, JSON mode, history role mapping (`model` → `assistant`), image and PDF content parts.
