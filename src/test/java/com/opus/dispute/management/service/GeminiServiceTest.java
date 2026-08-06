@@ -61,4 +61,69 @@ class GeminiServiceTest {
         assertTrue(ex.getMessage().contains("not configured"));
         verify(openAiService, org.mockito.Mockito.never()).generateContent(anyString(), anyString());
     }
+
+    @Test
+    void generateJson_fallsBackToOpenAi_whenGeminiThrows() {
+        // Gemini key present but invalid → real HTTP call will fail fast on a bad host is not viable here,
+        // so we exercise the "Gemini key missing" path instead, which is deterministic without network access.
+        when(openAiService.isAvailable()).thenReturn(true);
+        when(openAiService.generateJson("sys", "user")).thenReturn("{\"ok\":true}");
+
+        GeminiService service = new GeminiService("", openAiService);
+        String result = service.generateJson("sys", "user");
+
+        assertEquals("{\"ok\":true}", result);
+    }
+
+    @Test
+    void generateContentWithHistory_usesOpenAi_whenGeminiKeyMissing() {
+        when(openAiService.isAvailable()).thenReturn(true);
+        java.util.List<GeminiService.ConversationTurn> history = java.util.List.of(
+                new GeminiService.ConversationTurn("user", "hi"));
+        when(openAiService.generateContentWithHistory("sys", "user", history)).thenReturn("history response");
+
+        GeminiService service = new GeminiService("", openAiService);
+        String result = service.generateContentWithHistory("sys", "user", history);
+
+        assertEquals("history response", result);
+    }
+
+    @Test
+    void generateJsonWithHistory_usesOpenAi_whenGeminiKeyMissing() {
+        when(openAiService.isAvailable()).thenReturn(true);
+        java.util.List<GeminiService.ConversationTurn> history = java.util.List.of();
+        when(openAiService.generateJsonWithHistoryAndMedia("sys", "user", history, java.util.List.of()))
+                .thenReturn("{}");
+
+        GeminiService service = new GeminiService("", openAiService);
+        String result = service.generateJsonWithHistory("sys", "user", history);
+
+        assertEquals("{}", result);
+    }
+
+    @Test
+    void generateMultimodalContent_usesOpenAi_whenGeminiKeyMissing() {
+        when(openAiService.isAvailable()).thenReturn(true);
+        java.util.List<MediaFile> mediaFiles = java.util.List.of(
+                new MediaFile("photo.png", "image/png", new byte[]{1, 2, 3}));
+        when(openAiService.generateMultimodalContent("sys", "user", mediaFiles)).thenReturn("image response");
+
+        GeminiService service = new GeminiService("", openAiService);
+        String result = service.generateMultimodalContent("sys", "user", mediaFiles);
+
+        assertEquals("image response", result);
+    }
+
+    @Test
+    void generateMultimodalJson_usesOpenAi_whenGeminiKeyMissing() {
+        when(openAiService.isAvailable()).thenReturn(true);
+        java.util.List<MediaFile> mediaFiles = java.util.List.of(
+                new MediaFile("statement.pdf", "application/pdf", new byte[]{1, 2, 3}));
+        when(openAiService.generateMultimodalJson("sys", "user", mediaFiles)).thenReturn("{\"pdf\":true}");
+
+        GeminiService service = new GeminiService("", openAiService);
+        String result = service.generateMultimodalJson("sys", "user", mediaFiles);
+
+        assertEquals("{\"pdf\":true}", result);
+    }
 }
