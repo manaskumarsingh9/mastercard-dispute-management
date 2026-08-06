@@ -24,11 +24,13 @@ public class GeminiService {
     private static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
 
     private final String apiKey;
+    private final OpenAiService openAiService;
     private final OkHttpClient httpClient;
     private final Gson gson = new Gson();
 
-    public GeminiService(@Value("${gemini.api-key:}") String apiKey) {
+    public GeminiService(@Value("${gemini.api-key:}") String apiKey, OpenAiService openAiService) {
         this.apiKey = apiKey;
+        this.openAiService = openAiService;
         this.httpClient = new OkHttpClient.Builder()
                 .connectTimeout(30, TimeUnit.SECONDS)
                 .readTimeout(120, TimeUnit.SECONDS)
@@ -36,14 +38,18 @@ public class GeminiService {
                 .build();
 
         if (apiKey == null || apiKey.isEmpty()) {
-            log.warn("Gemini API key not configured. AI agent features will be unavailable.");
+            log.warn("Gemini API key not configured. Requests will be served by OpenAI fallback if available.");
         } else {
             log.info("Gemini service initialized successfully");
         }
     }
 
-    public boolean isAvailable() {
+    private boolean geminiAvailable() {
         return apiKey != null && !apiKey.isEmpty();
+    }
+
+    public boolean isAvailable() {
+        return geminiAvailable() || openAiService.isAvailable();
     }
 
     private static final int MAX_RETRIES = 3;
@@ -51,34 +57,85 @@ public class GeminiService {
 
     public String generateContent(String systemPrompt, String userPrompt) {
         if (!isAvailable()) {
-            throw new RuntimeException("Gemini API key not configured");
+            throw new RuntimeException("AI service not configured: no Gemini or OpenAI API key present");
         }
-
-        JsonObject requestBody = buildRequest(systemPrompt, userPrompt);
-        return executeWithRetry(requestBody, "generateContent");
+        if (!geminiAvailable()) {
+            log.warn("Gemini API key not configured; serving generateContent via OpenAI fallback");
+            String result = openAiService.generateContent(systemPrompt, userPrompt);
+            log.info("Served generateContent via OpenAI");
+            return result;
+        }
+        try {
+            JsonObject requestBody = buildRequest(systemPrompt, userPrompt);
+            String result = executeWithRetry(requestBody, "generateContent");
+            log.info("Served generateContent via Gemini");
+            return result;
+        } catch (RuntimeException geminiFailure) {
+            if (openAiService.isAvailable()) {
+                log.warn("Gemini call failed for generateContent, falling back to OpenAI: {}", geminiFailure.getMessage());
+                String result = openAiService.generateContent(systemPrompt, userPrompt);
+                log.info("Served generateContent via OpenAI fallback");
+                return result;
+            }
+            throw geminiFailure;
+        }
     }
 
     public String generateJson(String systemPrompt, String userPrompt) {
         if (!isAvailable()) {
-            throw new RuntimeException("Gemini API key not configured");
+            throw new RuntimeException("AI service not configured: no Gemini or OpenAI API key present");
         }
-
-        JsonObject requestBody = buildRequest(systemPrompt, userPrompt);
-
-        JsonObject generationConfig = new JsonObject();
-        generationConfig.addProperty("responseMimeType", "application/json");
-        requestBody.add("generationConfig", generationConfig);
-
-        return executeWithRetry(requestBody, "generateJson");
+        if (!geminiAvailable()) {
+            log.warn("Gemini API key not configured; serving generateJson via OpenAI fallback");
+            String result = openAiService.generateJson(systemPrompt, userPrompt);
+            log.info("Served generateJson via OpenAI");
+            return result;
+        }
+        try {
+            JsonObject requestBody = buildRequest(systemPrompt, userPrompt);
+            JsonObject generationConfig = new JsonObject();
+            generationConfig.addProperty("responseMimeType", "application/json");
+            requestBody.add("generationConfig", generationConfig);
+            String result = executeWithRetry(requestBody, "generateJson");
+            log.info("Served generateJson via Gemini");
+            return result;
+        } catch (RuntimeException geminiFailure) {
+            if (openAiService.isAvailable()) {
+                log.warn("Gemini call failed for generateJson, falling back to OpenAI: {}", geminiFailure.getMessage());
+                String result = openAiService.generateJson(systemPrompt, userPrompt);
+                log.info("Served generateJson via OpenAI fallback");
+                return result;
+            }
+            throw geminiFailure;
+        }
     }
 
     public String generateContentWithHistory(String systemPrompt, String userPrompt, List<ConversationTurn> history) {
         if (!isAvailable()) {
-            throw new RuntimeException("Gemini API key not configured");
+            throw new RuntimeException("AI service not configured: no Gemini or OpenAI API key present");
         }
-
-        JsonObject requestBody = buildRequestWithHistory(systemPrompt, userPrompt, history);
-        return executeWithRetry(requestBody, "generateContentWithHistory");
+        if (!geminiAvailable()) {
+            log.warn("Gemini API key not configured; serving generateContentWithHistory via OpenAI fallback");
+            List<ConversationTurn> trimmedHistory = trimHistoryToFit(systemPrompt, userPrompt, history);
+            String result = openAiService.generateContentWithHistory(systemPrompt, userPrompt, trimmedHistory);
+            log.info("Served generateContentWithHistory via OpenAI");
+            return result;
+        }
+        try {
+            JsonObject requestBody = buildRequestWithHistory(systemPrompt, userPrompt, history);
+            String result = executeWithRetry(requestBody, "generateContentWithHistory");
+            log.info("Served generateContentWithHistory via Gemini");
+            return result;
+        } catch (RuntimeException geminiFailure) {
+            if (openAiService.isAvailable()) {
+                log.warn("Gemini call failed for generateContentWithHistory, falling back to OpenAI: {}", geminiFailure.getMessage());
+                List<ConversationTurn> trimmedHistory = trimHistoryToFit(systemPrompt, userPrompt, history);
+                String result = openAiService.generateContentWithHistory(systemPrompt, userPrompt, trimmedHistory);
+                log.info("Served generateContentWithHistory via OpenAI fallback");
+                return result;
+            }
+            throw geminiFailure;
+        }
     }
 
     public String generateJsonWithHistory(String systemPrompt, String userPrompt, List<ConversationTurn> history) {
@@ -88,18 +145,35 @@ public class GeminiService {
     public String generateJsonWithHistoryAndMedia(String systemPrompt, String userPrompt,
                                                    List<ConversationTurn> history, List<MediaFile> mediaFiles) {
         if (!isAvailable()) {
-            throw new RuntimeException("Gemini API key not configured");
+            throw new RuntimeException("AI service not configured: no Gemini or OpenAI API key present");
         }
-
         mediaFiles = filterMediaFiles(mediaFiles);
 
-        JsonObject requestBody = buildRequestWithHistory(systemPrompt, userPrompt, history, mediaFiles);
-
-        JsonObject generationConfig = new JsonObject();
-        generationConfig.addProperty("responseMimeType", "application/json");
-        requestBody.add("generationConfig", generationConfig);
-
-        return executeWithRetry(requestBody, "generateJsonWithHistoryAndMedia");
+        if (!geminiAvailable()) {
+            log.warn("Gemini API key not configured; serving generateJsonWithHistoryAndMedia via OpenAI fallback");
+            List<ConversationTurn> trimmedHistory = trimHistoryToFit(systemPrompt, userPrompt, history);
+            String result = openAiService.generateJsonWithHistoryAndMedia(systemPrompt, userPrompt, trimmedHistory, mediaFiles);
+            log.info("Served generateJsonWithHistoryAndMedia via OpenAI");
+            return result;
+        }
+        try {
+            JsonObject requestBody = buildRequestWithHistory(systemPrompt, userPrompt, history, mediaFiles);
+            JsonObject generationConfig = new JsonObject();
+            generationConfig.addProperty("responseMimeType", "application/json");
+            requestBody.add("generationConfig", generationConfig);
+            String result = executeWithRetry(requestBody, "generateJsonWithHistoryAndMedia");
+            log.info("Served generateJsonWithHistoryAndMedia via Gemini");
+            return result;
+        } catch (RuntimeException geminiFailure) {
+            if (openAiService.isAvailable()) {
+                log.warn("Gemini call failed for generateJsonWithHistoryAndMedia, falling back to OpenAI: {}", geminiFailure.getMessage());
+                List<ConversationTurn> trimmedHistory = trimHistoryToFit(systemPrompt, userPrompt, history);
+                String result = openAiService.generateJsonWithHistoryAndMedia(systemPrompt, userPrompt, trimmedHistory, mediaFiles);
+                log.info("Served generateJsonWithHistoryAndMedia via OpenAI fallback");
+                return result;
+            }
+            throw geminiFailure;
+        }
     }
 
     public record ConversationTurn(String role, String content) {}
@@ -137,11 +211,29 @@ public class GeminiService {
             return generateContent(systemPrompt, userPrompt);
         }
         if (!isAvailable()) {
-            throw new RuntimeException("Gemini API key not configured");
+            throw new RuntimeException("AI service not configured: no Gemini or OpenAI API key present");
         }
 
-        JsonObject requestBody = buildMultimodalRequest(systemPrompt, userPrompt, mediaFiles);
-        return executeWithRetry(requestBody, "generateMultimodalContent");
+        if (!geminiAvailable()) {
+            log.warn("Gemini API key not configured; serving generateMultimodalContent via OpenAI fallback");
+            String result = openAiService.generateMultimodalContent(systemPrompt, userPrompt, mediaFiles);
+            log.info("Served generateMultimodalContent via OpenAI");
+            return result;
+        }
+        try {
+            JsonObject requestBody = buildMultimodalRequest(systemPrompt, userPrompt, mediaFiles);
+            String result = executeWithRetry(requestBody, "generateMultimodalContent");
+            log.info("Served generateMultimodalContent via Gemini");
+            return result;
+        } catch (RuntimeException geminiFailure) {
+            if (openAiService.isAvailable()) {
+                log.warn("Gemini call failed for generateMultimodalContent, falling back to OpenAI: {}", geminiFailure.getMessage());
+                String result = openAiService.generateMultimodalContent(systemPrompt, userPrompt, mediaFiles);
+                log.info("Served generateMultimodalContent via OpenAI fallback");
+                return result;
+            }
+            throw geminiFailure;
+        }
     }
 
     public String generateMultimodalJson(String systemPrompt, String userPrompt, List<MediaFile> mediaFiles) {
@@ -150,16 +242,32 @@ public class GeminiService {
             return generateJson(systemPrompt, userPrompt);
         }
         if (!isAvailable()) {
-            throw new RuntimeException("Gemini API key not configured");
+            throw new RuntimeException("AI service not configured: no Gemini or OpenAI API key present");
         }
 
-        JsonObject requestBody = buildMultimodalRequest(systemPrompt, userPrompt, mediaFiles);
-
-        JsonObject generationConfig = new JsonObject();
-        generationConfig.addProperty("responseMimeType", "application/json");
-        requestBody.add("generationConfig", generationConfig);
-
-        return executeWithRetry(requestBody, "generateMultimodalJson");
+        if (!geminiAvailable()) {
+            log.warn("Gemini API key not configured; serving generateMultimodalJson via OpenAI fallback");
+            String result = openAiService.generateMultimodalJson(systemPrompt, userPrompt, mediaFiles);
+            log.info("Served generateMultimodalJson via OpenAI");
+            return result;
+        }
+        try {
+            JsonObject requestBody = buildMultimodalRequest(systemPrompt, userPrompt, mediaFiles);
+            JsonObject generationConfig = new JsonObject();
+            generationConfig.addProperty("responseMimeType", "application/json");
+            requestBody.add("generationConfig", generationConfig);
+            String result = executeWithRetry(requestBody, "generateMultimodalJson");
+            log.info("Served generateMultimodalJson via Gemini");
+            return result;
+        } catch (RuntimeException geminiFailure) {
+            if (openAiService.isAvailable()) {
+                log.warn("Gemini call failed for generateMultimodalJson, falling back to OpenAI: {}", geminiFailure.getMessage());
+                String result = openAiService.generateMultimodalJson(systemPrompt, userPrompt, mediaFiles);
+                log.info("Served generateMultimodalJson via OpenAI fallback");
+                return result;
+            }
+            throw geminiFailure;
+        }
     }
 
     private String executeWithRetry(JsonObject requestBody, String caller) {
