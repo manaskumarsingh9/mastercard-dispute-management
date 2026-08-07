@@ -10,6 +10,7 @@ import com.opus.dispute.management.repository.FeeDetailRepository;
 import com.opus.dispute.management.repository.RetrievalDetailRepository;
 import com.opus.dispute.management.service.ClaimIngestionService;
 import com.opus.dispute.management.service.PostIngestionPipelineService;
+import com.opus.dispute.management.service.ReasonCodeRulesService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -44,6 +45,7 @@ public class IngestionController {
     private final CaseFilingDetailRepository caseFilingDetailRepository;
     private final EvidenceMapRepository evidenceMapRepository;
     private final PostIngestionPipelineService postIngestionPipelineService;
+    private final ReasonCodeRulesService reasonCodeRulesService;
 
     public IngestionController(ClaimIngestionService claimIngestionService,
                                 DisputeRepository disputeRepository,
@@ -52,7 +54,8 @@ public class IngestionController {
                                 FeeDetailRepository feeDetailRepository,
                                 CaseFilingDetailRepository caseFilingDetailRepository,
                                 EvidenceMapRepository evidenceMapRepository,
-                                PostIngestionPipelineService postIngestionPipelineService) {
+                                PostIngestionPipelineService postIngestionPipelineService,
+                                ReasonCodeRulesService reasonCodeRulesService) {
         this.claimIngestionService = claimIngestionService;
         this.disputeRepository = disputeRepository;
         this.chargebackDetailRepository = chargebackDetailRepository;
@@ -61,6 +64,7 @@ public class IngestionController {
         this.caseFilingDetailRepository = caseFilingDetailRepository;
         this.evidenceMapRepository = evidenceMapRepository;
         this.postIngestionPipelineService = postIngestionPipelineService;
+        this.reasonCodeRulesService = reasonCodeRulesService;
     }
 
     @PostMapping("/ingest")
@@ -133,7 +137,8 @@ public class IngestionController {
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "50") int size) {
         try {
-            Page<Dispute> disputes = disputeRepository.findAll(PageRequest.of(page, size));
+            Page<Dispute> disputes = disputeRepository.findByReasonCodeIn(
+                    reasonCodeRulesService.getSupportedReasonCodes(), PageRequest.of(page, size));
 
             Map<String, Object> response = new HashMap<>();
             response.put("disputes", disputes.getContent());
