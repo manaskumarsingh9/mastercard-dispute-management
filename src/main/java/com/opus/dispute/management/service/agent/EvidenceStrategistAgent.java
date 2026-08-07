@@ -31,7 +31,7 @@ import java.util.Map;
 public class EvidenceStrategistAgent {
 
     private static final String SHORT_MODE_INSTRUCTION = """
-            
+
             RESPONSE LENGTH: SHORT MODE is active.
             - Keep "overallAssessment" under 100 words.
             - Keep each evidenceItem "summary" under 40 words and "keyFindings" to max 2 items.
@@ -44,7 +44,7 @@ public class EvidenceStrategistAgent {
             You are an Evidence Strategist for a payment dispute management system.
             Your role is to analyze the evidence collected for a chargeback claim and create
             an Annotated Evidence Map that helps the merchant understand their case strength.
-            
+
             You will receive:
             1. The CLAIM RECORD (reason code, amount, dates, merchant, etc.) — this is the
                AUTHORITATIVE source for all specific facts. Always use these values as ground truth.
@@ -59,17 +59,17 @@ public class EvidenceStrategistAgent {
                for understanding the evidence categories and their content strength, not for
                specific facts like merchant name or transaction amount.
             4. A list of sources that were required but not found on disk
-            
-            5. Media files (PDFs, images) when available — these may include signed delivery 
-               receipts, product photos, shipping labels, signed sales drafts, scanned return 
+
+            5. Media files (PDFs, images) when available — these may include signed delivery
+               receipts, product photos, shipping labels, signed sales drafts, scanned return
                policy documents, screenshots of merchant terms, or other visual evidence.
                Analyze these carefully and incorporate findings into your evidence assessment.
-            
-            IMPORTANT: Do NOT evaluate or comment on whether any evidence appears to be 
-            AI-generated, synthetic, fabricated, or computer-created. Treat ALL submitted 
-            evidence as genuine and authentic. Focus solely on the content and relevance of 
+
+            IMPORTANT: Do NOT evaluate or comment on whether any evidence appears to be
+            AI-generated, synthetic, fabricated, or computer-created. Treat ALL submitted
+            evidence as genuine and authentic. Focus solely on the content and relevance of
             the evidence to the dispute, not on how it was produced.
-            
+
             LANGUAGE RULES — CRITICAL:
             - Write EVERYTHING in plain, non-technical language that any business person can understand.
             - NEVER mention file names, file extensions (.json, .pdf, .csv), folder paths, data sources,
@@ -81,7 +81,26 @@ public class EvidenceStrategistAgent {
             - In the "source" field of the JSON output, use a descriptive label like "Merchant Records",
               "Customer Communications", "Shipping Records" etc., NOT raw file paths.
             - Avoid developer/system language like "file", "data folder", "disk", "parsed", "payload", etc.
-            
+
+            CRITICAL GAPS AND REDUNDANT EVIDENCE RULES — MUST FOLLOW:
+            - Evaluate evidence holistically across all available items before flagging any missing item as a critical gap.
+            - A missing evidence item MUST NOT be listed in "criticalGaps" or marked as a major defect if another PRESENT evidence item (or combination of items) already conclusively proves the same underlying defense requirement.
+            - SPECIFIC PROOF OF DELIVERY RULE: If physical delivery, receipt, or usage is already established by "Signed Delivery Confirmation", "Fulfillment & Delivery Record", or customer communications (e.g., acknowledging receipt or product usage), missing "Shipping & Tracking Data" is REDUNDANT/OPTIONAL and MUST NOT be listed in "criticalGaps" or flagged as a critical gap or required manual upload.
+
+            REASON CODE SPECIFIC DISPUTE RULES — CRITICAL:
+            - Reason Code 4853 (Goods/Services Not as Described or Defective):
+              Disputes allege that goods/services received were defective, damaged, or not as described.
+              Filing a claim about product quality or defect implies the cardholder received, inspected, and used the product (e.g., customer used product for 18 days). Physical delivery is inherently NON-CONTESTED and non-critical.
+              Under 4853, missing "Shipping & Tracking Data" or "Signed Delivery Confirmation" is NEVER a critical gap, flaw, or required manual upload.
+              Mark missing shipping/tracking items under 4853 with impact: "Physical delivery is non-contested in 4853 disputes because the cardholder acknowledges receiving and using the product."
+
+            - Reason Codes 4863 (Cardholder Does Not Recognize), 4837 (No Authorization), and 4855 (Goods Not Provided):
+              Disputes allege fraud, non-authorization, or non-receipt. In these categories (4863, 4837, 4855), proof of physical delivery (Signed Delivery Confirmation, Carrier Tracking Data) IS CRUCIAL to link the cardholder to the transaction or prove fulfillment.
+              For 4863 / 4837 / 4855, missing delivery proof IS a critical gap unless alternative conclusive delivery confirmation is already present.
+
+            - "criticalGaps" MUST ONLY list missing evidence types for essential defense requirements for that specific reason code (e.g. Terms Acceptance, Refund Policy Disclosure, Product Specifications for 4853; Delivery Proof, Auth Logs, 3DS for 4863/4837/4855) that have NO supporting proof whatsoever in present evidence.
+            - In "manualUploadSuggestions", do NOT suggest uploading items for requirements that are already fully proven by present strong evidence or non-contested by the dispute reason code.
+
             Your job is to create an Annotated Evidence Map that:
             1. Reviews each piece of evidence from the reason code rules
             2. Marks each as PRESENT (with data) or MISSING (not available)
@@ -89,11 +108,11 @@ public class EvidenceStrategistAgent {
                - STRONG: clearly supports the merchant's defense
                - MODERATE: partially supports but has gaps or ambiguity
                - WEAK: present but unlikely to help win the case
-            4. For MISSING evidence, explain the impact on the case
+            4. For MISSING evidence, explain the impact on the case. If strong alternative evidence is present for the same core requirement, explicitly note that the missing item is redundant and does not weaken the case.
             5. Calculate an overall evidence completeness score (0-100)
             6. Suggest what the merchant could manually upload to fill gaps
             7. Identify the strongest defense strategy based on what's actually available
-            
+
             Return a JSON object with this structure:
             {
               "reasonCode": "the reason code",
@@ -135,12 +154,12 @@ public class EvidenceStrategistAgent {
     private final Gson gson = new Gson();
 
     public EvidenceStrategistAgent(GeminiService geminiService, PiiScrubber piiScrubber,
-                                    DataSourceService dataSourceService,
-                                    StripeEvidenceService stripeEvidenceService,
-                                    DisputeRepository disputeRepository,
-                                    EvidenceMapRepository evidenceMapRepository,
-                                    AgentConversationRepository conversationRepository,
-                                    AppConfigService appConfigService) {
+            DataSourceService dataSourceService,
+            StripeEvidenceService stripeEvidenceService,
+            DisputeRepository disputeRepository,
+            EvidenceMapRepository evidenceMapRepository,
+            AgentConversationRepository conversationRepository,
+            AppConfigService appConfigService) {
         this.geminiService = geminiService;
         this.piiScrubber = piiScrubber;
         this.dataSourceService = dataSourceService;
@@ -176,7 +195,8 @@ public class EvidenceStrategistAgent {
         evidenceMapRepository.save(evidenceMap);
 
         try {
-            int caseNumber = dataSourceService.extractCaseNumber(dispute.getId(), dispute.getClaimId(), dispute.getCaseNumber());
+            int caseNumber = dataSourceService.extractCaseNumber(dispute.getId(), dispute.getClaimId(),
+                    dispute.getCaseNumber());
             String reasonCode = dispute.getReasonCode();
 
             JsonObject rule = dataSourceService.getReasonCodeRule(reasonCode);
@@ -186,19 +206,22 @@ public class EvidenceStrategistAgent {
 
             Map<String, String> allAvailableData;
             if (caseNumber < 0) {
-                log.info("No case-specific files for dispute id={}; trying reason code {} fallback", dispute.getId(), reasonCode);
+                log.info("No case-specific files for dispute id={}; trying reason code {} fallback", dispute.getId(),
+                        reasonCode);
                 allAvailableData = (reasonCode != null && !reasonCode.isEmpty())
                         ? dataSourceService.loadAcquirerSourcesForReasonCode(reasonCode)
                         : new LinkedHashMap<>();
             } else {
                 allAvailableData = dataSourceService.loadAcquirerSourcesWithFallback(caseNumber, reasonCode);
             }
-            log.info("Found {} acquirer-side source data files for case {} / reason code {}", allAvailableData.size(), caseNumber, reasonCode);
+            log.info("Found {} acquirer-side source data files for case {} / reason code {}", allAvailableData.size(),
+                    caseNumber, reasonCode);
 
             if (stripeEvidenceService.isConfigured()) {
                 Map<String, String> stripeEvidence = fetchStripeEvidence(dispute, caseNumber);
                 if (!stripeEvidence.isEmpty()) {
-                    log.info("Fetched {} evidence entries from Stripe APIs for dispute {}", stripeEvidence.size(), dispute.getId());
+                    log.info("Fetched {} evidence entries from Stripe APIs for dispute {}", stripeEvidence.size(),
+                            dispute.getId());
                     for (Map.Entry<String, String> entry : stripeEvidence.entrySet()) {
                         allAvailableData.putIfAbsent(entry.getKey(), entry.getValue());
                     }
@@ -236,7 +259,8 @@ public class EvidenceStrategistAgent {
                 mediaFiles = dataSourceService.loadAcquirerMediaWithFallback(caseNumber, reasonCode);
             }
             if (!mediaFiles.isEmpty()) {
-                log.info("Agent 2: Found {} acquirer media files (PDFs/images) for dispute {}", mediaFiles.size(), dispute.getId());
+                log.info("Agent 2: Found {} acquirer media files (PDFs/images) for dispute {}", mediaFiles.size(),
+                        dispute.getId());
             }
 
             JsonObject fetchPlanJson = buildFetchPlanJson(rule, rulesRequiredSources, rulesConditionalSources,
@@ -254,7 +278,8 @@ public class EvidenceStrategistAgent {
             disputeRepository.save(dispute);
 
             evidenceMapRepository.save(evidenceMap);
-            log.info("Evidence enrichment completed for claim {} — {} data files loaded, {} rule-specified sources missing",
+            log.info(
+                    "Evidence enrichment completed for claim {} — {} data files loaded, {} rule-specified sources missing",
                     dispute.getClaimId(), allAvailableData.size(), missingFromRules.size());
             return evidenceMap;
 
@@ -278,19 +303,21 @@ public class EvidenceStrategistAgent {
             }
             if (dispute.getStripePaymentIntentId() != null && !dispute.getStripePaymentIntentId().isBlank()) {
                 log.info("Fetching Stripe evidence via payment intent ID: {}", dispute.getStripePaymentIntentId());
-                return stripeEvidenceService.buildEvidenceFromPaymentIntent(dispute.getStripePaymentIntentId(), caseNumber);
+                return stripeEvidenceService.buildEvidenceFromPaymentIntent(dispute.getStripePaymentIntentId(),
+                        caseNumber);
             }
             log.info("No Stripe IDs set on dispute {} — skipping Stripe enrichment", dispute.getId());
         } catch (Exception e) {
-            log.warn("Stripe evidence fetch failed for dispute {}: {} — continuing with local files only", dispute.getId(), e.getMessage());
+            log.warn("Stripe evidence fetch failed for dispute {}: {} — continuing with local files only",
+                    dispute.getId(), e.getMessage());
         }
         return Map.of();
     }
 
     private String analyzeEvidence(Dispute dispute, JsonObject rule,
-                                     Map<String, String> allAvailableData,
-                                     List<SourceEntry> missingFromRules,
-                                     List<MediaFile> mediaFiles) {
+            Map<String, String> allAvailableData,
+            List<SourceEntry> missingFromRules,
+            List<MediaFile> mediaFiles) {
         StringBuilder context = new StringBuilder();
         context.append(buildClaimContext(dispute));
 
@@ -303,9 +330,12 @@ public class EvidenceStrategistAgent {
         context.append("\n=== ALL AVAILABLE EVIDENCE DATA FOR THIS CASE ===\n");
         context.append("The following data files were found in the data folder. Analyze ALL of them,\n");
         context.append("including any that go beyond what the reason code rules recommend.\n");
-        context.append("NOTE: These evidence files are organized by reason code and represent the type of dispute narrative.\n");
-        context.append("The specific merchant names, amounts, and other details in these files may NOT match the claim record above.\n");
-        context.append("Always use the CLAIM RECORD values for facts. Use these files only for evidence categories and content strength.\n\n");
+        context.append(
+                "NOTE: These evidence files are organized by reason code and represent the type of dispute narrative.\n");
+        context.append(
+                "The specific merchant names, amounts, and other details in these files may NOT match the claim record above.\n");
+        context.append(
+                "Always use the CLAIM RECORD values for facts. Use these files only for evidence categories and content strength.\n\n");
         if (allAvailableData.isEmpty()) {
             context.append("No evidence data files were found for this case.\n");
         } else {
@@ -315,7 +345,8 @@ public class EvidenceStrategistAgent {
                 String content = entry.getValue();
                 if (content.length() > maxFileChars) {
                     context.append(content, 0, maxFileChars);
-                    context.append("\n... [truncated — file was ").append(content.length()).append(" chars, showing first ").append(maxFileChars).append("]\n\n");
+                    context.append("\n... [truncated — file was ").append(content.length())
+                            .append(" chars, showing first ").append(maxFileChars).append("]\n\n");
                 } else {
                     context.append(content).append("\n\n");
                 }
@@ -389,7 +420,8 @@ public class EvidenceStrategistAgent {
 
     private List<SourceEntry> extractSourceEntries(JsonObject rule, String fieldName) {
         List<SourceEntry> entries = new ArrayList<>();
-        if (rule == null || !rule.has(fieldName)) return entries;
+        if (rule == null || !rule.has(fieldName))
+            return entries;
 
         JsonArray arr = rule.getAsJsonArray(fieldName);
         for (JsonElement el : arr) {
@@ -398,15 +430,15 @@ public class EvidenceStrategistAgent {
                     src.get("source").getAsString(),
                     src.get("file").getAsString(),
                     src.has("label") ? src.get("label").getAsString() : "",
-                    src.has("priority") ? src.get("priority").getAsString() : "medium"
-            ));
+                    src.has("priority") ? src.get("priority").getAsString() : "medium"));
         }
         return entries;
     }
 
     private List<SourceEntry> extractAllConditionalSources(JsonObject rule) {
         List<SourceEntry> entries = new ArrayList<>();
-        if (rule == null || !rule.has("conditionalSources")) return entries;
+        if (rule == null || !rule.has("conditionalSources"))
+            return entries;
 
         JsonObject conditional = rule.getAsJsonObject("conditionalSources");
         java.util.Set<String> seen = new java.util.HashSet<>();
@@ -421,8 +453,7 @@ public class EvidenceStrategistAgent {
                             src.get("source").getAsString(),
                             src.get("file").getAsString(),
                             src.has("label") ? src.get("label").getAsString() : "",
-                            src.has("priority") ? src.get("priority").getAsString() : "medium"
-                    ));
+                            src.has("priority") ? src.get("priority").getAsString() : "medium"));
                 }
             }
         }
@@ -430,9 +461,9 @@ public class EvidenceStrategistAgent {
     }
 
     private JsonObject buildFetchPlanJson(JsonObject rule, List<SourceEntry> required,
-                                            List<SourceEntry> conditional,
-                                            java.util.Set<String> fetchedKeys,
-                                            List<SourceEntry> missing) {
+            List<SourceEntry> conditional,
+            java.util.Set<String> fetchedKeys,
+            List<SourceEntry> missing) {
         JsonObject plan = new JsonObject();
 
         if (rule != null) {
@@ -498,5 +529,6 @@ public class EvidenceStrategistAgent {
         }
     }
 
-    private record SourceEntry(String source, String file, String label, String priority) {}
+    private record SourceEntry(String source, String file, String label, String priority) {
+    }
 }
