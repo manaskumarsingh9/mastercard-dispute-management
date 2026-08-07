@@ -1,8 +1,8 @@
 {
-  "source": "CloudVault Premium — Identity Verification",
+  "source": "AudioPeak Electronics — Identity Verification",
   "dataType": "AVS/CVV Verification Results",
   "reasonCode": "4841",
-  "reasonCodeDescription": "Cancelled Recurring or Digital Goods Transaction",
+  "reasonCodeDescription": "Cancelled Recurring Transaction",
   "verificationResults": {
     "avs": {
       "responseCode": "Y",

@@ -2,19 +2,19 @@
   "source": "Issuing Bank — Cardholder Services",
   "dataType": "Cardholder Dispute Statement",
   "reasonCode": "4841",
-  "reasonCodeDescription": "Cancelled Recurring or Digital Goods Transaction",
+  "reasonCodeDescription": "Cancelled Recurring Transaction",
   "statement": {
-    "disputeReason": "4841 - Cancelled Recurring or Digital Goods Transaction",
-    "detailedDescription": "The cardholder states they cancelled their CloudVault Premium subscription [7 days before the disputed billing date] via the merchant's website. Despite this, a $14.99 monthly charge was processed. The cardholder believes all charges after the cancellation should stop immediately.",
+    "disputeReason": "4841 - Cancelled Recurring Transaction",
+    "detailedDescription": "The cardholder states they cancelled their AudioPeak Sound+ plan [7 days before the disputed billing date] via the merchant's website. Despite this, a $12.99 monthly charge was processed. The cardholder believes all charges after the cancellation should stop immediately.",
     "contactedMerchant": true,
-    "merchantResponseSummary": "The cardholder emailed CloudVault [7 days before the billing date] to cancel. The merchant responded acknowledging the cancellation but stated it would take effect at the end of the current billing cycle, not immediately.",
+    "merchantResponseSummary": "The cardholder emailed AudioPeak [7 days before the billing date] to cancel. The merchant responded acknowledging the cancellation but stated it would take effect at the end of the current billing cycle, not immediately.",
     "previousDisputeHistory": "None",
-    "requestedResolution": "Reversal of the $14.99 post-cancellation charge.",
+    "requestedResolution": "Reversal of the $12.99 post-cancellation charge.",
     "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
   },
   "bankInternalNotes": {
     "riskAssessment": "Medium — merchant may have valid defense documentation.",
-    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4841 (Cancelled Recurring or Digital Goods Transaction).",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4841 (Cancelled Recurring Transaction).",
     "priority": "Standard"
   }
 }

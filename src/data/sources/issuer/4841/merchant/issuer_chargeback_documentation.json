@@ -2,21 +2,15 @@
   "source": "Issuing Bank — Chargeback Department",
   "dataType": "Issuer Chargeback Documentation",
   "reasonCode": "4841",
-  "reasonCodeDescription": "Cancelled Recurring or Digital Goods Transaction",
+  "reasonCodeDescription": "Cancelled Recurring Transaction",
   "chargebackFiling": {
     "reasonCode": "4841",
-    "reasonCodeDescription": "Cancelled Recurring or Digital Goods Transaction",
+    "reasonCodeDescription": "Cancelled Recurring Transaction",
     "supportingDocuments": [
-      {
-        "type": "Cardholder Dispute Form",
-        "desc": "Statement that the subscription was cancelled before the charge date."
-      },
-      {
-        "type": "Cardholder's Email Record",
-        "desc": "Email from cardholder to merchant requesting cancellation."
-      }
+      { "type": "Cardholder Dispute Form", "desc": "Statement that the plan was cancelled before the charge date." },
+      { "type": "Cardholder's Email Record", "desc": "Email from cardholder to merchant requesting cancellation." }
     ],
-    "issuerCommentary": "Filing under 4841. The cardholder cancelled their recurring subscription before the disputed charge. The cardholder expected the cancellation to be immediate.",
+    "issuerCommentary": "Filing under 4841. The cardholder cancelled their recurring plan before the disputed charge. The cardholder expected the cancellation to be immediate.",
     "arbitrationEligible": true
   },
   "transactionDetails": {

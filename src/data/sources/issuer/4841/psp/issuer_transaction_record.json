@@ -2,7 +2,7 @@
   "source": "Issuing Bank — Transaction Processing",
   "dataType": "Issuer Transaction Record",
   "reasonCode": "4841",
-  "reasonCodeDescription": "Cancelled Recurring or Digital Goods Transaction",
+  "reasonCodeDescription": "Cancelled Recurring Transaction",
   "authorization": {
     "responseCode": "00",
     "merchantCategoryCode": "5999",

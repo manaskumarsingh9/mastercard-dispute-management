@@ -1,14 +1,13 @@
 {
-  "source": "CloudVault Premium — Fulfillment",
+  "source": "AudioPeak Electronics — Fulfillment",
   "dataType": "Fulfillment & Delivery Record",
   "reasonCode": "4841",
-  "reasonCodeDescription": "Cancelled Recurring or Digital Goods Transaction",
+  "reasonCodeDescription": "Cancelled Recurring Transaction",
   "fulfillmentRecord": {
-    "type": "Digital Service",
-    "status": "Active — cardholder continued using service after cancellation request",
-    "method": "Cloud storage accessible via web and mobile app",
-    "timing": "Continuous access since signup",
+    "type": "Physical Goods — recurring shipment",
+    "status": "Shipped — final cycle after cancellation request",
+    "method": "Ground shipping, replacement parts kit",
     "confirmed": true,
-    "notes": "Usage logs show the cardholder logged into their CloudVault account and accessed files [2 days before the chargeback was filed], [1 day after the disputed charge], and on [4 other occasions after the cancellation request]. Total storage used: 1.2TB of the 2TB plan."
+    "notes": "The final-cycle replacement ear tips/cushions kit was shipped and delivered to the cardholder's address [2 days after the disputed billing date], consistent with an active plan through the end of the current paid period."
   }
 }

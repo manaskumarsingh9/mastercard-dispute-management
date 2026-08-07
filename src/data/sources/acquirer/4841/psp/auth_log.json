@@ -1,8 +1,8 @@
 {
-  "source": "CloudVault Premium — Payment Service Provider",
+  "source": "AudioPeak Electronics — Payment Service Provider",
   "dataType": "Authorization Log",
   "reasonCode": "4841",
-  "reasonCodeDescription": "Cancelled Recurring or Digital Goods Transaction",
+  "reasonCodeDescription": "Cancelled Recurring Transaction",
   "authorizationRecord": {
     "authorizationObtained": true,
     "responseCode": "00",

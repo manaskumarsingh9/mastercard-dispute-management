@@ -1,19 +1,19 @@
 {
-  "source": "CloudVault Premium — Order Management System",
+  "source": "AudioPeak Electronics — Order Management System",
   "dataType": "Order Details",
   "reasonCode": "4841",
-  "reasonCodeDescription": "Cancelled Recurring or Digital Goods Transaction",
+  "reasonCodeDescription": "Cancelled Recurring Transaction",
   "orderRecord": {
     "orderStatus": "Active subscription — billed monthly",
     "items": [
       {
-        "name": "CloudVault Premium — Monthly Cloud Storage Plan (2TB)",
+        "name": "AudioPeak Sound+ — Monthly Replacement Parts Plan (ear tips, cushions, annual cable credit)",
         "quantity": 1,
-        "unitPrice": 14.99,
-        "sku": "CV-PREM-MO"
+        "unitPrice": 12.99,
+        "sku": "AP-SOUNDPLUS-MO"
       }
     ],
-    "shippingAddress": null,
-    "orderNotes": "Monthly recurring subscription. Cardholder signed up [6 months before the disputed charge]. The cancellation request was received [7 days before the next billing date], but per the terms agreed at signup, cancellation takes effect at the end of the current paid period. The disputed charge is for the final billing cycle."
+    "shippingAddress": "Cardholder's billing address",
+    "orderNotes": "Monthly recurring plan tied to the cardholder's ProSilence ANC Headphones purchase. Cardholder signed up [6 months before the disputed charge]. The cancellation request was received [7 days before the next billing date], but per the terms agreed at signup, cancellation takes effect at the end of the current paid period. The disputed charge covers the final billing cycle's replacement-parts shipment."
   }
 }
