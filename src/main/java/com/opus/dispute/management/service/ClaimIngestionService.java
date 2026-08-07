@@ -35,18 +35,21 @@ public class ClaimIngestionService {
     private final IngestionStateRepository ingestionStateRepository;
     private final ClaimDetailService claimDetailService;
     private final ReasonCodeRulesService reasonCodeRulesService;
+    private final AudioPeakOverrideService audioPeakOverrideService;
     private final Gson gson = new Gson();
 
     public ClaimIngestionService(MastercardApiClient mastercardApiClient,
                                   DisputeRepository disputeRepository,
                                   IngestionStateRepository ingestionStateRepository,
                                   ClaimDetailService claimDetailService,
-                                  ReasonCodeRulesService reasonCodeRulesService) {
+                                  ReasonCodeRulesService reasonCodeRulesService,
+                                  AudioPeakOverrideService audioPeakOverrideService) {
         this.mastercardApiClient = mastercardApiClient;
         this.disputeRepository = disputeRepository;
         this.ingestionStateRepository = ingestionStateRepository;
         this.claimDetailService = claimDetailService;
         this.reasonCodeRulesService = reasonCodeRulesService;
+        this.audioPeakOverrideService = audioPeakOverrideService;
     }
 
     public IngestionResult ingestFromQueues(String dateFrom, String dateTo) {
@@ -184,6 +187,7 @@ public class ClaimIngestionService {
                     Dispute existing = disputeRepository.findByClaimId(claimId).orElse(null);
                     if (existing != null) {
                         updateDisputeFromClaim(existing, claim, queueName);
+                        audioPeakOverrideService.applyOverride(existing);
                         disputeRepository.save(existing);
                         updatedClaims++;
                     } else {

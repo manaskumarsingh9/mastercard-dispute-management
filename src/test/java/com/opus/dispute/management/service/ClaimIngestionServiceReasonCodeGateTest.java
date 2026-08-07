@@ -31,6 +31,8 @@ class ClaimIngestionServiceReasonCodeGateTest {
     private ClaimDetailService claimDetailService;
     @Mock
     private ReasonCodeRulesService reasonCodeRulesService;
+    @Mock
+    private AudioPeakOverrideService audioPeakOverrideService;
 
     @InjectMocks
     private ClaimIngestionService claimIngestionService;
@@ -67,5 +69,31 @@ class ClaimIngestionServiceReasonCodeGateTest {
         // since the mocked MastercardApiClient returns the same unsupported-reason-code
         // claim regardless of queue, the gate deletes it once per queue polled.
         verify(disputeRepository, atLeastOnce()).deleteById(1L);
+    }
+
+    @Test
+    void appliesAudioPeakOverrideWhenRePollingAnAlreadyIngestedClaim() throws Exception {
+        // A claim that is still sitting in a Mastercard queue (e.g. "Pending") on a
+        // later poll is found by claimId and routed through the "existing" update
+        // branch, not the "new claim" branch that calls fetchAndStoreClaimDetail().
+        // That branch must still re-apply the AudioPeak override so an in-scope
+        // reason code never surfaces real merchant/currency data to the read APIs.
+        ReflectionTestUtils.setField(claimIngestionService, "maxNewClaims", 3);
+
+        JsonObject responseObj = JsonParser.parseString(
+                "{\"pageCount\":\"1\",\"claimList\":[{\"claimId\":\"555\",\"reasonCode\":\"4853\"}]}"
+        ).getAsJsonObject();
+        when(mastercardApiClient.post(any(), any())).thenReturn(responseObj.toString());
+
+        Dispute existing = new Dispute();
+        existing.setId(7L);
+        existing.setClaimId("555");
+        existing.setReasonCode("4853");
+        when(disputeRepository.findByClaimId("555")).thenReturn(Optional.of(existing));
+
+        claimIngestionService.ingestFromQueues(null, null);
+
+        verify(audioPeakOverrideService, atLeastOnce()).applyOverride(existing);
+        verify(disputeRepository, atLeastOnce()).save(existing);
     }
 }
