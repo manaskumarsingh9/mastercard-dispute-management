@@ -2,7 +2,6 @@ package com.opus.dispute.management.service;
 
 import com.opus.dispute.management.entity.Dispute;
 import com.opus.dispute.management.repository.DisputeRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -13,8 +12,13 @@ import java.util.UUID;
 @Service
 public class DisputeService {
 
-    @Autowired
-    private DisputeRepository disputeRepository;
+    private final DisputeRepository disputeRepository;
+    private final ReasonCodeRulesService reasonCodeRulesService;
+
+    public DisputeService(DisputeRepository disputeRepository, ReasonCodeRulesService reasonCodeRulesService) {
+        this.disputeRepository = disputeRepository;
+        this.reasonCodeRulesService = reasonCodeRulesService;
+    }
 
     public Dispute createDispute(Dispute dispute) {
         dispute.setClaimId(UUID.randomUUID().toString());
@@ -25,7 +29,7 @@ public class DisputeService {
     }
 
     public List<Dispute> getAllDisputes() {
-        return disputeRepository.findAll();
+        return disputeRepository.findByReasonCodeIn(reasonCodeRulesService.getSupportedReasonCodes());
     }
 
     public Optional<Dispute> getDisputeById(Long id) {
