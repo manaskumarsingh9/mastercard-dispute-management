@@ -1,5 +1,5 @@
 {
-  "source": "CaseArtisan — Payment Service Provider",
+  "source": "AudioPeak Electronics — Payment Service Provider",
   "dataType": "Authorization Log",
   "reasonCode": "4863",
   "reasonCodeDescription": "Cardholder Does Not Recognize Transaction",
@@ -7,13 +7,13 @@
     "authorizationObtained": true,
     "responseCode": "00",
     "responseMessage": "Approved",
-    "entryMode": "Ecommerce",
+    "entryMode": "Ecommerce — card on file, account login",
     "threeDSecure": {
       "enrolled": true,
       "authenticated": true,
       "eci": "05",
       "cavv": "Verified"
     },
-    "notes": "3D Secure authentication completed. AVS and CVV matched. The order included a personalized photo uploaded by the customer."
+    "notes": "Authorization for $34.99 under billing descriptor 'AUDIOPEAK ELECTRONICS', matching the merchant name shown at checkout."
   }
 }

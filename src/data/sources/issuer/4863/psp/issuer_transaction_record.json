@@ -14,7 +14,7 @@
     },
     "cvvResult": {
       "code": "M",
-      "description": "CVV Match"
+      "description": "CVV matched"
     }
   },
   "riskFlags": {

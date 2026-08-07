@@ -7,17 +7,15 @@
     "reasonCode": "4863",
     "reasonCodeDescription": "Cardholder Does Not Recognize Transaction",
     "supportingDocuments": [
-      {
-        "type": "Cardholder Dispute Form",
-        "desc": "Statement that the cardholder does not recognize the merchant or the charge."
-      }
+      { "type": "Cardholder Dispute Form", "desc": "Statement that the $34.99 charge is not recognized." },
+      { "type": "Account Statement", "desc": "Showing the disputed $34.99 charge from AudioPeak Electronics." }
     ],
-    "issuerCommentary": "Filing under 4863. The cardholder does not recognize this transaction or the merchant name on their statement.",
+    "issuerCommentary": "Filing under 4863. Cardholder does not recognize the transaction or the merchant billing descriptor.",
     "arbitrationEligible": true
   },
   "transactionDetails": {
     "cardPresent": false,
-    "ecommerceIndicator": "ECI_07",
+    "ecommerceIndicator": "ECI_05",
     "posEntryMode": "81"
   }
 }

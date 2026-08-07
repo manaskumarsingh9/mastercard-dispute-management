@@ -1,16 +1,16 @@
 {
-  "source": "CaseArtisan — Identity Verification",
+  "source": "AudioPeak Electronics — Identity Verification",
   "dataType": "AVS/CVV Verification Results",
   "reasonCode": "4863",
   "reasonCodeDescription": "Cardholder Does Not Recognize Transaction",
   "verificationResults": {
     "avs": {
       "responseCode": "Y",
-      "description": "Full match — street and ZIP"
+      "description": "Full match"
     },
     "cvv": {
       "responseCode": "M",
-      "description": "CVV matches issuer records"
+      "description": "CVV matched"
     }
   }
 }

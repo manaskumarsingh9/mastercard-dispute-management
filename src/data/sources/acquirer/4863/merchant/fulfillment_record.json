@@ -1,14 +1,13 @@
 {
-  "source": "CaseArtisan — Fulfillment",
+  "source": "AudioPeak Electronics — Fulfillment",
   "dataType": "Fulfillment & Delivery Record",
   "reasonCode": "4863",
   "reasonCodeDescription": "Cardholder Does Not Recognize Transaction",
   "fulfillmentRecord": {
-    "type": "Custom Manufacturing + Shipment",
-    "status": "Delivered to billing address",
-    "method": "USPS First Class",
-    "timing": "[6 days after purchase]",
+    "type": "Physical Goods — custom engraved",
+    "status": "Shipped and delivered",
+    "method": "Ground shipping",
     "confirmed": true,
-    "notes": "Custom phone case featuring the cardholder's uploaded personal family photo. Delivered to billing address."
+    "notes": "Custom-engraved case produced with the initials entered at checkout and shipped to the cardholder's billing address."
   }
 }

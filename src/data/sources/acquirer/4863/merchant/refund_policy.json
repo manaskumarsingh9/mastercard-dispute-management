@@ -1,12 +1,12 @@
 {
-  "source": "CaseArtisan — Policies",
-  "dataType": "Refund & Cancellation Policy",
+  "source": "AudioPeak Electronics — Policies",
+  "dataType": "Refund & Return Policy",
   "reasonCode": "4863",
   "reasonCodeDescription": "Cardholder Does Not Recognize Transaction",
   "policy": {
-    "refundWindow": "N/A — custom/personalized products",
-    "policy": "Custom personalized products are non-refundable unless there is a manufacturing defect. This was stated at checkout before payment.",
-    "disclosureMethod": "Non-refundable notice displayed next to the 'Place Order' button and in confirmation email.",
-    "customerAcknowledgment": "Customer acknowledged 'Custom items are non-refundable' checkbox at checkout."
+    "refundWindow": "N/A — custom engraved item",
+    "policy": "Custom/personalized items are final sale and not eligible for standard returns.",
+    "disclosureMethod": "Disclosed on the product page and at checkout before payment.",
+    "customerAcknowledgment": "Customer entered personalization text and confirmed the order, acknowledging the final-sale terms."
   }
 }
