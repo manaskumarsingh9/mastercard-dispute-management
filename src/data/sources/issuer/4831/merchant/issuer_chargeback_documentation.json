@@ -7,21 +7,15 @@
     "reasonCode": "4831",
     "reasonCodeDescription": "Transaction Amount Differs",
     "supportingDocuments": [
-      {
-        "type": "Cardholder Dispute Form",
-        "desc": "Statement indicating expected amount was $85.00."
-      },
-      {
-        "type": "Account Statement",
-        "desc": "Showing posted amount of $102.00."
-      }
+      { "type": "Cardholder Dispute Form", "desc": "Statement indicating expected amount was $79.99." },
+      { "type": "Account Statement", "desc": "Showing posted amount of $98.49." }
     ],
-    "issuerCommentary": "Filing under 4831. Posted amount of $102.00 differs from the cardholder's expected amount of $85.00.",
+    "issuerCommentary": "Filing under 4831. Posted amount of $98.49 differs from the cardholder's expected amount of $79.99.",
     "arbitrationEligible": true
   },
   "transactionDetails": {
-    "cardPresent": true,
-    "ecommerceIndicator": null,
-    "posEntryMode": "05"
+    "cardPresent": false,
+    "ecommerceIndicator": "ECI_05",
+    "posEntryMode": "81"
   }
 }

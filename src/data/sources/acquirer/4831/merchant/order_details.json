@@ -1,5 +1,5 @@
 {
-  "source": "The Olive Garden Terrace — Order Management System",
+  "source": "AudioPeak Electronics — Order Management System",
   "dataType": "Order Details",
   "reasonCode": "4831",
   "reasonCodeDescription": "Transaction Amount Differs",
@@ -7,25 +7,13 @@
     "orderStatus": "Completed",
     "items": [
       {
-        "name": "Dinner entrees (2)",
-        "quantity": 2,
-        "unitPrice": 28,
-        "sku": "OGT-ENT"
-      },
-      {
-        "name": "Appetizer — bruschetta",
+        "name": "AudioPeak Portable Bluetooth Speaker — Compact",
         "quantity": 1,
-        "unitPrice": 14,
-        "sku": "OGT-APP"
-      },
-      {
-        "name": "House wine (2 glasses)",
-        "quantity": 2,
-        "unitPrice": 7.5,
-        "sku": "OGT-BEV"
+        "unitPrice": 79.99,
+        "sku": "AP-PBS-C"
       }
     ],
-    "shippingAddress": null,
-    "orderNotes": "Dine-in. Subtotal: $85.00. Tip: $17.00 (20%). Total: $102.00. Signed receipt on file with tip amount in cardholder's handwriting."
+    "shippingAddress": "Cardholder's billing address",
+    "orderNotes": "Checkout session itemized total: Subtotal $79.99, Standard Shipping $4.99, Tax $13.51 — Total $98.49. The cardholder's cart-preview screenshot shows only the $79.99 item subtotal before shipping and tax were calculated at the final checkout step. The $18.50 difference is shipping plus tax, both itemized and disclosed on the checkout confirmation page the cardholder confirmed before payment."
   }
 }

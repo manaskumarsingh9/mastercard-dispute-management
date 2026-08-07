@@ -5,15 +5,15 @@
   "reasonCodeDescription": "Transaction Amount Differs",
   "statement": {
     "disputeReason": "4831 - Transaction Amount Differs",
-    "detailedDescription": "The cardholder dined at 'THE OLIVE GARDEN TERRACE' and the bill presented was $85.00. The posted amount is $102.00 — $17.00 more. The cardholder believes they were overcharged and is uncertain about the tip amount shown on the receipt.",
+    "detailedDescription": "The cardholder ordered from 'AUDIOPEAK ELECTRONICS' expecting to pay $79.99 based on the cart preview screen, but the posted amount is $98.49 — $18.50 more. The cardholder believes they were overcharged.",
     "contactedMerchant": true,
-    "merchantResponseSummary": "The cardholder called the restaurant [4 days after dining]. The staff said they would check records but never called back.",
+    "merchantResponseSummary": "The cardholder emailed AudioPeak [6 days after the order]. The merchant explained the $18.50 difference is standard shipping ($4.99) and tax ($13.51), both itemized on the checkout confirmation page before payment.",
     "previousDisputeHistory": "None",
-    "requestedResolution": "Reversal of the $17.00 difference between expected and posted amounts.",
+    "requestedResolution": "Reversal of the $18.50 difference between the cart-preview amount and posted amount.",
     "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
   },
   "bankInternalNotes": {
-    "riskAssessment": "Medium — merchant may have valid defense documentation.",
+    "riskAssessment": "Medium — merchant may have valid defense documentation showing itemized checkout total.",
     "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4831 (Transaction Amount Differs).",
     "priority": "Standard"
   }

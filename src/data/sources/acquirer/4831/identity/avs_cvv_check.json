@@ -1,16 +1,16 @@
 {
-  "source": "The Olive Garden Terrace — Identity Verification",
+  "source": "AudioPeak Electronics — Identity Verification",
   "dataType": "AVS/CVV Verification Results",
   "reasonCode": "4831",
   "reasonCodeDescription": "Transaction Amount Differs",
   "verificationResults": {
     "avs": {
-      "responseCode": "N/A",
-      "description": "Card-present EMV"
+      "responseCode": "Y",
+      "description": "Full match"
     },
     "cvv": {
-      "responseCode": "N/A",
-      "description": "Chip cryptogram verified"
+      "responseCode": "M",
+      "description": "CVV matched"
     }
   }
 }

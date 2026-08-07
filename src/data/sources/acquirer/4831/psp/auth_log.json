@@ -1,5 +1,5 @@
 {
-  "source": "The Olive Garden Terrace — Payment Service Provider",
+  "source": "AudioPeak Electronics — Payment Service Provider",
   "dataType": "Authorization Log",
   "reasonCode": "4831",
   "reasonCodeDescription": "Transaction Amount Differs",
@@ -7,8 +7,13 @@
     "authorizationObtained": true,
     "responseCode": "00",
     "responseMessage": "Approved",
-    "entryMode": "EMV Chip — Card Present",
-    "threeDSecure": null,
-    "notes": "Authorization for base amount of $85.00. Final settlement of $102.00 includes $17.00 tip added by cardholder on the signed receipt. Tip is within Mastercard's permitted tolerance for restaurant transactions."
+    "entryMode": "Ecommerce",
+    "threeDSecure": {
+      "enrolled": true,
+      "authenticated": true,
+      "eci": "05",
+      "cavv": "Verified"
+    },
+    "notes": "Authorization for the full itemized checkout total of $98.49 (subtotal $79.99 + shipping $4.99 + tax $13.51), matching the amount shown on the checkout confirmation page."
   }
 }

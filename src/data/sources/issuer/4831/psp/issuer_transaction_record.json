@@ -6,19 +6,19 @@
   "authorization": {
     "responseCode": "00",
     "merchantCategoryCode": "5999",
-    "posEntryMode": "05",
-    "cardNotPresent": false,
+    "posEntryMode": "81",
+    "cardNotPresent": true,
     "avsResult": {
-      "code": "N/A",
-      "description": "Card-present EMV"
+      "code": "Y",
+      "description": "Full match"
     },
     "cvvResult": {
-      "code": "N/A",
-      "description": "Chip read"
+      "code": "M",
+      "description": "CVV matched"
     }
   },
   "riskFlags": {
     "geolocationMismatch": "None",
-    "deviceTrustScore": "N/A"
+    "deviceTrustScore": "High"
   }
 }

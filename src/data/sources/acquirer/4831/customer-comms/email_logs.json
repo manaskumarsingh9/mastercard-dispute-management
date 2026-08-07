@@ -1,15 +1,22 @@
 {
-  "source": "The Olive Garden Terrace — Customer Communications",
+  "source": "AudioPeak Electronics — Customer Communications",
   "dataType": "Email Communication Logs",
   "reasonCode": "4831",
   "reasonCodeDescription": "Transaction Amount Differs",
   "communications": [
     {
-      "type": "No Email — Card-Present Dining",
-      "dir": "system_note",
-      "timing": "N/A",
-      "subject": "N/A",
-      "body": "Card-present restaurant transaction. The cardholder signed a receipt with the itemized subtotal of $85.00 and added a handwritten tip of $17.00 (20%), bringing the total to $102.00. The signed receipt clearly shows the cardholder's handwriting for the tip amount and the final total. The cardholder called [4 days after dining] but the follow-up call was missed by staff."
+      "type": "Order Confirmation",
+      "dir": "merchant_to_customer",
+      "timing": "At time of order",
+      "subject": "AudioPeak Electronics — Order Confirmation #AP-3390",
+      "body": "AudioPeak Portable Bluetooth Speaker — Compact. Subtotal: $79.99. Shipping: $4.99. Tax: $13.51. Total charged: $98.49."
+    },
+    {
+      "type": "Pricing Dispute Inquiry",
+      "dir": "customer_to_merchant",
+      "timing": "[6 days after the order]",
+      "subject": "Why was I charged more than I expected?",
+      "body": "The cardholder emailed stating they expected to pay $79.99 based on the cart preview and were surprised by the $98.49 charge. AudioPeak responded with the itemized checkout confirmation showing shipping and tax were added at the final step, both disclosed before payment."
     }
   ]
 }
