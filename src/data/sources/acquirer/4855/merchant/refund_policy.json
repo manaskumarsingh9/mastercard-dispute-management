@@ -1,12 +1,12 @@
 {
-  "source": "HomeStitch Custom Décor — Policies",
-  "dataType": "Refund & Cancellation Policy",
+  "source": "AudioPeak Electronics — Policies",
+  "dataType": "Refund & Return Policy",
   "reasonCode": "4855",
   "reasonCodeDescription": "Goods or Services Not Provided",
   "policy": {
-    "refundWindow": "30 days from expected delivery date",
-    "policy": "Custom orders: full refund if not delivered within 30 days of estimated delivery date.",
-    "disclosureMethod": "Policy on website.",
-    "customerAcknowledgment": "Customer agreed to terms at checkout."
+    "refundWindow": "Immediate refund if order is cancelled prior to shipment",
+    "policy": "Orders that cannot be fulfilled due to supply disruption are eligible for full refund or store credit.",
+    "disclosureMethod": "Cancellation/refund policy displayed at checkout and referenced in order status emails.",
+    "customerAcknowledgment": "N/A — order was never fulfilled; refund policy applies automatically to unfulfilled custom orders."
   }
 }

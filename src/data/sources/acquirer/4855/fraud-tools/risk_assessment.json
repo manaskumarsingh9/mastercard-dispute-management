@@ -1,11 +1,11 @@
 {
-  "source": "HomeStitch Custom Décor — Fraud Prevention",
+  "source": "AudioPeak Electronics — Fraud Prevention",
   "dataType": "Device Fingerprint & Risk Assessment",
   "reasonCode": "4855",
   "reasonCodeDescription": "Goods or Services Not Provided",
   "riskAssessment": {
     "deviceFingerprint": {
-      "status": "Customer's device is known and legitimate",
+      "status": "Known device",
       "trust": "High",
       "match": true
     },
@@ -13,8 +13,8 @@
       "level": "Low",
       "proxy": false,
       "geoMatch": true,
-      "notes": "IP consistent with cardholder."
+      "notes": "IP consistent with cardholder's usual location."
     },
-    "overallRiskScore": "N/A — risk is on the merchant side (non-delivery)"
+    "overallRiskScore": "Low — legitimate order affected by merchant-side supply disruption"
   }
 }

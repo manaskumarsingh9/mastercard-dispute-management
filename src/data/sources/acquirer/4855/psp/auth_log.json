@@ -1,5 +1,5 @@
 {
-  "source": "HomeStitch Custom Décor — Payment Service Provider",
+  "source": "AudioPeak Electronics — Payment Service Provider",
   "dataType": "Authorization Log",
   "reasonCode": "4855",
   "reasonCodeDescription": "Goods or Services Not Provided",
@@ -9,6 +9,6 @@
     "responseMessage": "Approved",
     "entryMode": "Ecommerce",
     "threeDSecure": null,
-    "notes": "Authorization obtained at time of order. The custom product was never manufactured or shipped. No refund was issued."
+    "notes": "Authorization for $179.99 obtained at order placement. Order was never fulfilled due to a supply chain disruption on the Walnut finish."
   }
 }

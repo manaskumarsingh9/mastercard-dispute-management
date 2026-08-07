@@ -10,11 +10,11 @@
     "cardNotPresent": true,
     "avsResult": {
       "code": "Y",
-      "description": "Match"
+      "description": "Full match"
     },
     "cvvResult": {
       "code": "M",
-      "description": "CVV Match"
+      "description": "CVV matched"
     }
   },
   "riskFlags": {

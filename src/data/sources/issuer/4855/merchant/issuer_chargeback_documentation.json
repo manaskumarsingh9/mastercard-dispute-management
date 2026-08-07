@@ -7,21 +7,15 @@
     "reasonCode": "4855",
     "reasonCodeDescription": "Goods or Services Not Provided",
     "supportingDocuments": [
-      {
-        "type": "Order Confirmation",
-        "desc": "Confirmation email showing order placed and payment collected."
-      },
-      {
-        "type": "Communication Attempts",
-        "desc": "Emails and call logs showing multiple failed attempts to reach the merchant."
-      }
+      { "type": "Cardholder Dispute Form", "desc": "Statement that the custom speaker pair was never received after 6 weeks." },
+      { "type": "Merchant Delay Email", "desc": "Merchant's own email acknowledging a supply chain delay and no shipment." }
     ],
-    "issuerCommentary": "Filing under 4855. The cardholder paid for custom curtains that were never delivered. The merchant has become unresponsive and their website is now closed. The delivery deadline has long passed.",
+    "issuerCommentary": "Filing under 4855. Merchant's own communication confirms the order was never fulfilled.",
     "arbitrationEligible": true
   },
   "transactionDetails": {
     "cardPresent": false,
-    "ecommerceIndicator": "ECI_07",
+    "ecommerceIndicator": "ECI_05",
     "posEntryMode": "81"
   }
 }

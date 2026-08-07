@@ -1,9 +1,9 @@
 {
-  "source": "HomeStitch Custom Décor — Payment Service Provider",
+  "source": "AudioPeak Electronics — Payment Service Provider",
   "dataType": "Settlement Record",
   "reasonCode": "4855",
   "reasonCodeDescription": "Goods or Services Not Provided",
   "settlementRecord": {
-    "notes": "Settled for $275.00. No product was delivered. No refund was processed. The merchant's operations have been suspended."
+    "notes": "Charge of $179.99 was settled at order placement per standard checkout flow, but the order was never fulfilled due to supply disruption."
   }
 }

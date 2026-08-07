@@ -1,14 +1,13 @@
 {
-  "source": "HomeStitch Custom Décor — Fulfillment",
+  "source": "AudioPeak Electronics — Fulfillment",
   "dataType": "Fulfillment & Delivery Record",
   "reasonCode": "4855",
   "reasonCodeDescription": "Goods or Services Not Provided",
   "fulfillmentRecord": {
-    "type": "Custom Manufacturing + Shipment",
+    "type": "Physical Goods — custom finish",
     "status": "Never shipped — production halted",
-    "method": "N/A — order never fulfilled",
-    "timing": "Expected [10-14 business days after purchase], never delivered",
+    "method": "N/A",
     "confirmed": false,
-    "notes": "The custom curtains were never manufactured to completion or shipped. The merchant has ceased operations. No tracking number was ever generated."
+    "notes": "Walnut veneer supply disruption halted production. No shipment ever occurred for this order."
   }
 }
