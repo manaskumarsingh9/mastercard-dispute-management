@@ -1,16 +1,16 @@
 {
-  "source": "LuxeVision Online — Order Management System",
+  "source": "AudioPeak Electronics — Order Management System",
   "dataType": "Order Details",
   "reasonCode": "4837",
-  "reasonCodeDescription": "No Cardholder Authorization (Fraud)",
+  "reasonCodeDescription": "No Cardholder Authorization",
   "orderRecord": {
     "orderStatus": "Completed — shipped to address on order",
     "items": [
       {
-        "name": "Designer Aviator Sunglasses — Polarized, Gold Frame",
+        "name": "SoundWave Pro True Wireless Earbuds — Titanium",
         "quantity": 1,
-        "unitPrice": 327,
-        "sku": "LV-AV-GLD"
+        "unitPrice": 249.99,
+        "sku": "AP-SW-TWE-TI"
       }
     ],
     "shippingAddress": "Different from cardholder's billing address — shipped to a forwarding address",

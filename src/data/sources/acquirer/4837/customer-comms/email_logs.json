@@ -1,22 +1,22 @@
 {
-  "source": "LuxeVision Online — Customer Communications",
+  "source": "AudioPeak Electronics — Customer Communications",
   "dataType": "Email Communication Logs",
   "reasonCode": "4837",
-  "reasonCodeDescription": "No Cardholder Authorization (Fraud)",
+  "reasonCodeDescription": "No Cardholder Authorization",
   "communications": [
     {
       "type": "Order Confirmation",
       "dir": "merchant_to_customer",
-      "timing": "Immediately after purchase",
-      "subject": "LuxeVision Online — Order #LV-7829",
-      "body": "Your order for Designer Aviator Sunglasses (Polarized, Gold Frame) is confirmed. Total: $327.00. Shipping to: [address different from billing]."
+      "timing": "At time of order",
+      "subject": "AudioPeak Electronics — Order Confirmation #AP-7734",
+      "body": "Thank you for your order! SoundWave Pro True Wireless Earbuds (Titanium), $249.99. Shipping to the address provided at checkout."
     },
     {
-      "type": "Shipping Notification",
-      "dir": "merchant_to_customer",
-      "timing": "[1 day after purchase]",
-      "subject": "Your LuxeVision Order Has Shipped — #LV-7829",
-      "body": "Your sunglasses have shipped. Tracking number included."
+      "type": "Fraud Dispute Inquiry",
+      "dir": "customer_to_merchant",
+      "timing": "[22 days after the order]",
+      "subject": "I did not make this purchase",
+      "body": "The cardholder emailed AudioPeak stating they never placed order #AP-7734 and did not recognize the shipping address used."
     }
   ]
 }

@@ -1,14 +1,13 @@
 {
-  "source": "LuxeVision Online — Fulfillment",
+  "source": "AudioPeak Electronics — Fulfillment",
   "dataType": "Fulfillment & Delivery Record",
   "reasonCode": "4837",
-  "reasonCodeDescription": "No Cardholder Authorization (Fraud)",
+  "reasonCodeDescription": "No Cardholder Authorization",
   "fulfillmentRecord": {
-    "type": "Physical Shipment",
-    "status": "Delivered to shipping address (not billing address)",
-    "method": "Express shipping",
-    "timing": "[3 days after purchase]",
+    "type": "Physical Goods",
+    "status": "Shipped and delivered",
+    "method": "Ground shipping",
     "confirmed": true,
-    "notes": "Package delivered to the shipping address on the order, which is different from the cardholder's billing address. Shipped to what appears to be a package forwarding facility."
+    "notes": "SoundWave Pro True Wireless Earbuds shipped to the forwarding address provided at checkout, not the cardholder's billing address on file."
   }
 }

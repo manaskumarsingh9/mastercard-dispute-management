@@ -1,12 +1,12 @@
 {
-  "source": "LuxeVision Online — Policies",
-  "dataType": "Refund & Cancellation Policy",
+  "source": "AudioPeak Electronics — Policies",
+  "dataType": "Refund & Return Policy",
   "reasonCode": "4837",
-  "reasonCodeDescription": "No Cardholder Authorization (Fraud)",
+  "reasonCodeDescription": "No Cardholder Authorization",
   "policy": {
     "refundWindow": "30 days from delivery",
-    "policy": "Full refund within 30 days if returned in original condition.",
-    "disclosureMethod": "Policy on website.",
-    "customerAcknowledgment": "Standard website terms."
+    "policy": "Standard 30-day return window. Not applicable to fraud disputes — this case turns on transaction authorization, not product condition.",
+    "disclosureMethod": "Displayed at checkout and in order confirmation email.",
+    "customerAcknowledgment": "N/A — cardholder disputes ever placing the order."
   }
 }

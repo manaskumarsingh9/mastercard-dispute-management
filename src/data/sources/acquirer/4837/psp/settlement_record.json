@@ -1,9 +1,9 @@
 {
-  "source": "LuxeVision Online — Payment Service Provider",
+  "source": "AudioPeak Electronics — Payment Service Provider",
   "dataType": "Settlement Record",
   "reasonCode": "4837",
-  "reasonCodeDescription": "No Cardholder Authorization (Fraud)",
+  "reasonCodeDescription": "No Cardholder Authorization",
   "settlementRecord": {
-    "notes": "Settled for $327.00. Shipped to an address that does not match the billing address. No 3D Secure authentication performed."
+    "notes": "Settled for $249.99, matching the authorized amount. Single transaction, no duplicate settlement."
   }
 }

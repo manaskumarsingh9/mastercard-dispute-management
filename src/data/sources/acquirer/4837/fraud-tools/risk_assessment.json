@@ -1,20 +1,20 @@
 {
-  "source": "LuxeVision Online — Fraud Prevention",
+  "source": "AudioPeak Electronics — Fraud Prevention",
   "dataType": "Device Fingerprint & Risk Assessment",
   "reasonCode": "4837",
-  "reasonCodeDescription": "No Cardholder Authorization (Fraud)",
+  "reasonCodeDescription": "No Cardholder Authorization",
   "riskAssessment": {
     "deviceFingerprint": {
-      "status": "Unknown device — not seen before on any account",
+      "status": "New/unrecognized device — first transaction from this device",
       "trust": "Low",
       "match": false
     },
     "ipAnalysis": {
-      "level": "High",
-      "proxy": true,
+      "level": "Medium",
+      "proxy": false,
       "geoMatch": false,
-      "notes": "IP address originates from a VPN/proxy service in a different country from the billing address."
+      "notes": "IP location does not match cardholder's billing address region."
     },
-    "overallRiskScore": "High — AVS mismatch, unknown device, foreign IP via proxy, no 3DS"
+    "overallRiskScore": "Medium-High — AVS mismatch and shipping-to-forwarding-address pattern"
   }
 }

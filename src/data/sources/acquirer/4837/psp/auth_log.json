@@ -1,14 +1,14 @@
 {
-  "source": "LuxeVision Online — Payment Service Provider",
+  "source": "AudioPeak Electronics — Payment Service Provider",
   "dataType": "Authorization Log",
   "reasonCode": "4837",
-  "reasonCodeDescription": "No Cardholder Authorization (Fraud)",
+  "reasonCodeDescription": "No Cardholder Authorization",
   "authorizationRecord": {
     "authorizationObtained": true,
     "responseCode": "00",
     "responseMessage": "Approved",
-    "entryMode": "Ecommerce",
+    "entryMode": "Ecommerce — card on file not used, manual entry",
     "threeDSecure": null,
-    "notes": "Authorization obtained. However, 3D Secure was NOT enabled on the merchant's payment gateway at the time. AVS returned a mismatch — the billing address provided did not match the cardholder's address on file. The merchant proceeded despite the AVS mismatch."
+    "notes": "Authorization approved for $249.99. 3D Secure (Mastercard Identity Check) was not enabled on the merchant's payment gateway at the time of this transaction — no liability shift available."
   }
 }
