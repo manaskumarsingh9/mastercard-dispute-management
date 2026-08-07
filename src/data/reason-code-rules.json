@@ -15,26 +15,6 @@
         { "source": "shipping", "file": "delivery_confirmation.json", "label": "Signed Delivery Confirmation", "priority": "critical" },
         { "source": "shipping", "file": "tracking_data.json", "label": "Shipping & Tracking Data", "priority": "high" },
         { "source": "merchant", "file": "order_details.json", "label": "Order Details & Billing Descriptor", "priority": "high" }
-      ],
-      "digital_service": [
-        { "source": "merchant", "file": "usage_logs.json", "label": "Service Usage Logs", "priority": "critical" },
-        { "source": "fraud-tools", "file": "ip_risk_report.json", "label": "IP Geolocation & Risk Assessment", "priority": "high" },
-        { "source": "merchant", "file": "order_details.json", "label": "Order Details & Billing Descriptor", "priority": "high" }
-      ],
-      "subscription": [
-        { "source": "merchant", "file": "subscription_record.json", "label": "Subscription & Billing History", "priority": "critical" },
-        { "source": "merchant", "file": "usage_logs.json", "label": "Service Usage Logs", "priority": "high" },
-        { "source": "merchant", "file": "order_details.json", "label": "Order Details & Billing Descriptor", "priority": "high" }
-      ],
-      "travel": [
-        { "source": "merchant", "file": "service_delivery_proof.json", "label": "Service Delivery Proof", "priority": "critical" },
-        { "source": "merchant", "file": "order_details.json", "label": "Booking & Itinerary Details", "priority": "high" },
-        { "source": "fraud-tools", "file": "ip_risk_report.json", "label": "IP Geolocation & Risk Assessment", "priority": "high" }
-      ],
-      "food_delivery": [
-        { "source": "shipping", "file": "delivery_confirmation.json", "label": "Delivery Confirmation with GPS", "priority": "critical" },
-        { "source": "merchant", "file": "order_details.json", "label": "Order Details & Billing Descriptor", "priority": "high" },
-        { "source": "fraud-tools", "file": "ip_risk_report.json", "label": "IP Geolocation & Risk Assessment", "priority": "high" }
       ]
     },
     "winRate": 62,
@@ -54,25 +34,6 @@
         { "source": "shipping", "file": "tracking_data.json", "label": "Shipping & Tracking Data", "priority": "critical" },
         { "source": "shipping", "file": "delivery_confirmation.json", "label": "Signed Delivery Confirmation", "priority": "critical" },
         { "source": "merchant", "file": "order_details.json", "label": "Order Details & Product Description", "priority": "high" },
-        { "source": "merchant", "file": "fulfillment_record.json", "label": "Fulfillment Record", "priority": "high" }
-      ],
-      "digital_service": [
-        { "source": "merchant", "file": "usage_logs.json", "label": "Service Usage Logs", "priority": "critical" },
-        { "source": "merchant", "file": "service_delivery_proof.json", "label": "Service Delivery Proof", "priority": "critical" },
-        { "source": "merchant", "file": "order_details.json", "label": "Service Agreement & Details", "priority": "high" }
-      ],
-      "subscription": [
-        { "source": "merchant", "file": "subscription_record.json", "label": "Subscription & Billing History", "priority": "critical" },
-        { "source": "merchant", "file": "usage_logs.json", "label": "Service Usage Logs", "priority": "critical" },
-        { "source": "merchant", "file": "order_details.json", "label": "Order Details & Pricing", "priority": "high" }
-      ],
-      "travel": [
-        { "source": "merchant", "file": "service_delivery_proof.json", "label": "Service Delivery Proof", "priority": "critical" },
-        { "source": "merchant", "file": "order_details.json", "label": "Booking & Itinerary Details", "priority": "critical" }
-      ],
-      "food_delivery": [
-        { "source": "shipping", "file": "delivery_confirmation.json", "label": "Delivery Confirmation with GPS", "priority": "critical" },
-        { "source": "merchant", "file": "order_details.json", "label": "Order Details", "priority": "high" },
         { "source": "merchant", "file": "fulfillment_record.json", "label": "Fulfillment Record", "priority": "high" }
       ]
     },
@@ -94,25 +55,6 @@
         { "source": "shipping", "file": "delivery_confirmation.json", "label": "Signed Delivery Confirmation", "priority": "critical" },
         { "source": "shipping", "file": "tracking_data.json", "label": "Shipping & Tracking Data", "priority": "critical" },
         { "source": "fraud-tools", "file": "device_fingerprint.json", "label": "Device Fingerprint Analysis", "priority": "high" }
-      ],
-      "digital_service": [
-        { "source": "merchant", "file": "usage_logs.json", "label": "Service Usage Logs", "priority": "critical" },
-        { "source": "device", "file": "3ds_authentication.json", "label": "3D Secure / Mastercard Identity Check", "priority": "critical" },
-        { "source": "fraud-tools", "file": "device_fingerprint.json", "label": "Device Fingerprint Analysis", "priority": "high" }
-      ],
-      "subscription": [
-        { "source": "merchant", "file": "subscription_record.json", "label": "Subscription & Billing History", "priority": "critical" },
-        { "source": "merchant", "file": "usage_logs.json", "label": "Service Usage Logs", "priority": "critical" },
-        { "source": "device", "file": "3ds_authentication.json", "label": "3D Secure / Mastercard Identity Check", "priority": "high" }
-      ],
-      "travel": [
-        { "source": "merchant", "file": "service_delivery_proof.json", "label": "Service Delivery Proof", "priority": "critical" },
-        { "source": "fraud-tools", "file": "device_fingerprint.json", "label": "Device Fingerprint Analysis", "priority": "high" },
-        { "source": "device", "file": "3ds_authentication.json", "label": "3D Secure / Mastercard Identity Check", "priority": "high" }
-      ],
-      "food_delivery": [
-        { "source": "shipping", "file": "delivery_confirmation.json", "label": "Delivery Confirmation with GPS", "priority": "critical" },
-        { "source": "fraud-tools", "file": "device_fingerprint.json", "label": "Device Fingerprint Analysis", "priority": "high" }
       ]
     },
     "winRate": 55,
@@ -129,19 +71,8 @@
     ],
     "conditionalSources": {
       "physical_goods": [
-        { "source": "merchant", "file": "pos_terminal_log.json", "label": "POS Terminal & Transaction Log", "priority": "high" },
-        { "source": "shipping", "file": "delivery_confirmation.json", "label": "Delivery Confirmation", "priority": "medium" }
-      ],
-      "digital_service": [
-        { "source": "merchant", "file": "usage_logs.json", "label": "Service Usage Logs", "priority": "high" },
-        { "source": "merchant", "file": "service_delivery_proof.json", "label": "Service Delivery Proof", "priority": "medium" }
-      ],
-      "subscription": [
-        { "source": "merchant", "file": "subscription_record.json", "label": "Subscription & Billing History", "priority": "high" }
-      ],
-      "travel": [
-        { "source": "merchant", "file": "terms_acceptance.json", "label": "Cancellation Policy Disclosure", "priority": "high" },
-        { "source": "merchant", "file": "service_delivery_proof.json", "label": "Service Delivery Proof", "priority": "high" }
+        { "source": "merchant", "file": "order_details.json", "label": "Order & Invoice Log", "priority": "high" },
+        { "source": "psp", "file": "settlement_record.json", "label": "Settlement Record — Distinct Auth Codes", "priority": "high" }
       ]
     },
     "winRate": 58,
@@ -159,9 +90,9 @@
       { "source": "customer-comms", "file": "email_logs.json", "label": "Customer Communication Logs", "priority": "medium" }
     ],
     "conditionalSources": {
-      "subscription": [
-        { "source": "merchant", "file": "subscription_record.json", "label": "Subscription & Billing History", "priority": "critical" },
-        { "source": "merchant", "file": "cancellation_policy.json", "label": "Cancellation Policy & Terms", "priority": "high" }
+      "physical_goods": [
+        { "source": "merchant", "file": "order_details.json", "label": "Checkout Session & Itemized Total", "priority": "critical" },
+        { "source": "customer-comms", "file": "email_logs.json", "label": "Order Confirmation Email", "priority": "high" }
       ]
     },
     "winRate": 52,
@@ -180,22 +111,6 @@
         { "source": "shipping", "file": "tracking_data.json", "label": "Shipping & Tracking Data", "priority": "critical" },
         { "source": "shipping", "file": "delivery_confirmation.json", "label": "Signed Delivery Confirmation", "priority": "critical" },
         { "source": "merchant", "file": "fulfillment_record.json", "label": "Fulfillment Record", "priority": "high" }
-      ],
-      "digital_service": [
-        { "source": "merchant", "file": "usage_logs.json", "label": "Service Usage Logs", "priority": "critical" },
-        { "source": "merchant", "file": "service_delivery_proof.json", "label": "Service Delivery Proof", "priority": "critical" }
-      ],
-      "subscription": [
-        { "source": "merchant", "file": "subscription_record.json", "label": "Subscription & Billing History", "priority": "critical" },
-        { "source": "merchant", "file": "usage_logs.json", "label": "Service Usage Logs", "priority": "critical" }
-      ],
-      "travel": [
-        { "source": "merchant", "file": "service_delivery_proof.json", "label": "Service Delivery Proof", "priority": "critical" },
-        { "source": "merchant", "file": "terms_acceptance.json", "label": "Booking Terms & Conditions", "priority": "high" }
-      ],
-      "food_delivery": [
-        { "source": "shipping", "file": "delivery_confirmation.json", "label": "Delivery Confirmation with GPS", "priority": "critical" },
-        { "source": "merchant", "file": "fulfillment_record.json", "label": "Fulfillment Record", "priority": "high" }
       ]
     },
     "winRate": 48,
@@ -208,7 +123,7 @@
     "requiredSources": [
       { "source": "merchant", "file": "subscription_record.json", "label": "Subscription & Billing History", "priority": "critical" },
       { "source": "merchant", "file": "cancellation_policy.json", "label": "Cancellation Policy & Terms Disclosure", "priority": "critical" },
-      { "source": "merchant", "file": "usage_logs.json", "label": "Post-Cancellation Usage Logs", "priority": "critical" },
+      { "source": "merchant", "file": "fulfillment_record.json", "label": "Post-Cancellation Shipment Record", "priority": "critical" },
       { "source": "customer-comms", "file": "email_logs.json", "label": "Customer Communication Logs", "priority": "high" },
       { "source": "merchant", "file": "terms_acceptance.json", "label": "Recurring Billing Agreement", "priority": "high" },
       { "source": "psp", "file": "auth_log.json", "label": "PSP Authorization Log", "priority": "medium" }
@@ -241,24 +156,9 @@
       { "source": "merchant", "file": "refund_policy.json", "label": "Refund & Resolution Policy", "priority": "high" }
     ],
     "conditionalSources": {
-      "digital_service": [
-        { "source": "merchant", "file": "service_delivery_proof.json", "label": "Service Delivery Proof", "priority": "critical" },
-        { "source": "merchant", "file": "usage_logs.json", "label": "Service Usage/Access Logs", "priority": "critical" },
-        { "source": "merchant", "file": "order_details.json", "label": "Service Agreement & Details", "priority": "high" }
-      ],
-      "subscription": [
-        { "source": "merchant", "file": "subscription_record.json", "label": "Subscription & Billing History", "priority": "critical" },
-        { "source": "merchant", "file": "usage_logs.json", "label": "Service Usage/Access Logs", "priority": "critical" },
-        { "source": "merchant", "file": "service_delivery_proof.json", "label": "Service Delivery Proof", "priority": "high" }
-      ],
-      "travel": [
-        { "source": "merchant", "file": "service_delivery_proof.json", "label": "Service Delivery Proof", "priority": "critical" },
-        { "source": "merchant", "file": "order_details.json", "label": "Booking & Itinerary Details", "priority": "critical" }
-      ],
       "physical_goods": [
-        { "source": "shipping", "file": "delivery_confirmation.json", "label": "Delivery Confirmation & Proof", "priority": "critical" },
-        { "source": "merchant", "file": "fulfillment_record.json", "label": "Fulfillment Record", "priority": "critical" },
-        { "source": "merchant", "file": "order_details.json", "label": "Order Details", "priority": "high" }
+        { "source": "customer-comms", "file": "email_logs.json", "label": "IVR Confirmation & Addendum Notice", "priority": "critical" },
+        { "source": "merchant", "file": "order_details.json", "label": "Order Addendum Record", "priority": "high" }
       ]
     },
     "winRate": 50,
