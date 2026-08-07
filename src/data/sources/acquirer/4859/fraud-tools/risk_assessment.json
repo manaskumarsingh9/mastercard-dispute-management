@@ -1,20 +1,20 @@
 {
-  "source": "Seaside Grand Hotel — Fraud Prevention",
+  "source": "AudioPeak Electronics — Fraud Prevention",
   "dataType": "Device Fingerprint & Risk Assessment",
   "reasonCode": "4859",
   "reasonCodeDescription": "Addendum, No-show, or ATM Dispute",
   "riskAssessment": {
     "deviceFingerprint": {
-      "status": "Known device from booking",
-      "trust": "High",
-      "match": true
+      "status": "N/A — IVR phone confirmation, not a device session",
+      "trust": "N/A",
+      "match": null
     },
     "ipAnalysis": {
       "level": "Low",
       "proxy": false,
       "geoMatch": true,
-      "notes": "Booking made from cardholder's usual location."
+      "notes": "Original order placed from cardholder's usual location. Addendum confirmed via phone call to the number on file, not a web session."
     },
-    "overallRiskScore": "Low — legitimate hotel no-show charge"
+    "overallRiskScore": "Low — recorded IVR acceptance to the verified phone number on file"
   }
 }

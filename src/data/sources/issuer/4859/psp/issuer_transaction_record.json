@@ -14,7 +14,7 @@
     },
     "cvvResult": {
       "code": "M",
-      "description": "CVV on file from booking"
+      "description": "CVV on file from original order"
     }
   },
   "riskFlags": {

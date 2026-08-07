@@ -1,16 +1,16 @@
 {
-  "source": "Seaside Grand Hotel — Identity Verification",
+  "source": "AudioPeak Electronics — Identity Verification",
   "dataType": "AVS/CVV Verification Results",
   "reasonCode": "4859",
   "reasonCodeDescription": "Addendum, No-show, or ATM Dispute",
   "verificationResults": {
     "avs": {
       "responseCode": "Y",
-      "description": "Full match at booking"
+      "description": "Full match — card on file from original order"
     },
     "cvv": {
       "responseCode": "M",
-      "description": "CVV verified at booking"
+      "description": "CVV on file from original order, not re-collected for addendum"
     }
   }
 }

@@ -1,16 +1,16 @@
 {
-  "source": "Seaside Grand Hotel — Authentication",
+  "source": "AudioPeak Electronics — Authentication",
   "dataType": "3D Secure Authentication Record",
   "reasonCode": "4859",
   "reasonCodeDescription": "Addendum, No-show, or ATM Dispute",
   "threeDSecure": {
     "version": "2.0",
     "enrolled": true,
-    "status": "Y — Authenticated at booking",
+    "status": "Y — Authenticated at original order",
     "eci": "05",
     "cavv": "Verified",
     "challenge": true,
-    "liabilityShift": "Yes",
-    "notes": "3D Secure completed at time of booking."
+    "liabilityShift": "Yes — at original order",
+    "notes": "3D Secure was completed at the original order #AP-7401. The addendum charge reuses the authenticated card-on-file credentials, confirmed separately via recorded IVR acceptance."
   }
 }

@@ -1,12 +1,12 @@
 {
-  "source": "Seaside Grand Hotel — Policies",
-  "dataType": "Refund & Cancellation Policy",
+  "source": "AudioPeak Electronics — Policies",
+  "dataType": "Refund & Addendum Policy",
   "reasonCode": "4859",
   "reasonCodeDescription": "Addendum, No-show, or ATM Dispute",
   "policy": {
-    "refundWindow": "N/A — no-show policy applies",
-    "policy": "Free cancellation up to 24 hours before check-in. No-shows charged full room rate.",
-    "disclosureMethod": "CANCELLATION POLICY clearly stated in booking confirmation and check-in reminder email. Also displayed during online booking before payment.",
-    "customerAcknowledgment": "Customer acknowledged cancellation policy during online booking."
+    "refundWindow": "N/A — addendum service already rendered",
+    "policy": "Shipping-upgrade addendums confirmed via recorded IVR acceptance are non-refundable once the expedited shipment has occurred.",
+    "disclosureMethod": "IVR script discloses the $24.99 charge amount before requesting confirmation; a recorded confirmation email is also sent immediately after acceptance.",
+    "customerAcknowledgment": "Recorded IVR acceptance (keypress '1') logged with timestamp and phone number on file."
   }
 }

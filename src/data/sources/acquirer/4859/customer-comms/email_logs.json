@@ -1,43 +1,36 @@
 {
-  "source": "Seaside Grand Hotel — Customer Communications",
+  "source": "AudioPeak Electronics — Customer Communications",
   "dataType": "Email Communication Logs",
   "reasonCode": "4859",
   "reasonCodeDescription": "Addendum, No-show, or ATM Dispute",
   "communications": [
     {
-      "type": "Booking Confirmation",
+      "type": "Original Order Confirmation",
       "dir": "merchant_to_customer",
-      "timing": "[14 days before check-in]",
-      "subject": "Seaside Grand Hotel — Reservation Confirmation #SGH-8821",
-      "body": "Your reservation is confirmed! Deluxe Ocean View Room for 1 night. Total: $189.00. Check-in: 3:00 PM. CANCELLATION POLICY: Free cancellation up to 24 hours before check-in. Cancellations within 24 hours or no-shows will be charged the full room rate. To cancel, use the link below or call us with your confirmation number #SGH-8821."
+      "timing": "[3 days before the addendum charge]",
+      "subject": "AudioPeak Electronics — Order Confirmation #AP-7401",
+      "body": "Your order is confirmed and will ship via standard ground shipping."
     },
     {
-      "type": "Check-in Reminder",
-      "dir": "merchant_to_customer",
-      "timing": "[1 day before check-in]",
-      "subject": "Seaside Grand Hotel — Tomorrow's Check-in Reminder",
-      "body": "We're looking forward to welcoming you tomorrow! Check-in begins at 3:00 PM. Your Deluxe Ocean View Room is reserved. If you need to cancel, please do so before 3:00 PM today to avoid charges. Confirmation #SGH-8821."
+      "type": "IVR Call Log",
+      "dir": "system_note",
+      "timing": "[1 day before the addendum charge]",
+      "subject": "Automated Call — Expedited Shipping Offer",
+      "body": "Automated IVR call placed to the phone number on file for order #AP-7401. Script: 'Press 1 to upgrade to expedited shipping for $24.99, or stay on the line for other options.' Call log shows keypress '1' received at 11:42 AM, call duration 47 seconds."
     },
     {
-      "type": "No-Show Notification",
+      "type": "Addendum Confirmation Email",
       "dir": "merchant_to_customer",
-      "timing": "[1 day after scheduled check-in]",
-      "subject": "Seaside Grand Hotel — No-Show Charge for Reservation #SGH-8821",
-      "body": "You did not check in for your reservation yesterday and no cancellation was recorded in our system. Per our cancellation policy (shared in your booking confirmation), your card has been charged $189.00 for the no-show. If you believe this is an error, please contact us at (555) 123-4567 with your confirmation number."
+      "timing": "Immediately after the IVR call",
+      "subject": "AudioPeak Electronics — Shipping Upgrade Confirmed for Order #AP-7401",
+      "body": "You've upgraded to expedited shipping for $24.99, confirmed by phone. Your order will now arrive sooner."
     },
     {
-      "type": "Customer Dispute Call",
+      "type": "Customer Dispute Inquiry",
       "dir": "customer_to_merchant",
-      "timing": "[3 days after the no-show charge]",
-      "subject": "Phone Call — Disputing No-Show Charge",
-      "body": "The cardholder called the hotel to dispute the no-show charge. The cardholder stated they called to cancel [2 days before check-in]. The hotel front desk checked the reservation system and confirmed no cancellation was recorded. The hotel's reservation system has an audit log showing the reservation status remained 'Confirmed' with no modification or cancellation events. The cardholder's phone records show a 2-minute call to the hotel's main number, but the hotel cannot confirm whether the call was a cancellation request, a general inquiry, or was routed to voicemail."
-    },
-    {
-      "type": "Merchant Written Response",
-      "dir": "merchant_to_customer",
-      "timing": "[4 days after the no-show charge]",
-      "subject": "RE: Your No-Show Charge — Reservation #SGH-8821",
-      "body": "We have thoroughly reviewed your reservation #SGH-8821. Our system shows no cancellation was recorded. The reservation audit log shows it remained in 'Confirmed' status from booking through the no-show date. Your room was held and could not be sold to other guests. Our cancellation policy, which was clearly stated in your booking confirmation and reminder emails, requires cancellation before the deadline. We are unable to reverse the charge."
+      "timing": "[10 days after the addendum charge]",
+      "subject": "I didn't authorize this extra charge",
+      "body": "The cardholder emailed stating they don't recall the IVR call or agreeing to any shipping upgrade. AudioPeak responded with the recorded call log showing the keypress acceptance."
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "source": "Seaside Grand Hotel — Payment Service Provider",
+  "source": "AudioPeak Electronics — Payment Service Provider",
   "dataType": "Authorization Log",
   "reasonCode": "4859",
   "reasonCodeDescription": "Addendum, No-show, or ATM Dispute",
@@ -7,13 +7,13 @@
     "authorizationObtained": true,
     "responseCode": "00",
     "responseMessage": "Approved",
-    "entryMode": "Ecommerce — booking guarantee",
+    "entryMode": "Ecommerce — addendum to card on file",
     "threeDSecure": {
       "enrolled": true,
       "authenticated": true,
       "eci": "05",
-      "cavv": "Verified at booking"
+      "cavv": "Verified at original order"
     },
-    "notes": "Authorization obtained at time of booking as a guarantee. No-show charge processed after the guest failed to appear and no cancellation was recorded."
+    "notes": "Addendum charge of $24.99 authorized against the card on file from original order #AP-7401, following recorded IVR acceptance."
   }
 }

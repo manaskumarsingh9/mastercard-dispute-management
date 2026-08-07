@@ -1,19 +1,19 @@
 {
-  "source": "Seaside Grand Hotel — Order Management System",
+  "source": "AudioPeak Electronics — Order Management System",
   "dataType": "Order Details",
   "reasonCode": "4859",
   "reasonCodeDescription": "Addendum, No-show, or ATM Dispute",
   "orderRecord": {
-    "orderStatus": "No-show — room held but guest did not arrive",
+    "orderStatus": "Addendum charge — expedited shipping upgrade added to existing order",
     "items": [
       {
-        "name": "Deluxe Ocean View Room — 1 night",
+        "name": "Order Addendum — Expedited Shipping Upgrade for Order #AP-7401",
         "quantity": 1,
-        "unitPrice": 189,
-        "sku": "SGH-DOV-1N"
+        "unitPrice": 24.99,
+        "sku": "AP-ADDENDUM-SHIP"
       }
     ],
-    "shippingAddress": null,
-    "orderNotes": "Reservation made online [14 days before check-in]. Cancellation policy requires cancellation at least 24 hours before check-in via the booking portal or by calling with the confirmation number. The hotel's reservation system shows no cancellation was recorded. The room was held and could not be sold to other guests."
+    "shippingAddress": "Cardholder's billing address (same as original order #AP-7401)",
+    "orderNotes": "Original order #AP-7401 was placed online [3 days before the addendum charge]. An automated IVR call was placed to the phone number on file offering an expedited shipping upgrade; the recorded call log shows the recipient pressed '1' to accept, triggering the $24.99 addendum charge."
   }
 }
