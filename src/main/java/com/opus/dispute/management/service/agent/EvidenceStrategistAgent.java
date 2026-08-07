@@ -48,8 +48,10 @@ public class EvidenceStrategistAgent {
             You will receive:
             1. The CLAIM RECORD (reason code, amount, dates, merchant, etc.) — this is the
                AUTHORITATIVE source for all specific facts. Always use these values as ground truth.
-            2. The reason code rules — official Mastercard guidance for this reason code,
-               including required evidence, conditional evidence, win rate, and tips
+            2. The reason code rules — official Mastercard guidance specifying expected evidence
+               document types (e.g., delivery confirmations, customer terms, payment logs),
+               win rate, and tips. Evidence items may be provided in any format (structured data,
+               PDF, image receipt, or text).
             3. Evidence data files organized by reason code — these represent the type of dispute
                narrative and available evidence categories. IMPORTANT: The specific merchant names,
                amounts, and other details in these files may differ from the claim record.
@@ -72,7 +74,7 @@ public class EvidenceStrategistAgent {
             - Write EVERYTHING in plain, non-technical language that any business person can understand.
             - NEVER mention file names, file extensions (.json, .pdf, .csv), folder paths, data sources,
               or internal system terms in your response.
-            - NEVER say things like "No explicit 'terms_acceptance.json' file found" — instead say
+            - NEVER say things like "No explicit 'terms_acceptance' file found" — instead say
               "No record of the customer accepting the terms was found."
             - Refer to evidence by its plain-language purpose: "delivery confirmation", "customer agreement",
               "refund policy", "transaction record" — NOT by file names or technical identifiers.
@@ -211,13 +213,15 @@ public class EvidenceStrategistAgent {
             List<SourceEntry> missingFromRules = new ArrayList<>();
 
             for (SourceEntry entry : rulesRequiredSources) {
-                String key = entry.source + "/" + entry.file.replace(".json", "");
+                String cleanFile = entry.file.replaceAll("\\.[a-zA-Z0-9]+$", "");
+                String key = entry.source + "/" + cleanFile;
                 if (!allAvailableData.containsKey(key)) {
                     missingFromRules.add(entry);
                 }
             }
             for (SourceEntry entry : rulesConditionalSources) {
-                String key = entry.source + "/" + entry.file.replace(".json", "");
+                String cleanFile = entry.file.replaceAll("\\.[a-zA-Z0-9]+$", "");
+                String key = entry.source + "/" + cleanFile;
                 if (!allAvailableData.containsKey(key)) {
                     missingFromRules.add(entry);
                 }
@@ -445,7 +449,8 @@ public class EvidenceStrategistAgent {
             obj.addProperty("file", e.file);
             obj.addProperty("label", e.label);
             obj.addProperty("priority", e.priority);
-            obj.addProperty("found", fetchedKeys.contains(e.source + "/" + e.file.replace(".json", "")));
+            String cleanFile = e.file.replaceAll("\\.[a-zA-Z0-9]+$", "");
+            obj.addProperty("found", fetchedKeys.contains(e.source + "/" + cleanFile));
             requiredArr.add(obj);
         }
         plan.add("requiredSources", requiredArr);
@@ -457,7 +462,8 @@ public class EvidenceStrategistAgent {
             obj.addProperty("file", e.file);
             obj.addProperty("label", e.label);
             obj.addProperty("priority", e.priority);
-            obj.addProperty("found", fetchedKeys.contains(e.source + "/" + e.file.replace(".json", "")));
+            String cleanFile = e.file.replaceAll("\\.[a-zA-Z0-9]+$", "");
+            obj.addProperty("found", fetchedKeys.contains(e.source + "/" + cleanFile));
             conditionalArr.add(obj);
         }
         plan.add("conditionalSources", conditionalArr);
