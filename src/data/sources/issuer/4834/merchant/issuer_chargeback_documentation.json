@@ -2,26 +2,20 @@
   "source": "Issuing Bank — Chargeback Department",
   "dataType": "Issuer Chargeback Documentation",
   "reasonCode": "4834",
-  "reasonCodeDescription": "Point of Interaction Error / Duplicate Processing",
+  "reasonCodeDescription": "Point of Interaction Error",
   "chargebackFiling": {
     "reasonCode": "4834",
-    "reasonCodeDescription": "Point of Interaction Error / Duplicate Processing",
+    "reasonCodeDescription": "Point of Interaction Error",
     "supportingDocuments": [
-      {
-        "type": "Account Statement",
-        "desc": "Statement showing two identical $79.99 charges from same merchant, same day."
-      },
-      {
-        "type": "Cardholder Dispute Form",
-        "desc": "Signed statement that only one purchase was intended."
-      }
+      { "type": "Cardholder Dispute Form", "desc": "Statement that two $79.99 charges 20 minutes apart appear to be a duplicate." },
+      { "type": "Account Statement", "desc": "Showing both $79.99 charges from AudioPeak Electronics." }
     ],
-    "issuerCommentary": "Filing under 4834. Two charges of $79.99 from the same merchant on the same date. Cardholder asserts only one purchase was made.",
+    "issuerCommentary": "Filing under 4834. Cardholder believes the two closely-timed charges are a duplicate of a single order.",
     "arbitrationEligible": true
   },
   "transactionDetails": {
     "cardPresent": false,
-    "ecommerceIndicator": "ECI_07",
+    "ecommerceIndicator": "ECI_05",
     "posEntryMode": "81"
   }
 }

@@ -1,12 +1,12 @@
 {
-  "source": "PhoneShield Pro — Policies",
-  "dataType": "Refund & Cancellation Policy",
+  "source": "AudioPeak Electronics — Policies",
+  "dataType": "Refund & Return Policy",
   "reasonCode": "4834",
-  "reasonCodeDescription": "Point of Interaction Error / Duplicate Processing",
+  "reasonCodeDescription": "Point of Interaction Error",
   "policy": {
     "refundWindow": "30 days from delivery",
-    "policy": "Full refund within 30 days if items returned in unopened condition.",
-    "disclosureMethod": "Displayed at checkout and in each order confirmation email.",
-    "customerAcknowledgment": "Customer agreed to terms during each checkout."
+    "policy": "Standard 30-day return window. Both orders were separate, valid purchases and are each individually eligible for return under normal terms.",
+    "disclosureMethod": "Displayed at checkout and in each order's confirmation email.",
+    "customerAcknowledgment": "Customer confirmed each order individually at checkout."
   }
 }

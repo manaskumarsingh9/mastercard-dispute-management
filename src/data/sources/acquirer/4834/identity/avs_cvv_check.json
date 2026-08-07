@@ -1,16 +1,16 @@
 {
-  "source": "PhoneShield Pro — Identity Verification",
+  "source": "AudioPeak Electronics — Identity Verification",
   "dataType": "AVS/CVV Verification Results",
   "reasonCode": "4834",
-  "reasonCodeDescription": "Point of Interaction Error / Duplicate Processing",
+  "reasonCodeDescription": "Point of Interaction Error",
   "verificationResults": {
     "avs": {
       "responseCode": "Y",
-      "description": "Full match on both"
+      "description": "Full match on both orders"
     },
     "cvv": {
       "responseCode": "M",
-      "description": "CVV matched on both"
+      "description": "CVV matched on both orders"
     }
   }
 }

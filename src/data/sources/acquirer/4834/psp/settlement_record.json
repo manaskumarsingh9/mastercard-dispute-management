@@ -1,9 +1,9 @@
 {
-  "source": "PhoneShield Pro — Payment Service Provider",
+  "source": "AudioPeak Electronics — Payment Service Provider",
   "dataType": "Settlement Record",
   "reasonCode": "4834",
-  "reasonCodeDescription": "Point of Interaction Error / Duplicate Processing",
+  "reasonCodeDescription": "Point of Interaction Error",
   "settlementRecord": {
-    "notes": "Two separate settlements of $79.99 each for two distinct orders with unique order IDs, auth codes, and product SKUs. Not duplicate charges."
+    "notes": "Two separate settlements: $79.99 for order #AP-9210 and $79.99 for order #AP-9247. Total $159.98 across two distinct, non-duplicate transactions."
   }
 }

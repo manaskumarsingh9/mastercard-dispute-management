@@ -2,7 +2,7 @@
   "source": "Issuing Bank — Transaction Processing",
   "dataType": "Issuer Transaction Record",
   "reasonCode": "4834",
-  "reasonCodeDescription": "Point of Interaction Error / Duplicate Processing",
+  "reasonCodeDescription": "Point of Interaction Error",
   "authorization": {
     "responseCode": "00",
     "merchantCategoryCode": "5999",
@@ -14,7 +14,7 @@
     },
     "cvvResult": {
       "code": "M",
-      "description": "CVV Match"
+      "description": "CVV matched"
     }
   },
   "riskFlags": {

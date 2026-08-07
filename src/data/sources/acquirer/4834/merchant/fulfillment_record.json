@@ -1,14 +1,13 @@
 {
-  "source": "PhoneShield Pro — Fulfillment",
+  "source": "AudioPeak Electronics — Fulfillment",
   "dataType": "Fulfillment & Delivery Record",
   "reasonCode": "4834",
-  "reasonCodeDescription": "Point of Interaction Error / Duplicate Processing",
+  "reasonCodeDescription": "Point of Interaction Error",
   "fulfillmentRecord": {
-    "type": "Physical Shipment — two separate packages",
-    "status": "Both delivered",
-    "method": "USPS Priority — separate tracking numbers",
-    "timing": "[4 days after purchase] and [5 days after purchase]",
+    "type": "Physical Goods",
+    "status": "Both orders shipped and delivered separately",
+    "method": "Ground shipping",
     "confirmed": true,
-    "notes": "Two packages shipped separately. Both delivered to cardholder's billing address."
+    "notes": "Order #AP-9210 (charging pad) and order #AP-9247 (ear cushions) were fulfilled as two independent shipments with separate tracking numbers, confirming they are not a single duplicated order."
   }
 }

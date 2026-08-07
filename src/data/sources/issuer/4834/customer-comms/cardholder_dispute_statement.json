@@ -2,19 +2,19 @@
   "source": "Issuing Bank — Cardholder Services",
   "dataType": "Cardholder Dispute Statement",
   "reasonCode": "4834",
-  "reasonCodeDescription": "Point of Interaction Error / Duplicate Processing",
+  "reasonCodeDescription": "Point of Interaction Error",
   "statement": {
-    "disputeReason": "4834 - Point of Interaction Error / Duplicate Processing",
-    "detailedDescription": "The cardholder's statement shows two charges of $79.99 each from 'PHONESHIELD PRO' on the same day. The cardholder states they only made one purchase and the second is a duplicate.",
+    "disputeReason": "4834 - Point of Interaction Error",
+    "detailedDescription": "The cardholder sees two charges of $79.99 each from 'AUDIOPEAK ELECTRONICS' posted 20 minutes apart and believes this is a duplicate charge for a single order.",
     "contactedMerchant": true,
-    "merchantResponseSummary": "The cardholder emailed PhoneShield Pro [3 days after the charges]. The merchant replied that both are separate orders but the cardholder doesn't recall placing two.",
+    "merchantResponseSummary": "The cardholder emailed AudioPeak [5 days after the charges]. The merchant explained the two charges correspond to two separate orders with different products and different order numbers.",
     "previousDisputeHistory": "None",
-    "requestedResolution": "Reversal of one $79.99 charge as a duplicate.",
+    "requestedResolution": "Reversal of one of the two $79.99 charges, believed to be a duplicate.",
     "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
   },
   "bankInternalNotes": {
-    "riskAssessment": "Medium — merchant may have valid defense documentation.",
-    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4834 (Point of Interaction Error / Duplicate Processing).",
+    "riskAssessment": "Medium — merchant may have valid defense documentation showing two distinct orders.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4834 (Point of Interaction Error).",
     "priority": "Standard"
   }
 }

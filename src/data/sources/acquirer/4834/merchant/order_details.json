@@ -1,25 +1,25 @@
 {
-  "source": "PhoneShield Pro — Order Management System",
+  "source": "AudioPeak Electronics — Order Management System",
   "dataType": "Order Details",
   "reasonCode": "4834",
-  "reasonCodeDescription": "Point of Interaction Error / Duplicate Processing",
+  "reasonCodeDescription": "Point of Interaction Error",
   "orderRecord": {
     "orderStatus": "Both orders completed and delivered",
     "items": [
       {
-        "name": "Order #PS-88210: Premium Leather Phone Case — iPhone 15 Pro Max",
+        "name": "Order #AP-9210: SnapCharge Wireless Charging Pad",
         "quantity": 1,
         "unitPrice": 79.99,
-        "sku": "PS-LC-15PM"
+        "sku": "AP-SC-WCP"
       },
       {
-        "name": "Order #PS-88247: Ultimate Screen Protector Kit — iPhone 15 Pro Max (3-pack with installation tool)",
+        "name": "Order #AP-9247: Replacement Ear Cushions — ProSilence ANC (Pair)",
         "quantity": 1,
         "unitPrice": 79.99,
-        "sku": "PS-SP3-15PM"
+        "sku": "AP-RC-PS-PR"
       }
     ],
     "shippingAddress": "Both shipped to cardholder's billing address",
-    "orderNotes": "Two separate orders placed 20 minutes apart. Order #PS-88210 at 2:15 PM (phone case) and #PS-88247 at 2:35 PM (screen protector kit). Each has unique order ID, unique SKU, different product, and separate authorization code."
+    "orderNotes": "Two separate orders placed 20 minutes apart. Order #AP-9210 at 2:15 PM (charging pad) and #AP-9247 at 2:35 PM (ear cushions). Each has unique order ID, unique SKU, different product, and separate authorization code."
   }
 }

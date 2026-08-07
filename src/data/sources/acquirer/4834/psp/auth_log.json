@@ -1,8 +1,8 @@
 {
-  "source": "PhoneShield Pro — Payment Service Provider",
+  "source": "AudioPeak Electronics — Payment Service Provider",
   "dataType": "Authorization Log",
   "reasonCode": "4834",
-  "reasonCodeDescription": "Point of Interaction Error / Duplicate Processing",
+  "reasonCodeDescription": "Point of Interaction Error",
   "authorizationRecord": {
     "authorizationObtained": true,
     "responseCode": "00",
@@ -12,8 +12,8 @@
       "enrolled": true,
       "authenticated": true,
       "eci": "05",
-      "cavv": "Verified on both transactions"
+      "cavv": "Verified"
     },
-    "notes": "Two separate authorizations 20 minutes apart. Auth #1 at 2:15 PM (phone case), Auth #2 at 2:35 PM (screen protector). Each has unique auth code and transaction ID. Different products, not duplicates."
+    "notes": "Two distinct authorizations: Auth code AP1-4471 for order #AP-9210 ($79.99, 2:15 PM) and Auth code AP1-4479 for order #AP-9247 ($79.99, 2:35 PM). Different products, different SKUs, different authorization codes — not a duplicate."
   }
 }

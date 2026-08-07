@@ -1,16 +1,16 @@
 {
-  "source": "PhoneShield Pro — Authentication",
+  "source": "AudioPeak Electronics — Authentication",
   "dataType": "3D Secure Authentication Record",
   "reasonCode": "4834",
-  "reasonCodeDescription": "Point of Interaction Error / Duplicate Processing",
+  "reasonCodeDescription": "Point of Interaction Error",
   "threeDSecure": {
     "version": "2.0",
     "enrolled": true,
-    "status": "Y — Authenticated on both",
+    "status": "Y — Authenticated separately on each order",
     "eci": "05",
-    "cavv": "Verified on both",
+    "cavv": "Verified",
     "challenge": true,
-    "liabilityShift": "Yes — both transactions",
-    "notes": "3D Secure completed independently on each order."
+    "liabilityShift": "Yes",
+    "notes": "3D Secure completed independently for both order #AP-9210 (2:15 PM) and order #AP-9247 (2:35 PM), each producing a distinct CAVV — further confirming these are two separate authenticated transactions, not a duplicate."
   }
 }

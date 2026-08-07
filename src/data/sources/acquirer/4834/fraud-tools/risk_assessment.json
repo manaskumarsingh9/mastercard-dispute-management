@@ -1,11 +1,11 @@
 {
-  "source": "PhoneShield Pro — Fraud Prevention",
+  "source": "AudioPeak Electronics — Fraud Prevention",
   "dataType": "Device Fingerprint & Risk Assessment",
   "reasonCode": "4834",
-  "reasonCodeDescription": "Point of Interaction Error / Duplicate Processing",
+  "reasonCodeDescription": "Point of Interaction Error",
   "riskAssessment": {
     "deviceFingerprint": {
-      "status": "Same device for both — consistent with one customer placing two orders",
+      "status": "Same known device for both orders",
       "trust": "High",
       "match": true
     },
@@ -13,8 +13,8 @@
       "level": "Low",
       "proxy": false,
       "geoMatch": true,
-      "notes": "Same IP for both orders, consistent with cardholder's location."
+      "notes": "Same IP for both orders, consistent with cardholder's usual location."
     },
-    "overallRiskScore": "Low — legitimate separate orders"
+    "overallRiskScore": "Low — two distinct, legitimate purchases from the same session pattern"
   }
 }

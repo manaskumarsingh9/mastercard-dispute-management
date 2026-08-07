@@ -1,43 +1,29 @@
 {
-  "source": "PhoneShield Pro — Customer Communications",
+  "source": "AudioPeak Electronics — Customer Communications",
   "dataType": "Email Communication Logs",
   "reasonCode": "4834",
-  "reasonCodeDescription": "Point of Interaction Error / Duplicate Processing",
+  "reasonCodeDescription": "Point of Interaction Error",
   "communications": [
     {
-      "type": "Order Confirmation — First",
+      "type": "Order Confirmation",
       "dir": "merchant_to_customer",
-      "timing": "Immediately after first purchase",
-      "subject": "PhoneShield Pro — Order #PS-88210",
-      "body": "Thank you! Your Premium Leather Phone Case for iPhone 15 Pro Max is confirmed. Total: $79.99. Delivery: [4-6 business days]."
+      "timing": "2:15 PM",
+      "subject": "AudioPeak Electronics — Order Confirmation #AP-9210",
+      "body": "SnapCharge Wireless Charging Pad, $79.99."
     },
     {
-      "type": "Order Confirmation — Second",
+      "type": "Order Confirmation",
       "dir": "merchant_to_customer",
-      "timing": "[20 minutes after first purchase]",
-      "subject": "PhoneShield Pro — Order #PS-88247",
-      "body": "Thank you! Your Ultimate Screen Protector Kit for iPhone 15 Pro Max (3-pack with installation tool) is confirmed. Total: $79.99. Delivery: [4-6 business days]."
+      "timing": "2:35 PM",
+      "subject": "AudioPeak Electronics — Order Confirmation #AP-9247",
+      "body": "Replacement Ear Cushions — ProSilence ANC (Pair), $79.99."
     },
     {
-      "type": "Shipping Notification",
-      "dir": "merchant_to_customer",
-      "timing": "[1 day after purchase]",
-      "subject": "Your PhoneShield Pro orders have shipped",
-      "body": "Both orders shipped in separate packages. Order #PS-88210 (phone case) and #PS-88247 (screen protector kit). Two tracking numbers provided."
-    },
-    {
-      "type": "Customer Inquiry",
+      "type": "Duplicate Charge Inquiry",
       "dir": "customer_to_merchant",
-      "timing": "[3 days after purchase]",
-      "subject": "Duplicate charge on my account",
-      "body": "I see two charges of $79.99 from your store. I only placed one order for a phone case. Please refund the duplicate charge."
-    },
-    {
-      "type": "Merchant Response",
-      "dir": "merchant_to_customer",
-      "timing": "[3 days after purchase]",
-      "subject": "RE: Duplicate charge on my account",
-      "body": "Our records show you placed two separate orders 20 minutes apart:\n\n1. Order #PS-88210 at 2:15 PM — Premium Leather Phone Case ($79.99)\n2. Order #PS-88247 at 2:35 PM — Screen Protector Kit ($79.99)\n\nThese are different products with separate order numbers. Both were authenticated via 3D Secure and shipped. If you'd like to return either item, use our return portal within 30 days."
+      "timing": "[5 days after the orders]",
+      "subject": "Was I charged twice?",
+      "body": "The cardholder emailed asking whether the two charges on their statement were a duplicate. AudioPeak confirmed the two charges correspond to two separate orders (#AP-9210 and #AP-9247) for two different products."
     }
   ]
 }
