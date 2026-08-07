@@ -10,11 +10,11 @@
     "cardNotPresent": true,
     "avsResult": {
       "code": "Y",
-      "description": "Street address and ZIP match"
+      "description": "Full match"
     },
     "cvvResult": {
       "code": "M",
-      "description": "CVV Match"
+      "description": "CVV matched"
     }
   },
   "riskFlags": {

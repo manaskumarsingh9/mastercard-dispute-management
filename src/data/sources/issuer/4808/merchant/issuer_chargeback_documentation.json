@@ -7,21 +7,15 @@
     "reasonCode": "4808",
     "reasonCodeDescription": "Authorization-Related Chargeback",
     "supportingDocuments": [
-      {
-        "type": "Cardholder Dispute Form",
-        "desc": "Signed form stating cardholder did not authorize the purchase."
-      },
-      {
-        "type": "Account Activity Report",
-        "desc": "Issuer's records showing the authorization approval."
-      }
+      { "type": "Cardholder Dispute Form", "desc": "Statement questioning authorization validity for the $449.00 charge." },
+      { "type": "Account Statement", "desc": "Showing the disputed $449.00 charge from AudioPeak Electronics." }
     ],
-    "issuerCommentary": "Filing under 4808. The cardholder disputes authorizing this transaction. While an authorization approval exists, the cardholder maintains they did not initiate the purchase.",
+    "issuerCommentary": "Filing under 4808 pending confirmation of authorization approval code and settlement timing.",
     "arbitrationEligible": true
   },
   "transactionDetails": {
     "cardPresent": false,
-    "ecommerceIndicator": "ECI_07",
+    "ecommerceIndicator": "ECI_05",
     "posEntryMode": "81"
   }
 }

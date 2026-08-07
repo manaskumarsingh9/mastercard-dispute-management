@@ -1,14 +1,13 @@
 {
-  "source": "RenewTech Store — Fulfillment",
+  "source": "AudioPeak Electronics — Fulfillment",
   "dataType": "Fulfillment & Delivery Record",
   "reasonCode": "4808",
   "reasonCodeDescription": "Authorization-Related Chargeback",
   "fulfillmentRecord": {
-    "type": "Physical Shipment",
-    "status": "Delivered — signed for at billing address",
-    "method": "UPS Ground — signature required",
-    "timing": "[5 days after purchase]",
+    "type": "Physical Goods — refurbished/open-box",
+    "status": "Delivered and signed for",
+    "method": "Ground shipping",
     "confirmed": true,
-    "notes": "Package delivered and signed for. Signature on file matches cardholder name."
+    "notes": "Refurbished BassLine 5.1 Home Theater Soundbar delivered within 5 business days of authorization, well within the 7-calendar-day settlement window."
   }
 }

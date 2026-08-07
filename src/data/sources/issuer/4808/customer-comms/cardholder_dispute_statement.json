@@ -5,16 +5,16 @@
   "reasonCodeDescription": "Authorization-Related Chargeback",
   "statement": {
     "disputeReason": "4808 - Authorization-Related Chargeback",
-    "detailedDescription": "The cardholder states they did not authorize a $549.00 purchase from 'RENEWTECH STORE' for a refurbished laptop. The cardholder claims they never visited the merchant's website and their card was in their possession at the time.",
-    "contactedMerchant": true,
-    "merchantResponseSummary": "The cardholder contacted RenewTech Store [3 days after the charge appeared]. The merchant said the order was placed from a verified account with 3D Secure and was delivered to the cardholder's address with a signature. The merchant refused a refund.",
+    "detailedDescription": "The cardholder disputes a $449.00 charge from 'AUDIOPEAK ELECTRONICS', questioning whether a valid authorization was obtained and whether settlement occurred within the required window.",
+    "contactedMerchant": false,
+    "merchantResponseSummary": "N/A — cardholder filed the dispute directly with the issuing bank.",
     "previousDisputeHistory": "None",
-    "requestedResolution": "Reversal of the $549.00 charge pending review of authorization records.",
+    "requestedResolution": "Reversal of the $449.00 charge pending proof of valid authorization and timely settlement.",
     "cardholderDeclaration": "I declare that the information provided in this dispute statement is true, accurate, and complete to the best of my knowledge and belief."
   },
   "bankInternalNotes": {
-    "riskAssessment": "Medium — merchant may have valid defense documentation.",
-    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4808 (Authorization-Related Chargeback).",
+    "riskAssessment": "Low-Medium — routine authorization-timing dispute, merchant likely has valid documentation.",
+    "recommendedAction": "Proceed with chargeback filing under Mastercard reason code 4808 (Authorization-Related Chargeback) pending review.",
     "priority": "Standard"
   }
 }

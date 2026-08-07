@@ -1,12 +1,12 @@
 {
-  "source": "RenewTech Store — Policies",
-  "dataType": "Refund & Cancellation Policy",
+  "source": "AudioPeak Electronics — Policies",
+  "dataType": "Refund & Return Policy",
   "reasonCode": "4808",
   "reasonCodeDescription": "Authorization-Related Chargeback",
   "policy": {
-    "refundWindow": "30 days from delivery date",
-    "policy": "Full refund within 30 days if item returned in original condition. Return label provided.",
-    "disclosureMethod": "Displayed at checkout and in order confirmation email.",
-    "customerAcknowledgment": "Customer agreed to terms during checkout."
+    "refundWindow": "30 days from delivery",
+    "policy": "Refurbished/open-box items carry the standard 30-day return window and a 90-day limited warranty.",
+    "disclosureMethod": "Disclosed on the product page and at checkout.",
+    "customerAcknowledgment": "Customer acknowledged refurbished/open-box condition at checkout before payment."
   }
 }

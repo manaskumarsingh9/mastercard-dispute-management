@@ -1,5 +1,5 @@
 {
-  "source": "RenewTech Store — Payment Service Provider",
+  "source": "AudioPeak Electronics — Payment Service Provider",
   "dataType": "Authorization Log",
   "reasonCode": "4808",
   "reasonCodeDescription": "Authorization-Related Chargeback",
@@ -12,8 +12,8 @@
       "enrolled": true,
       "authenticated": true,
       "eci": "05",
-      "cavv": "Verified — Mastercard Identity Check"
+      "cavv": "Verified"
     },
-    "notes": "Real-time authorization with 3D Secure challenge completed. AVS and CVV both matched. Amount matches settlement exactly."
+    "notes": "Authorization approval code AP2-3391 obtained for $449.00. Settlement occurred 5 calendar days after authorization, within Mastercard's required 7-day window."
   }
 }
